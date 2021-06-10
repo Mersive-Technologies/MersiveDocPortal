@@ -112,9 +112,6 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Cloud-Create-Categories.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
-        Title="Pod Location Settings"
-        Link="/Content/Topics/Cloud-Management-Location.htm" />
-      <TocEntry
         Title="Configuration Templates"
         Link="/Content/Topics/Cloud-Management-Templates.htm">
         <TocEntry
@@ -179,6 +176,9 @@
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Cloud-Monitor-Deployment.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="Pod Locations"
+        Link="/Content/Topics/Cloud-Management-Location.htm" />
       <TocEntry
         Title="View and Manage USB Devices"
         Link="/Content/Topics/Cloud-Management-USB-Devices.htm"></TocEntry>
@@ -280,6 +280,9 @@
     <TocEntry
       Title="Solstice Conference Physical Setup"
       Link="/Content/Topics/Solstice-Conference-Physical-Setup.htm"></TocEntry>
+    <TocEntry
+      Title="Solstice Conference Supported Peripherals"
+      Link="/Content/Topics/Solstice-Conference-Supported-Peripherals.htm" />
     <TocEntry
       Title="How to Use Solstice Conference"
       Link="/Content/Topics/Solstice-Conference-How-to-Use.htm" />

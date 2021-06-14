@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>
+                <p>In the upper-right hand corner of the Displays table, click the down arrow next to Manage Columns. A box appears for each available data option and category defined in your Solstice Cloud account. </p>
+                <p>
+                    <img src="../Images/AnalyticsManageColumns.png" />
+                </p>
+            </li>
+            <li>Select the boxes for the data options and categories you want to display as columns. Changes to columns will immediately appear in the table below.</li>
+        </ol>
+        <p>The selected data options or categories appear in the Displays table. Click the sort icon <img src="../Images/I_sortIcon.png" alt="double arrow pointing up and down" /> to the right of a column title to change the sort order of the table.</p>
+        <p class="note">Note that the Manage Columns options affect only the columns being displayed in the Displays table; they do not affect the data displayed in the graphs above.</p>
+    </body>
+</html>

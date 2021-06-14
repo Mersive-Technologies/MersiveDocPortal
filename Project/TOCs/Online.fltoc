@@ -170,6 +170,9 @@
           Title="Compare"
           Link="/Content/Topics/Cloud-Analytics-Compare.htm"></TocEntry>
         <TocEntry
+          Title="User Trends"
+          Link="/Content/Topics/Cloud-Analytics-User-Trends.htm"></TocEntry>
+        <TocEntry
           Title="In-Room Tech"
           Link="/Content/Topics/Cloud-Analytics-In-Room-Tech.htm" />
       </TocEntry>

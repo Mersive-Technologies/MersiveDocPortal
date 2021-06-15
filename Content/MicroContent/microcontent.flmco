@@ -90,7 +90,7 @@
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
                     <xhtml:h4>How to Rename a Solstice Display</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Rename-Pod.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudPodRename.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -114,7 +114,7 @@
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
                     <xhtml:h4>How to Download the Solstice App Directly from the Pod</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/HT_download_app_directly.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_SolsticeUserAppDirectDownload.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -220,7 +220,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Enable Network Encryption</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Enable-Network-Encryption.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudSecurityEnableNetworkEncryption.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -233,7 +233,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Change Pod Date and Time</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Pod-Date-And-Time.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudPodDateandTime.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -247,7 +247,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Integrate an Office365 Calendar with the Pod</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Calendar</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-O365-Calendar-Integration.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCalendarIntegrateO365.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -259,7 +259,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Customize Connection Instructions on Welcome Screen</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Welcome Screen</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Customize-Connection-Instructions.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudWelcomeCustCnxInstructions.flsnp" />
                     <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
@@ -273,7 +273,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Add Admin Password to Solstice Pod Settings</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Password-Protect-Configurations.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudSecurityPasswordProtectConfigs.flsnp" />
                     <xhtml:p>A message displays confirming that the Pod configuration has been updated.</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
@@ -285,7 +285,7 @@
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
                     <xhtml:h4>How to Create a Solstice Cloud Account and Onboard Pods</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Create-Account-Onboard-Pods.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCreateAccountOnboardPods.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -329,7 +329,7 @@
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
                     <xhtml:h4>How to Rename a Pod</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Rename-Pod.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudPodRename.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -341,7 +341,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Change the Pod's Language Setting</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Change-Pod-Language.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudChangePodLanguage.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -354,7 +354,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Add Digital Signage Feed</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Digital Signage</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Enable-Digital-Signage.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudDigitalSignageEnable.flsnp" />
                     <xhtml:p>A message displays confirming that the Pod configuration has been updated.</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
@@ -368,7 +368,7 @@
                 <xhtml:body>
                     <xhtml:h4>How to Display Screen Key on Solstice Pod</xhtml:h4>
                     <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Features</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/Cloud-Enable-Screen-Key.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudFeaturesEnableScreenKey.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
                     <xhtml:p>A message displays confirming that the Pod configuration has been updated.</xhtml:p>
                 </xhtml:body>
             </xhtml:html>

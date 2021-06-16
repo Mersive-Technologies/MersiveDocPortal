@@ -98,21 +98,19 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>After you have a signed certificate from your certificate authority that corresponds to the private key on the Solstice Pod, you can upload it.</p>
-                <li>
-                    <ol>
-                        <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
-                        <li>Go to the <b>Security</b> tab &gt;&#160;<b>Certificate Tools</b> section.</li>
-                        <li>Click <b>Install Certificate</b>, then click <b>Open</b>.</li>
-                        <li>To upload a certificate to the Solstice Pod, ensure that <b>Pod server</b> is selected. <p>If you want to begin configuration for 802.1x network device authentication, select either the 802.1x Ethernet option or the 802.1x Wifi option.</p></li>
-                        <li>From the Install Certificate pop-up, click Certificate <b>Browse</b>.</li>
-                        <li>On your file system, navigate to the location of the signed certificate. Click the certificate, then click <b>Open</b></li>
-                        <li>If you are uploading a PFX certificate, enter the password in the PKCS #12 Password field.</li>
-                        <li>Click <b>Import</b>.</li>
-                        <li>From the Import Success pop-up, click <b>OK</b>.</li>
-                    </ol>
-                    <p>The Solstice Pod will now use the certificate you uploaded to validate connection requests. To view the certificate on the Pod, see View Certificate Details below.</p>
-                    <p class="note">If you imported 802.1x certificates, additional configuration steps need to be performed on the Network tab.</p>
-                </li>
+                <ol>
+                    <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
+                    <li>Go to the <b>Security</b> tab &gt;&#160;<b>Certificate Tools</b> section.</li>
+                    <li>Click <b>Install Certificate</b>, then click <b>Open</b>.</li>
+                    <li>To upload a certificate to the Solstice Pod, ensure that <b>Pod server</b> is selected. <p>If you want to begin configuration for 802.1x network device authentication, select either the 802.1x Ethernet option or the 802.1x Wifi option.</p></li>
+                    <li>From the Install Certificate pop-up, click Certificate <b>Browse</b>.</li>
+                    <li>On your file system, navigate to the location of the signed certificate. Click the certificate, then click <b>Open</b></li>
+                    <li>If you are uploading a PFX certificate, enter the password in the PKCS #12 Password field.</li>
+                    <li>Click <b>Import</b>.</li>
+                    <li>From the Import Success pop-up, click <b>OK</b>.</li>
+                </ol>
+                <p>The Solstice Pod will now use the certificate you uploaded to validate connection requests. To view the certificate on the Pod, see View Certificate Details below.</p>
+                <p class="note">If you imported 802.1x certificates, additional configuration steps need to be performed on the Network tab.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -123,20 +121,18 @@
                 <p>If you have both a signed certificate and its private key, you can upload both files to configure encryption for Client/Server communications on the Solstice Pod. </p>
                 <p class="note">If both your signed certificate and private key are contained in a PFX certificate, use the Install Certificate procedure to upload the PFX file to the Pod.</p>
                 <p class="note">This import option is not available for 802.1x certificates.</p>
-                <li>
-                    <ol>
-                        <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
-                        <li>Go to the <b>Security</b> tab &gt;&#160;<b>Certificate Tools</b> section.</li>
-                        <li>Click <b>Install Certificate and private key</b>, then click <b>Open</b>.</li>
-                        <li>From the Install Certificate and Private Key pop-up, click Certificate <b>Browse</b>.</li>
-                        <li>On your file system, navigate to the location of the signed certificate. Click the certificate, then click <b>Open</b></li>
-                        <li>From the Install Certificate and Private Key pop-up, click Private Key <b>Browse</b>.</li>
-                        <li>On your file system, navigate to the location of the private key that corresponds to your certificate. Click the private key file, then click <b>Open</b>.</li>
-                        <li>Click <b>Import</b>.</li>
-                        <li>On the Import Success pop-up, click <b>OK</b>.</li>
-                    </ol>
-                    <p>The Solstice Pod will now use the certificate and private key you uploaded to validate connection requests. To view the certificate on the Pod, see the 'View Certificate Details' steps below.</p>
-                </li>
+                <ol>
+                    <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
+                    <li>Go to the <b>Security</b> tab &gt;&#160;<b>Certificate Tools</b> section.</li>
+                    <li>Click <b>Install Certificate and private key</b>, then click <b>Open</b>.</li>
+                    <li>From the Install Certificate and Private Key pop-up, click Certificate <b>Browse</b>.</li>
+                    <li>On your file system, navigate to the location of the signed certificate. Click the certificate, then click <b>Open</b></li>
+                    <li>From the Install Certificate and Private Key pop-up, click Private Key <b>Browse</b>.</li>
+                    <li>On your file system, navigate to the location of the private key that corresponds to your certificate. Click the private key file, then click <b>Open</b>.</li>
+                    <li>Click <b>Import</b>.</li>
+                    <li>On the Import Success pop-up, click <b>OK</b>.</li>
+                </ol>
+                <p>The Solstice Pod will now use the certificate and private key you uploaded to validate connection requests. To view the certificate on the Pod, see the 'View Certificate Details' steps below.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -145,14 +141,12 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>To view the currently installed certificate:</p>
-                <li>
-                    <ol>
-                        <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
-                        <li>Go to the <b>Security</b> tab &gt;&#160;<b>Encryption</b> section.</li>
-                        <li>Click Certificate <b>View</b>.</li>
-                    </ol>
-                    <p>A read-only listing of the current certificate appears.</p>
-                </li>
+                <ol>
+                    <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
+                    <li>Go to the <b>Security</b> tab &gt;&#160;<b>Encryption</b> section.</li>
+                    <li>Click Certificate <b>View</b>.</li>
+                </ol>
+                <p>A read-only listing of the current certificate appears.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

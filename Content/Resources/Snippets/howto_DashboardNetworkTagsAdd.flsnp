@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Search tags can be used to group Solstice Pod displays based on criteria such as their location, allowing users to filter the Solstice displays listed in their Solstice app  to easily find and connect to right display. </p>
+        <p class="tip">Multiple tags can be added to a single display to allow users to narrow their results. For example, you might add tags for both the city name and the campus name to a Solstice display. </p>
+        <ol>
+            <li>In Solstice Dashboard, select the Pod you wish to apply a tag to from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Network</b> tab and scroll down to the <b>Display Search&#160;Tags</b> section. </li>
+            <li>In <b>Tag Name</b>, type in the name of a new tag OR&#160;select an existing tag from the dropdown list. </li>
+            <li>Select the <b>Tag Color</b> you would like to associate with the tag.</li>
+            <li>Click <b>Add</b>. The added tag appears in the Assigned Tags area.</li>
+            <li>Click <b>Apply</b>. The new tag is applied to the selected Pod and will appear in the Solstice user app.</li>
+        </ol>
+    </body>
+</html>

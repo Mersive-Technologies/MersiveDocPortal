@@ -110,7 +110,7 @@
         <xhtml:body>
           <xhtml:h4>How to Add Search Tags to Solstice Displays</xhtml:h4>
           <MadCap:snippetBlock
-            xhtml:src="../Resources/Snippets/dashboard_addtags.flsnp" />
+            xhtml:src="../Resources/Snippets/howto_DashboardNetworkTagsAdd.flsnp" />
         </xhtml:body>
       </xhtml:html>
     </MicroContentResponse>

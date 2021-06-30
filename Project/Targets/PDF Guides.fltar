@@ -11,7 +11,8 @@
   GetLatestBeforeCompile="false"
   MasterToc="/Project/TOCs/Solstice Dashboard Admin Guide.fltoc"
   OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
-  InjectBookHeadings="true">
+  InjectBookHeadings="true"
+  OutputFile="Solstice Dashboard Admin Guide">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

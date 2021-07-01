@@ -6,16 +6,16 @@
   Destinations=""
   ShowMadCapBacklink="true"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  ConditionTagExpression="include[Default.PrintOnly or Default.ScreenOnly], exclude[Default.Exclude or Default.Future]"
+  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Cloud or Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/AB to MD.fltoc"
+  MasterToc="/Project/TOCs/Solstice Dashboard Admin Guide.fltoc"
   OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   InjectBookHeadings="true"
-  OutputFile="Customer Renewal Export Pod IDs">
+  OutputFile="Solstice Dashboard Admin Guide">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="false"
+    GenerateTOCProxy="true"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />

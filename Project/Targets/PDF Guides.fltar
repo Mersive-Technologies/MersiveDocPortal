@@ -6,13 +6,13 @@
   Destinations=""
   ShowMadCapBacklink="true"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Cloud or Default.Exclude or Default.Future or Default.ScreenOnly]"
+  ConditionTagExpression="include[Default.Cloud or Default.PrintOnly or Default.ScreenOnly], exclude[Default.Exclude or Default.Future]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Dashboard Admin Guide.fltoc"
+  MasterToc="/Project/TOCs/AB to MD.fltoc"
   OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   InjectBookHeadings="true"
-  OutputFile="Solstice Dashboard Admin Guide">
+  OutputFile="Enable Miracast and AirPlay">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

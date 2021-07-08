@@ -42,4 +42,8 @@
     BackgroundColor="#2f4f4f"
     Name="NewDevices"
     Comment="" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="Cloud"
+    Comment="" />
 </CatapultConditionTagSet>

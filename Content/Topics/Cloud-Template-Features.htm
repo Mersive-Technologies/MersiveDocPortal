@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
     <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
         <h1>Features Template</h1>
@@ -62,13 +63,12 @@
                 <MadCap:dropDownHotspot>Enable Miracast</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Users can mirror their device screens to a Pod display in a number of ways. Solstice Pods offer two options for Miracast connections.</p>
+                <p>Users can mirror their Windows device screens to a Solstice Pods via Miracast in two ways: either over the existing network infrastructure the Pod is connected to, or directly to the Pod via a  wireless P2P stream.</p>
                 <ol>
-                    <li>To allow users to mirror their Windows device screen via a P2P stream to the Pod, select <b>Enable Miracast WiFi Direct</b>.</li>
-                    <li>To allow users to mirror their Windows device screen to the Pod over the existing network, select <b>Enable Miracast Infrastructure</b>.</li>
-                    <li>Click <b>Save</b>.</li>
+                    <li>To enable Miracast mirroring, apply the appropriate settings for your Pods' network configuration based on the table below.<br /><![CDATA[	]]><table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21"><col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 25%;" /><col class="TableStyle-Alternate-Row-Color-Column-Column1" /><tbody><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><strong>Network Configuration</strong></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><strong>Miracast Configuration in Solstice Cloud</strong></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Ethernet Only (recommended)</td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><ul><li>Select both <b>Enable Miracast Infrastructure</b> and <b>Enable Miracast WiFi Direct</b>.</li></ul><p class="warning">WiFi must also be enabled on Pods for Miracast discovery. In the WiFi configuration, select <b>Enable WiFi</b>, choose <b>Existing Network</b>, set Security Type to <b>Open</b>, and leave <b>SSID</b> blank.  (The wireless interface will only be used for Miracast discovery.)</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Wirelessly Attached to Existing Network Only</td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><ul><li>Select <b>Enable Miracast Infrastructure</b>.</li></ul></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Ethernet + Wirelessly Attached to Existing Network</td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><ul><li>Select <b>Enable Miracast Infrastructure</b>.</li></ul></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Ethernet + Wireless Access Point</td><td rowspan="2" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Miracast not supported. When the Pod is acting as an access point, Miracast discovery cannot operate. Contact Mersive to discuss other options like attaching your Pod to an existing network.</td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td valign="middle" class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Wireless Access Point Only</td></tr></tbody></table></li>
+                    <li> Click <b>Save</b>.</li>
                 </ol>
-                <p class="note">For more information on how to configure Miracast for your organization's needs, see <a href="Admin-Enabling-Miracast.htm">Enabling Miracast</a>. This option is only available for Gen2i and Gen3 Pods.</p>
+                <p class="note">For more about Miracast and configuring it for your organization's needs, see <a href="Admin-Enabling-Miracast.htm">Enable Sharing with Miracast</a>.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

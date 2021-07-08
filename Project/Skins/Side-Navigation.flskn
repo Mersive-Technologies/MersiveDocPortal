@@ -9,7 +9,7 @@
   AutoSyncTOC="true">
   <WebHelpOptions
     NavigationPanePosition="Right"
-    OffCanvasMenuStyle="Accordion"
+    OffCanvasMenuStyle="Drilldown"
     MainMenuPosition="Left"
     EnableSticky="All" />
   <Stylesheet>

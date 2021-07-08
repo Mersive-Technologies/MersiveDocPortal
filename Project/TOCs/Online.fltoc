@@ -258,10 +258,10 @@
       Title="Solstice Discovery Service (SDS)"
       Link="/Content/Topics/SDS-Introduction.htm">
       <TocEntry
-        Title="[%=System.LinkedTitle%]"
+        Title="Introduction to SDS"
         Link="/Content/Topics/SDS-Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
-        Title="[%=System.LinkedTitle%]"
+        Title="SDS + DNS Resolution"
         Link="/Content/Topics/SDS-DNS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment=""
@@ -6,12 +6,13 @@
   Destinations=""
   ShowMadCapBacklink="true"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.ScreenOnly]"
+  ConditionTagExpression="include[Default.PrintOnly or Default.ScreenOnly], exclude[Default.Exclude or Default.Future]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
-  OutputFolder="C:\Users\mdumas\Documents\Documentation"
-  InjectBookHeadings="true">
+  MasterToc="/Project/TOCs/AB to MD.fltoc"
+  OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
+  InjectBookHeadings="true"
+  OutputFile="Customer Renewal Export Pod IDs">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="false"

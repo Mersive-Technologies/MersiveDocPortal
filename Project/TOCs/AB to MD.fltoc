@@ -3,7 +3,11 @@
   Version="1">
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/Topics/Admin-Enabling-Miracast.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    Link="/Content/Topics/Cloud-Template-Features.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
     StartSection="false"
-    ReplaceMergeNode="false"></TocEntry>
+    ReplaceMergeNode="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"></TocEntry>
 </CatapultToc>

@@ -16,7 +16,7 @@
   OutputFile="index"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   GenerateAllSkins="true"
-  OutputFolder="C:\Users\mdumas\Documents\HTML5"
+  OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   DefaultUrl="/Content/Home.htm"
   PartialWordSearch="false"
   MinimumWordSize="4"

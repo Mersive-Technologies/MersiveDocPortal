@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');" MadCap:conditions="Default.Exclude">
+    <head><title>Solstice Edge Server (SES) Introduction</title>
+    </head>
+    <body>
+        <h1>Configure Solstice Pods for SES</h1>
+        <p>Solstice Pods must be configured to use the Solstice Edge Server (SES) in the following two ways. This can be done via Solstice Dashboard or through the Web Configuration tool on the Pod itself.</p>
+        <h2>Configure the SDS Host </h2>
+        <p>Setting a Pod’s SDS host to the SES IP address makes that Pod known to the Solstice Discovery Service within SES, making that Pod discoverable to Solstice clients. </p>
+        <p>In the screenshot below, a Pod named Phobos is being configured in Solstice Dashboard &gt; Network. The IP address of the SES (in this example, 192.168.1.26) is entered in <b>SDS Host 1</b> in the <b>Display Discovery</b> section. Checking <b>List display to Solstice Directory Service</b> allows this Pod’s display to be easily found by Solstice clients.</p>
+        <p>
+            <img src="../Resources/Images/ex_SESDashboardConfigureSDSHost.png" />
+        </p>
+        <h2>Configure the http and https Web Proxy</h2>
+        <p>In the same Network tab of Dashboard, the Web Server Proxy settings appear. Set your proxies for http and https traffic here. A <b>Web Proxy IP Address</b> and <b>Web Proxy Port</b> must be specified. If your proxy requires a login, also enter a <b>Login Name</b> and <b>Password</b>. The port used for the SES proxy is 3128. The <b>Exclusion List</b> and <b>Don’t use the proxy server for local addresses on the same subnet</b> can be left blank because these types of configuration are specified in SES itself.</p>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="SES-Validate-on-Pods.htm">Validate SES on Pods</a>
+        </p>
+    </body>
+</html>

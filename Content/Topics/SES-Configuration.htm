@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');" MadCap:conditions="Default.Exclude">
+    <head><title>SES Configuration</title>
+    </head>
+    <body>
+        <h1>Configure the Solstice Edge Server (SES)</h1>
+        <p>Once the SES virtual machine is up and running on your network, you can log in and configure it. (See the <a href="SES-Introduction.htm">SES&#160;Introduction</a> for SES requirements and how to run SES&#160;in VMware.)</p>
+        <h2>Logging in to Solstice Edge Server</h2>
+        <p>SES can be logged in to in a couple of ways. You may use the terminal window of the VMware environment, or if you know the IP address (or hostname) of SES, you can connect to it remotely via SSH. </p>
+        <p class="note">Common SSH clients are PuTTY, MobaXterm, or Git Bash. In Windows 10, the OpenSSH client can be installed as an optional feature.</p>
+        <p>Type the following into your SSH client to connect to SES:
+						</p>
+        <p><span style="font-family: monospace; font-weight: bold;">ssh admin@&lt;IP address or hostname of SES&gt;</span>
+        </p>
+        <p>When logging in to SES, the username will always be ‘admin’. Initially, the password for the admin user is ‘Solstice’:						</p>
+        <p><span style="font-family: monospace;">solstice-edge-server login:	<b>admin</b><br />Password: <b>Solstice</b></span>
+        </p>
+        <p>You will be prompted to choose a new password immediately upon logging in. As always, choose a strong password and keep it safe. </p>
+        <p>When successfully logged in, the following greeting will appear:
+						</p>
+        <p> <img src="../Resources/Images/ex_SESLogInGreeting.png" /></p>
+        <h2>Running <span style="font-family: monospace;">sesadm</span> to Configure SES</h2>
+        <p>The <span style="font-family: monospace;">sesadm</span> tool is used to configure SES. Because <span style="font-family: monospace;">sesadm</span> requires elevated privileges, you will need to use <span style="font-family: monospace;">sudo</span> to run it with super user permissions:
+						</p>
+        <p><span style="font-family: monospace; font-weight: bold;">sudo sesadm</span>
+        </p>
+        <p class="note">When using <span style="font-family: monospace;">sudo</span>, the server will occasionally prompt you to reenter the admin password you used to log in to SES.</p>
+        <p>You will see the menu for making all SES configuration changes:</p>
+        <p>
+            <img src="../Resources/Images/ex_SESConfigMain.png" />
+        </p>
+        <p class="note">No configuration changes will be applied until you enter option <b>4</b> to exit <span style="font-family: monospace;">sesadm</span>. You will be asked if you want to apply the changes upon exiting.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>1 - Network Configuration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Enter <b>1</b> to select Network Configuration. This option allows you to define how SES networking is set up.</p>
+                <p>SES can be configured to use DHCP, where SES’s IP address will be automatically assigned by network equipment, or Static IP, where you can assign SES a fixed IP address. If using Static IP, you will be prompted for the IP address to use, the network prefix length, the Gateway, and the DNS address.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Proxy_Config"></a>2- Proxy Configuration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Proxy Configuration section contains several options:</p>
+                <p>
+                    <img src="../Resources/Images/ex_SESConfigProxy.png" />
+                </p>
+                <h3>1 - Parent Proxy Configuration</h3>
+                <p>For added security, some organizations may want Solstice Edge Server, which itself acts as a proxy, to operate inside another proxy server or servers. This option can be enabled and disabled in Parent Proxy Configuration. Enabling a parent proxy forces all SES traffic to the outside internet, including traffic from Solstice Pods, through the specified proxy.
+
+</p>
+                <p>There are several parent proxy configuration options. Some simple examples are provided in the configuration file, including single-parent, multi-parent, and round-robin parent proxy configurations. SES’s proxy is built on the Squid proxy platform; thus all Squid options are available to you. For detailed Squid documentation, <a href="http://www.squid-cache.org/Doc/config/cache_peer">click here</a>.
+</p>
+                <p>When you enter the option to edit parent proxy settings, the GNU nano editor appears. This is a simple text editor with editing options shown at the bottom of the screen. Help is available in the editor, or from <a href="https://www.nano-editor.org/">GNU nano</a>.
+</p>
+                <p>
+When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and save your changes. </p>
+                <p class="note">Remember, settings changes are not applied until you exit <span style="font-family: monospace;">sesadm</span> and confirm doing so.
+</p>
+                <h3><a name="MAC_Access_List"></a>2 - MAC Access List</h3>
+                <p>If the MAC Access List is enabled, SES can be accessed only by Pods whose MAC addresses are specified in the configuration file. If this feature is disabled, any MAC address, regardless of what is in the configuration file, is allowed access. (See other ways to limit network access in the <a href="#Local_Network_Access_List">Local Network Access List</a> and <a href="#Proxy_Access_List">Proxy Access List</a> sections.)</p>
+                <p>Edit the configuration file to enter the MAC addresses of all Solstice Pods you want to be able to communicate to the internet through SES.</p>
+                <p class="note">You can locate the MAC addresses of Pods in Solstice Cloud Management and Solstice Dashboard.</p>
+                <h3> <a name="Local_Network_Access_List"></a>3 - Local Network Access List</h3>
+                <p>The Local Network Access List limits by IP address which devices and networks are allowed to communicate through the SES proxy. Edit the list to specify the IP addresses you want to have access to SES (IPV4 and IPV6 are supported). The network that the Solstice Pods are using should be listed here. You may both specify whole networks using CIDR notation and list IP addresses individually. (See other ways to limit network access in the <a href="#MAC_Access_List">MAC Address List</a> and <a href="#Proxy_Access_List">Proxy Access List</a> sections.)</p>
+                <p class="note">In Squid proxy configurations (the proxy platform used by SES), use the commenting character ‘#’ before text you want the proxy to ignore. Information after the ‘#’ (to the next line break) can remain in the configuration file without taking effect. For more about Squid configuration, click <a href="http://www.squid-cache.org/">here</a>.</p>
+                <h3><a name="Proxy_Access_List"></a>4 - Proxy Access List</h3>
+                <p>The Proxy Access List allows you to configure which internet sites SES will be allowed to access.</p>
+                <p>By default, SES allows Pods access to only the sites shown below. These are generally the only sites Pods need to access, for the latest software releases and to verify licenses. Removing these is not recommended. (See other ways to limit network access in MAC Address List Configuration and Local Network Access List.)</p>
+                <ul>
+                    <li><b>.mersive.com</b> - Solstice Pods check for software updates and manage Pods via Solstice Cloud Management.</li>
+                    <li><b>manager.flexnetoperations.com</b> - License server for Solstice Pods subscriptions.</li>
+                    <li>
+                        <p><b>www.google.com</b> - Pods verify internet access through the proxy configured on SES.</p>
+                    </li>
+                </ul>
+                <p>There are only a couple cases in which organizations may need to open up additional domains. If you use the Digital Signage or RSS feed features of Solstice, add the domains of the URLs your Pods use to access these features to the Proxy Access List configuration.</p>
+                <p class="note">The content shared to Solstice Pod displays by both employees and guests via the Solstice client does not leave the Pod. It never goes to SES, nor will it ever be passed through the SES proxy.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>3 - Export <span style="font-family: monospace;">sesadm</span> Settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Enter this option in <span style="font-family: monospace;">sesadm</span> to back up all of your current SES configurations to a TAR archive file. You can then copy this file to your organization’s backup drives. When there are new SES releases, Mersive will deliver a new virtual machine OVF file. Simply “power down” the previous SES virtual machine, “boot” the new SES virtual machine, and import the settings. The new SES release is now operational, and Pods will start sending discovery information to SDS.
+						</p>
+                <p class="note">Import functionality is not part of the SES v0.5 beta release. Either import or an option for automatically preserving settings through upgrades will be included in future SES releases. Manual reconfiguration of SES due to an upgrade will not be necessary.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownBody>
+                <h3>Solstice Edge Server Diagram</h3>
+                <p>The diagram below illustrates how the SES and an optional parent proxy allow Solstice Pods to access only essential internet resources while protecting all content shared by users.</p>
+                <p>
+                    <img src="../Resources/Images/dgm_SESCloudDiagram.png" style="border-left-style: none;border-left-width: 1px;border-right-style: none;border-top-style: none;border-bottom-style: none;">
+                    </img>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2><a name="Exit_sesadm"></a>Exit <span style="font-family: monospace;">sesadm</span></h2>
+        <p>From the main <span style="font-family: monospace;">sesadm</span>menu, enter option <b>4</b> to exit the administration tool and apply your configuration changes. If you choose to not apply changes, none of the settings you made during your current <span style="font-family: monospace;">sesadm</span> session will be saved. </p>
+        <p>
+            <img src="../Resources/Images/ex_SESConfigApplyChanges.png" style="width: 350px;" />
+        </p>
+        <p>Entering <b>y</b> will immediately apply your network and proxy configuration settings. There is no need to do anything else for the settings to take effect.</p>
+        <h2>Basic Current Settings with <span style="font-family: monospace;">sesinfo</span></h2>
+        <p>After saving configuration changes in <span style="font-family: monospace;">sesadm</span>, the system displays some basic SES settings: SES version, IP address, and proxy port number. (See screenshot in the Exit <span style="font-family: monospace;">sesadm</span> section above.) </p>
+        <p>To see this information anytime, enter:</p>
+        <p><span style="font-family: monospace; font-weight: bold;">sesinfo</span>
+        </p>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="SES-Pod-Configuration.htm">Configure Solstice Pods for SES</a>
+        </p>
+    </body>
+</html>

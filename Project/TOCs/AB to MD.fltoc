@@ -2,19 +2,6 @@
 <CatapultToc
   Version="1">
   <TocEntry
-    Title="SES Introduction"
-    Link="/Content/Topics/SES-Introduction.htm"
-    conditions="Default.Exclude"></TocEntry>
-  <TocEntry
-    Title="Configure SES"
-    Link="/Content/Topics/SES-Configuration.htm"
-    conditions="Default.Exclude"></TocEntry>
-  <TocEntry
-    Title="Configure Solstice Pods for SES"
-    Link="/Content/Topics/SES-Pod-Configuration.htm"
-    conditions="Default.Exclude" />
-  <TocEntry
-    Title="Validated SES on Pods"
-    Link="/Content/Topics/SES-Validate-on-Pods.htm"
-    conditions="Default.Exclude" />
+    Title="Active Learning Design a Room"
+    Link="/Content/Topics/Active-Learning-Design-Room.htm" />
 </CatapultToc>

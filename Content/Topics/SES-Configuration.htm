@@ -52,9 +52,9 @@
                 <p>For added security, some organizations may want Solstice Edge Server, which itself acts as a proxy, to operate inside another proxy server or servers. This option can be enabled and disabled in Parent Proxy Configuration. Enabling a parent proxy forces all SES traffic to the outside internet, including traffic from Solstice Pods, through the specified proxy.
 
 </p>
-                <p>There are several parent proxy configuration options. Some simple examples are provided in the configuration file, including single-parent, multi-parent, and round-robin parent proxy configurations. SES’s proxy is built on the Squid proxy platform; thus all Squid options are available to you. For detailed Squid documentation, <a href="http://www.squid-cache.org/Doc/config/cache_peer">click here</a>.
+                <p>There are several parent proxy configuration options. Some simple examples are provided in the configuration file, including single-parent, multi-parent, and round-robin parent proxy configurations. SES’s proxy is built on the Squid proxy platform; thus all Squid options are available to you. For detailed Squid documentation, <a href="http://www.squid-cache.org/Doc/config/cache_peer" target="_blank">click here</a>.
 </p>
-                <p>When you enter the option to edit parent proxy settings, the GNU nano editor appears. This is a simple text editor with editing options shown at the bottom of the screen. Help is available in the editor, or from <a href="https://www.nano-editor.org/">GNU nano</a>.
+                <p>When you enter the option to edit parent proxy settings, the GNU nano editor appears. This is a simple text editor with editing options shown at the bottom of the screen. Help is available in the editor, or from <a href="https://www.nano-editor.org/" target="_blank">GNU nano</a>.
 </p>
                 <p>
 When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and save your changes. </p>
@@ -66,16 +66,14 @@ When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and sa
                 <p class="note">You can locate the MAC addresses of Pods in Solstice Cloud Management and Solstice Dashboard.</p>
                 <h3> <a name="Local_Network_Access_List"></a>3 - Local Network Access List</h3>
                 <p>The Local Network Access List limits by IP address which devices and networks are allowed to communicate through the SES proxy. Edit the list to specify the IP addresses you want to have access to SES (IPV4 and IPV6 are supported). The network that the Solstice Pods are using should be listed here. You may both specify whole networks using CIDR notation and list IP addresses individually. (See other ways to limit network access in the <a href="#MAC_Access_List">MAC Address List</a> and <a href="#Proxy_Access_List">Proxy Access List</a> sections.)</p>
-                <p class="note">In Squid proxy configurations (the proxy platform used by SES), use the commenting character ‘#’ before text you want the proxy to ignore. Information after the ‘#’ (to the next line break) can remain in the configuration file without taking effect. For more about Squid configuration, click <a href="http://www.squid-cache.org/">here</a>.</p>
+                <p class="note">In Squid proxy configurations (the proxy platform used by SES), use the commenting character ‘#’ before text you want the proxy to ignore. Information after the ‘#’ (to the next line break) can remain in the configuration file without taking effect. For more about Squid configuration, click <a href="http://www.squid-cache.org/" target="_blank">here</a>.</p>
                 <h3><a name="Proxy_Access_List"></a>4 - Proxy Access List</h3>
                 <p>The Proxy Access List allows you to configure which internet sites SES will be allowed to access.</p>
                 <p>By default, SES allows Pods access to only the sites shown below. These are generally the only sites Pods need to access, for the latest software releases and to verify licenses. Removing these is not recommended. (See other ways to limit network access in MAC Address List Configuration and Local Network Access List.)</p>
                 <ul>
                     <li><b>.mersive.com</b> - Solstice Pods check for software updates and manage Pods via Solstice Cloud Management.</li>
                     <li><b>manager.flexnetoperations.com</b> - License server for Solstice Pods subscriptions.</li>
-                    <li>
-                        <p><b>www.google.com</b> - Pods verify internet access through the proxy configured on SES.</p>
-                    </li>
+                    <li><b>www.google.com</b> - Pods verify internet access through the proxy configured on SES.</li>
                 </ul>
                 <p>There are only a couple cases in which organizations may need to open up additional domains. If you use the Digital Signage or RSS feed features of Solstice, add the domains of the URLs your Pods use to access these features to the Proxy Access List configuration.</p>
                 <p class="note">The content shared to Solstice Pod displays by both employees and guests via the Solstice client does not leave the Pod. It never goes to SES, nor will it ever be passed through the SES proxy.</p>
@@ -91,16 +89,11 @@ When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and sa
                 <p class="note">Import functionality is not part of the SES v0.5 beta release. Either import or an option for automatically preserving settings through upgrades will be included in future SES releases. Manual reconfiguration of SES due to an upgrade will not be necessary.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownBody>
-                <h3>Solstice Edge Server Diagram</h3>
-                <p>The diagram below illustrates how the SES and an optional parent proxy allow Solstice Pods to access only essential internet resources while protecting all content shared by users.</p>
-                <p>
-                    <img src="../Resources/Images/dgm_SESCloudDiagram.png" style="border-left-style: none;border-left-width: 1px;border-right-style: none;border-top-style: none;border-bottom-style: none;">
-                    </img>
-                </p>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <h3>Solstice Edge Server Diagram</h3>
+        <p>The diagram below illustrates how the SES and an optional parent proxy allow Solstice Pods to access only essential internet resources while protecting all content shared by users.</p>
+        <p>
+            <img src="../Resources/Images/dgm_SESCloudDiagram.png" style="border-left-style: none;border-left-width: 1px;border-right-style: none;border-top-style: none;border-bottom-style: none;" />
+        </p>
         <h2><a name="Exit_sesadm"></a>Exit <span style="font-family: monospace;">sesadm</span></h2>
         <p>From the main <span style="font-family: monospace;">sesadm</span>menu, enter option <b>4</b> to exit the administration tool and apply your configuration changes. If you choose to not apply changes, none of the settings you made during your current <span style="font-family: monospace;">sesadm</span> session will be saved. </p>
         <p>

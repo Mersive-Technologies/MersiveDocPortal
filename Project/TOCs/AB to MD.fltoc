@@ -2,12 +2,19 @@
 <CatapultToc
   Version="1">
   <TocEntry
-    Title="[%=System.LinkedTitle%]"
-    Link="/Content/Topics/Cloud-Template-Features.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
-    StartSection="false"
-    ReplaceMergeNode="false"
-    SectionNumberReset="continue"
-    VolumeNumberReset="same"
-    ChapterNumberReset="continue"
-    ComputeToc="false"></TocEntry>
+    Title="SES Introduction"
+    Link="/Content/Topics/SES-Introduction.htm"
+    conditions="Default.Exclude"></TocEntry>
+  <TocEntry
+    Title="Configure SES"
+    Link="/Content/Topics/SES-Configuration.htm"
+    conditions="Default.Exclude"></TocEntry>
+  <TocEntry
+    Title="Configure Solstice Pods for SES"
+    Link="/Content/Topics/SES-Pod-Configuration.htm"
+    conditions="Default.Exclude" />
+  <TocEntry
+    Title="Validated SES on Pods"
+    Link="/Content/Topics/SES-Validate-on-Pods.htm"
+    conditions="Default.Exclude" />
 </CatapultToc>

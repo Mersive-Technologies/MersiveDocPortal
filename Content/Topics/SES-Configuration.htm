@@ -1,35 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');" MadCap:conditions="Default.Exclude">
-    <head><title>SES Configuration</title>
+    <head><title>Configure SES</title>
     </head>
     <body>
-        <h1>Configure the Solstice Edge Server (SES)</h1>
-        <p>Once the SES virtual machine is up and running on your network, you can log in and configure it. (See the <a href="SES-Introduction.htm">SES&#160;Introduction</a> for SES requirements and how to run SES&#160;in VMware.)</p>
-        <h2>Logging in to Solstice Edge Server</h2>
+        <h1>Configure SES</h1>
+        <p>Once the Solstice Edge Server (SES) virtual machine is up and running on your network, you can log in and configure it. (See the <a href="SES-Introduction.htm">SES&#160;Introduction</a> for SES requirements and how to run SES&#160;in VMware.)</p>
+        <h2>Logging in to SES</h2>
         <p>SES can be logged in to in a couple of ways. You may use the terminal window of the VMware environment, or if you know the IP address (or hostname) of SES, you can connect to it remotely via SSH. </p>
         <p class="note">Common SSH clients are PuTTY, MobaXterm, or Git Bash. In Windows 10, the OpenSSH client can be installed as an optional feature.</p>
         <p>Type the following into your SSH client to connect to SES:
 						</p>
-        <p><span style="font-family: monospace; font-weight: bold;">ssh admin@&lt;IP address or hostname of SES&gt;</span>
+        <p><code style="font-weight: bold;">ssh admin@&lt;IP address or hostname of SES&gt;</code>
         </p>
         <p>When logging in to SES, the username will always be ‘admin’. Initially, the password for the admin user is ‘Solstice’:						</p>
-        <p><span style="font-family: monospace;">solstice-edge-server login:	<b>admin</b><br />Password: <b>Solstice</b></span>
+        <p><code>solstice-edge-server login:	<b>admin</b><br />Password: <b>Solstice</b></code>
         </p>
         <p>You will be prompted to choose a new password immediately upon logging in. As always, choose a strong password and keep it safe. </p>
-        <p>When successfully logged in, the following greeting will appear:
+        <p>
+            <MadCap:expanding>
+                <MadCap:expandingHead>When successfully logged in, a Mersive greeting and command prompt will appear.</MadCap:expandingHead>
+                <MadCap:expandingBody>
+                    <br />
+                    <br /> <img src="../Resources/Images/ex_SESLogInGreeting.png" /></MadCap:expandingBody>
+            </MadCap:expanding><![CDATA[
+						]]></p>
+        <h2>Running <code>sesadm</code> to Configure SES</h2>
+        <p>The <span style="font-family: monospace;">sesadm</span> tool is used to configure SES. Because <code>sesadm</code> requires elevated privileges, you will need to use <code>sudo</code> to run it with super user permissions:
 						</p>
-        <p> <img src="../Resources/Images/ex_SESLogInGreeting.png" /></p>
-        <h2>Running <span style="font-family: monospace;">sesadm</span> to Configure SES</h2>
-        <p>The <span style="font-family: monospace;">sesadm</span> tool is used to configure SES. Because <span style="font-family: monospace;">sesadm</span> requires elevated privileges, you will need to use <span style="font-family: monospace;">sudo</span> to run it with super user permissions:
-						</p>
-        <p><span style="font-family: monospace; font-weight: bold;">sudo sesadm</span>
+        <p><code style="font-weight: bold;">sudo sesadm</code>
         </p>
-        <p class="note">When using <span style="font-family: monospace;">sudo</span>, the server will occasionally prompt you to reenter the admin password you used to log in to SES.</p>
+        <p class="note">When using <code>sudo</code>, the server will occasionally prompt you to reenter the admin password you used to log in to SES.</p>
         <p>You will see the menu for making all SES configuration changes:</p>
         <p>
             <img src="../Resources/Images/ex_SESConfigMain.png" />
         </p>
-        <p class="note">No configuration changes will be applied until you enter option <b>4</b> to exit <span style="font-family: monospace;">sesadm</span>. You will be asked if you want to apply the changes upon exiting.</p>
+        <p class="note">No configuration changes will be applied until you enter option <b>4</b> to exit <code>sesadm</code>. You will be asked if you want to apply the changes upon exiting.</p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>1 - Network Configuration</MadCap:dropDownHotspot>
@@ -81,12 +86,24 @@ When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and sa
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>3 - Export <span style="font-family: monospace;">sesadm</span> Settings</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>3 - Export <code>sesadm</code> Settings</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Enter this option in <span style="font-family: monospace;">sesadm</span> to back up all of your current SES configurations to a TAR archive file. You can then copy this file to your organization’s backup drives. When there are new SES releases, Mersive will deliver a new virtual machine OVF file. Simply “power down” the previous SES virtual machine, “boot” the new SES virtual machine, and import the settings. The new SES release is now operational, and Pods will start sending discovery information to SDS.
+                <p>Enter this option in <code>sesadm</code> to back up all of your current SES configurations to a TAR archive file. You can then copy this file to your organization’s backup drives. When there are new SES releases, Mersive will deliver a new virtual machine OVF file. Simply “power down” the previous SES virtual machine, “boot” the new SES virtual machine, and import the settings. The new SES release is now operational, and Pods will start sending discovery information to SDS.
 						</p>
                 <p class="note">Import functionality is not part of the SES v0.5 beta release. Either import or an option for automatically preserving settings through upgrades will be included in future SES releases. Manual reconfiguration of SES due to an upgrade will not be necessary.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Exit_sesadm"></a>4 - Exit <code>sesadm</code></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>From the main <code>sesadm</code> menu, enter option <b>4</b> to exit the administration tool and apply your configuration changes. If you choose to not apply changes, none of the settings you made during your current <code>sesadm</code> session will be saved. </p>
+                <p>
+                    <img src="../Resources/Images/ex_SESConfigApplyChanges.png" style="width: 350px;" />
+                </p>
+                <p>Entering <b>y</b> will immediately apply your network and proxy configuration settings. There is no need to do anything else for the settings to take effect.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h3>Solstice Edge Server Diagram</h3>
@@ -94,16 +111,10 @@ When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and sa
         <p>
             <img src="../Resources/Images/dgm_SESCloudDiagram.png" style="border-left-style: none;border-left-width: 1px;border-right-style: none;border-top-style: none;border-bottom-style: none;" />
         </p>
-        <h2><a name="Exit_sesadm"></a>Exit <span style="font-family: monospace;">sesadm</span></h2>
-        <p>From the main <span style="font-family: monospace;">sesadm</span>menu, enter option <b>4</b> to exit the administration tool and apply your configuration changes. If you choose to not apply changes, none of the settings you made during your current <span style="font-family: monospace;">sesadm</span> session will be saved. </p>
-        <p>
-            <img src="../Resources/Images/ex_SESConfigApplyChanges.png" style="width: 350px;" />
-        </p>
-        <p>Entering <b>y</b> will immediately apply your network and proxy configuration settings. There is no need to do anything else for the settings to take effect.</p>
-        <h2>Basic Current Settings with <span style="font-family: monospace;">sesinfo</span></h2>
-        <p>After saving configuration changes in <span style="font-family: monospace;">sesadm</span>, the system displays some basic SES settings: SES version, IP address, and proxy port number. (See screenshot in the Exit <span style="font-family: monospace;">sesadm</span> section above.) </p>
+        <h2>Basic Current Settings with <code>sesinfo</code></h2>
+        <p>After saving configuration changes in <code>sesadm</code>, the system displays some basic SES settings: SES version, IP address, and proxy port number. (See screenshot in the <a href="#Exit_sesadm">Exit <code style="font-family: monospace;">sesadm</code></a> section above.) </p>
         <p>To see this information anytime, enter:</p>
-        <p><span style="font-family: monospace; font-weight: bold;">sesinfo</span>
+        <p><code style="font-weight: bold;">sesinfo</code>
         </p>
         <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
         <p MadCap:conditions="Default.ScreenOnly"><a href="SES-Pod-Configuration.htm">Configure Solstice Pods for SES</a>

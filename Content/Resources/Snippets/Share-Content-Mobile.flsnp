@@ -6,9 +6,11 @@
         <p>On the Share tab of the Solstice mobile app, you can share unlimited content using any of the following options. </p>
         <ul>
             <li><b>Mirror Screen</b>: Share a real-time view of your mobile device screen.</li>
-            <li><b>Media File</b>: Share media files such as images and videos from the device’s media library. Note: Solstice supports a broad range of video types, but not all video files are supported. If a video file is shared but does not post correctly to the display, you can open and play the video on your mobile device and mirror your screen to the display.</li>
-            <li><b>Camera</b>: Take a picture with your mobile device and share it to the display. Note: Ensure the Solstice app has permission to access your camera.</li>
-            <li><b>Take Video</b>: Take a video with your mobile device and share it to the display. Note: Ensure the Solstice app has permission to access your camera and microphone.</li>
+            <li><b>Media File</b>: Share media files such as images and videos from the device’s media library.
+            <p class="note">Solstice supports a broad range of video types, but not all video files are supported. If a video file is shared but does not appear correctly on the display, you can open and play the video on your mobile device and mirror your screen to the display.</p></li>
+            <li><b>Camera</b>: Take a picture with your mobile device and share it to the display.</li>
+            <li><b>Take Video</b>: Take a video with your mobile device and share it to the display.</li>
         </ul>
+        <p class="note">To share media files, pictures, and videos be sure to grant permission for the Solstice mobile app to access your phone's media files, camera, and microphone.</p>
     </body>
 </html>

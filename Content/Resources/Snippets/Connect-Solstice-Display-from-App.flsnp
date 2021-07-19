@@ -4,11 +4,10 @@
     </head>
     <body>
         <ol>
-            <li>Open the Solstice App. If display discovery is enabled, a list of displays will appear on the Discovered Displays tab.<p><br /><img src="../Images/howtoconnect.png" style="width: 470px;height: 310px;" /><br /></p></li>
+            <li>Open the Solstice app window. A list of Solstice Pod displays you have previously connected to or that are available via display discovery (if enabled for your Solstice deployment) will appear.<p><img src="../Images/ex_UserSharingDiscoveryConnect.png" style="width: 600px;height: auto;" /><br /></p></li>
             <li>Click on a display to connect.</li>
-            <li>If you are having trouble finding a specific display in the list of Discovered Displays, you can:<ul><li>Search for a specific display by name in the search bar.</li><li>Select the <b>Tags</b> tab to filter the list of displays (Enterprise Edition only).</li></ul></li>
-            <li>If a list of displays did not appear on the Discovered Displays tab, go to the <b>Enter Display URL</b> tab to manually enter in the URL&#160;shown on the display’s Welcome Screen.</li>
-            <li>If prompted, enter in the screen key listed on the Solstice display.</li>
+            <li>To find a specific display in the discovered list, you can:<ul><li>Search for a specific display by name in the search bar.</li><li>Click <b>Tags</b> to filter the list of displays by assigned tags (Enterprise Edition only).</li></ul></li>
+            <li>If prompted, enter in the screen key listed on the display.</li>
             <li>The user app will join the collaboration session with full media posting and control rights.</li>
         </ol>
     </body>

@@ -8,5 +8,6 @@
     <Word Comment="">dropdown</Word>
     <Word Comment="">audio/video</Word>
     <Word Comment="">USB</Word>
-    <Word>WiFi</Word>
+    <Word Comment="">WiFi</Word>
+    <Word>taskbar</Word>
 </SpellingDictionary>

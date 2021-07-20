@@ -4,10 +4,10 @@
     </head>
     <body>
         <h1>Validate SES on Solstice Pods</h1>
-        <p>There are a variety of ways to test that your Solstice Edge Server is set up correctly. Typing <code>sesinfo</code> in the SES command prompt displays the SES version, IP address, and proxy port number. Solstice Dashboard can also be used to check if things are working as expected.</p>
+        <p>There are a variety of ways to test that your Solstice Edge Server (SES) is set up correctly. Typing <code>sesinfo</code> in the SES command prompt displays the SES version, IP address, and proxy port number. Solstice Dashboard can also be used to check if things are working as expected.</p>
         <h2>Is SDS on SES Working?</h2>
-        <p>In addition to configuring Pods, Solstice Dashboard can be used to view any Pods currently reporting their presence to the Solstice Discovery Service. This allows you to check whether Pods are configured correctly and SDS within SES is working.</p>
-        <p>In the SDS tab of Dashboard, set the <b>Primary SDS Host</b> to the SES IP address. Dashboard will then show you the Pods that SDS is aware of. The Pod Phobos is listed in the table below, showing that SDS within SES is managing that Pod and making it discoverable to the Solstice user app.</p>
+        <p>In addition to configuring Pods, Solstice Dashboard can be used to view any Pods currently reporting their presence to the Solstice Discovery Service (SDS). This allows you to check whether Pods are configured correctly and confirm the that SDS instance running within SES is making Pods discoverable to the Solstice user app.</p>
+        <p>In the SDS tab of Dashboard, set the <b>Primary SDS Host</b> to the SES IP address.  In the table shown below, Dashboard will then display the Pods that SDS within SES is making available for discovery.</p>
         <p>
             <img src="../Resources/Images/ex_SESDashboardSDSWorking.png" />
         </p>
@@ -16,7 +16,7 @@
         <p>
             <img src="../Resources/Images/ex_SESDashboardProxyTestSuccess.png" />
         </p>
-        <p>Green <b>Success</b> results in the dialog box show that the Pod has successfully communicated with Google through the SES proxy, and the parent proxy, if configured.</p>
+        <p>Green <b>Success</b> results show that the Pod has successfully communicated with Google through the SES proxy, and the parent proxy, if configured.</p>
         <p>You can also test the negative case, that Pods are not able to access sites they should not have access, to in a couple of ways:</p>
         <ol>
             <li>Use <code>sesadm</code> to remove or comment out the www.google.com line from the Proxy Access List configuration file. (See <a href="SES-Configuration.htm">Configure SES</a> for details on using <code>sesadm</code>.) Exit <code>sesadm</code> to save configuration changes and try <b>Test Proxy Settings</b> in Solstice Dashboard again. This should produce <b>Failed</b> results.</li>

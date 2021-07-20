@@ -4,7 +4,7 @@
     </head>
     <body>
         <h1>Configure SES</h1>
-        <p>Once the Solstice Edge Server (SES) virtual machine is up and running on your network, you can log in and configure it. (See the <a href="SES-Introduction.htm">SES&#160;Introduction</a> for SES requirements and how to run SES&#160;in VMware.)</p>
+        <p>Once the Solstice Edge Server (SES) virtual machine is up and running on your network, you can log in and configure it. (If you do not already have the SES virtual machine running on your network, see <a href="SES-Introduction.htm">SES&#160;Introduction</a>.)</p>
         <h2>Logging in to SES</h2>
         <p>SES can be logged in to in a couple of ways. You may use the terminal window of the VMware environment, or if you know the IP address (or hostname) of SES, you can connect to it remotely via SSH. </p>
         <p class="note">Common SSH clients are PuTTY, MobaXterm, or Git Bash. In Windows 10, the OpenSSH client can be installed as an optional feature.</p>
@@ -16,13 +16,7 @@
         <p><code>solstice-edge-server login:	<b>admin</b><br />Password: <b>Solstice</b></code>
         </p>
         <p>You will be prompted to choose a new password immediately upon logging in. As always, choose a strong password and keep it safe. </p>
-        <p>
-            <MadCap:expanding>
-                <MadCap:expandingHead>When successfully logged in, a Mersive greeting and command prompt will appear.</MadCap:expandingHead>
-                <MadCap:expandingBody>
-                    <br />
-                    <br /> <img src="../Resources/Images/ex_SESLogInGreeting.png" /></MadCap:expandingBody>
-            </MadCap:expanding><![CDATA[
+        <p>When successfully logged in, a Mersive greeting and command prompt will appear:<br /><br /> <img src="../Resources/Images/ex_SESLogInGreeting.png" /><![CDATA[
 						]]></p>
         <h2>Running <code>sesadm</code> to Configure SES</h2>
         <p>The <span style="font-family: monospace;">sesadm</span> tool is used to configure SES. Because <code>sesadm</code> requires elevated privileges, you will need to use <code>sudo</code> to run it with super user permissions:
@@ -32,7 +26,7 @@
         <p class="note">When using <code>sudo</code>, the server will occasionally prompt you to reenter the admin password you used to log in to SES.</p>
         <p>You will see the menu for making all SES configuration changes:</p>
         <p>
-            <img src="../Resources/Images/ex_SESConfigMain.png" />
+            <img src="../Resources/Images/ex_SESConfigMain.png" style="max-width: 100%;" />
         </p>
         <p class="note">No configuration changes will be applied until you enter option <b>4</b> to exit <code>sesadm</code>. You will be asked if you want to apply the changes upon exiting.</p>
         <MadCap:dropDown>
@@ -53,7 +47,7 @@
                 <p>
                     <img src="../Resources/Images/ex_SESConfigProxy.png" />
                 </p>
-                <h3>1 - Parent Proxy Configuration</h3>
+                <p style="font-weight: bold;">1 - Parent Proxy Configuration</p>
                 <p>For added security, some organizations may want Solstice Edge Server, which itself acts as a proxy, to operate inside another proxy server or servers. This option can be enabled and disabled in Parent Proxy Configuration. Enabling a parent proxy forces all SES traffic to the outside internet, including traffic from Solstice Pods, through the specified proxy.
 
 </p>
@@ -65,14 +59,14 @@
 When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and save your changes. </p>
                 <p class="note">Remember, settings changes are not applied until you exit <span style="font-family: monospace;">sesadm</span> and confirm doing so.
 </p>
-                <h3><a name="MAC_Access_List"></a>2 - MAC Access List</h3>
+                <p style="font-weight: bold;"><a name="MAC_Access_List"></a>2 - MAC Access List</p>
                 <p>If the MAC Access List is enabled, SES can be accessed only by Pods whose MAC addresses are specified in the configuration file. If this feature is disabled, any MAC address, regardless of what is in the configuration file, is allowed access. (See other ways to limit network access in the <a href="#Local_Network_Access_List">Local Network Access List</a> and <a href="#Proxy_Access_List">Proxy Access List</a> sections.)</p>
                 <p>Edit the configuration file to enter the MAC addresses of all Solstice Pods you want to be able to communicate to the internet through SES.</p>
-                <p class="note">You can locate the MAC addresses of Pods in Solstice Cloud Management and Solstice Dashboard.</p>
-                <h3> <a name="Local_Network_Access_List"></a>3 - Local Network Access List</h3>
+                <p class="note">You can locate the MAC addresses of Pods in Solstice Cloud and Solstice Dashboard.</p>
+                <p style="font-weight: bold;"> <a name="Local_Network_Access_List"></a>3 - Local Network Access List</p>
                 <p>The Local Network Access List limits by IP address which devices and networks are allowed to communicate through the SES proxy. Edit the list to specify the IP addresses you want to have access to SES (IPV4 and IPV6 are supported). The network that the Solstice Pods are using should be listed here. You may both specify whole networks using CIDR notation and list IP addresses individually. (See other ways to limit network access in the <a href="#MAC_Access_List">MAC Address List</a> and <a href="#Proxy_Access_List">Proxy Access List</a> sections.)</p>
                 <p class="note">In Squid proxy configurations (the proxy platform used by SES), use the commenting character ‘#’ before text you want the proxy to ignore. Information after the ‘#’ (to the next line break) can remain in the configuration file without taking effect. For more about Squid configuration, click <a href="http://www.squid-cache.org/" target="_blank">here</a>.</p>
-                <h3><a name="Proxy_Access_List"></a>4 - Proxy Access List</h3>
+                <p style="font-weight: bold;"><a name="Proxy_Access_List"></a>4 - Proxy Access List</p>
                 <p>The Proxy Access List allows you to configure which internet sites SES will be allowed to access.</p>
                 <p>By default, SES allows Pods access to only the sites shown below. These are generally the only sites Pods need to access, for the latest software releases and to verify licenses. Removing these is not recommended. (See other ways to limit network access in MAC Address List Configuration and Local Network Access List.)</p>
                 <ul>
@@ -81,7 +75,7 @@ When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and sa
                     <li><b>www.google.com</b> - Pods verify internet access through the proxy configured on SES.</li>
                 </ul>
                 <p>There are only a couple cases in which organizations may need to open up additional domains. If you use the Digital Signage or RSS feed features of Solstice, add the domains of the URLs your Pods use to access these features to the Proxy Access List configuration.</p>
-                <p class="note">The content shared to Solstice Pod displays by both employees and guests via the Solstice client does not leave the Pod. It never goes to SES, nor will it ever be passed through the SES proxy.</p>
+                <p class="note">The content shared to Solstice Pod displays by end users using the Solstice app never leaves the Pod. It doesn't go to SES, nor will it ever be passed through the SES proxy.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -89,9 +83,9 @@ When your configuration is complete, use <b>Ctrl-X</b> to exit the editor and sa
                 <MadCap:dropDownHotspot>3 - Export <code>sesadm</code> Settings</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Enter this option in <code>sesadm</code> to back up all of your current SES configurations to a TAR archive file. You can then copy this file to your organization’s backup drives. When there are new SES releases, Mersive will deliver a new virtual machine OVF file. Simply “power down” the previous SES virtual machine, “boot” the new SES virtual machine, and import the settings. The new SES release is now operational, and Pods will start sending discovery information to SDS.
+                <p>Enter this option in <code>sesadm</code> to back up all of your current SES configurations to a TAR archive file. You can then copy this file to your organization’s backup drives. </p>
+                <p>When there are new SES releases, Mersive will deliver a new virtual machine OVF file. Simply “power down” the previous SES virtual machine, “boot” the new SES virtual machine, and import the settings. The newly installed version of SES will then be operational, and Pods will start sending discovery information to SDS.
 						</p>
-                <p class="note">Import functionality is not part of the SES v0.5 beta release. Either import or an option for automatically preserving settings through upgrades will be included in future SES releases. Manual reconfiguration of SES due to an upgrade will not be necessary.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

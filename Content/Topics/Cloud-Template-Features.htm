@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>Features Template</h1>
-        <p>The Features template allows you to configure options for how attendees may view and interact with the Solstice display. There are options that determine how attendees can connect to the meeting, as well as how they may view and share content on their personal devices. Miracast support for Windows devices can also be enabled. For more information on how to configure Solstice to support sharing with AirPlay and Miracast, see <a href="Admin-Enabling-AirPlay.htm">Enable Sharing with AirPlay</a> and <a href="Admin-Enabling-Miracast.htm">Enable Sharing with Miracast</a>.</p>
+        <p>The Features template allows you to configure options for how attendees may view and interact with the Solstice display. There are options that determine how attendees can connect to the meeting, as well as how they may view and share content on their personal devices. Miracast support for Windows devices can also be enabled. For more information on how to configure Solstice to support sharing with AirPlay and Miracast, see <a href="Admin-Enabling-AirPlay.htm" target="_blank">Enable Sharing with AirPlay</a> and <a href="Admin-Enabling-Miracast.htm" target="_blank">Enable Sharing with Miracast</a>.</p>
         <p>
             <img src="../Resources/Images/Templates-sidebarnav-features.png" style="border-left-style: solid;border-left-width: ;border-left-color: ;border-right-style: solid;border-right-width: ;border-right-color: ;border-top-style: solid;border-top-width: ;border-top-color: ;border-bottom-style: solid;border-bottom-width: ;border-bottom-color: ;border-top-left-radius: 1px;border-top-right-radius: 1px;border-bottom-right-radius: 1px;border-bottom-left-radius: 1px;width: 760px;height: auto;" />
         </p>
@@ -68,7 +68,7 @@
                     <li>To enable Miracast mirroring, apply the appropriate settings for your Pods' network configuration based on the table below.<br /><![CDATA[	]]><table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21"><col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 25%;" /><col class="TableStyle-Alternate-Row-Color-Column-Column1" /><tbody><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><strong>Network Configuration</strong></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><strong>Miracast Configuration in Solstice Cloud</strong></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Ethernet Only (recommended)</td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><ul><li>Select both <b>Enable Miracast Infrastructure</b> and <b>Enable Miracast WiFi Direct</b>.</li></ul><p class="note">WiFi must also be enabled on Pods for Miracast discovery. In the WiFi configuration, select <b>Enable WiFi</b>, choose <b>Existing Network</b>, set Security Type to <b>Open</b>, and leave <b>SSID</b> blank.  (The wireless interface will only be used for Miracast discovery.)</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Wirelessly Attached to Existing Network Only</td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><ul><li>Select <b>Enable Miracast Infrastructure</b>.</li></ul></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Ethernet + Wirelessly Attached to Existing Network</td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><ul><li>Select <b>Enable Miracast Infrastructure</b>.</li></ul></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Ethernet + Wireless Access Point</td><td rowspan="2" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Miracast not supported. When the Pod is acting as an access point, Miracast discovery cannot operate. Contact Mersive to discuss other options like attaching your Pod to an existing network.</td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td valign="middle" class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Wireless Access Point Only</td></tr></tbody></table></li>
                     <li> Click <b>Save</b>.</li>
                 </ol>
-                <p class="note">For more about Miracast and configuring it for your organization's needs, see <a href="Admin-Enabling-Miracast.htm">Enable Sharing with Miracast</a>.</p>
+                <p class="note">For more about Miracast and configuring it for your organization's needs, see <a href="Admin-Enabling-Miracast.htm" target="_blank">Enable Sharing with Miracast</a>.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -96,7 +96,7 @@
 					    <p class="note">This option provides another alternative for discovery in environments that do not allow UDP broadcast traffic or Apple's Bonjour protocol. Available starting on Solstice 4.6 and Gen3 Pods. Users must still connect to the same network as the Pod in order to stream content via AirPlay.</p></li>
                     <li>Click <b>Save</b>.</li>
                 </ol>
-                <p class="note">For more information on how to configure AirPlay, see <a href="Admin-Enabling-AirPlay.htm"><a href="Admin-Enabling-AirPlay.htm">Enable Sharing with AirPlay</a></a>.</p>
+                <p class="note">For more information on how to configure AirPlay, see <a href="Admin-Enabling-AirPlay.htm"><a href="Admin-Enabling-AirPlay.htm" target="_blank">Enable Sharing with AirPlay</a></a>.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -120,7 +120,7 @@
                 <ol>
                     <li>Select one of the following options:
 						<ul><li><p><b>Launch app &amp; connect</b>:&#160;Once installed, the Solstice app will launch, and the app will automatically connect to the display. </p></li><li><b>Launch app &amp;&#160;set SDS</b>:&#160;Once installed, the Solstice app will launch, and Solstice will automatically set the SDS address in the Solstice app. This automatically populates the list of discovered displays for users to easily find and connect to a Solstice display. 
-								<p class="note">For this capability to work, the Pod must have an SDS host address defined in the <a href="Cloud-Template-Discovery.htm">Discovery Template</a>.</p></li><li><b>Launch app only</b>:&#160;Once installed, the Solstice app will launch but will not automatically connect to a display or set the SDS address.</li></ul></li>
+								<p class="note">For this capability to work, the Pod must have an SDS host address defined in the <a href="Cloud-Template-Discovery.htm" target="_blank">Discovery Template</a>.</p></li><li><b>Launch app only</b>:&#160;Once installed, the Solstice app will launch but will not automatically connect to a display or set the SDS address.</li></ul></li>
                 </ol>
                 <ol start="2">
                     <li>Click <b>Save</b>. </li>
@@ -173,7 +173,7 @@
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <p class="note">Looking to enable Solstice Conferencing, location services, or occupancy data? See the <a href="Cloud-Template-Room-Intelligence.htm">Room Intelligence Template</a>.</p>
+        <p class="note">Want to enable Solstice Conferencing, location services, or occupancy data? See the <a href="Cloud-Template-Room-Intelligence.htm" target="_blank">Room Intelligence Template</a>.</p>
         <MadCap:dropDown MadCap:conditions="Default.ScreenOnly">
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Assign the Template to Your Pods</MadCap:dropDownHotspot>

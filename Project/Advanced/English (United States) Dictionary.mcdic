@@ -9,5 +9,8 @@
     <Word Comment="">audio/video</Word>
     <Word Comment="">USB</Word>
     <Word Comment="">WiFi</Word>
-    <Word>taskbar</Word>
+    <Word Comment="">taskbar</Word>
+    <Word Comment="">onboard</Word>
+    <Word Comment="">analytics</Word>
+    <Word>Analytics</Word>
 </SpellingDictionary>

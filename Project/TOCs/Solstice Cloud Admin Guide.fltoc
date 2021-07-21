@@ -18,7 +18,14 @@
     Link="/Content/Topics/Cloud-Template-Calendar.htm"></TocEntry>
   <TocEntry
     Title="Features"
-    Link="/Content/Topics/Cloud-Template-Features.htm"></TocEntry>
+    Link="/Content/Topics/Cloud-Template-Features.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Admin-Enabling-AirPlay.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Admin-Enabling-Miracast.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
   <TocEntry
     Title="Digital Signage "
     Link="/Content/Topics/Cloud-Template-Digital-Signage.htm"></TocEntry>

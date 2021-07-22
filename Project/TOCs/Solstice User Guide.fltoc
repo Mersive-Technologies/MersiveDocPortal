@@ -14,6 +14,9 @@
     Title="[%=System.LinkedTitle%]"
     Link="/Content/Topics/User-Sharing-Content.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/User-Sharing-Mirror-Device.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
     Title="Using Solstice with Your Web Conference"
     Link="/Content/Topics/User-Solstice-Conference.htm" />
   <TocEntry

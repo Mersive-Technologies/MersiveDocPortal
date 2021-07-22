@@ -9,10 +9,10 @@
   ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Active Learning Guide.fltoc"
+  MasterToc="/Project/TOCs/Solstice User Guide.fltoc"
   OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   InjectBookHeadings="true"
-  OutputFile="SolsticeActiveLearningGuide">
+  OutputFile="SolsticeUserGuide">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -21,7 +21,7 @@
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice Active Learning Guide" />
+    Title="Solstice User Guide" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

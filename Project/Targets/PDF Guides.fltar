@@ -6,11 +6,11 @@
   Destinations=""
   ShowMadCapBacklink="true"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.ScreenOnly]"
+  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.NotforEndUser or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
   MasterToc="/Project/TOCs/Solstice User Guide.fltoc"
-  OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
+  OutputFolder="C:\Users\mdumas\Documents\HTML5\PDF"
   InjectBookHeadings="true"
   OutputFile="SolsticeUserGuide">
   <PrintedOutput

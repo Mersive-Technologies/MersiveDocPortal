@@ -2,9 +2,8 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ul>
-            <li>Close the Solstice app window.
-            	<ul><li>On a laptop, click the Close 'X' icon. Solstice will ask if you wish to disconnect from the display and stop sharing all content. If yes, click <b>Disconnect</b>.</li><li>On a mobile device, close the app window and Solstice will automatically disconnect the device from the display.</li></ul></li>
-            <li>With the Solstice app open and connected, click the <b>Disconnect</b> button at the top of the app window. You will be prompted to confirm that you want to disconnect from the display. </li>
+            <li>Click the <b>Disconnect</b> button at the top of the app window. You will be prompted to confirm that you want to disconnect from the display. </li>
+            <li>Close the Solstice App window:            	<ul style="list-style-type: circle;"><li>On a laptop, click the Close 'X' icon. Solstice will ask if you wish to disconnect from the display and stop sharing all content. If yes, click <b>Disconnect</b>.</li><li>On a mobile device, close the app window and Solstice will automatically disconnect the device from the display.</li></ul></li>
         </ul>
     </body>
 </html>

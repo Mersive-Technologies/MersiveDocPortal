@@ -10,7 +10,7 @@
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
   MasterToc="/Project/TOCs/Solstice User Guide.fltoc"
-  OutputFolder="C:\Users\mdumas\Documents\HTML5\PDF"
+  OutputFolder="C:\Users\mdumas\Documents\HTML5"
   InjectBookHeadings="true"
   OutputFile="SolsticeUserGuide">
   <PrintedOutput

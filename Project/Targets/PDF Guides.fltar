@@ -9,13 +9,12 @@
   ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.NotforEndUser or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice User Guide.fltoc"
-  OutputFolder="C:\Users\mdumas\Documents\HTML5"
-  InjectBookHeadings="true"
-  OutputFile="SolsticeUserGuide">
+  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
+  OutputFolder="C:\Users\mdumas\Documents\html5_output"
+  InjectBookHeadings="true">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="true"
+    GenerateTOCProxy="false"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />

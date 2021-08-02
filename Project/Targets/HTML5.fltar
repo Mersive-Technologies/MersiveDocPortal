@@ -2,7 +2,7 @@
 <CatapultTarget
   Version="2"
   Comment="New Target"
-  Type="PDF"
+  Type="WebHelp2"
   Destinations=""
   ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
@@ -15,7 +15,7 @@
   OutputFile="index"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   GenerateAllSkins="true"
-  OutputFolder="C:\Users\mdumas\Documents\html5_output"
+  OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   DefaultUrl="/Content/Home.htm"
   PartialWordSearch="false"
   MinimumWordSize="4"
@@ -29,7 +29,8 @@
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
-    GenerateGlossaryProxy="true" />
+    GenerateGlossaryProxy="true"
+    OutputFormat="doc" />
   <MetaTags
     Enabled="false">
     <meta

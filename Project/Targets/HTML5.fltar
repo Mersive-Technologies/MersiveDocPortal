@@ -2,7 +2,7 @@
 <CatapultTarget
   Version="2"
   Comment="New Target"
-  Type="WebHelp2"
+  Type="PDF"
   Destinations=""
   ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
@@ -10,7 +10,6 @@
   MakeFileLowerCase="true"
   GetLatestBeforeCompile="false"
   EquationsOutputType="SVG"
-  Skin="/Project/Skins/Side-Navigation.flskn"
   DisableAutoSync="false"
   ConditionTagExpression="include[Default.ScreenOnly], exclude[Default.Exclude or Default.Future or Default.PrintOnly]"
   OutputFile="index"

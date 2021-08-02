@@ -10,8 +10,9 @@
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
   MasterToc="/Project/TOCs/Solstice Conference User Guide.fltoc"
-  OutputFolder="C:\Users\mdumas\Documents\html5_output"
-  InjectBookHeadings="true">
+  OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
+  InjectBookHeadings="true"
+  OutputFile="SolsticeConferenceUserGuide">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -20,7 +21,7 @@
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice User Guide" />
+    Title="Solstice Conference User Guide" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

@@ -20,8 +20,9 @@
             <li><b>TCP port 7250</b>: Port on which the Pod listens for Miracast packets when Over Existing Network mode is enabled.</li>
             <li><b>UDP port 5353</b>: If Miracast Over Existing Network mode is enabled, this port is used for multicast DNS (mDNS). mDNS is broadcast to the local subnet of each network interface the Pod is connected to. If the computer that is attempting to make an infrastructure connection is on a different subnet, this broadcast will fail. If this happens, a workaround is to create a DNS entry to the Pod’s hostname.</li>
             <li>For for Gen2i Pods, confirm that&#160;port <b>32768:60999</b> is also open.</li>
-            <p class="note">Miracast may utilize any non-privileged UDP port from 1024 to 65535 for video streaming.</p>
+            <li>Ensure that the IP address space for WiFi Direct (<b>192.168.49.*</b>) is not behind a firewall.</li>
         </ul>
+        <p class="note">Miracast may utilize any non-privileged UDP port from 1024 to 65535 for video streaming.</p>
         <h2>Important Considerations</h2>
         <ul>
             <li>Miracast requires that the Pod be located in close proximity to the display. Miracast discovery operates over a range of approximately 150–200 feet. Only Pods within this range will be displayed in the Miracast source list on the client device.&#160;</li>

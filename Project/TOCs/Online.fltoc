@@ -83,8 +83,9 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Topics/User-Sharing-Mirror-Device.htm" />
     <TocEntry
-      Title="Using Solstice with Your Web Conference"
-      Link="/Content/Topics/User-Solstice-Conference.htm" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Solstice-Conference.htm"
+      ReplaceMergeNode="false" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Topics/User-Control-Layout.htm" />
@@ -115,7 +116,10 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Cloud-Create-Categories.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
-        Title="Configuration Templates"
+        Title="Set Pod Locations"
+        Link="/Content/Topics/Cloud-Management-Location.htm" />
+      <TocEntry
+        Title="Settings and Templates"
         Link="/Content/Topics/Cloud-Management-Templates.htm">
         <TocEntry
           Title="Welcome Screen"
@@ -182,9 +186,6 @@
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Cloud-Monitor-Deployment.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-      <TocEntry
-        Title="Pod Locations"
-        Link="/Content/Topics/Cloud-Management-Location.htm" />
       <TocEntry
         Title="View and Manage USB Devices"
         Link="/Content/Topics/Cloud-Management-USB-Devices.htm"></TocEntry>

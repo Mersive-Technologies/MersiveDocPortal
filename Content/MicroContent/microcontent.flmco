@@ -159,7 +159,7 @@
         <xhtml:body>
           <xhtml:h4>How to Moderate a Session</xhtml:h4>
           <MadCap:snippetBlock
-            xhtml:src="../Resources/Snippets/Moderate-a-Session.flsnp" />
+            xhtml:src="../Resources/Snippets/howto_UserModerateSessionDsktp.flsnp" />
         </xhtml:body>
       </xhtml:html>
     </MicroContentResponse>

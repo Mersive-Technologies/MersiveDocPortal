@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Security Settings</title>
+    </head>
+    <body>
+        <h1>Solstice Security Features Overview</h1>
+        <p>A Solstice Pod is a network-attached device that provides straightforward and secure wireless access to existing display infrastructure by leveraging a host IT network. Configuring Pods according to the guidelines laid out in this and linked topics allows users to quickly connect and share content to the displays in Pod-enabled rooms while still maintaining network security standards. Pods that are not configured properly can be vulnerable to user and network security breaches, including unauthorized user access, screen capture and recording, unauthorized changes to configuration settings, and denial-of-service attacks.</p>
+        <p>Mersive recommends that initial configurations for Solstice Pods take place on a standalone network prior to being deployed on your enterprise network. This ensures that Pods have the recommended baseline security features enabled before being exposed to critical functions and potential vulnerabilities on a larger network. To do so, the Solstice Dashboard management tool will need to be installed on a secure Windows computer and run on the same network as the Pods being configured.</p>
+        <p>Pod security options:</p>
+        <ul>
+            <li>Password protect Pod configuration</li>
+            <li>Disable local Pod configuration</li>
+            <li>Serve Solstice app via port 443 (prevent man-in-the-middle redirects on insecure networks)</li>
+            <li>Redirect http Pod addresses to https hostname</li>
+            <li>Disable Pod's captive portal checking (to determine internet access)</li>
+            <li>Encrypt network traffic between Pods and user devices (TLS)<ul><li>Upload (additional) custom TLS certificate for network encryption</li></ul></li>
+            <li>Enable Screen Key on Pod (Cloud &gt;&#160;Features template)</li>
+            <li>Enable Moderator Mode for collaboration sessions (default)  (Cloud &gt;&#160;Features template)</li>
+            <li>Disable/enable browser look-in feature (Cloud &gt;&#160;Features template)</li>
+            <li>Disable network broadcast of Pod display name </li>
+        </ul>
+        <p>Other security recommendations:</p>
+        <ul>
+            <li>Initially configure Pods with Solstice Dashboard on standalone network</li>
+            <li>Block traffic (enable firewall) between Pods' wired and wireless networks in dual-network configuration (Dashboard only??)</li>
+        </ul>
+        <p>See detailed security topics:</p>
+        <ul>
+            <li>Initial baseline security configuration for Solstice Pods (Dashboard on standalone network)</li>
+            <li>Managing security settings in Solstice Dashboard<ul><li>Security tab</li><li>Network tab</li></ul></li>
+            <li>Managing security settings in Solstice Cloud<ul><li>Security template</li><li>Features template</li><li>Network template</li></ul></li>
+            <li>&#160;</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -7,8 +7,7 @@
         <ol>
             <li>From the Instructions drop-down, select how you would like the connection instructions to display on the Welcome Screen for end-users. <ul><li><b>Default:</b> Selecting this setting displays Solstice's default connection instructions to meeting attendees on the Welcome Screen. </li><li><b>Show custom instructions:</b> Allows the creation of custom connection instructions specific to your organization's Solstice configuration. </li></ul></li>
             <li>When <b>Show custom instructions</b> is selected, a rich text field appears below, allowing you to enter and format custom connection instructions.
-				<p class="tip">You can include responsive variables such as [RoomName] and [ScreenKey], which will be automatically replaced with Pod-specific information, in your custom instructions.
-(Variables are case sensitive.)</p></li>
+				<p class="tip"> You can include responsive variables, which will be automatically replaced with Pod-specific information, in your custom instructions. Available variables are [RoomName], [ScreenKey], [WifiNetworkName], [WifiIP], [EthNetworkName], and [EthIP]. Note that variables are case sensitive.</p></li>
             <li>To hide the Airplay instructions, deselect the <b>Show Airplay instruction line</b> checkbox. </li>
             <li>To hide the Miracast instructions, deselect the <b>Show Miracast instruction line</b> checkbox. <p><img src="../Images/Welcome-CustomInstructions.png" style="width: 279px;height: 439px;border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #808080;" /></p></li>
             <li>Click <b>Save</b>. A message displays confirming that the Pod configuration has been updated.</li>

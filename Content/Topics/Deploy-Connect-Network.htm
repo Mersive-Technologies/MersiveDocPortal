@@ -8,7 +8,7 @@
         <p>You may have connected your Pods to the network in order to import them into the Solstice Dashboard for streamlined deployment. However, there may be some additional network configurations needed. Mersive recommends reviewing the options below on how to attach the Solstice Pod to your network. <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">For additional network configurations, see <a href="Admin-Network-Settings.htm">Network Settings</a>. </MadCap:conditionalText></p>
         <p>The following are the primary options for how to attach the Solstice Pod to your network:</p>
         <ul>
-            <li><b>Attached via Ethernet</b>  – Connect an existing network jack directly into the Pod's Ethernet port. It is best practice to connect the Pod to the primary network via Ethernet. The Pod comes with Ethernet enabled by default, so connecting an active network jack should result in an automatic network connection. However, you may still need to set additional configurations. </li>
+            <li><b>Attached via Ethernet</b>  – Connect an existing network jack directly into the Pod's Ethernet port. It is best practice to connect the Pod to the primary network via Ethernet. The Pod comes with Ethernet enabled by default, so connecting an active network jack should result in an automatic network connection, although you may still need to set additional configurations. The Pod can also be configured to communicate with up to four VLANs over the Ethernet interface.</li>
             <li><b>Attached Wirelessly</b> – Connect the Pod to an existing network wirelessly when there is no Ethernet jack in the room. </li>
             <li><b>Dual Networks (Attached via Ethernet and Wirelessly)</b> - Connect the Pod to the primary network via Ethernet and the secondary/guest network wirelessly. Many deployments take advantage of the Pod’s dual-network capabilities to support secure collaboration between users on separate networks, such as corporate and guest users. The Pod’s two network interface cards are completely distinct with separate routing tables, enabling seamless collaboration without compromising the security of either network. </li>
             <p class="note">When the dual-network configuration is implemented, the firewall feature should be enabled (Network tab &gt;&#160;Firewall Settings).</p>
@@ -34,19 +34,19 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Connect a Pod to a VLAN</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_PodConnecttoVLAN.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Disable Wireless Access Point (WAP) Mode</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_PodDisableWAPMode.flsnp">
                 </MadCap:snippetBlock>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Connect a Pod to a VLAN</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../Resources/Snippets/howto_PodConnecttoVLAN.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h3 MadCap:conditions="Default.ScreenOnly">Next Step</h3>

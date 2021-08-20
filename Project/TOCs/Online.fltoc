@@ -362,14 +362,17 @@
       Title="Digital Signage Integrations"
       Link="/Content/Topics/Integration-Digital-Signage.htm">
       <TocEntry
+        Title="Integrating Digital Signage"
+        Link="/Content/Topics/Integration-Digital-Signage-HowTo.htm"></TocEntry>
+      <TocEntry
+        Title="22MILES Digital Signage"
+        Link="/Content/Topics/Integration-22Miles-Digital-Signage.htm"></TocEntry>
+      <TocEntry
         Title="Appspace Digital Signage"
         Link="/Content/Topics/Integration-Appspace-Digital-Signage.htm" />
       <TocEntry
         Title="Carousel Digital Signage"
         Link="/Content/Topics/Integration-Carousel-Digital-Signage.htm" />
-      <TocEntry
-        Title="22MILES Digital Signage"
-        Link="/Content/Topics/Integration-22Miles-Digital-Signage.htm" />
     </TocEntry>
     <TocEntry
       Title="OpenControl API"

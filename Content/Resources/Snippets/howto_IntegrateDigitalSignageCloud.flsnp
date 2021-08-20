@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Log in to Solstice Cloud at <a href="../../PDF/Solstice_22Miles_Digital_Signage.pdf/#https://cloud.mersive.com/">https://cloud.mersive.com/</a>.</li>
+            <li>Go to <b>Manage</b> &gt; <b>Pods</b> and click the name of the Pod you want to display digital signage content on.</li>
+            <li>Scroll down and click the down arrow to expand the <b>Digital Signage</b> settings.</li>
+            <li>Check <b>Enable Digital Signage</b> and select a display mode:</li>
+            <MadCap:snippetBlock src="info_DigitalSignageDisplayModesUList.flsnp" />
+            <li>In <b>Source URL</b>, enter the URL for the digital signage feed to be displayed.</li>
+            <li>Click <b>Save as Unassigned</b>, or you can <b>Save as New Template</b> to create a digital signage template you can apply to multiple Pods.</li>
+        </ol>
+        <p class="note">Some signage providers require you to use a unique code to register your signage endpoints. Refer to your signage content provider's instructions to complete this process as needed.</p>
+    </body>
+</html>

@@ -6,22 +6,22 @@
   Destinations=""
   ShowMadCapBacklink="true"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.NotforEndUser or Default.ScreenOnly]"
+  ConditionTagExpression="include[Default.Dashboard or Default.NotforEndUser or Default.PrintOnly], exclude[Default.Cloud or Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
+  MasterToc="/Project/TOCs/Solstice Deployment Guide - Dashboard.fltoc"
   OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   InjectBookHeadings="true"
-  OutputFile="solsticeconferencesupportedperipherals">
+  OutputFile="SolsticeDeploymentGuide">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="false"
+    GenerateTOCProxy="true"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice Conference Supported Peripherals" />
+    Title="Solstice Deployment Guide" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

@@ -9,7 +9,7 @@
             <li>Under Load service-account credentials, click <b>Clear</b> and then <b>Yes</b> if necessary.</li>
             <li>Click <b>Upload</b>.</li>
             <li>Navigate to the location of the service account you created for the Pod and select it.</li>
-            <li>Click <b>Test Connection</b>. If the your configuration and credentials are correct a success screen appears. <p><img src="../Images/GoogleCloudIntegratonSuccess.png" style="width: 857px;height: 524px;" /></p><p>&#160;</p></li>
+            <li>Click <b>Test Connection</b>. If the your configuration and credentials are correct a success screen appears. <p><img src="../Images/GoogleCloudIntegratonSuccess.png" style="width: 857px;height: 524px;" /></p></li>
             <li>On the Success screen click <b>OK</b>.</li>
             <li>Under Privacy settings, select whether you want to show meeting titles and names of meeting organizers.</li>
             <li>If want the calender information to update at a slower interval, select the new interval from the <b>Update Interval</b> drop-down.</li>

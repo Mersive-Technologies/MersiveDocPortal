@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ul>
-            <li MadCap:conditions="Default.ScreenOnly"><a href="../../PDF/Solstice_22Miles_Digital_Signage.pdf" target="_blank">Solstice + 22MILES Digital Signage</a>
+            <li MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Integration-22Miles-Digital-Signage.htm" target="_blank">Solstice + 22MILES Digital Signage</a>
             </li>
             <li MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pdf/solstice_22miles_digital_signage.pdf" target="_blank">Solstice + 22MILES Digital Signage</a>
             </li>

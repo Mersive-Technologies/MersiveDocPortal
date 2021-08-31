@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStylesheets/SupportTable.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>See the compatibility chart below for more details on which web browsers are supported for browser-based sharing on your laptop. Note that available sharing options (e.g. desktop sharing, application window sharing) vary by browser. </p>
+        <MadCap:dropDown style="padding-bottom: 10px">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Browser Support by Operating System </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table style="width: 90%;mc-table-style: url('../TableStylesheets/SupportTable.css');" class="TableStyle-SupportTable" cellspacing="21">
+                    <col style="width: 25%;" class="TableStyle-SupportTable-Column-Column1">
+                    </col>
+                    <col class="TableStyle-SupportTable-Column-Column1" style="width: 40%;">
+                    </col>
+                    <col class="TableStyle-SupportTable-Column-Column1">
+                    </col>
+                    <tbody>
+                        <tr style="height: 24px;" class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                                <p class="TableParagraph_2"><b>Operating System</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                                <p class="TableParagraph_2"><b>Web Browsers Supported for Browser-based Sharing</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                                <p class="table-text"><b>Notes</b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 24px;" class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body" style="font-weight: normal;">Windows
+8/10                    </td>
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                                <p>Firefox, Chrome, Microsoft Edge</p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                                <ul>
+                                    <li> Audio streaming is supported for the desktop and browser tab sharing options  on Google Chrome and Microsoft Edge browsers only. You must ensure "Share Audio" option is checked <u>before</u> sharing.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body" style="font-weight: normal;">
+                                <p class="TableParagraph_2">macOS
+Catalina, Big Sur                    </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                                <p class="TableParagraph_2">Firefox, Chrome, Safari 13 or 14</p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                                <ul>
+                                    <li>Audio streaming is supported for the browser tab sharing options on Google Chrome browsers only. You must ensure "Share Audio" option is checked <u>before</u> sharing.<br /></li>
+                                    <li>Browser-based sharing is only available for Safari users if the Pod has a DNS hostname configured. </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body" style="font-weight: normal;">ChromeOS
+                    </td>
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                                <p class="TableParagraph_2">Firefox, Chrome                     </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                                <p class="table-text">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyB-Column1-Body" style="font-weight: normal;">
+                                <p class="TableParagraph_2" style="font-weight: normal;">Linux
+                        </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyB-Column1-Body">
+                                <p class="TableParagraph_2">Firefox, Chrome</p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyA-Column1-Body">
+                                <p class="table-text">&#160;</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

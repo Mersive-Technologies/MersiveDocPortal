@@ -107,13 +107,15 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>moderate a session</MicroContentPhrase>
-        <MicroContentPhrase>moderator mode</MicroContentPhrase>
+        <MicroContentPhrase>moderate a collaboration session</MicroContentPhrase>
+        <MicroContentPhrase>moderator mode Solstice app</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>How to Moderate a Session</xhtml:h4>
+                    <xhtml:h4>How to Moderate a Session in the Solstice Desktop App</xhtml:h4>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserModerateSessionDsktp.flsnp" />
+                    <xhtml:h4>How to Moderate a Session in the Solstice Mobile App</xhtml:h4>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserModerateSessionMobile.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -146,7 +148,7 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Set up a Solstice Conference</MicroContentPhrase>
+        <MicroContentPhrase>Set up Solstice Conference</MicroContentPhrase>
         <MicroContentResponse href="../Topics/Solstice-Conference-Introduction.htm" />
     </MicroContent>
     <MicroContent>
@@ -329,12 +331,12 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Integrate a personal calendar in your Solstice App</MicroContentPhrase>
-        <MicroContentPhrase>Integrate a O365 calendar in your Solstice App</MicroContentPhrase>
+        <MicroContentPhrase>Add your personal calendar to Solstice app</MicroContentPhrase>
+        <MicroContentPhrase>Integrate your O365 calendar with Solstice App</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>How to Integrate a Personal Calendar with the Solstice App</xhtml:h4>
+                    <xhtml:h4>Add Your Personal Calendar to Your Solstice App</xhtml:h4>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserAppIntegratePersonalCalendar.flsnp" />
                 </xhtml:body>
             </xhtml:html>

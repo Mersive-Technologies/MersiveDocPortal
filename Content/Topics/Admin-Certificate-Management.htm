@@ -16,26 +16,19 @@
         <h2>Limitations</h2>
         <p>Be aware of the following limitations to the Certificate Tools:</p>
         <ul>
-            <li>
-                <p>If you are using <b>Install certificate and private key</b>, password-protected PEM files and private keys are not supported.</p>
-            </li>
-            <li>
-                <p>If you are using <b>Install certificate</b> to import 802.1x certificates, you will not be able to include intermediate certificates. If you need to include intermediate certificates, use the Network &gt; Wireless Settings or Network &gt; Ethernet Settings sections to upload them in the PKCS#12 (PFX) format.</p>
-            </li>
+            <li>If you are using <b>Install certificate and private key</b>, password-protected PEM files and private keys are not supported.</li>
         </ul>
         <h2>Pod Certificate Support</h2>
         <p>Here are the certificate formats supported by Solstice:</p>
         <table class="TableStyle-SupportTable" style="width: 75%;mc-table-style: url('../Resources/TableStylesheets/SupportTable.css');" cellspacing="21">
-            <col style="width: 153px;" class="TableStyle-SupportTable-Column-Column1" />
-            <col style="width: 214px;" class="TableStyle-SupportTable-Column-Column1" />
-            <col style="width: 211px;" class="TableStyle-SupportTable-Column-Column1" />
-            <col style="width: 231px;" class="TableStyle-SupportTable-Column-Column1" />
+            <col style="width: 30%;" class="TableStyle-SupportTable-Column-Column1" />
+            <col class="TableStyle-SupportTable-Column-Column1" style="width: 35%;" />
+            <col class="TableStyle-SupportTable-Column-Column1" style="width: 35%;" />
             <thead>
                 <tr class="TableStyle-SupportTable-Head-Header1">
                     <th class="TableStyle-SupportTable-HeadE-Column1-Header1">&#160;</th>
                     <th class="TableStyle-SupportTable-HeadE-Column1-Header1">Pod-server</th>
-                    <th class="TableStyle-SupportTable-HeadE-Column1-Header1">802.1x EAP-TLS for Ethernet and Wireless</th>
-                    <th class="TableStyle-SupportTable-HeadD-Column1-Header1">802.1x EAP-TLS<br /> (from Network Tab)</th>
+                    <th class="TableStyle-SupportTable-HeadD-Column1-Header1">802.1x EAP-TLS for Ethernet and Wireless</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,14 +40,9 @@
                             <li>PFX</li>
                         </ul>
                     </td>
-                    <td class="TableStyle-SupportTable-BodyE-Column1-Body">
-                        <ul>
-                            <li>PEM (will be converted to PFX)</li>
-                            <li>PFX</li>
-                        </ul>
-                    </td>
                     <td class="TableStyle-SupportTable-BodyD-Column1-Body">
                         <ul>
+                            <li>PEM (will be converted to PFX)</li>
                             <li>PFX</li>
                         </ul>
                     </td>
@@ -67,7 +55,6 @@
                             <li>PFX</li>
                         </ul>
                     </td>
-                    <td class="TableStyle-SupportTable-BodyB-Column1-Body">&#160;</td>
                     <td class="TableStyle-SupportTable-BodyA-Column1-Body">&#160;</td>
                 </tr>
             </tbody>

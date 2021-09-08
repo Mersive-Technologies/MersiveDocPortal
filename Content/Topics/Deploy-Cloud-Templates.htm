@@ -5,11 +5,11 @@
     <body>
         <h1>Step 2: About Configuration Templates and Set Pod Appearance
         </h1>
-        <p>Solstice Cloud  allows administrators to create unlimited configuration templates to apply across their Solstice deployment. This and the following setup steps guide you through setting the recommended base configuration templates to help you get Solstice quickly deployed based on your organization's needs and IT security policies. For the network settings appropriate to your organization's deployment, consult with your IT or network team. For a full list of templates and configuration options, see <a href="Cloud-Management-Templates.htm" target="_blank">Solstice Cloud:&#160;Configuration Templates</a>. </p>
-        <p class="note">Mersive recommends updating each template category's Default template. However, you can also create new templates if you wish to have different configurations based on office location, department, etc. </p>
+        <p>Solstice Cloud  allows administrators to create unlimited configuration templates to apply across their Solstice deployment. This and the following setup steps guide you through setting the recommended base configuration templates to help you quickly Solstice deploy based on your organization's needs and IT security policies. For the network settings appropriate to your organization's deployment, consult with your IT or network team. For a full list of templates and configuration options, see <a href="Cloud-Management-Templates.htm" target="_blank">Solstice Cloud:&#160;Configuration Templates</a>. </p>
+        <p class="note">If all the Solstice Pods in your organization use the same settings within a configuration category, Mersive recommends simply updating and applying the Default template for that category. Or use the following directions to create new, descriptively named templates to store different sets configurations based on office location, department, etc. </p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Welcome Screen Template</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Appearance Settings in Welcome Screen Template</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>To make it easy for users to discover and connect to the right Solstice display, Mersive recommends renaming the Pod to correspond to the meeting room or space it will be installed in. You can also change the appearance of the Solstice display's welcome screen to match your organization's branding by updating the display's background images, adding customized connection instructions, changing the text color, and more. </p>
@@ -18,29 +18,29 @@
                     <li>Click <b>Create New Welcome Screen Template</b>.</li>
                     <li>Enter a descriptive <b>Template Name</b>. </li>
                     <li>To change background images, click on the upload icon for that background image. Then browse to the image file and select. </li>
-                    <li>To disable background images from the rotating display, deselect the checkbox in the lower right-hand corner of the background image preview.&#160; </li>
+                    <li>To disable background images from the rotating display, uncheck the box in the lower right-hand corner of the background image preview.&#160; </li>
                     <li>To customize the connection instructions that display on the welcome screen, go to the <b>Instructions</b> drop-down and select how you would like the connection instructions to display on the Welcome Screen for end-users. <ul><li><b>Default:</b> This setting uses Solstice's default connection instructions. &#160;</li><li><b>Show custom instructions:</b> Allows you to create custom instructions for meeting attendees to see on the Welcome Screen. &#160;</li></ul></li>
                     <li>If you selected the <b>Show custom instructions</b> option, a rich text field appears below, allowing you to enter and format custom connection instructions. 
 						<p class="tip"> You can include responsive variables, which will be automatically replaced with Pod-specific information, in your custom instructions. Available variables are [RoomName], [ScreenKey], [WifiNetworkName], [WifiIP], [EthNetworkName], and [EthIP]. Note that variables are case sensitive.</p></li>
-                    <li>To hide the Airplay instructions if you are not enabling sharing via AirPlay, deselect the <b>Show Airplay instruction</b> line checkbox. </li>
-                    <li>To hide the Miracast instructions if you are not enabling sharing via Miracast, deselect the <b>Show Miracast instruction</b> line checkbox. </li>
+                    <li>If you are not enabling sharing Apple device screens via AirPlay, hide the AirPlay instructions by unchecking <b>Show AirPlay instruction line</b>. </li>
+                    <li>If you are not enabling sharing Windows device screens via Miracast, hide the Miracast instructions by unchecking <b>Show Miracast instruction line</b>. </li>
                     <li>Click <b>Save</b>. </li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Time/Locale Template</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Appearance Settings in Time/Locale Template</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>The Time/Locale Template page allows you to set various system preferences for your Solstice display, including timezone and language settings. </p>
+                <p>The Time/Locale template allows you to set various system preferences that affect the appearance of your Solstice Pod displays, including timezone and language settings. </p>
                 <ol>
                     <li>
                         In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Time/Locale.</b></li>
                     <li>Click <b>Create New Time/Locale Template</b>. </li>
                     <li>Enter a descriptive <b>Template Name</b>. &#160;</li>
-                    <li>To set the date and time using a time server, Enable the <b>Set date/time automatically</b> checkbox and enter the time server URL in the corresponding field (the default timeserver URL is pool.ntp.org).</li>
-                    <li>If you want the time to display in 24 hour format (4:00 pm is displayed as 16:00), select the <b>24 hour format</b> checkbox.</li>
+                    <li>To set the date and time using a time server, check <b>Set date/time automatically</b> and enter the time server URL in the corresponding field (the default timeserver URL is pool.ntp.org).</li>
+                    <li>If you want the time to display in 24 hour format (4:00 pm displays as 16:00), select <b>24 hour format</b>.</li>
                     <li>From the <b>Timezone</b> drop-down, select the timezone the Pod is in (for example, Eastern Time).</li>
                     <li> From the <b>Language</b> drop-down, select the language you would like to display on the Pod.</li>
                     <li>Click <b>Save</b>.</li>
@@ -48,7 +48,8 @@
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h4 MadCap:conditions="Default.ScreenOnly">Next Topic</h4>
-        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Baseline-Security.htm">Step 3:&#160;Set the Base Security Settings</a>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="file:///C:/Users/rocky/Docs/Work/Writing and Editing/Projects/Mersive/Flare/Solstice_SideNav/Content/Topics/Deploy-Cloud-Security-Settings.htm">Step 3:&#160;Network and Base Security Settings</a>
         </p>
+        <p MadCap:conditions="Default.ScreenOnly">&#160;</p>
     </body>
 </html>

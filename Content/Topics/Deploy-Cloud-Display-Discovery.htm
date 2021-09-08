@@ -5,14 +5,14 @@
     <body>
         <h1> Step 5:&#160;Set Up Display Discovery</h1>
         <p>Display discovery refers to the ability for a user to "discover" what Solstice displays are available to connect to. By default, Solstice utilizes UDP broadcast packets to enable discovery. Broadcast discovery is only recommended for single network configurations that do not use a switch and that allow UDP&#160;broadcast traffic. However, Mersive strongly recommends utilizing Solstice Discovery Service (SDS),&#160;especially if broadcast discovery needs to be disabled. </p>
-        <p style="text-align: left;">SDS is a lightweight network application for display discovery  and only requires a simple, one-time setup. SDS populates a user's Solstice app with a list of Pods available on the network to connect to, allowing them to simply click to connect. </p>
+        <p style="text-align: left;">SDS is a lightweight network application for display discovery  and only requires a simple, one-time setup. SDS populates a user's Solstice app with a list of Pods available on the network to connect to, allowing them to simply click to connect. Network administrators can also configure DNS resolution on their networks to work with SDS, allowing users to enter a Pod's domain name rather than its IP address to connect. For more information on how to implement and configure SDS, see <a href="SDS-Introduction.htm" MadCap:conditions="Default.ScreenOnly">Solstice Discovery Service (SDS)</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="http://www.documentation.mersive.com/content/topics/sds-introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText>.</p>
         <h3>SDS Requirements</h3>
         <ul>
             <li>Must be installed on a Windows machine with a static IP address running Windows 8 or 10, or a Windows Server running 2012 R2  or later, and a quad core processor with a minimum of 12GB RAM. A Windows 2016 Server may be used if desktop experience is enabled. </li>
         </ul>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 1: Download and Install SDS</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>1- Download and Install SDS</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
@@ -24,16 +24,16 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 2: Find the IP Address of the SDS Host</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>2 - Find the IP Address of the SDS Host</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>If you already know the static IP address of the machine with SDS installed, move on to Step 3. </p>
+                <p>If you already know the static IP address of the machine with SDS installed, move on to step 3 below. </p>
                 <p>To find your IP address, open a Command Prompt window, type <b>ipconfig</b> then hit your Enter key. The IP address is listed in the results that appear. <br /><br /><img src="../Resources/Images/ex_cmd.png" style="mc-thumbnail-max-height: auto;width: 464px;height: 323px;" /></p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 3: Create a Discovery Template in Solstice Cloud</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>3 - Create a Discovery Template in Solstice Cloud</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>Creating a Discovery template allows you to easily configure SDS for all of your Solstice Pods. </p>
@@ -49,14 +49,14 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 4: Configure SDS&#160;in Solstice User Apps</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>4 - Set SDS&#160;Host in Solstice User Apps</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>For users to see Solstice displays listed in the SDS directory, each user will need to do a one-time configuration to enter the SDS host IP address in their Solstice app’s Settings. After entering the SDS host, the user will be able to see Solstice displays available for connection every time they open the app.</p>
                 <p>
                     <img src="../Resources/Images/ex_app_sdshost.png" style="width: 430px;height: 280px;" />
                 </p>
-                <p>If centrally deploying the app to end-users using <a href="Admin-MSI-Instuctions.htm">MSI</a>&#160;or <a href="Admin-SCCM-Instuctions.htm">SCCM</a>, SDS information can be pre-configured during the installation process. </p>
+                <p>If centrally deploying the app to end-users using <a href="Admin-MSI-Instuctions.htm" target="_blank">MSI</a>&#160;or <a href="Admin-SCCM-Instuctions.htm" target="_blank">SCCM</a>, SDS information can be pre-configured during the installation process. </p>
                 <p>Alternatively, if you have already applied the Discovery template containing the SDS information to your Solstice Pods, SDS will be automatically configured in a user's app when they connect to one of these displays by entering the display's URL&#160;in the app's search bar. </p>
                 <p>
                     <img src="../Resources/Images/ex_displayURL_solsticeapp.png" style="width: 375px;height: 249px;" />
@@ -67,5 +67,6 @@
         <h3 MadCap:conditions="Default.ScreenOnly">Next Step</h3>
         <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Content-Sharing.htm">Step 6:&#160;Set Content Sharing Options</a>
         </p>
+        <p MadCap:conditions="Default.ScreenOnly">&#160;</p>
     </body>
 </html>

@@ -4,14 +4,40 @@
     </head>
     <body>
         <h1>Step 6:&#160;Set Up Display Discovery</h1>
-        <p>Display discovery refers to the ability for a user to "discover" what Solstice displays are available to connect to. A user may always discover a Pod by typing the Pod’s IP address into the Solstice App. However, Solstice discovery can streamline the connection process by listing all Pods available for connection and enabling users to simply click a Pod’s name to connect. There are three discovery methods that will enable this click-to-connect functionality in your Solstice deployment.</p>
-        <h3>Broadcast Discovery
-        </h3>
-        <p style="text-align: left;">By default, Solstice utilizes UDP broadcast packets to enable discovery. Broadcast discovery is only recommended for single network configurations that do not use a switch and that allow UDP&#160;broadcast traffic. If you do not wish for Solstice to utilize broadcast discovery, you can disable it in the Pod's configurations (Network tab &gt;&#160;Display Discovery section &gt;&#160;Broadcast display name on network). However, Mersive strongly recommends utilizing Solstice Discovery Service if broadcast discovery is disabled. </p>
-        <h3>Solstice Discovery Service (recommended)<![CDATA[        ]]></h3>
-        <p style="text-align: left;">Solstice Discovery Service (SDS) is a lightweight network application for display discovery on networks with switches and/or multiple subnets or those that do not allow UDP broadcast traffic. SDS provides users the easiest method for display discovery and only requires a simple, one-time setup. Instead of users having to type an IP&#160;address in order to connect to the Pod, SDS will populate their Solstice app with a list of Pods available on the network to connect to, allowing them to simply click to connect. For more information on how to implement and configure SDS, see <a href="SDS-Introduction.htm" MadCap:conditions="Default.ScreenOnly">Solstice Discovery Service (SDS)</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="http://www.documentation.mersive.com/content/topics/sds-introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText>.</p>
-        <h3>Solstice Discovery Service&#160;+&#160;DNS&#160;Resolution</h3>
-        <p style="text-align: left;">Discovery with Solstice Discovery Service (SDS) requires users to enter the SDS IP address into their Solstice app. Users can type the hostname into a browser (for example, http://hostname.domain) to easily download the Solstice app. Network administrators must first configure DNS resolution on their networks. This method first requires SDS to be configured, then the additional <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-DNS.htm" target="_blank">SDS + DNS Resolution</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="http://www.documentation.mersive.com/content/topics/sds-network-routing-override.htm" target="_blank">SDS + DNS Resolution</a></MadCap:conditionalText> step to be performed. </p>
+        <p>Display discovery refers to the ability for a user to "discover" what Solstice Pod displays are available to connect to. A user may always discover a Pod display by typing the Pod’s IP address into the Solstice app. However, Solstice discovery can streamline the connection process by listing all Pods available for connection, enabling users to simply click a Pod’s name to connect. </p>
+        <p>There are three discovery methods that  enable this click-to-connect functionality in your Solstice deployment:</p>
+        <ul>
+            <li><b>Broadcast Discovery</b>
+- By default, Solstice utilizes UDP broadcast packets to enable Pod display discovery. Broadcast discovery is only recommended for single network configurations that do not use a switch and that allow UDP&#160;broadcast traffic. Mersive strongly recommends utilizing Solstice Discovery Service if broadcast discovery is disabled. </li>
+            <li><b>Solstice Discovery Service (recommended)</b> - Solstice Discovery Service (SDS) is a lightweight network application for display discovery on networks with switches and/or multiple subnets or those that do not allow UDP broadcast traffic. SDS provides users the easiest method for display discovery and requires only a simple, one-time setup. Instead of users having to type an IP&#160;address in order to connect to a Pod display, SDS will populate their Solstice app with a list of Pods available on the network, allowing them to simply click to connect. For more information on how to implement and configure SDS, see <a href="SDS-Introduction.htm" MadCap:conditions="Default.ScreenOnly">Solstice Discovery Service (SDS)</a><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="http://www.documentation.mersive.com/content/topics/sds-introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText>.</li>
+            <li><b>Solstice Discovery Service&#160;+&#160;DNS&#160;Resolution</b> -  Discovery with SDS alone requires the SDS IP address to be entered into users' Solstice app. By adding DNS&#160;resolution, users can instead type a Pod display's domain name into a browser (for example, http://hostname.domain) to easily download the Solstice app. Network administrators must first configure DNS resolution on their networks. This method first requires SDS to be configured, then the additional <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-DNS.htm" target="_blank">SDS + DNS Resolution</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="http://www.documentation.mersive.com/content/topics/sds-network-routing-override.htm" target="_blank">SDS + DNS Resolution</a></MadCap:conditionalText> step to be performed. </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/Snippets/info_AdminSDSRequirement.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>1- Download and Install SDS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSDSDownloadInstall.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>2 - Find the IP Address of the SDS Host</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you already know the static IP address of the Windows machine with SDS installed, move on to step 3 below. </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSDSFindServerIP.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>3- Set SDS Information to List Solstice Pod Displays on SDS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSDSEnableDashboard.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <h3 MadCap:conditions="Default.ScreenOnly">Next Step</h3>
         <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Content-Sharing.htm">Step 7: Set the Content Sharing Options</a>
         </p>

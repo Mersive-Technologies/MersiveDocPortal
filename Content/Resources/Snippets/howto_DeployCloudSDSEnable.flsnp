@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Creating a Discovery template allows you to easily configure SDS for all of your Solstice Pods managed in Solstice Cloud. </p>
+        <ol>
+            <li>
+                In the left sidebar navigation panel of Solstice Cloud,  click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Discovery</b>.</li>
+            <li>Enter a descriptive <b>Template Name</b>. </li>
+            <li>Uncheck <b>Broadcast display name on network</b> and ensure that <b>List display to SDS</b> is checked.</li>
+            <li>In the <b>SDS Host 1</b> field, enter the SDS&#160;host machine’s IP address.<p class="note">A second SDS host can be listed for Solstice displays that are attached to two networks using Solstice’s dual-network capability. Displays attached to two networks will require an SDS host machine on each network in order to utilize SDS (order does not matter).</p></li>
+            <li>Click <b>Save</b>. <br /></li>
+        </ol>
+    </body>
+</html>

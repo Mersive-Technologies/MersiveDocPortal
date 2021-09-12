@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h3>SDS Requirements</h3>
+        <ul>
+            <li>Solstice Disovery Service must be installed on a Windows machine with a static IP address running Windows 8 or 10, or a Windows Server running 2012 R2  or later, and a quad core processor with a minimum of 12GB RAM. A Windows 2016 Server may be used if desktop experience is enabled. </li>
+        </ul>
+    </body>
+</html>

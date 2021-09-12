@@ -27,11 +27,7 @@
                 <MadCap:dropDownHotspot>Step 1: Download and Install SDS</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <ol>
-                    <li>Visit <a href="https://www.mersive.com/download/get-sds/" target="_blank">mersive.com/download/get-sds</a>.</li>
-                    <li>Under <b>Newest Version (recommended)</b>, click the link for the latest version of SDS. The installer will be downloaded. </li>
-                    <li>Run the SolsticeDiscoveryServiceSetup_[version_number].exe installer on the Windows host machine or Windows server and step through the InstallShield wizard until SDS is installed.</li>
-                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSDSDownloadInstall.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -39,8 +35,8 @@
                 <MadCap:dropDownHotspot>Step 2: Find the IP Address of the SDS Host</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>If you already know the static IP address of the machine with SDS installed, move on to Step 2. </p>
-                <p>To find your IP address, open a Command Prompt window, type <b>ipconfig</b> then hit your Enter key. The IP address is listed in the results that appear. <br /><br /><img src="../Resources/Images/ex_cmd.png" style="mc-thumbnail-max-height: auto;width: 464px;height: 323px;" /></p>
+                <p>If you already know the static IP address of the machine with SDS installed, move on to Step 3. </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSDSFindServerIP.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -51,27 +47,10 @@
                 <p>There are two ways you can set the SDS configuration for Solstice: using Solstice Cloud, or using the Solstice Dashboard. </p>
                 <p><b>Solstice Cloud</b>
                 </p>
-                <ol>
-                    <li>Log into Solstice Cloud as an admin.</li>
-                    <li>Go to <b>Manage</b> &gt;&#160;<b>Pods</b> &gt;&#160;<b>Templates</b> &gt;&#160;<b>Discovery</b>. </li>
-                    <li>Edit an existing template, or create a new template. </li>
-                    <li>Select the <b>List display to SDS</b> option. </li>
-                    <li>In the <b>SDS&#160;Host field</b>, enter the IP&#160;address of the SDS&#160;host machine. If you have multiple instances of SDS, you can add the IP&#160;address of each SDS host machine (the order does not matter). </li>
-                    <li>Click <b>Save</b>. </li>
-                    <li>If the template was already applied to your Pods, the saved settings will be applied across those Pods. If the template was not already applied, you can batch apply it to your&#160;Pods by clicking <b>Assign Pods</b> and using the Pod Template Assignments table. </li>
-                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSDSEnableCloud.flsnp" />
                 <p><b>Solstice Dashboard</b>
                 </p>
-                <ol>
-                    <li>Open the Solstice Dashboard.</li>
-                    <li>Go to the <b>SDS</b> tab and click the <b>Configure Primary SDS Host</b> button.</li>
-                    <li>In the pop-up that appears, enter the IP address of the SDS host machine, then click <b>Set</b>. The SDS tab’s icon will turn green once a connection to this host has been made.</li>
-                    <li>In the list of your Solstice instances, select the Solstice displays you want to add to the SDS directory.  Use CTRL+click or SHIFT+click to select multiple displays.</li>
-                    <li>Go to the <b>Network</b> tab.</li>
-                    <li>In the Display Discovery section, select the <b>List display to Solstice Directory Service</b> checkbox.</li>
-                    <li>In the <b>SDS Host 1</b> field, enter the SDS&#160;host machine’s IP address, then click <b>Apply</b>. <br /></li>
-                </ol>
-                <p class="note">Note that there are two SDS host fields available. A second SDS host can be listed for Solstice displays that are attached to two networks using Solstice’s dual-network capability. Displays attached to two networks will require an SDS host machine on each network in order to utilize SDS.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSDSEnableDashboard.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

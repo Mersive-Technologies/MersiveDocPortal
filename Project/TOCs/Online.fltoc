@@ -48,28 +48,31 @@
       Title="Deploy Solstice Using Solstice Dashboard"
       Link="/Content/Topics/Deploy-Dashboard-Solstice-Setup.htm">
       <TocEntry
-        Title="Step 1: Install the Solstice Dashboard and Import Pods"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Install-Dashboard.htm"></TocEntry>
       <TocEntry
-        Title="Step 2: Connect the Pods to the Network"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Connect-Network.htm"></TocEntry>
       <TocEntry
-        Title="Step 3: Rename the Pod and Customize the Appearance"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Rename-Customize.htm"></TocEntry>
       <TocEntry
-        Title="Step 4: Set the Pod's Date and Time"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Set-DateTime.htm"></TocEntry>
       <TocEntry
-        Title="Step 5: Set the Base Security Settings"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Security-Settings.htm"></TocEntry>
       <TocEntry
-        Title="Step 6: Set Up Display Discovery"
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Deploy-Room-Calendar.htm"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Display-Discovery.htm"></TocEntry>
       <TocEntry
-        Title="Step 7: Set the Content Sharing Options"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Content-Sharing.htm"></TocEntry>
       <TocEntry
-        Title="Step 8: Validate Your Deployment"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Validate-Deployment.htm"></TocEntry>
       <TocEntry
         Title="Other Considerations"

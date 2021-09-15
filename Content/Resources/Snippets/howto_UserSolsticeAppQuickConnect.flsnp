@@ -3,9 +3,9 @@
     <head>
     </head>
     <body>
-        <p style="font-weight: bold;">Quick Connect Method</p>
+        <h4>How To Quick Connect to Display with Solstice App</h4>
         <ol>
-            <li>With the Solstice app running in the background, click the Solstice icon in the system tray, or use the keyboard shortcut <b>Crtl +&#160;Alt +&#160;C</b>. A Start Conference pop-up box will appear.
+            <li>With the Solstice app running in the background on a laptop, click the Solstice icon in the system tray, or use the keyboard shortcut <b>Crtl +&#160;Alt +&#160;C</b>. A Start Conference pop-up box will appear.
             <p><img src="../Images/ex_UserSharingQuickConnect.png" /></p></li>
             <li>If prompted, enter the Solstice Pod's IP&#160;address that appears on the display connected to the Solstice Pod. Then enter the screen key that appears on the display. </li>
             <li>You will be connected and your desktop shared to that Solstice display. </li>

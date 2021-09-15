@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>On the Windows machine used for Solstice Pod display management, open Solstice Dashboard.</li>
+            <li>Go to the <b>SDS</b> tab and click <b>Configure Primary SDS Host</b>.</li>
+            <li>In the box that appears, enter the IP address of the SDS host machine, then click <b>Set</b>. The SDS tab’s icon will turn green to show a connection has been made to this host.</li>
+            <li>In the list of your Solstice instances, select the Solstice displays you want to add to the SDS directory.  You can use CTRL+click or SHIFT+click to select multiple displays.</li>
+            <li>Go to the <b>Network</b> tab.</li>
+            <li>In the Display Discovery section, uncheck <b>Broadcast display name on network</b> to disable broadcast discovery and select <b>List display to Solstice Directory Service</b>.</li>
+            <li>In the <b>SDS Host 1</b> field, enter the SDS&#160;host machine’s IP address.<p class="note">A second SDS host can be listed for Solstice displays that are attached to two networks using Solstice’s dual-network capability. Displays attached to two networks will require an SDS host machine on each network in order to utilize SDS.</p></li>
+            <li>Click <b>Apply</b>. <br /></li>
+        </ol>
+    </body>
+</html>

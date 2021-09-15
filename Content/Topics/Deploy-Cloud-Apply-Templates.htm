@@ -1,15 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
-    <head>
+    <head><title>Step 7: Apply Templates and Unique-to-Pod Settings</title>
     </head>
     <body>
-        <h1>Step 4:&#160;Apply Configuration Templates</h1>
+        <h1>Step 7:&#160;Apply Configuration Templates and Unique-to-Pod Settings</h1>
         <p>In the step, you will apply the configuration templates you created across your deployment. Repeat the process of assigning a template to a Pod for all of the configuration templates you created, and applying them to all of the Pods across your deployment. </p>
-        <p class="tip">To make the process of applying templates across your deployment more efficient, you can use categories to  apply configuration templates to Pods by location, campus, or any other categories you choose to define. See <a href="Cloud-Create-Categories.htm">Create Categories</a> to learn more about how to create and use categories, as well as best practices.  </p>
-        <h4>How to Apply Configuration Templates </h4>
+        <p class="tip">To make the process of applying templates across your deployment more efficient, you can use categories to  apply configuration templates to Pods by location, campus, or any other categories you choose to define. See <a href="Cloud-Create-Categories.htm" target="_blank">Create Categories</a> to learn more about how to create and use categories, as well as best practices.  </p>
+        <p>You will also find below information on how to apply settings that are unique to a Solstice Pod, such as room calendar authentication details. For how to change the settings of an individual Pod without using a template, see <a href="Cloud-Management-Templates.htm#Apply_Settings_to_Individual_Pods" target="_blank">Managing Your Solstice Pod Settings</a>.</p>
+        <h4>How to Apply Configuration Templates to Solstice Pods</h4>
         <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudApplyTemplate.flsnp" />
+        <h4>How to Apply Settings Unique to Pods</h4>
+        <ol>
+            <li>In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Pods</b>.</li>
+            <li>In the Pod Template Assignments table, click the name of the Pod you want to configure individually.</li>
+            <li>In the Template Configuration section click the <img src="../Resources/Images/i_expand.png" alt="down arrow" /> icon to expand the options available for a particular settings category, such as Calendar. </li>
+            <li>If the selected Pod has previously been assigned to a template, you may need to click <b>Edit</b> to be able to interact with the configuration options.</li>
+            <li>After entering settings that are unique to an individual Pod, such as Username, Password, and Room Email in the Calendar settings, click the <b>Save</b> button that appear near the edited settings, <u>not</u> Save as Unassigned or Save as New Template at the top of the settings section.</li>
+            <li>A message will appear confirming the Pod configuration has been updated. Until the configuration has been successfully applied to the Pod, an option  is available to Cancel Pending Changes.</li>
+        </ol>
         <h3 MadCap:conditions="Default.ScreenOnly">Next Step</h3>
-        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Validate-Deployment.htm">Step 5:&#160;Validate Your Deployment</a>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Validate-Deployment.htm">Step 8:&#160;Validate Your Deployment</a>
         </p>
+        <p MadCap:conditions="Default.ScreenOnly">&#160;</p>
     </body>
 </html>

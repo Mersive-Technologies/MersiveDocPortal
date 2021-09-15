@@ -8,7 +8,7 @@
         <p>Doing a silent install requires that the installer knows how to handle the questions that are asked during the installation wizard. The options '/s /v/qn' require that there is a separate data file with the answers to the questions. By default this file is called 'setup.iss' and it needs to be in the same directory as the installer. As a note, admin or system privileges are needed to install system-wide but the installer does not explicitly check for these privileges. </p>
         <h3>Silent Install Instructions</h3>
         <ol>
-            <li>Download the SCCM version of our client installer from <a href="https://www.mersive.com/download/" target="_blank">mersive.com/download</a>. </li>
+            <li>Download the SCCM version of the Solstice client app installer from <a href="https://www.mersive.com/download-admin/" target="_blank">mersive.com/download-admin</a> &gt; Deployment Management.</li>
             <li>Run the installer on a machine once via a command window and use the command line option '/r'. This will run through the wizard and record a response file that will be used later. Note that the command must be issued from a command prompt with system or admin rights. Example command: </li>
             <p class="codeblock">SolsticeClientSetup-5.2_SCCM.exe /r</p>
             <li>			Run through the install wizard and set your desired configurations. <br /><br /> <img src="../Resources/Images/SCCMconfigoptions2.png" style="width: 481px;height: 360px;" /> <img src="../Resources/Images/SCCM_config.png" style="width: 491px;height: 361px;" /></li>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Visit <a href="https://www.mersive.com/download/get-sds/" target="_blank">mersive.com/download/get-sds</a>.</li>
+            <li>Under <b>Newest Version (recommended)</b>, click the link for the latest version of SDS. The installer will be downloaded. </li>
+            <li>Run the SolsticeDiscoveryServiceSetup_[version_number].exe installer on the Windows host machine or Windows server and step through the InstallShield wizard until SDS is installed.</li>
+        </ol>
+    </body>
+</html>

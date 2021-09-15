@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Log into Solstice Cloud as an adminstrator.</li>
+            <li>Using the left sidebar, navigate to <b>Manage</b> &gt;&#160;<b>Pods</b> &gt;&#160;<b>Templates</b> &gt;&#160;<b>Discovery</b>. </li>
+            <li>Edit an existing template, or create a new template. </li>
+            <li>Uncheck <b>Broadcast display name on network</b> and ensure that <b>List display to SDS</b> is checked.</li>
+            <li>In the <b>SDS Host 1</b> field, enter the SDS&#160;host machine’s IP address.<p class="note">A second SDS host can be listed for Solstice displays that are attached to two networks using Solstice’s dual-network capability. Displays attached to two networks will require an SDS host machine on each network in order to utilize SDS (order does not matter).</p></li>
+            <li>Click <b>Save</b>. </li>
+            <li>If the template was already applied to your Pods, the saved settings will be applied across those Pods. If the template was not already applied, you can batch apply it to your&#160;Pods by clicking <b>Assign Pods</b> and using the Pod Template Assignments table. </li>
+        </ol>
+    </body>
+</html>

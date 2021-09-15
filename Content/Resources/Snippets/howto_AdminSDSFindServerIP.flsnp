@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>To find your IP address, open a Command Prompt window, type <b>ipconfig</b>, and hit Enter. The IP address is listed in the results that appear. </p>
+        <p>
+            <img src="../Images/ex_cmd.png" style="mc-thumbnail-max-height: auto;width: 464px;height: 323px;" />
+        </p>
+    </body>
+</html>

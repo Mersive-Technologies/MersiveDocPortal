@@ -3,7 +3,7 @@
   Version="1">
   <TocEntry
     Title="Solstice Overview"
-    Link="/Content/Topics/General-Solstice-Introduction.htm" />
+    Link="/Content/Topics/General-Solstice-Introduction.htm"></TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/Topics/General-Solstice-Setup.htm"></TocEntry>
@@ -18,7 +18,23 @@
     Link="/Content/Topics/Deploy-Cloud-Templates.htm" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Deploy-Cloud-Security-Settings.htm"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Deploy-Cloud-Room-Calendar.htm"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
     Link="/Content/Topics/Deploy-Cloud-Display-Discovery.htm"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Deploy-Cloud-Content-Sharing.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Admin-Enabling-AirPlay.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Admin-Enabling-Miracast.htm"></TocEntry>
+  </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/Topics/Deploy-Cloud-Apply-Templates.htm" />

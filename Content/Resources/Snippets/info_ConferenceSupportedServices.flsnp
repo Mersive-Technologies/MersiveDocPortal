@@ -4,7 +4,7 @@
         <link href="../TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <p>Below are the supported conferencing services depending on the operating system of the meeting host laptop. For support listed as "browser-based version only", Solstice Conference's full functionality (i.e. the ability to share the Solstice display to remote users via the conferencing application)&#160;is only supported in the browser-based version of that conferencing application. As a note, please ensure your video conferencing software is updated to the latest version. </p>
+        <p>Below are the supported conferencing services depending on the operating system of the meeting host laptop. For support listed as "browser-based version only," Solstice Conference's full functionality (i.e. the ability to share the Solstice display to remote users via the conferencing application)&#160;is only supported in the browser-based version of that conferencing application. As a note, please ensure your video conferencing software is updated to the latest version. </p>
         <table style="mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
@@ -94,6 +94,6 @@
                 </tr>
             </tbody>
         </table>
-        <p>*Chrome, Edge, Opera, and Internet Explorer browsers supported </p>
+        <p>*Chrome, Firefox, Microsoft Edge, and Safari browsers supported </p>
     </body>
 </html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Each required Solstice Cloud configuration category contains one <i style="font-weight: bold;">Default</i> template. Mersive recommends configuring this template with the most common set of configuration options for the Solstice Pods in your organization's deployment. Then use the <a href="#Duplicat">Duplicate a Template</a> option to create variations of the template for groups of Pods that use different configuration options.  For example, use the default Time/Locale template to configure the time zone for Pods in the main office, then duplicate the template and modify the duplicates for Pods located in other time zones.</p>
+    </body>
+</html>

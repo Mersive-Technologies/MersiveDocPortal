@@ -18,6 +18,9 @@
     Link="/Content/Topics/Deploy-Cloud-Templates.htm" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Deploy-Cloud-Rename-Customize.htm"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
     Link="/Content/Topics/Deploy-Cloud-Security-Settings.htm"></TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"

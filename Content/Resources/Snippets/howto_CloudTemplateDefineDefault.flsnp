@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In the left sidebar menu of Solstice Cloud, click <b>Manage</b> &gt;&#160;<b>Templates</b>.</li>
+            <li>From the list of configuration categories that appears below Templates, select the category you wish to configure. </li>
+            <li>Click the first template in the list, named <b style="font-style: italic;">Default</b>, to see the available configuration options.</li>
+            <li>Configure the default settings as appropriate for the majority of Solstice Pods in your deployment.  </li>
+            <li>Click <b>Save</b>. A green box confirming that the template was updated will briefly appear.</li>
+        </ol>
+    </body>
+</html>

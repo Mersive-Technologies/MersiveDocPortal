@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In the left sidebar menu of Solstice Cloud, click <b>Manage</b> &gt;&#160;<b>Templates</b>.</li>
+            <li>From the list of configuration categories that appears below Templates, select the category you wish to configure. </li>
+            <li>For the template you wish to duplicate, click the vertical ellipsis <img src="../Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon, then select <b>Duplicate Template</b>. <p><img src="../Images/ex_SC_duplicatetemplate.png" style="width: 151px;height: 91px;" /><br /></p></li>
+            <li>Give the duplicated template a descriptive <b>Template Name</b>, ideally related to its purpose, and change the configuration settings as needed. </li>
+            <li>Click <b>Save</b>. </li>
+        </ol>
+    </body>
+</html>

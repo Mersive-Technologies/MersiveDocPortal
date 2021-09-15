@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>For users to see Solstice displays listed in the SDS directory, each user will need to do a one-time configuration to enter the SDS host IP address in their Solstice app’s Settings. After entering the SDS host, the user will be able to see Solstice displays available for connection every time they open the app.</p>
+        <p>
+            <img src="../Images/ex_app_sdshost.png" style="width: 430px;height: 280px;" />
+        </p>
+        <p>If centrally deploying the app to end-users using MSI&#160;or SCCM, SDS information can be pre-configured during the installation process. For more information on MSI and SCCM installations, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Admin-Client-Installs.htm">Deploy Solstice with MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">Deploy Solstice with MSI or SCCM</a></MadCap:conditionalText>.</p>
+        <p>Alternatively, if you have already applied SDS information to your Solstice Pods and displays, as described in step 3 above, SDS will be automatically configured in a user's app when they connect to one of these displays by entering the display's URL&#160;in the app's search bar. </p>
+        <p>
+            <img src="../Images/ex_displayURL_solsticeapp.png" style="width: 375px;height: 249px;" />
+        </p>
+    </body>
+</html>

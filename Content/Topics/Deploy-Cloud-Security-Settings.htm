@@ -3,7 +3,7 @@
     <head><title></title>
     </head>
     <body>
-        <h1>Step 3: Network and Base Security Settings        </h1>
+        <h1>Step 4: Network and Base Security Settings        </h1>
         <p>Mersive recommends setting up templates with the following network and security configurations for your Solstice Pod displays. These settings will allow users to quickly connect and share content to the displays in Pod-enabled rooms while still maintaining network security standards for larger, centrally-managed Pod deployments. Small deployments, collaboration hotspots, and open-to-public use of Solstice Pods are also perfectly valid. </p>
         <p>IT administration and Network Security should be involved in designing an appropriate deployment, and deployments can differ based on network configuration specifics and policies. Ensure you have reviewed the <a href="Admin-Network-Ports.htm" target="_blank">Network Requirements</a>. For additional security configurations, see <a href="Cloud-Template-Security.htm" target="_blank">Solstice Cloud: Security Template</a>. </p>
         <MadCap:dropDown>
@@ -15,8 +15,7 @@
                 <p> These steps outline how to configure basic Ethernet network settings to apply across your deployment. For more about advanced Ethernet settings, see <a href="Cloud-Template-Ethernet.htm" target="_blank">Solstice Cloud:&#160;Ethernet Template</a>. </p>
                 <ol>
                     <li>In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Ethernet</b>.</li>
-                    <li>Click <b>Create New Ethernet Template</b>. </li>
-                    <li>Enter a descriptive <b>Template Name</b>. </li>
+                    <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New Ethernet Template</b> and enter a descriptive <b>Template Name</b>. </li>
                     <li>To activate the options, select the <b>Enable Ethernet</b> checkbox.</li>
                     <li>Change the&#160;<b>Network Name</b> to the one that users will see in the list of available networks on their device so that it is easily recognizable.</li>
                     <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow administrative configuration access</b> checkbox.</li>
@@ -44,8 +43,7 @@
                 <ol>
                     <li>
                 In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>WiFi</b>. </li>
-                    <li>Click <b>Create New WiFi Template</b>. </li>
-                    <li>Enter a descriptive <b>Template Name</b>. </li>
+                    <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New WiFi Template</b> and enter a descriptive <b>Template Name</b>. </li>
                     <li> Select the <b>Enable WiFi</b> checkbox. </li>
                     <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow admin configuration access</b> checkbox. </li>
                     <li>Select&#160;<b>Existing Network</b>.  This option connects the Pod to an existing network wirelessly. </li>
@@ -64,8 +62,7 @@
                 <ol>
                     <li>
                 In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>WiFi</b>. </li>
-                    <li>Click <b>Create New WiFi Template</b>. </li>
-                    <li>Enter a descriptive <b>Template Name</b>. </li>
+                    <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New WiFi Template</b> and enter a descriptive <b>Template Name</b>. </li>
                     <li>Uncheck the <b>Enable WiFi</b> checkbox.</li>
                     <li>Click <b>Save</b>. </li>
                 </ol>
@@ -79,8 +76,7 @@
                 <p>Before deploying your Solstice Pods, certain security baselines should be configured to harden the security of your deployment. The following are the base security settings that Mersive recommends.  </p>
                 <ol>
                     <li>In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Security</b>.</li>
-                    <li>Click <b>Create New Security Template</b>. </li>
-                    <li>Enter a descriptive <b>Template Name</b>. </li>
+                    <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New Security Template</b> and enter a descriptive <b>Template Name</b>. </li>
                     <li>If you wish to set an admin password to protect your Solstice Pod configurations, enter the password you wish to require for Pod configuration in <b>Set Admin Password</b>. To set the same administrator password for all of your Pods (recommended), apply this Security template to all your organization's Pods in Manage &gt; Pods. </li>
                     <li>If you wish to enforce password validation rules (8-character minimum, one uppercase and one lowercase character, one number or special character), select <b>Enforce password validation rules</b>.</li>
                     <li>If you do not wish to allow access to a Pod's configuration settings by physically connecting a keyboard and mouse to it, uncheck <b>Allow local configuration</b>. Note that the admin password set above is required for this configuration method.</li>
@@ -98,15 +94,14 @@
                 <p>This template contains the option to require meeting participants to enter screen key when connecting to Solstice collaboration sessions for added security. For more about using this template to configure content sharing options, see <a href="Deploy-Cloud-Content-Sharing.htm">Step 6: Set Content Sharing Options</a>.</p>
                 <ol>
                     <li>In the left sidebar navigation panel of Solstice Cloud,   click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Features</b>. </li>
-                    <li>Click <b>Create New Features Template</b>.</li>
-                    <li>Enter a descriptive <b>Template Name</b>. </li>
+                    <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New Features Template</b> and enter a descriptive <b>Template Name</b>. </li>
                     <li>Under the Solstice Feature Options section, select <b>Enable screen key</b>. This is an important security setting that requires end-users to enter the 4-digit screen key visible on the display to connect and share to Solstice. </li>
                     <li>Click <b>Save</b>.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h4 MadCap:conditions="Default.ScreenOnly">Next Topic</h4>
-        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Display-Discovery.htm">Step 4:&#160;Add a Room Calendar</a>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Room-Calendar.htm">Step 5:&#160;Add a Room Calendar</a>
         </p>
         <p MadCap:conditions="Default.ScreenOnly">&#160;</p>
     </body>

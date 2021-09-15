@@ -31,7 +31,7 @@
                 </ul>
                 <p>To apply settings to a specific Pod without assigning a template:</p>
                 <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>. </li>
+                    <li>In the left sidebar menu of Solstice Cloud, click <b>Manage</b> &gt;&#160;<b>Pods</b>. </li>
                     <li>In the Pod Template Assignments table, click the name of the Pod you want to configure.</li>
                     <li>In the Template Configuration section click the <img src="../Resources/Images/i_expand.png" alt="down arrow" /> icon  to expand the options available for a particular settings category.<p><img src="../Resources/Images/cloud_configurePodSettings.png" style="width: 80%;height: auto;" /></p></li>
                     <li>Configure the settings as desired and then click <b>Save as Unassigned</b>.<p><img src="../Resources/Images/cloud_saveAsUnassigned.png" style="height: auto;width: 90%;" /></p></li>
@@ -50,17 +50,9 @@
                 <br />
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Default templates are used for pre-configuring Pod settings before the Pods are shipped. For customers in Mersive’s Pre-Provisioning Program, Solstice Pods will automatically import into their Solstice Cloud account, significantly reducing the time needed for Pod deployment upon arrival. Reach out to your sales representative for inquiries into the Pod Pre-Provisioning Program.</p>
-                <p class="note">Each template type can only have one default template. If you have Pods with different settings, Mersive recommends creating a default template that applies to most of your Pods, then use the <a href="#Duplicat">Duplicate a Template</a> option to create variations of the template for your other Pods. For example, the Time/Locale default template can only be configured for one time zone. If you have Pods in multiple time zones, create a Time/Locale default template that is configured for the most common time zone, then duplicate the template and modify the duplicates for the other time zones.</p>
-                <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. </li>
-                    <li>Select the template type of default template you want to edit. </li>
-                    <li>Click the first template in the list named <b>Default</b>. <p>The default template for the template type you selected appears.</p></li>
-                    <li>
-                        <p>Configure the settings in the default template, then  click <b>Save</b>.</p>
-                    </li>
-                </ol>
-                <p>Solstice cloud displays a confirmation that the "Template was updated."</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_CloudTemplateDefineDefault.flsnp" />
+                <p class="tip">Default templates are also used for pre-configuring Pod settings before the Pods are shipped. For customers in Mersive’s Pre-Provisioning Program, Solstice Pods will automatically import into their Solstice Cloud account, significantly reducing the time needed for Pod deployment upon arrival. Reach out to your sales representative for inquiries into the Pod Pre-Provisioning Program.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudTemplateDefineDefault.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -68,18 +60,7 @@
                 <MadCap:dropDownHotspot><a name="Create"></a>Create a New Template</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. </li>
-                    <li>Select the template type you wish to create. For example, you can select Welcome Screen or Features. </li>
-                    <li>Click <b>Create New Template</b> icon <img src="../Resources/Images/I_Cloud_createNewFeatureTemplate.png" style="width: 18px;height: 18px;" />. </li>
-                    <li>
-                        <p>Enter the <b>Template Name</b>. For example, you could name the template by location (London Office) or descriptively (Mountain Theme). </p>
-                    </li>
-                    <li>Configure the settings you wish to be applied for that template. </li>
-                    <li>Click <b>Save</b>.</li>
-                    <p class="note">While most settings can be batch configured in templates, there are still certain settings or values that are unique to each Pod and will need to be set for each Pod individually. </p>
-                    <li>Click <b>Save</b>.</li>
-                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudTemplateCreateNew.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -87,13 +68,7 @@
                 <MadCap:dropDownHotspot><a name="Duplicat"></a>Duplicate a Template</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. The drop-down expands to show a list of templates. </li>
-                    <li>Select the template type you wish to edit. For example, you can select Welcome Screen or Features. </li>
-                    <li>For the template you wish to duplicate, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon, then select <b>Duplicate Template</b>. <p><img src="../Resources/Images/ex_SC_duplicatetemplate.png" style="width: 151px;height: 91px;" /><br /></p></li>
-                    <li>If you wish to, you can edit the template name, as well as edit or update any of the template's settings. </li>
-                    <li>Click <b>Save</b>. </li>
-                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudTemplateDuplicate.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -110,8 +85,8 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. The drop-down expands to show a list of templates. </li>
-                    <li>Select the template type you wish to edit. For example, you can select Welcome Screen or Features. </li>
+                    <li>In the left sidebar menu of Solstice Cloud, click <b>Manage</b> &gt;&#160;<b>Templates</b>. A list of available configuration templates will appear in the sidebar.</li>
+                    <li>From the list of configuration categories that appears below Templates, select the category you wish to configure. </li>
                     <li>Click on the template you wish to edit. </li>
                     <li>Edit or update any of the template's settings. </li>
                     <li>Click <b>Save</b>. If the template has been applied to any Pods, clicking Save will apply any changes to those Pods. </li>
@@ -124,9 +99,9 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. The drop-down expands to show a list of templates. </li>
-                    <li>Select the template type you wish to edit. For example, you can select Welcome Screen or Features. </li>
-                    <li>For the template you wish to duplicate, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon, then select <b>Delete Template</b>. <br /><img src="../Resources/Images/ex_SC_deletetemplate.png" style="width: 155px;height: 104px;" /><br /></li>
+                    <li>In the left sidebar menu of Solstice Cloud, click <b>Manage</b> &gt;&#160;<b>Templates</b>. A list of available configuration templates will appear in the sidebar.</li>
+                    <li>From the list of configuration categories that appears below Templates, select the category you wish to configure. </li>
+                    <li>For the template you wish to delete, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon, then select <b>Delete Template</b>. <br /><img src="../Resources/Images/ex_SC_deletetemplate.png" style="width: 155px;height: 104px;" /><br /></li>
                     <li>In the confirmation pop-up that appears, click <b>Delete</b>.</li>
                 </ol>
             </MadCap:dropDownBody>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In the left sidebar menu of Solstice Cloud, click <b>Manage</b> &gt;&#160;<b>Templates</b>. A list of available configuration templates will appear in the sidebar.</li>
+            <li>From the list of configuration categories that appears below Templates, select the category you wish to configure. </li>
+            <li>Click <b>Create New Template</b>. </li>
+            <li>Enter a descriptive <b>Template Name</b>. For example, you could name the template by location (London Office) or appearance (Mountain Theme), as appropriate for its purpose. </li>
+            <li>Configure the settings you wish to be applied to the Solstice Pods using this template. </li>
+            <li>Click <b>Save</b>.</li>
+            <p class="note">Most settings can be configured collectively in templates, but you may occasionally see settings or values labeled "Unique to Pod" that will need to be set for each Pod individually. See <a href="../../Topics/Cloud-Management-Templates.htm#Apply_Settings_to_Individual_Pods">Apply Settings to Individual Pods</a> for details.</p>
+        </ol>
+    </body>
+</html>

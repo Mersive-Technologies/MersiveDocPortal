@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Before deploying Solstice, be sure to review the following topics:</p>
+        <ul>
+            <li><a href="../../Topics/General-Solstice-Introduction.htm">Solstice Overview</a>
+            </li>
+            <li><a href="../../Topics/General-Solstice-Setup.htm">Solstice Setup</a>
+            </li>
+            <li><a href="../../Topics/Admin-Network-Ports.htm">Network Requirements</a>
+            </li>
+        </ul>
+    </body>
+</html>

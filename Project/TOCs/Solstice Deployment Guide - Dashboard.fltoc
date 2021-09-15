@@ -29,7 +29,10 @@
     StartSection="false" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/Topics/Deploy-Display-Discovery.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    Link="/Content/Topics/Deploy-Room-Calendar.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Deploy-Display-Discovery.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/Topics/Deploy-Content-Sharing.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">

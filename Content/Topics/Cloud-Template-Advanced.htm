@@ -66,15 +66,15 @@
                 <MadCap:snippetBlock src="../Resources/Snippets/QoS_Windows_Client.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <MadCap:dropDown MadCap:conditions="Default.Exclude">
+        <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Schedule Daily Restart</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Schedule Daily Reboots</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Enable and schedule daily Pod software restarts to refresh the Pod’s memory usage and maximize system performance.</p>
+                <p>Enable and schedule daily Pod software reboots to refresh the Pod’s memory usage and maximize system performance. <MadCap:conditionalText MadCap:conditions="Default.5-4_Release">If users are connected and sharing content to a Pod at the scheduled reboot time, that Pod's reboot will be skipped until the next scheduled reboot time.</MadCap:conditionalText></p>
                 <ol>
-                    <li>Select the <b>Daily Restart Needed</b> checkbox.</li>
-                    <li>In the <b>Daily Restart Time</b> field, enter in the time you would like the Pods to restart each day. </li>
+                    <li>Select <b>Daily Reboot Enabled</b> to turn on and schedule daily reboots.</li>
+                    <li>In the <b>Daily Reboot Time</b> field, enter in the time you would like the Pods to restart each day. </li>
                     <li>Click <b>Save</b>. </li>
                 </ol>
             </MadCap:dropDownBody>

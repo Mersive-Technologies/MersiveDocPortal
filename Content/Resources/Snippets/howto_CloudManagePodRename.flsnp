@@ -6,7 +6,8 @@
         <ol>
             <li>To change the name of a Pod in Solstice Cloud, use the left sidebar menu to navigate to either <b>Manage &gt;&#160;Pods</b>  or <b>Manage &gt; Location</b>.</li>
             <li>In the Pods table that appears, find the Pod you want to rename and click the link in the Name column. The Pod's Configuration Settings page will open.<p class="note">If you manage a large number of Pods, you can reduce the number of Pods displayed in the table by entering all or part of the Pod's name in the search box, or by setting a filter.</p></li>
-            <li>In the box that shows the Pod's identifying details, enter the desired <b>Pod Name</b> in the text box and click <b>Save</b>.</li>
+            <li>In the box that shows the Pod's identifying details, enter a <b>Pod Name</b> in the text box that corresponds with the location or room the Pod is in. </li>
+            <li>Click <b>Save</b>.</li>
         </ol>
     </body>
 </html>

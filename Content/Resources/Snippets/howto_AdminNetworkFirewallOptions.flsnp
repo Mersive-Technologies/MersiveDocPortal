@@ -4,7 +4,7 @@
     </head>
     <body>
         <p class="note">The firewall options become available when both the Ethernet Settings and the Wireless Settings using WAP have been enabled. </p>
-        <p>The following firewall options are available on the Network tab of the Solstice Dashboard in the Firewall Settings section:</p>
+        <p>The following firewall options are available on the Network tab of Solstice Dashboard in the Firewall Settings section:</p>
         <ul>
             <li><b>Block all traffic between Wired and&#160;Wireless networks.</b> This allows an administrator to block all traffic between the Pod's Ethernet and wireless connections. </li>
             <li><b>Allow internet access to the wireless networks.</b> This option allows traffic only through ports 80 and 443.</li>

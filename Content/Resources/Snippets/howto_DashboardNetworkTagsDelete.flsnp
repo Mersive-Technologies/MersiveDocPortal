@@ -3,7 +3,7 @@
     <body>
         <p>If a search tag is no longer appropriate for a Solstice Pod display, it can be removed in Solstice Dashboard. </p>
         <ol>
-            <li>In the list of Your Solstice Instances in Dashboard, select the Pod you wish to remove a tag from.</li>
+            <li>In the list of Your Solstice Instances in Dashboard, select the Pod(s) you wish to remove a tag from.</li>
             <li>Go to the <b>Network</b> tab and scroll down to the <b>Display Search&#160;Tags</b> section. </li>
             <li>All the tags applied to the selected Pod will appear in the <b>Assigned Tags</b> box. Click the <img src="../Images/i_XonBlueSquare-ClearTags.png" alt="white X icon" /> to the right of the name of the tag you want to remove. The selected tag no longer appears in Assigned Tags.</li>
             <li>Click <b>Apply</b>. The Pod is updated to match the Assigned Tags list.</li>

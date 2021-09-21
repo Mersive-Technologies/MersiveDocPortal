@@ -4,16 +4,16 @@
     </head>
     <body>
         <ol>
-            <li><a name="OnboardKepler"></a>Open the Solstice Dashboard. </li>
-            <p class="note">If you do not have the Solstice Dashboard, you will first need to download the Dashboard, then import your Pods into the Dashboard before proceeding to step 2.<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Admin-GetStarted-Dashboard.htm" target="_blank">Learn more</a></MadCap:conditionalText></p>
-            <li>From the list of your Solstice instances, select the Pod displays you wish to connect to Solstice Cloud.</li>
-            <li>Go to the <b>Solstice Cloud</b> tab, then click <b>Connect</b>. A list of your selected displays appears.</li>
-            <li>If needed, select or remove additional displays, then click <b>Next</b>.</li>
+            <li><a name="OnboardKepler"></a>Open Solstice Dashboard. </li>
+            <p class="note">If you do not have the Solstice Dashboard app, you will first need to download Dashboard, then import your Pods into Dashboard before proceeding to step 2. <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Admin-GetStarted-Dashboard.htm" target="_blank">Learn more.</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-getstarted-dashboard.htm" target="_blank">Learn more.</a></MadCap:conditionalText></p>
+            <li>From the list of Your Solstice Instances, select the Solstice Pod displays you wish to manage in Solstice Cloud.<p class="note">Only Solstice displays running on Solstice Pod hardware can be added to and managed in Solstice Cloud. Use Solstice Dashboard to manage any instances of the Solstice Windows Display Software in use at your organization.</p></li>
+            <li>Go to the <b>Solstice Cloud</b> tab, then click <b>Connect</b>. A list of your selected Pod displays will appear.</li>
+            <li>If needed, you can remove or select additional Pod displays. When the list of Pods to be imported into Solstice Cloud is complete, click <b>Next</b>.</li>
             <li>Read through the terms of service. If you agree to the terms listed, select the <b>Agree</b> checkbox, then click <b>Next</b>.</li>
-            <li>Enter your email address, then click <b>Next</b>. If no Solstice Cloud account is associated with the email address entered, a prompt to create your password displays.</li>
-            <li>Enter a password, confirm the password, then click <b>Next</b>. A notification confirming the displays have been added to your Solstice Cloud account appears.</li>
+            <li>Enter your email address, then click <b>Next</b>. If no Solstice Cloud account is associated with the email address entered, you will be prompted to choose a password for your new Solstice Cloud.</li>
+            <li>Enter and confirm your new password, then click <b>Next</b>. You will see a notification confirming the addition of the selected Solstice Pod displays to your Solstice Cloud account.</li>
             <li>Click anywhere on the notification to proceed.</li>
-            <li>Click the <b>My Account</b> link to be directed to the <a href="https://cloud.mersive.com/" target="_blank">Solstice Cloud login page</a> via a web browser.</li>
+            <li>Click <b>My Account</b> to be directed to the <a href="https://cloud.mersive.com/" target="_blank">Solstice Cloud login page</a> in your default web browser.</li>
         </ol>
     </body>
 </html>

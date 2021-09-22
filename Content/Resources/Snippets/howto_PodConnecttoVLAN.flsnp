@@ -4,7 +4,7 @@
         <p>In addition to handling the usual untagged Ethernet traffic on the default VLAN for the connected switch port, Solstice Pods can now communicate using tagged traffic over the wired Ethernet interface on up to three additional VLANs. </p>
         <p class="note">A default VLAN for the physical switch port must be configured within the switch port’s settings. This default VLAN should be configured as the primary Ethernet network in the Dashboard.</p>
         <ol>
-            <li>In Solstice Dashboard, select the Solstice Pods you wish to connect to one or more VLANs from the list of My Solstice Instances. </li>
+            <li>In Solstice Dashboard, select the Solstice Pod(s) you wish to connect to one or more VLANs from the list of My Solstice Instances. </li>
             <li>Go to the <b>Network</b> tab.</li>
             <li>Enable <b>VLAN&#160;Settings</b>.</li>
             <li>In the <b>Label</b> field, enter the name of the network that you wish for users to see. </li>

@@ -3,7 +3,7 @@
     <body>
         <ol>
             <li>Plug a network-connected Ethernet cable into the Ethernet port on the back of the Pod(s).</li>
-            <li>In Solstice Dashboard, select a Pod from the list of Your Solstice Instances. </li>
+            <li>In Solstice Dashboard, select the Pod or Pods to be configured from the list of Your Solstice Instances. </li>
             <li>Go to the <b>Network</b> tab and ensure <b>Ethernet</b> is enabled.</li>
             <li>Change the&#160;<b>Network Name</b> to the one that users will see in their device's list of available networks to connect to. </li>
             <li>If you wish to utilize DNS&#160;resolution  and have added a DNS&#160;entry in your DNS&#160;server that resolves to the Pod's IP&#160;address, you can enter the DNS&#160;entry (for example, hostname.domain) in the <b>DNS&#160;Hostname</b> field. This will display the DNS&#160;hostname on the Pod's welcome screen instead of the its IP&#160;address, which allows users to type the hostname into a browser to easily download the Solstice app. <MadCap:conditionalText MadCap:conditions="Default.Exclude">For more information on DNS&#160;resolution, see <a href="../../Topics/Admin-DNS-Resolution.htm">DNS&#160;Resolution</a>.</MadCap:conditionalText></li>

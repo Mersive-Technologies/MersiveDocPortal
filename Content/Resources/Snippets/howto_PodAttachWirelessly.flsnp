@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>In Solstice Dashboard, select one or more Pods from the list of Your Solstice Instances.</li>
+            <li>In Solstice Dashboard, select the Pod or Pods to be configured from the list of Your Solstice Instances.</li>
             <li>Go to the <b>Network</b> tab.</li>
             <li>Enable <b>Wireless Settings</b>.</li>
             <li>	Select <b>Attached to Existing Network</b> radio button.</li>

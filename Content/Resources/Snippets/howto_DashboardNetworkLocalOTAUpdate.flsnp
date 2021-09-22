@@ -5,11 +5,10 @@
         <ol>
             <li>Download the Local OTA (.zip) file from <a href="https://www.mersive.com/download-admin/#solstice-pod-updates" target="_blank">Solstice Download Center &gt; Admin Downloads &gt; Pod Updates</a>.</li>
             <li>Extract the .zip file and place its contents on an internal web server that can respond to https requests. This file contains all the files needed to update Solstice Pods and will overwrite any previous update package when extracted into the same directory.</li>
-            <p class="tip">To check that the update is accessible, point a web browser at the Solstice.apk file on the internal web server. If the file automatically downloads, the update should be accessible via Dashboard. If the file does not begin to download, you may need to adjust your web server’s handling of .apk files.</p>
+            <p class="tip">To check that the update is accessible, point a web browser at the Solstice.apk file on the internal web server. If the file automatically downloads, the update should be accessible via Solstice Dashboard. If the file does not begin to download, you may need to adjust your web server’s handling of .apk files.</p>
         </ol>
-        <p>Configure Dashboard to access the OTA files on the local web server. This initial configuration only needs to be done once.</p>
+        <p>Configure Solstice Dashboard to access the OTA files on the local web server. This initial configuration only needs to be done once.</p>
         <ol>
-            <li>Ensure the Pod is connected to a network with access to internal web server the Solstice OTA update file was extracted to.</li>
             <li>In Solstice Dashboard, go to the <b>Licensing</b> tab.</li>
             <li>Under Software and License Information, select <b>Use web server for upgrades</b> from the menu.</li>
             <li>Go to the <b>Network</b> tab &gt; <b>Local Web Server</b> section.</li>
@@ -19,8 +18,9 @@
         </ol>
         <p>Have Dashboard check for available updates on your local web server and install the update on your Pods.</p>
         <ol>
+            <li>Ensure the Pods to be updated via Local OTA are connected to a network with access to the internal web server the Solstice OTA update file was extracted to.</li>
             <li>In Solstice Dashboard, go to the <b>Licensing</b> tab and click <b>Check for Updates</b>. Dashboard will use the local web server location defined above to check for updates.</li>
-            <li>If an update is available, select the Pods you wish to update and click <b>Install Update.</b></li>
+            <li>If an update is available, select the Pod(s) you wish to update and click <b>Install Update.</b></li>
         </ol>
     </body>
 </html>

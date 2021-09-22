@@ -33,7 +33,7 @@
             <MadCap:dropDownBody>
                 <p class="note">If a Pod is set to WAP mode, it cannot be simultaneously attached to a wireless network or used for Miracast discovery.</p>
                 <ol>
-                    <li>In the Dashboard, select the Pod(s) from the list of Your Solstice Instances.</li>
+                    <li>In Solstice Dashboard, select the Pod(s) to be configured from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Network</b> tab.</li>
                     <li>Enable <b>Wireless Settings</b>.</li>
                     <li>	Select <b>Wireless Access Point</b> radio button.</li>
@@ -61,7 +61,7 @@
                 <p>Previously, when this setting was enabled, it allowed the Pod to restart networking every ten minutes. However, this feature was deprecated and will no longer work as of Solstice 5.3.2. The setting will also be removed in an upcoming release.</p>
                 <p>Mersive recommends all customers disable this feature as soon as it is convenient to do so. To disable the Gateway Check:</p>
                 <ol>
-                    <li>In the Dashboard, select the Pods from the list of Your Solstice Instances.</li>
+                    <li>In Solstice Dashboard, select the Pod(s) to be configured from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Network</b> tab &gt;&#160;<b>Gateway Check</b> section.</li>
                     <li>Uncheck the <b>Use gateway check</b> box.</li>
                     <li>Click <b>Apply</b>. </li>
@@ -75,10 +75,24 @@
             <MadCap:dropDownBody>
                 <p>This setting allows you to specify the base ports over which Solstice will transport its network traffic. Solstice will use the port defined in this field as well as the next two consecutive ports, plus ports 80 and 443 for web configuration and client-server traffic. The additional communication ports used will be listed to the right of the Solstice Base Port field.</p>
                 <ol>
-                    <li>In the Dashboard, select the Pods from the list of Your Solstice Instances.</li>
+                    <li>In SolsticeDashboard, select the Pod(s) to be configured from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Network</b> tab &gt;&#160;<b>Communication Ports</b> section.</li>
                     <li>In the <b>Solstice Base Port</b> field, enter in the base network communication port you wish for Solstice to use.</li>
                     <li>Verify  the <b>Streaming Port</b> and <b>Notification Port</b> listed to the right of the base port field. </li>
+                    <li>Click <b>Apply</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.5-4_Release">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable LLDP for POE Management</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_AdminEnableLLDP.flsnp" />
+                <ol>
+                    <li>In Solstice Dashboard, select the Pod(s) you want to enable LLDP&#160;for from the list of Your Solstice Instances.</li>
+                    <li>Go to the <b>Network</b> tab &gt;&#160;<b>Link Layer Discovery Protocol (LLDP)</b> section.</li>
+                    <li>To enable LLDP for POE&#160;power management for the selected Pods, check <b>Enable reception and transmission of LLDP&#160;frames on all networks</b> and   <b>Use LLDP&#160;for POE&#160;Power Negotiation</b>. </li>
                     <li>Click <b>Apply</b>. </li>
                 </ol>
             </MadCap:dropDownBody>
@@ -90,7 +104,7 @@
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/QoS_overview.flsnp" />
                 <ol>
-                    <li>In the Dashboard, select the Pods from the list of Your Solstice Instances.</li>
+                    <li>In Solstice Dashboard, select the Pod(s) to be configured from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Network</b> tab &gt;&#160;<b>Quality of Service Packet Headers</b> section.</li>
                     <li>Select the <b>Implement QoS for Solstice Traffic</b> option.</li>
                     <li>In the corresponding fields that appear below, enter the 6-digit binary QoS video and audio stream bit settings. <p>Mersive recommends you that use the DSCP Pool 1 Codepoints defined by the IETF.</p></li>
@@ -114,7 +128,7 @@
             <MadCap:dropDownBody>
                 <p>By default, Solstice utilizes UDP broadcast packets to enable discovery. Broadcast discovery is only recommended for single network configurations that do not use a switch and that allow UDP&#160;broadcast traffic. If you do not wish for Solstice to utilize broadcast discovery, it can be disabled. However, it is recommended that you utilize<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"> <a href="SDS-Introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Solstice Discovery Service (SDS)</a></MadCap:conditionalText> instead.</p>
                 <ol>
-                    <li>In the Dashboard, select the Pods from the list of Your Solstice Instances.</li>
+                    <li>In Solstice Dashboard, select the Pod(s) to be configured from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Network</b> tab &gt;&#160;<b>Display Discovery</b> section.</li>
                     <li>Deselect the <b>Broadcast display name on the network</b> option.</li>
                     <li>Click <b>Apply</b>. </li>
@@ -129,7 +143,7 @@
                 <p>Provides a method to configure Solstice displays deployed behind a secure web proxy to still reach the licensing and over-the-air (OTA) update servers. Options to enable the web proxy for both http and https traffic are available.</p>
                 <ol>
                     <li>
-                        <p>In the Dashboard, select the Pods from the list of Your Solstice Instances.</p>
+                        <p>In Solstice Dashboard, select the Pod(s) to be configured from the list of Your Solstice Instances.</p>
                     </li>
                     <li>Go to the <b>Network</b> tab &gt;&#160;<b>Web Server Proxy</b> section.</li>
                     <li>Select the <b>Use Web Proxy</b> checkbox.</li>
@@ -146,7 +160,7 @@
                 <MadCap:dropDownHotspot>Use a Local Web Server for Software Updates</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>This option can be used to point the Pod to a local web server that software update files will be installed on and pushed out from using the Local OTA update method. For more information on this and other update options, see<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"> <a href="Admin-Updating-Solstice.htm" target="_blank">Updating Solstice to the Latest Version</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="https://documentation.mersive.com/content/topics/admin-updating-solstice.htm">Updating Solstice to the Latest Version</a>.</MadCap:conditionalText></p>
+                <p>Use this option to update Solstice Pods using the Local OTA (over the air) method by first placing the OTA software update files on a local web server and then pointing Solstice Dashboard at that server location for updates. For more information on this and other update options, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Updating-Solstice.htm" target="_blank">Updating Solstice to the Latest Version</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-updating-solstice.htm">Updating Solstice to the Latest Version</a>.</MadCap:conditionalText></p>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_DashboardNetworkLocalOTAUpdate.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -168,7 +182,7 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Add Search Tags to Solstice Pod Displays</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Add Search Tags to Solstice Displays</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_DashboardNetworkTagsAdd.flsnp" />
@@ -187,5 +201,6 @@
         </p>
         <p MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm">Solstice Discovery Service (SDS)</a>
         </p>
+        <p MadCap:conditions="Default.ScreenOnly">&#160;</p>
     </body>
 </html>

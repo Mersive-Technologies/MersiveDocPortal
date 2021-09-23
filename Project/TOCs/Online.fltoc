@@ -41,10 +41,10 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Cloud-Apply-Templates.htm" />
       <TocEntry
-        Title="[%=System.LinkedTitle%]"
+        Title="Step 9: Validate Your Solstice Deployment"
         Link="/Content/Topics/Deploy-Cloud-Validate-Deployment.htm"></TocEntry>
       <TocEntry
-        Title="Other Considerations"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Other-Considerations.htm" />
     </TocEntry>
     <TocEntry
@@ -75,10 +75,10 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Content-Sharing.htm"></TocEntry>
       <TocEntry
-        Title="[%=System.LinkedTitle%]"
+        Title="Step 9: Validate Your Solstice Deployment"
         Link="/Content/Topics/Deploy-Validate-Deployment.htm"></TocEntry>
       <TocEntry
-        Title="Other Considerations"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Deploy-Other-Considerations.htm" />
     </TocEntry>
   </TocEntry>

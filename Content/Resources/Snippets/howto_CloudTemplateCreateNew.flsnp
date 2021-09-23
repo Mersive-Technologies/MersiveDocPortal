@@ -8,7 +8,7 @@
             <li>Enter a descriptive <b>Template Name</b>. For example, you could name the template by location (London Office) or appearance (Mountain Theme), as appropriate for its purpose. </li>
             <li>Configure the settings you wish to be applied to the Solstice Pods using this template. </li>
             <li>Click <b>Save</b>.</li>
-            <p class="note">Most settings can be configured collectively in templates, but you may occasionally see settings or values labeled "Unique to Pod" that will need to be set for each Pod individually. See <a href="../../Topics/Cloud-Management-Templates.htm#Apply_Settings_to_Individual_Pods">Apply Settings to Individual Pods</a> for details.</p>
+            <p class="note">Most settings can be configured collectively in templates, but you may occasionally see settings or values labeled "Unique to Pod" that will need to be set for each Pod individually. See <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Cloud-Management-Templates.htm#Apply_Settings_to_Individual_Pods" target="_blank">Apply Settings to Individual Pods</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-management-templates.htm#Apply_Settings_to_Individual_Pods">Apply Settings to Individual Pods</a></MadCap:conditionalText> for details.</p>
         </ol>
     </body>
 </html>

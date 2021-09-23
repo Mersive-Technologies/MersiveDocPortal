@@ -5,14 +5,14 @@
     <body>
         <h1>Step 4: Network and Base Security Settings        </h1>
         <p>Mersive recommends setting up templates with the following network and security configurations for your Solstice Pod displays. These settings will allow users to quickly connect and share content to the displays in Pod-enabled rooms while still maintaining network security standards for larger, centrally-managed Pod deployments. Small deployments, collaboration hotspots, and open-to-public use of Solstice Pods are also perfectly valid. </p>
-        <p>IT administration and Network Security should be involved in designing an appropriate deployment, and deployments can differ based on network configuration specifics and policies. Ensure you have reviewed the <a href="Admin-Network-Ports.htm" target="_blank">Network Requirements</a>. For additional security configurations, see <a href="Cloud-Template-Security.htm" target="_blank">Solstice Cloud: Security Template</a>. </p>
+        <p>IT administration and Network Security should be involved in designing an appropriate deployment, and deployments can differ based on network configuration specifics and policies. Ensure you have reviewed the <a href="Admin-Network-Ports.htm" target="_blank">Network Requirements</a>. For additional security configurations, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Security.htm" target="_blank">Solstice Cloud: Security Template</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-security.htm">Solstice Cloud: Security Template</a>.</MadCap:conditionalText></p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Base Network and Security Settings in Ethernet Template</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>Solstice is designed to leverage existing Ethernet networks to support collaboration in meeting rooms and learning spaces. Mersive recommends connecting your Pod to Ethernet for best performance. </p>
-                <p> These steps outline how to configure basic Ethernet network settings to apply across your deployment. For more about advanced Ethernet settings, see <a href="Cloud-Template-Ethernet.htm" target="_blank">Solstice Cloud:&#160;Ethernet Template</a>. </p>
+                <p> These steps outline how to configure basic Ethernet network settings to apply across your deployment. For more about advanced Ethernet settings, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Ethernet.htm" target="_blank">Solstice Cloud: Ethernet Template</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-ethernet.htm">Solstice Cloud: Ethernet Template</a>.</MadCap:conditionalText></p>
                 <ol>
                     <li>In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Ethernet</b>.</li>
                     <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New Ethernet Template</b> and enter a descriptive <b>Template Name</b>. </li>
@@ -20,8 +20,7 @@
                     <li>Change the&#160;<b>Network Name</b> to the one that users will see in the list of available networks on their device so that it is easily recognizable.</li>
                     <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow administrative configuration access</b> checkbox.</li>
                     <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
-                    <li>If you selected Static IP, enter the <b>Gateway</b>, <b>Network Prefix Length</b> and <b>DNS 1</b> fields. Because it is unique to each Pod, you will enter the IP Address after this template is applied to a Pod.</li>
-                    <p class="note">Note that the IP&#160;Address is unique to each Pod, and can be added only after this template is applied to a Pod. This is covered in Step 5: Applying Individual Pod Settings.</p>
+                    <li>If you selected Static IP, enter the <b>Gateway</b>, <b>Network Prefix Length</b>, and <b>DNS 1</b> fields. Because it is unique to each Pod, you will enter the IP Address after this template is applied to a Pod.<p class="note">Note that the  IP Address is unique to each Pod and needs to be configured for every Pod. Once this template is applied to your Pods, you be will prompted to enter this information for each Pod the template is applied to. Also see <a href="Deploy-Cloud-Apply-Templates.htm">Step 8: Apply Unique-to-Pod Settings</a>.</p></li>
                     <li>Click <b>Save</b>.</li>
                 </ol>
             </MadCap:dropDownBody>
@@ -37,7 +36,7 @@
                     <li>Attaching the Pod to a wireless network</li>
                     <li>Disabling&#160;WAP&#160;mode</li>
                 </ol>
-                <p>If you are not attaching the Pod to a wireless network, Mersive strongly recommends following the steps for Option 2 below to <a href="#Disable_WAP">disable WAP mode</a>. For more about advanced WiFi settings, see <a href="Cloud-Template-WiFi.htm" target="_blank">Solstice Cloud:&#160;WiFi Template</a>.</p>
+                <p>If you are not attaching the Pod to a wireless network, Mersive strongly recommends following the steps for Option 2 below to <a href="#Disable_WAP">disable WAP mode</a>. For more about advanced WiFi settings, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-WiFi.htm" target="_blank">Solstice Cloud: WiFi Template</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-wifi.htm">Solstice Cloud: WiFi Template</a>.</MadCap:conditionalText></p>
                 <p><b>Option 1. Attach the Pod to a Wireless Network</b>
                 </p>
                 <ol>
@@ -49,13 +48,13 @@
                     <li>Select&#160;<b>Existing Network</b>.  This option connects the Pod to an existing network wirelessly. </li>
                     <li>Enter the network name in the <b>SSID</b> field.</li>
                     <li>In the <b>Security Type</b> drop-down, choose the appropriate option:&#160;<b>Open</b>, <b>WEP</b>, <b>WPA/WPA2</b>, or <b>802.1x EAP</b>. </li>
-                    <p class="note">If you chose <b>802.1x EAP</b>, see <a href="Cloud-Template-WiFi.htm" target="_blank">Solstice Cloud:&#160;WiFi Template</a> for more information on this configuration. &#160;</p>
+                    <p class="note">If you chose <b>802.1x EAP</b>, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-WiFi.htm" target="_blank">Solstice Cloud: WiFi Template</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-wifi.htm">Solstice Cloud: WiFi Template</a></MadCap:conditionalText> for more information on this configuration. &#160;</p>
                     <li>
                 If prompted, enter the <b>Password</b> for this network.</li>
                     <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.
 </li>
                     <li>If you selected Static IP, enter the <b>Gateway</b>, <b>Network Prefix Length</b> and <b>DNS 1</b> fields.  </li>
-                    <p class="note">Note that the  IP Address and DNS Hostname are unique to each Pod and need to be configured for every Pod. Once this template is applied to your Pods, you be will prompted to enter this information for each Pod the template is applied to.  </p>
+                    <p class="note">Note that the  IP Address and DNS Hostname are unique to each Pod and need to be configured for every Pod. Once this template is applied to your Pods, you be will prompted to enter this information for each Pod the template is applied to. Also see <a href="Deploy-Cloud-Apply-Templates.htm">Step 8: Apply Unique-to-Pod Settings</a>.</p>
                     <li>Click <b>Save</b>.          </li>
                 </ol>
                 <p style="font-weight: bold;">Option 2. Disable&#160;WAP  (Wireless Access Point)&#160;Mode<a name="Disable_WAP"></a></p>
@@ -73,7 +72,7 @@
                 <MadCap:dropDownHotspot>Base Security Settings in Security Template</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Before deploying your Solstice Pods, certain security baselines should be configured to harden the security of your deployment. The following are the base security settings that Mersive recommends.  </p>
+                <p>Before deploying your Solstice Pods, certain security baselines should be configured to harden the security of your deployment. The following are the base security settings that Mersive recommends. For more about advanced Security settings, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Security.htm" target="_blank">Solstice Cloud: Security Template</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-security.htm">Solstice Cloud: Security Template</a>.</MadCap:conditionalText> </p>
                 <ol>
                     <li>In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Security</b>.</li>
                     <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New Security Template</b> and enter a descriptive <b>Template Name</b>. </li>
@@ -91,7 +90,7 @@
                 <MadCap:dropDownHotspot>Base Security Settings in Features Template</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>This template contains the option to require meeting participants to enter screen key when connecting to Solstice collaboration sessions for added security. For more about using this template to configure content sharing options, see <a href="Deploy-Cloud-Content-Sharing.htm">Step 6: Set Content Sharing Options</a>.</p>
+                <p>This template contains the option to require meeting participants to enter screen key when connecting to Solstice collaboration sessions for added security. You will also use this template for additional configuration in <a href="Deploy-Cloud-Content-Sharing.htm">Step 7: Set Content Sharing Options</a>. For more about advanced Features settings, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Features.htm" target="_blank">Solstice Cloud: Features Template</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-features.htm">Solstice Cloud: Features Template</a>.</MadCap:conditionalText></p>
                 <ol>
                     <li>In the left sidebar navigation panel of Solstice Cloud,   click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Features</b>. </li>
                     <li>Either open the <b style="font-style: italic;">Default</b> template, or click <b>Create New Features Template</b> and enter a descriptive <b>Template Name</b>. </li>

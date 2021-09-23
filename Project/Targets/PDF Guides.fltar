@@ -9,19 +9,19 @@
   ConditionTagExpression="include[Default.PrintOnly], exclude[Default.5-4_Release or Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
-  OutputFolder="C:\Users\mdumas\Documents\HTML5\PDF"
+  MasterToc="/Project/TOCs/Solstice Deployment Guide - Cloud.fltoc"
+  OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   InjectBookHeadings="true"
-  OutputFile="SolsticeDeploymentGuide">
+  OutputFile="SolsticeCloudDeploymentGuide">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="false"
+    GenerateTOCProxy="true"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice Deployment Guide" />
+    Title="Solstice Cloud Deployment Guide" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

@@ -96,12 +96,16 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Connect to Display with Solstice App</MicroContentPhrase>
+        <MicroContentPhrase>connect to Solstice display with Solstice app</MicroContentPhrase>
+        <MicroContentPhrase>connect to Solstice Pod in Solstice user app</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>How to Connect to a Solstice Display</xhtml:h4>
+                    <xhtml:h4>How to Connect to a Display with the Solstice App</xhtml:h4>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_UserSolsticeAppBeforeConnect.flsnp" />
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserAppConnectToDisplay.flsnp" />
+                    <xhtml:p>For more about using the Solstice app to share a wide variety of content to a Solstice display, see <xhtml:a xhtml:href="../Topics/User-Sharing-Content.htm">Sharing Content Using the Solstice App</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -193,14 +197,16 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>change pod date and time</MicroContentPhrase>
-        <MicroContentPhrase>set pod date and time</MicroContentPhrase>
+        <MicroContentPhrase>change Solstice Pod date time and time zone in Solstice Cloud</MicroContentPhrase>
+        <MicroContentPhrase>setting Pod date time and timezone</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>How to Change Pod Date and Time</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>.</xhtml:p>
+                    <xhtml:h4>How to Change Date and Time for Solstice Pods in Solstice Cloud</xhtml:h4>
+                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>. Either edit an existing or create a new Time/Locale template.</xhtml:p>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudTimeLocalePodDateTime.flsnp" />
+                    <xhtml:p>This date/time configuration will be applied to any Pods assigned to use the selected Time/Locale template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Time-Locale.htm">Solstice Cloud: Time/Locale Template</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -233,26 +239,34 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>add admin password to solstice pod settings</MicroContentPhrase>
-        <MicroContentPhrase>configure admin password for solstice pod settings</MicroContentPhrase>
+        <MicroContentPhrase>password protect Solstice Pod configurations in Solstice Cloud</MicroContentPhrase>
+        <MicroContentPhrase>configure administrator password for Solstice Pod settings</MicroContentPhrase>
+        <MicroContentPhrase>set admin password</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>How to Add Admin Password to Solstice Pod Settings</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>.</xhtml:p>
+                    <xhtml:h4>How to Password Protect Solstice Configurations in Solstice Cloud</xhtml:h4>
+                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar  to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>. Either edit an existing or create a new Security template.</xhtml:p>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudSecurityPasswordProtectConfigs.flsnp" />
-                    <xhtml:p>A message displays confirming that the Pod configuration has been updated.</xhtml:p>
+                    <xhtml:p>This configuration change will be applied to any Pods assigned to use the selected Security template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Security.htm">Solstice Cloud: Security Template</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>create a solstice cloud account and onboard pods</MicroContentPhrase>
+        <MicroContentPhrase>create Solstice Cloud account and onboard Pods</MicroContentPhrase>
+        <MicroContentPhrase>import Solstice Pods into Solstice Cloud</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
+                    <xhtml:h4>Creating a Solstice Cloud Account and Onboarding Pods</xhtml:h4>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudPodOnboardingMasterAccount.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudPodOnboardingRequirements.flsnp" />
                     <xhtml:h4>How to Create a Solstice Cloud Account and Onboard Pods</xhtml:h4>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCreateAccountOnboardPods.flsnp" />
+                    <xhtml:p>For more about using Solstice Cloud to manage your organization's Solstice deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Introduction.htm">Get Started with Solstice Cloud</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -291,27 +305,32 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Change the Pod's Language Setting</MicroContentPhrase>
+        <MicroContentPhrase>change language for Solstice Pod in Solstice Cloud</MicroContentPhrase>
+        <MicroContentPhrase>setting Solstice display language</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>How to Change the Pod's Language Setting</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>.</xhtml:p>
+                    <xhtml:h4>How to Change the Language for Solstice Pods in Solstice Cloud</xhtml:h4>
+                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>. Either edit an existing or create a new Time/Locale template.</xhtml:p>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudTimeLocalePodLanguage.flsnp" />
+                    <xhtml:p>This language configuration will be applied to any Pods assigned to use the selected Time/Locale template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Time-Locale.htm">Solstice Cloud: Time/Locale Template</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Add digital signage feed</MicroContentPhrase>
-        <MicroContentPhrase>enable digital signage feed</MicroContentPhrase>
+        <MicroContentPhrase>add digital signage feed to Solstice display in Solstice Cloud</MicroContentPhrase>
+        <MicroContentPhrase>enable digital signage feed on Solstice Pod</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>How to Add Digital Signage Feed</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Digital Signage</xhtml:b>.</xhtml:p>
+                    <xhtml:h4>How to Add A Digital Signage Feed to a Solstice Display</xhtml:h4>
+                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Digital Signage</xhtml:b>. Either edit an existing or create a new Digital Signage template.</xhtml:p>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_DigitalSignageIntro.flsnp" />
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudDigitalSignageEnable.flsnp" />
-                    <xhtml:p>A message displays confirming that the Pod configuration has been updated.</xhtml:p>
+                    <xhtml:p>This configuration will be applied to any Pods assigned to use the selected Digital Signage template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Digital-Signage.htm">Solstice Cloud: Digital Signage Template</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>
@@ -331,13 +350,16 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Add your personal calendar to Solstice app</MicroContentPhrase>
-        <MicroContentPhrase>Integrate your O365 calendar with Solstice App</MicroContentPhrase>
+        <MicroContentPhrase>add a personal calendar to Solstice app</MicroContentPhrase>
+        <MicroContentPhrase>integrate personal Office 365 calendar with Solstice app</MicroContentPhrase>
+        <MicroContentPhrase>add O365 calendar in user app</MicroContentPhrase>
         <MicroContentResponse>
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
-                    <xhtml:h4>Add Your Personal Calendar to Your Solstice App</xhtml:h4>
+                    <xhtml:h4>Add Your Personal Calendar to Your Solstice Desktop App</xhtml:h4>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserAppIntegratePersonalCalendar.flsnp" />
+                    <xhtml:p>For more details about using Solstice Conference to share Solstice collaboration resources with a video conference, see <xhtml:a xhtml:href="../Topics/Solstice-Conference-How-to-Use.htm">How to Use Solstice Conference</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>

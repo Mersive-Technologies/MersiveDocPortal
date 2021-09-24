@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h3>Requirements</h3>
+        <ul>
+            <li>To onboard Pods into Solstice Cloud, Pods must have internet access and be running Solstice version 3.4 or later.</li>
+            <li>Deployment management capabilities are available for every Solstice Pod on version 4.5 or later.</li>
+            <li>Standard Solstice Cloud capabilities, including deployment management, are available at no charge for every Pod in perpetuity.</li>
+            <li>Full Solstice Cloud capabilities, including deployment monitoring and analytics, require current Solstice Subscription.</li>
+        </ul>
+    </body>
+</html>

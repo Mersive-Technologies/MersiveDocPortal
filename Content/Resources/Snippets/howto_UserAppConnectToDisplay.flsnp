@@ -4,11 +4,11 @@
     </head>
     <body>
         <ol>
-            <li>Open the Solstice app. A list of Solstice Pod displays you have previously connected to or that are available via display discovery (if enabled for your Solstice deployment) will appear.<p><img src="../Images/ex_UserSharingDiscoveryConnect.png" style="width: 600px;height: auto;" /><br /></p></li>
+            <li>Open the Solstice app. A list of Solstice displays you have previously connected to or that are available via display discovery (if enabled for your Solstice deployment) will appear.<p><img src="../Images/ex_UserSharingDiscoveryConnect.png" style="width: 600px;height: auto;" /><br /></p></li>
             <li>Click the name of the desired Solstice display to connect.</li>
             <li>To find a specific display in the discovered list, you can:<ul><li>Search for a specific display by name in the search bar.</li><li>Click <b>Tags</b> to filter the list of displays by assigned tags (Enterprise Edition only).</li></ul></li>
-            <li>If prompted, enter in the screen key listed on the display.</li>
-            <li>The user app will join the collaboration session with full media posting and control rights.</li>
+            <li>If prompted, enter the screen key that appears on the display.</li>
+            <li>By default, the user app joins the collaboration session with full media posting and control rights.</li>
         </ol>
     </body>
 </html>

@@ -5,14 +5,7 @@
         <p> <MadCap:expanding MadCap:conditions="Default.ScreenOnly"><MadCap:expandingHead>Watch Overview Video</MadCap:expandingHead><MadCap:expandingBody><br /><br /><iframe width="550" height="310" src="https://www.youtube.com/embed/XZ1e6G8BBGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe></MadCap:expandingBody></MadCap:expanding></p>
         <p MadCap:conditions="Default.PrintOnly">
             <img src="../Images/ex_home.png" style="width: 682px;height: 403px;" /> </p>
-        <p>Your organization can start using Solstice Cloud at any time by quickly onboarding your Solstice Pods into the Solstice Cloud management portal from the Solstice Dashboard app. (See onboarding directions below. Note that Pods must have internet access to be onboarded into Solstice Cloud.) The first time you onboard Pods into Solstice Cloud from Solstice Dashboard, you will be prompted to create a Solstice Cloud account, which will be your organization's master account for Solstice Cloud management. </p>
-        <p> Only a single master Solstice Cloud account is needed per organization, and it is strongly recommended you import all your organization's Solstice Pods into Solstice Cloud using this account. You can also use your master Solstice Cloud account to invite other users to join Solstice Cloud management for your organization in a variety of user roles. Inviting any additional users from the master account allows those users  to access the same set of Pods and data for your organization. For more information, see <a href="../../Topics/Cloud-Roles-Permissions.htm" target="_blank">Roles and Permissions</a>. </p>
-        <h3>Requirements</h3>
-        <ul>
-            <li>To onboard Pods into Solstice Cloud, Pods must have internet access and be running Solstice version 3.4 or later.</li>
-            <li>Deployment management capabilities are available for every Solstice Pod on version 4.5 or later.</li>
-            <li>Standard Solstice Cloud capabilities, including deployment management, are available at no charge for every Pod in perpetuity.</li>
-            <li>Full Solstice Cloud capabilities, including deployment monitoring and analytics, require current Solstice Subscription.</li>
-        </ul>
+        <MadCap:snippetBlock src="info_CloudPodOnboardingMasterAccount.flsnp" />
+        <MadCap:snippetBlock src="info_CloudPodOnboardingRequirements.flsnp" />
     </body>
 </html>

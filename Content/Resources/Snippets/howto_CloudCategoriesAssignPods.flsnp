@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="tip">As much as possible, choose the best category for each Pod from the beginning, as changing the assigned category of a Pod can affect the accuracy of historical data.</p>
+        <ol>
+            <li>In the left sidebar of Solstice Cloud, select <b>Categories</b>. Any Solstice Pods that have been imported into Solstice Cloud for your organization will appear in the Category Manager table.</li>
+            <li>To select which previously added categories display in the Category Manager table, click the expand <img src="../Images/i_expand.png" />  icon next to Manage Columns.</li>
+            <li>Check the boxes for categories you wish to view. The selected categories will appear as columns in the table.</li>
+            <li>To add an individual Solstice Pod to a category:<ol style="list-style-type: lower-alpha;"><li>In the row for the desired Pod, click the down arrow in the corresponding category column and select an option from the list that appears. Each Pod can be assigned to only one option per category.</li></ol></li>
+            <li>To add Solstice Pods to categories in batches:<ol style="list-style-type: lower-alpha;"><li>Check the box to the left of the Name for each Pod to be assigned to the same category option. Check the box at the top of this column to select all the Pods in the table.<p class="tip">Start typing in the Search box at the top of the table to filter for Pods with names that contain the matching letters or words.</p></li><li>In the row for any of the selected Pods, choose the desired option from the desired category column. </li><li>Click <b>Save</b> to confirm you want to assign the category option for the number of Pod displays you selected and return to the Category Manager table.</li></ol></li>
+            <li>Repeat steps 3–5 to assign groups of Pods to other category options.</li>
+        </ol>
+    </body>
+</html>

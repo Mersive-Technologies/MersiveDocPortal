@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>This setting enables LLDP support within Solstice 5.4 and later so a POE switch and Gen3 Solstice Pods can coordinate to signal and negotiate available power.</p>
+        <p>This setting enables LLDP support within Solstice 5.4 and later that allows a PoE switch and a Gen3 Solstice Pod to signal and negotiate available power.</p>
     </body>
 </html>

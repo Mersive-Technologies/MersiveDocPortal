@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In the left sidebar of Solstice Cloud, select <b>Categories</b>. Any Solstice Pods that have been imported into Solstice Cloud for your organization will appear in the Category Manager table.</li>
+            <li>At the top of the screen, click the left <img src="../Images/I_scrollLeft.png" style="max-width: 100%;" /> and right <img src="../Images/I_scrollRight.png" style="max-width: 100%;" /> icons to find the desired category, then click anywhere on the pie chart to view details of that category.</li>
+            <li>Click the pencil icon <img src="../Images/i_editCategory.png" style="width: 29px;height: 30px;" /> above the category options to access tools to edit the options, change the category name, or delete the category.</li>
+            <li>&#160;To change the name of the selected category:<ol style="list-style-type: lower-alpha;"><li>Click the category name and select <b>Rename Category</b>. </li><li>Click <b>Done</b> when finished making changes to view the updates to the selected category.</li><li>Click <b>Back</b> to return to the full list of categories and overview charts.</li></ol></li>
+            <li>To add a category option:<ol style="list-style-type: lower-alpha;"><li>Click <b>Add new...</b> in the top row of the options table. </li><li>Enter the name of the new category option and click the check icon <img src="../Images/ex_CloudCategoriesEditCategoryCheck.png" style="width: 30px;height: auto;" /> to save the new category option. Click the gray X icon <img src="../Images/ex_CloudCategoriesEditCategoryX.png" style="width: 30px;height: auto;" alt="" /> to cancel the addition of the new category option. </li><li>Click <b>Done</b> when finished.</li><li>Click <b>Back</b> to return to the full list of categories.</li></ol></li>
+            <li>To edit the name of an existing option:<ol style="list-style-type: lower-alpha;"><li>Click the existing option name in the table. </li><li>Make your desired changes to the name and click the check icon <img src="../Images/ex_CloudCategoriesEditCategoryCheck.png" style="width: 30px;height: auto;" /> to save the new name. Click the gray X icon <img src="../Images/ex_CloudCategoriesEditCategoryX.png" style="width: 30px;height: auto;" alt="" /> to cancel any changes and keep the existing option name. </li><li>Click <b>Done</b> when finished to view the updates to the selected category. </li><li>Click <b>Back</b> to return to the full list of categories.</li></ol></li>
+            <li>To delete the selected category:<ol style="list-style-type: lower-alpha;"><li>Click the category name and select <b>Delete Category</b>. </li><li>Click <b>Yes - Delete</b> to confirm deletion and return to the full list of categories.</li></ol></li>
+        </ol>
+    </body>
+</html>

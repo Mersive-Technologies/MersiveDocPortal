@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Categories provide the ability to classify individual Solstice Pods, and the collaboration spaces they create, in your Solstice deployment in ways that are meaningful to you. Mersive strongly recommends assigning Pods to categories once you have imported them into the Solstice Cloud management portal. Once created, categories can be used to  filter, sort, and compare usage data among different Solstice instances to help drive business decisions. For example, data from Solstice Cloud's meeting analytics can help you determine future meeting room construction based on the most utilized types of rooms. Categories can also be used to schedule software updates for Pods selected by location or department, allowing you to choose the best update times for that group. </p>
+    </body>
+</html>

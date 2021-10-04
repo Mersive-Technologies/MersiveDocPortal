@@ -9,19 +9,19 @@
         <p>Here are the current values that can be set during installation:</p>
         <p class="note">The Mersive MSI&#160;installer is case sensitive. Installation options must be specified in capital letters. </p>
         <p><b>INSTALLDIR=</b> controls where the Solstice app will be installed.  The default is: C:\Program Files (x86)\Mersive Technologies, Inc\Solstice\Client </p>
-        <p><b>STARTONLOGIN={ 0 | 1 }</b>  controls whether the app will auto launch when a user logs in.  A value of 1 means the app will start automatically; 0 means it will not.  </p>
-        <p><b>HIDEUIWHENSHARING={ 0 | 1 }</b>  controls whether the app's User Interface (UI) is hidden when the desktop is being shared.  This is a convenient shortcut so it doesn’t get in the way of content being shared.  A value of 1 automatically hides the UI window; 0 does not.</p>
+        <p><b>STARTONLOGIN={0|1}</b>  controls whether the app will auto launch when a user logs in.  A value of 1 means the app will start automatically; 0 means it will not.  </p>
+        <p><b>STARTDOCKED={0|1}</b>  determines whether or not the app starts in docked mode. A value of 1 sets the app to start in docked mode; 0 opens the app's UI window on start.</p>
+        <p><b>ADDSHORTCUT={0|1}</b> determines whether an icon for the Solstice app is added to the user's desktop. A value of 1 adds the icon to the desktop.</p>
         <p><b>SDSADDRESS=address</b> where 'address' can be a domain name (e.g., sdshost.yourcompany.com) or an IP address (e.g., 123.4.5.67).  This sets the initial value of the Solstice Discovery Service Address in the app (Settings &gt; General).  If this parameter is not given, the app’s SDS Address will not be modified. </p>
-        <p><b>NAME=”user name with spaces”</b> sets the value that appears in the Display Name (Settings &gt; General) in the app. If this value is not set, the user will be asked to enter a name when they first run the app.  If a name value contains spaces, it needs to be surrounded by quotes.</p>
-        <p><b>DEFAULTNAME={ 0 | 1 }</b> controls whether to set the user's Display Name in the app to be the name of the computer the app is being installed on. If both DEFAULTNAME=1 and a NAME&#160;value are specified, the Display Name will be set to the machine name (DEFAULTNAME setting takes precedence).</p>
-        <p><b>AUTOSHAREAUDIO={ 0 | 1 }</b>    sets whether desktop audio is automatically shared  when the user's desktop is shared. A value of 1 enables automatic desktop audio sharing; 0 disables it.</p>
-        <p><b>STARTDOCKED={ 0 | 1 }</b>  determines whether or not the app starts in docked mode. A value of 1 sets the app to start in docked mode; 0 opens the app's UI window on start.</p>
-        <p><b>ADDSHORTCUT={ 0 | 1 }</b> determines whether an icon for the Solstice app is added to the user's desktop. A value of 1 adds the icon to the desktop.</p>
-        <p><b>ADDCONFERENCE={ 0 | 1 }</b> determines if the lightweight drivers required for Solstice app users to utilize <a href="Solstice-Conference-Introduction.htm">Solstice Conference</a> capabilities are automatically installed. This allows administrators to deploy Solstice Conference capabilities in case end-users do not have the elevated permissions needed to install. A value of 1 automatically installs the Solstice Conference drivers.</p>
-        <p MadCap:conditions="Default.5-4_Release"><b>SHAREPODDISPLAY={ 0 | 1 }</b> determines whether the Share Pod Display setting for Solstice Conference (Settings &gt; Conference) is enabled or disabled. A value of 1 turns on the Share Pod Display toggle; 0 turns it off for better performance on some devices. If this parameter is not given, the Share Pod Display setting will be set to on.</p>
-        <p MadCap:conditions="Default.Exclude">NEWPRESENTATIONMODE config option - waiting on info</p>
-        <p><b>HIDECONFERENCE={ 0 | 1 }</b> hides the Solstice Conference functionality in the Solstice app from end-users. A value of 1 hides Solstice Conference–specific functions.</p>
-        <p><b>HIDESETTINGS={ 0 | 1 }</b> hides the settings options and configurations from end-users. A value of 1 hides the settings; 0 allows users to view and configure settings.</p>
+        <p><b>NAME=”user name with spaces”</b> sets a user's Display Name value in the app (Settings &gt; General). If this value is not set, the user will be asked to enter a name when they first run the app.  If a name value contains spaces, it needs to be surrounded by quotes.</p>
+        <p><b>DEFAULTNAME={0|1}</b> controls whether to set the user's Display Name in the app (Settings &gt; General) to be the name of the computer the app is being installed on. A value of 1 set the user's name to the computer name. If both DEFAULTNAME=1 and a NAME&#160;value are specified, the Display Name will be set to the machine name (DEFAULTNAME setting takes precedence).</p>
+        <p><b>AUTOSHAREAUDIO={0|1}</b>    sets whether desktop audio is automatically shared  when the user's desktop is shared. A value of 1 sets Auto Share Audio with Desktop (Settings &gt; Control) to on; 0 disables it.</p>
+        <p><b>HIDEUIWHENSHARING={0|1}</b>  controls whether the app's User Interface (UI) is hidden when the desktop is being shared.  This is a convenient shortcut so it doesn’t get in the way of content being shared.  A value of 1 sets Hide on Desktop Share (Settings &gt;&#160;Control) to on; 0 disables automatic desktop sharing.</p>
+        <p MadCap:conditions="Default.5-4_Release">NEWPRESENTATIONMODE<b>={0|1}</b> [config option not defined as of 10/4] controls the Extended Presentation Mode setting (Settings &gt; Control) upon install. A value of 1 turns on Extended Presentation Mode; 0 turns it off.</p>
+        <p><b>ADDCONFERENCE={0|1}</b> determines if the lightweight drivers required for Solstice app users to utilize <a href="Solstice-Conference-Introduction.htm">Solstice Conference</a> capabilities are automatically installed. This allows administrators to deploy Solstice Conference capabilities in case end-users do not have the elevated permissions needed to install. A value of 1 automatically installs the Solstice Conference drivers.</p>
+        <p MadCap:conditions="Default.5-4_Release"><b>SHAREPODDISPLAY={0|1}</b> determines whether the Share Pod Display setting for Solstice Conference (Settings &gt; Conference) is enabled or disabled. A value of 1 turns on the Share Pod Display toggle; 0 turns it off for better performance on some devices. If this parameter is not given, the Share Pod Display setting will be set to on.</p>
+        <p><b>HIDECONFERENCE={0|1}</b> hides the Solstice Conference functionality in the Solstice app from end-users. A value of 1 hides Solstice Conference–specific functions.</p>
+        <p><b>HIDESETTINGS={0|1}</b> hides the settings options and configurations from end-users. A value of 1 hides the settings; 0 allows users to view and configure settings.</p>
         <p>The app-specific data that was stored in each user’s home directory (e.g.<code> c:\programdata\Mersive\&lt;username&gt;</code>) will now be stored under a central shared location (e.g. <code>C:\ProgramData\Mersive\ALLUSERS\Solstice\Client)</code>.This allows for centralized management of these settings and the ability to update them for all users at installation time. </p>
         <h2>Examples</h2>
         <MadCap:dropDown>
@@ -80,8 +80,8 @@
                 <p class="codeblock">msiexec /x SolsticeClient32-5.3.msi /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <h3>Related Topics</h3>
-        <p><a href="Admin-SCCM-Instuctions.htm">Deploy the Solstice App with SCCM</a>
+        <h3 MadCap:conditions="Default.ScreenOnly">Related Topics</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Admin-SCCM-Instuctions.htm">Deploy the Solstice App with SCCM</a>
         </p>
         <p>&#160;</p>
     </body>

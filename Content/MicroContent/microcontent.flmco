@@ -286,10 +286,6 @@
         <MicroContentResponse href="../Topics/Admin-MSI-Instuctions.htm" />
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Create categories and assign to Pods</MicroContentPhrase>
-        <MicroContentResponse href="../Topics/Cloud-Create-Categories.htm" />
-    </MicroContent>
-    <MicroContent>
         <MicroContentPhrase>Deploy the Solstice App with SCCM</MicroContentPhrase>
         <MicroContentResponse href="../Topics/Admin-SCCM-Instuctions.htm" />
     </MicroContent>
@@ -380,6 +376,76 @@
                         <xhtml:li>Click <xhtml:b>Apply</xhtml:b>.</xhtml:li>
                     </xhtml:ol>
                     <xhtml:p xhtml:class="note">Mersive recommends loading a CA-signed certificate (Dashboard &gt; Security tab &gt;&#160;Encryption section) onto the Pod to avoid users seeing a security prompt in their web browser.</xhtml:p>
+                </xhtml:body>
+            </xhtml:html>
+        </MicroContentResponse>
+    </MicroContent>
+    <MicroContent>
+        <MicroContentPhrase>manage categories to classify Pods in Solstice Cloud</MicroContentPhrase>
+        <MicroContentResponse>
+            <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                <xhtml:head>
+                </xhtml:head>
+                <xhtml:body>
+                    <xhtml:h4>Manage Categories to Classify Pods in Solstice Cloud</xhtml:h4>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudCreateCategoriesIntro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                    <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Manage a Category</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCategoriesEditDelete.flsnp" />
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
+                </xhtml:body>
+            </xhtml:html>
+        </MicroContentResponse>
+    </MicroContent>
+    <MicroContent>
+        <MicroContentPhrase>create categories to classify Pods in Solstice Cloud</MicroContentPhrase>
+        <MicroContentResponse>
+            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                <xhtml:head>
+                    <xhtml:link xhtml:href="../Resources/TableStylesheets/Alternate-Row-Color.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
+                </xhtml:head>
+                <xhtml:body>
+                    <xhtml:h4>Create Categories to Classify Pods in Solstice Cloud</xhtml:h4>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/ex_CloudCreateCategoriesSampleScheme.flsnp" />
+                    <xhtml:p>&#160;</xhtml:p>
+                    <MadCap:dropDown>
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Add a New Category</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCategoriesCreate.flsnp" />
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
+                </xhtml:body>
+            </xhtml:html>
+        </MicroContentResponse>
+    </MicroContent>
+    <MicroContent>
+        <MicroContentPhrase>assign Pods to category options in Solstice Cloud</MicroContentPhrase>
+        <MicroContentPhrase>put Solstice Pods into categories</MicroContentPhrase>
+        <MicroContentResponse>
+            <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                <xhtml:body>
+                    <xhtml:h4>Assign Pods to Category Options in Solstice Cloud</xhtml:h4>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudCreateCategoriesIntro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                    <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Assign Pods to Category Options</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCategoriesAssignPods.flsnp" />
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
+                    <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>

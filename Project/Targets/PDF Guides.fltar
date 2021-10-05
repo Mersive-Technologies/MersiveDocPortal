@@ -6,7 +6,7 @@
   Destinations=""
   ShowMadCapBacklink="true"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.5-4_Release or Default.Dashboard or Default.Exclude or Default.Future or Default.ScreenOnly]"
+  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.5-4_Release or Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
   MasterToc="/Project/TOCs/Solstice Cloud Admin Guide.fltoc"

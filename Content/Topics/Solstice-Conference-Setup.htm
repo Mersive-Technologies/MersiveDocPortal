@@ -53,7 +53,7 @@
         </MadCap:dropDown>
         <h2>Integrating a Room Calendar</h2>
         <p><a name="calendar"></a>Integrating a room or personal calendar with Solstice lets Solstice detect  the web conferencing information in the calendar invite when users book a web conference and invite the room. This allows Solstice to start the scheduled web conferencing when the meeting host connects to the Solstice display. Solstice administrators can integrate Microsoft Exchange, Microsoft O365, and Google Workspace room calendars with Solstice displays. There are two ways to integrate a room calendar:&#160;using Solstice Cloud, or using the Solstice Dashboard. As a note, Solstice Pods must have internet access for these settings to be applied. </p>
-        <p class="note">As a note, Solstice end-users can integrate their Microsoft Exchange or O365 calendars with their Solstice apps. For more information, see<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"> <a href="User-Solstice-User-App.htm" target="_blank">Solstice User App</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="https://documentation.mersive.com/content/topics/user-solstice-user-app.htm">Solstice User App</a>.</MadCap:conditionalText></p>
+        <p class="note">Note that users that host Solstice Conferences can also integrate their personal Microsoft Exchange or O365 calendars with their Solstice apps to auto-launch scheduled web conferences. For more information, see<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"> <a href="User-Solstice-User-App.htm" target="_blank">Solstice User App</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="https://documentation.mersive.com/content/topics/user-solstice-user-app.htm">Solstice User App</a>.</MadCap:conditionalText></p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>How to Integrate a Microsoft Exchange or O365 Calendar Using Solstice Cloud
@@ -76,31 +76,19 @@
                     <li>
                         <p>If you are a using either an <b>Impersonation</b> or a <b>Delegation Mailbox</b>, select the corresponding radio button.</p>
                         <ul>
-                            <li>
-                                <p>If you selected <b>No</b>, skip to step 7.</p>
-                            </li>
-                            <li>
-                                <p>If you selected either <b>Impersonation</b> or <b>Delegation</b>, you will need to enter in the user name and password for the impersonation or delegation account (required).</p>
-                            </li>
+                            <li>If you selected <b>No</b>, skip to step 7.</li>
+                            <li>If you selected either <b>Impersonation</b> or <b>Delegation</b>, you will need to enter in the user name and password for the impersonation or delegation account (required).<p class="note">The login credentials for email accounts will need to be entered individually for each Pod on the <b>Manage</b> &gt; <b>All Pods</b> page.</p></li>
                         </ul>
-                        <ol>
-                            <p class="note">The login credentials for email accounts will need to be entered individually for each Pod on the <b>Manage</b> &gt; <b>All Pods</b> page.</p>
-                        </ol>
                     </li>
-                    <li>
-                        <p>If you wish to hide meeting titles or meeting organizers from being visible on the room display, deselect <b>Show meeting titles</b> and/or <b>Show meeting organizers</b>.</p>
-                    </li>
-                    <li>
-                        <p>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display.</p>
-                    </li>
-                    <li>
-                        <p>Click <b>Save</b>.</p>
-                    </li>
+                    <li>If you wish to hide meeting titles or meeting organizers from being visible on the room display, deselect <b>Show meeting titles</b> and/or <b>Show meeting organizers</b>.</li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display.</li>
+                    <li>Click <b>Save</b>.</li>
                     <li>	In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>. The Pod Template Assignments table displays. </li>
                     <li>	Select the checkboxes of the Pods you want to integrate a room calendar for. You can select each Pod's checkbox individually, or select the checkbox in the header row of the table to select all of the Pods in the table.</li>
                     <li>	Go to the Features column, click a drop-down in that column for one of the selected Pods, then select the name of the template you just created or edited. </li>
                     <li>A pop-up asks you to confirm the changes. Click&#160;<b>Confirm</b>. A green notification that the template was applied displays. </li>
                 </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_ConferenceMSCalendarDeleteCommentsOff.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -136,37 +124,18 @@
                 <ol>
                     <li>Open your Solstice Dashboard. </li>
                     <li>Select the displays you wish to integrate a room calendar for from the list of Your Solstice Instances.</li>
-                    <li>
-                        <p>Go to the <b>Calendar</b> tab.</p>
-                    </li>
-                    <li>
-                        <p>Select the <b>Enabled</b> option.</p>
-                    </li>
-                    <li>
-                        <p>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating: Microsoft Exchange or Office 365. </p>
-                    </li>
-                    <li>
-                        <p>In the <b>Server URL</b> field, enter the Microsoft Exchange server URL if that is the type of calendar you are integrating.</p>
-                    </li>
-                    <li>
-                        <p>In the <b>Authentication type</b> drop-down, select the type of authentication your Microsoft Exchange server is using: Basic or NTLM.</p>
-                    </li>
-                    <li>
-                        <p>Enter in the <b>Username</b> and <b>Password</b> for the room calendar account.</p>
-                    </li>
-                    <li>
-                        <p>If you are a using an <b>Impersonation</b> or <b>Delegation Mailbox</b>, enter them into the corresponding fields.</p>
-                    </li>
-                    <li>
-                        <p>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private”. If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</p>
-                    </li>
-                    <li>
-                        <p>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display.</p>
-                    </li>
-                    <li>
-                        <p>Click <b>Apply</b>.</p>
-                    </li>
+                    <li>Go to the <b>Calendar</b> tab.</li>
+                    <li>Select the <b>Enabled</b> option.</li>
+                    <li>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating: Microsoft Exchange or Office 365. </li>
+                    <li>In the <b>Server URL</b> field, enter the Microsoft Exchange server URL if that is the type of calendar you are integrating.</li>
+                    <li>In the <b>Authentication type</b> drop-down, select the type of authentication your Microsoft Exchange server is using: Basic or NTLM.</li>
+                    <li>Enter in the <b>Username</b> and <b>Password</b> for the room calendar account.</li>
+                    <li>If you are a using an <b>Impersonation</b> or <b>Delegation Mailbox</b>, enter them into the corresponding fields.</li>
+                    <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private.” If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display.</li>
+                    <li>Click <b>Apply</b>.</li>
                 </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_ConferenceMSCalendarDeleteCommentsOff.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

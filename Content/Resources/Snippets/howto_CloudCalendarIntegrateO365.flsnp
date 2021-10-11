@@ -15,8 +15,8 @@
             <li>In the Client Secret field, enter the <b>Client Secret</b>.</li>
             <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private”. If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
             <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
-            <li>Click <b>Save</b>.</li>
+            <li>Click <b>Save</b>. A message displays confirming that the Pod configuration has been updated.</li>
         </ol>
-        <p>A message displays confirming that the Pod configuration has been updated.</p>
+        <MadCap:snippetBlock src="info_ConferenceMSCalendarDeleteCommentsOff.flsnp" />
     </body>
 </html>

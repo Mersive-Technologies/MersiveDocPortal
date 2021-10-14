@@ -599,6 +599,15 @@
                 Name="Placeholder">...</Property>
             </Properties>
           </Style>
+          <Style
+            Name="Logo">
+            <Properties>
+              <Property
+                Name="AltText">Mersive Technologies Inc logo</Property>
+              <Property
+                Name="Tooltip">Back to Mersive Solstice Documentation home</Property>
+            </Properties>
+          </Style>
         </Styles>
       </Stylesheet>
     </Stylesheet>

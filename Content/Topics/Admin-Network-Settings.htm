@@ -90,9 +90,10 @@
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/info_AdminEnableLLDP.flsnp" />
                 <ol>
-                    <li>In Solstice Dashboard, select the Pod(s) you want to enable LLDP&#160;for from the list of Your Solstice Instances.</li>
+                    <li>In Solstice Dashboard, select the Gen3 Pod(s) you want to enable LLDP&#160;for from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Network</b> tab &gt;&#160;<b>Link Layer Discovery Protocol (LLDP)</b> section.</li>
-                    <li>To enable LLDP for POE&#160;power management for the selected Pods, check <b>Enable reception and transmission of LLDP&#160;frames on all networks</b> and   <b>Use LLDP&#160;for POE&#160;Power Negotiation</b>. </li>
+                    <li>Check <b>Enable reception and transmission of LLDP&#160;frames on all networks</b> to turn on information reporting over Link Layer Discovery Protocol for the selected Pods.</li>
+                    <li>Check <b>Use LLDP&#160;for POE&#160;Power Negotiation</b> to enable the selected Pods to use LLDP to report and negotiate their Power over Ethernet requirements with the PoE/PoE+ switch. <p class="note">Only use this option for Gen3 Pods that use PoE as their sole power supply. The switch supplying power must support LLDP and LLDP-MED (Media Endpoint Discovery).</p></li>
                     <li>Click <b>Apply</b>. </li>
                 </ol>
             </MadCap:dropDownBody>

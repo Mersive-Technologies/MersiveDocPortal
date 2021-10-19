@@ -78,15 +78,15 @@
         </MadCap:dropDown>
         <MadCap:dropDown MadCap:conditions="Default.5-4_Release">
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Enable Upcoming Meeting Notifications</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Enable Meeting Conflict Notifications</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>When enabled, Solstice will notify meeting collaborators when another scheduled meeting is about to start in the same meeting space. If nearby Solstice-enabled rooms are available, the system will suggest alternative spaces for continuing the meeting.</p>
-                <p class="note">This feature is available only on Solstice Pods manged in Solstice Cloud with active Solstice subscriptions.</p>
+                <p>When enabled, Solstice can display messages informing participants of ongoing meetings when a scheduled meeting is about to start in the same meeting space. <span style="background-color: #ffff00;">If nearby Solstice-enabled spaces are available, they may be suggested as alternatives for continuing the meeting.</span></p>
+                <p class="note">This feature is available in Solstice 5.4 and higher for Solstice Pods connected to Solstice Cloud with an active Solstice subscription and a room calendar enabled in the<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"> <a href="Cloud-Template-Calendar.htm" target="_blank">Solstice Cloud: Calendar</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="https://documentation.mersive.com/content/topics/cloud-template-calendar.htm">Solstice Cloud: Calendar</a></MadCap:conditionalText>settings.</p>
                 <ol>
-                    <li>Select <b>Enable upcoming meeting reminders</b> to configure up to two notifications messages to appear to meeting collaborators.</li>
+                    <li>Select <b>Enable upcoming meeting reminders</b> to configure up to two messages to notify meeting participants of possible meeting conflicts.</li>
                     <li>Select the <b>Time before next meeting</b> when you would like the first upcoming meeting notification to appear and how long you would like the message to appear in <b>Duration of message</b>.</li>
-                    <li>You can also set a reminder by selecting <b>Display follow-up remind</b> and entering a <b>Time before next meeting</b> that is shorter than the first reminder and the <b>Duration of message</b> for the second notification.</li>
+                    <li>You can also set a second notification by selecting <b>Display follow-up reminder</b> and entering a <b>Time before next meeting</b> and <b>Duration of message</b> for the second message. The follow-up reminder time selected must be less than the time selected for the primary reminder.</li>
                     <li>Click <b>Save</b>. </li>
                 </ol>
             </MadCap:dropDownBody>
@@ -94,5 +94,6 @@
         <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
         <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Ethernet.htm">Ethernet Template</a>
         </p>
+        <p>&#160;</p>
     </body>
 </html>

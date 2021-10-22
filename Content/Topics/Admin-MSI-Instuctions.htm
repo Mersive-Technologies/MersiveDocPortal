@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Default.5-4_Release">
     <head><title>[%=Heading.Level1%]</title>
     </head>
     <body>
@@ -40,7 +40,7 @@
                     <li>Install the app silently</li>
                     <li>Write an installation log file named C:\SolsticeClient.log</li>
                 </ul>
-                <p class="codeblock">msiexec /i SolsticeClient-5.3.msi SDSADDRESS=sdshost.yourcompany.com  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 /quiet /log c:\SolsticeClient.log</p>
+                <p class="codeblock">msiexec /i SolsticeClient-5.4.msi SDSADDRESS=sdshost.yourcompany.com  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -52,9 +52,9 @@
                 <p class="note">If you are deploying centrally to multiple PCs, you can use Microsoft’s Group Policy or another third-party tool to add the Mersive publisher certificate to the Trusted Publishers certificate store.</p>
                 <ol>
                     <li>Download the MSI version of the Solstice client app installer from <a href="https://www.mersive.com/download-admin/" target="_blank">mersive.com/download-admin</a> &gt; Deployment Management.</li>
-                    <li>From a computer that does not have the Solstice Conference feature of the Solstice app, run <b>SolsticeClient-5.3.msi</b>. (If you are working with a computer that already has this feature installed, skip to step 5.)</li>
-                    <li>Work through the installation wizard, and select the <b>Install Solstice Conference</b> option. <p><img src="../Resources/Images/msiInstall_SolsticeConference.png" /></p></li>
-                    <li>Continue the installation wizard.<p>When the installation starts, you will be prompted to trust Mersive software.</p><p><img src="../Resources/Images/solsticeConferenceTrust.png" /></p></li>
+                    <li>From a computer that does not have the Solstice Conference feature of the Solstice app, run <b>SolsticeClient-5.4.msi</b>. (If you are working with a computer that already has this feature installed, skip to step 5.)</li>
+                    <li>Work through the installation wizard, and select the <b>Install Solstice Conference</b> option. <p><img src="../Resources/Images/ex_UserAppMSIInstallerInstlConf.png" style="width: 550px;" /></p></li>
+                    <li>Continue the installation wizard.<p>When the installation starts, you will be prompted to trust Mersive software.</p><p><img src="../Resources/Images/ex_UserAppMSIInstallerTrust.png" /></p></li>
                     <li>Check <b>Always trust software from "Mersive Technologies, Inc."</b> and click <b>Install</b>. The Mersive trust certificate will be installed on the computer.</li>
                     <li>On the Windows start menu, enter <b>certmgr.msc</b></li>
                     <li>From the <i>certmgr</i> dialog, navigate to <b>Trusted Publishers &gt; Certificates</b>.</li>
@@ -62,13 +62,13 @@
                     <li>Click <b>Next</b>, and then click <b>Next</b> again.</li>
                     <li>Enter the file name for the Mersive certificate. For example, you could enter <code>mersive_cert.cer</code>. You can also use the Browse dialog to specify both the name and the location of the file.</li>
                     <li>Click <b>Next</b>, and then click <b>Finish</b>.</li>
-                    <li>Place the <code>SolsticeClient-5.3.msi</code> file and the trust certificate you just exported, into the same folder or on the same share where they can used for installation.</li>
+                    <li>Place the <code>SolsticeClient-5.4.msi</code> file and the trust certificate you just exported, into the same folder or on the same share where they can used for installation.</li>
                     <li>On the Windows computer where you want to perform the silent install, open a command prompt with Administrator permissions.</li>
                     <li>Install the certificate by entering <code style="font-weight: bold;">certutil -addstore "TrustedPublisher" &lt;certificate name&gt;.</code></li>
-                    <li>Using <i>msiexec</i> run <i>SolsticeClient-5.3.msi</i> with the "quiet" (or silent) option.</li>
+                    <li>Using <i>msiexec</i> run <i>SolsticeClient-5.4.msi</i> with the "quiet" (or silent) option.</li>
                 </ol>
                 <p>For example, to run both certutil and msiexec from the same command, you could enter:</p>
-                <p class="codeblock">certutil -addstore "TrustedPublisher" mersive_cert.cer &amp;&amp; msiexec /i SolsticeClient-5.3.msi SDSADDRESS=192.168.2.129  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 ADDCONFERENCE=1 /quiet /log c:\SolsticeClient.log</p>
+                <p class="codeblock">certutil -addstore "TrustedPublisher" mersive_cert.cer &amp;&amp; msiexec /i SolsticeClient-5.4.msi SDSADDRESS=192.168.2.129  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 ADDCONFERENCE=1 /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -77,7 +77,7 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>See below for an example command showing how to use <code>msiexec</code> to uninstall the Solstice app.</p>
-                <p class="codeblock">msiexec /x SolsticeClient32-5.3.msi /quiet /log c:\SolsticeClient.log</p>
+                <p class="codeblock">msiexec /x SolsticeClient32-5.4.msi /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h3 MadCap:conditions="Default.ScreenOnly">Related Topics</h3>

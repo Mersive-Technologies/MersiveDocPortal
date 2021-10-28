@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>By default, Solstice Pods periodically check to see if they have access to the internet. However, you can disable these checks if you want to eliminate this network traffic.</p>
+        <ol>
+            <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>In the Administration section, select <b>Disable Captive Portal Checking</b>.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>This setting should only be used on unsecured networks where users may be subject to man-in-the-middle redirects. Selecting this option requires additional clicks for the user to get started. </p>
+        <ol>
+            <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>In the Administration section, check <b>Always serve the Solstice client via port 443</b>.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

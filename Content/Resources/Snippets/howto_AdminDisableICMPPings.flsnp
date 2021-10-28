@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Disables the ability to ping Pods on WAP, Wireless Client, and Network and prevents ICMP/Ping flooding that could lock up the Pod. This feature is disabled by default.</p>
+        <ol>
+            <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>In the Administration section, select <b>Disable ICMP Pings to the Pod</b>.</li>
+            <li>Click <b>Apply</b>. </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>This setting allows Solstice network traffic between a Solstice Pod and Solstice user apps to be encrypted using a standard RSA/SHA cipher with a 2048-bit private key. This also includes network traffic related to configuration via either the Solstice Dashboard, the Pod’s web-based configuration (if enabled), or Solstice Cloud. When this option is enabled, Dashboard will also send Solstice Local Release updates via port 443. </p>
+        <p>By default, Pods are loaded with a self-signed CA certificate from Mersive that is used when a Pod receives HTTPS&#160;connections. However, there is an option to upload a custom CA certificate bundle to be used instead. Note that the Pod will always use the CA certificate for HTTPS traffic, even when Solstice client/server encryption is disabled. For more information about certificate management in Solstice, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Admin-Certificate-Management.htm" target="_blank">Enterprise Certificate Management</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-certificate-management.htm">Enterprise Certificate Management</a>.</MadCap:conditionalText></p>
+        <ol>
+            <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>In the Encryption section, select <b>Encrypt Client/Server Communications</b> to encrypt communication between the Pod and user devices.</li>
+            <li>If you wish to upload a custom CA certificate bundle to be used instead of the Pod's default self-signed certificate for external HTTPS connections, check <b>Use Custom CA Certificate Bundle for External Communications</b> and <b>Browse</b> to select the certificate file. </li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

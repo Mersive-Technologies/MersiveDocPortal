@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>When screen key is enabled, in-room users will be required to enter the four-digit screen key that is visible on the Solstice display before they are able to connect.</p>
+        <ol>
+            <li>In Solstice Dashboard, select your displays from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab and scroll to the Access Control settings.</li>
+            <li>Check <b>Screen key enabled</b> to require the entry of the screen key to connect to a display. A pop-up warning may appear.</li>
+            <li>If you agree with the requirements of the warning, click <b>Yes, enable Screen Key</b>.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

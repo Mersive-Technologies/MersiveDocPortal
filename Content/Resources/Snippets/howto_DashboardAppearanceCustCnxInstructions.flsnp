@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Connection instructions that appear on the Solstice Welcome Screen give meeting participants the information they need to quickly connect to a Solstice Pod display. You can customize these instructions according to how your organization has configured Solstice.</p>
+        <p>Connection instructions that appear on the Solstice Welcome Screen give meeting participants the information they need to quickly connect to a Solstice display. You can customize these instructions according to how your organization has configured Solstice.</p>
         <ol>
-            <li>Select one or more Pods from the list of Your Solstice Instances.</li>
+            <li>In Solstice Dashboard, select one or more displays from the list of Your Solstice Instances.</li>
             <li>Go to the <b>Appearance and Usage</b> tab.</li>
-            <li>Under Connection Instructions Overlay, select the <b>Custom instructions overlay</b> option.</li>
-            <li>In the field that appears, enter the custom connection instructions you wish to be visible on the display’s welcome screen. Both plain and rich text formats are supported.
+            <li>In Connection Instructions Overlay under Appearance, check <b>Custom instructions overlay</b>.</li>
+            <li>In the field that appears, enter the custom connection instructions you wish to appear on the display’s welcome screen. Both plain and rich text formats are supported.
 				<p class="tip"> You can include responsive variables, which will be automatically replaced with Pod-specific information, in your custom instructions. Available variables are [RoomName], [ScreenKey], [WifiNetworkName], [WifiIP], [EthNetworkName], and [EthIP]. Note that variables are case sensitive.</p></li>
             <li>To add a dynamic IP address to the instructions, enter the network name in brackets, e.g. [INTERNAL]. The string will be replaced with the corresponding IP address when it displays on the welcome screen.</li>
-            <li>If you wish to remove instructions on how users can connect using AirPlay or Miracast, deselect the <b>Show AirPlay</b> and/or <b>Show Miracast</b> options.</li>
+            <li>If you wish to remove instructions for how users can connect to the display using AirPlay or Miracast, uncheck the <b>Show AirPlay</b> and/or <b>Show Miracast</b> options.</li>
             <li>Click <b>Apply</b>.</li>
         </ol>
+        <p class="tip">Not sure how to get started with your custom instructions? See the sample below:<br /><br />To get started:<br />1. Connect your device to [EthNetworkName]<br />2. Open the Solstice App<br />3. Tap [RoomName]<br />4. Enter [ScreenKey] when prompted for the Screen Key<br />5. Share content to this screen!<br />6. First time? Visit https://[EthIP]<br /><br />Tip: Stash on-screen content by dragging it to the dock on the left</p>
     </body>
 </html>

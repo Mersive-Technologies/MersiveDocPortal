@@ -2,11 +2,11 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>Select one or more Pods from the list of Your Solstice Instances.</li>
+            <li>In Solstice Dashboard, select one or more displays from the list of Your Solstice Instances.</li>
             <li>Go to the <b>Appearance and Usage</b> tab.</li>
-            <li>In the Appearance section under Connection Instructions Overlay, select the radio button to either <b>Hide</b> or <b>Show instructions overlay</b>. </li>
-            <li>To hide or show the room calendar overlay, select or deselect the <b>Show calendar overlay</b> checkbox.</li>
-            <li>Click <b>Apply</b>. </li>
+            <li>In Connection Instructions Overlay under Appearance, select either <b>Hide instructions overlay</b> or <b>Show instructions overlay</b>. </li>
+            <li>To show a summary of upcoming events on the room calendar associated with the display, check <b>Show calendar overlay</b>. For more information on configuring a room calendar for a Solstice display, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Admin-Room-Calendar.htm" target="_blank">Room Calendar Settings</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-room-calendar.htm">Room Calendar Settings</a>.</MadCap:conditionalText></li>
+            <li>Click <b>Apply</b>.</li>
         </ol>
     </body>
 </html>

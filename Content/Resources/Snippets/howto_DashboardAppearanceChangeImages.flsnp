@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>In Solstice Dashboard, select one or more displays from the list of Your Solstice Instances.</li>
+            <li>In Solstice Dashboard, select your displays in the list of Your Solstice Instances.</li>
             <li>Go to the <b>Appearance and Usage</b> tab.</li>
             <li>Under Customize Welcome Screen, select the <b>Modern Splash Screen</b> option.</li>
             <li>Under <b>Background images</b>, click on the image you want to change. A file explorer window will opens.</li>

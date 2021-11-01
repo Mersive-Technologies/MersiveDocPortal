@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>When a USB device with audio output, such as a composite camera, is connected to a Solstice Pod, audio for content shared to the Pod normally routes to the USB port. However, you can choose for audio to instead be routed to the HDMI output, or HDMI outputs if the Pod is connected to more than one HDMI device, as appropriate for your Pod configuration.</p>
+        <p>Starting in Solstice 5.4, when a USB device with audio output, such as a composite camera, is connected to a Solstice Pod, audio for content shared to the Pod normally routes to the USB port. However, you can choose for audio to instead be routed to the HDMI output, or HDMI outputs if the Pod is connected to more than one HDMI device, as appropriate for your Pod configuration.</p>
         <ol>
             <li>In Solstice Dashboard, select a Pod from the list of Your Solstice Instances. </li>
             <li>Go to the <b>Appearance and Usage</b> tab.</li>

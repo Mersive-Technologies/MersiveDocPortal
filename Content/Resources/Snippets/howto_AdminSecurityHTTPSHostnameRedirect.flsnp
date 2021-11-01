@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p><a name="Redirect_HTTPS"></a>With this option enabled, when a user enters the Pod IP address in their browser, they will be automatically redirected to the HTTPS hostname as determined by a reverse DNS&#160;lookup by the defined DNS server.</p>
+        <p class="note">This feature requires that a valid DNS Hostname be set in <b>Network &gt; Wireless Settings</b> and/or <b>Network &gt; Ethernet Settings</b>, depending on your network configurations, and for the Pod to have a valid client-to-server certificate. Note that Pods ship with a generic default client-to-server certificate that can be replaced using the <b>Certificate Tools</b> on the  Security tab of the Solstice Dashboard.</p>
+        <ol>
+            <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>In the Administration section, check <b>Redirect to HTTPS hostname</b>. </li>
+            <li>A message containing additional DNS lookup information related to this setting will appear. Click <b>OK</b> to acknowledge. </li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

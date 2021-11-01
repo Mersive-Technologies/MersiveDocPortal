@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab and scroll to the Certificate Tools section.</li>
+            <li>If a new certificate is needed, select <b>Generate certificate signing request</b> and click <b>Open</b> to generate a Certificate Signing Request that can be submitted to request a trusted CA certificate, or to generate a self-signed certificate.<ol style="list-style-type: lower-alpha;"><li>Generate a <b>Pod client/server communications</b> CSR to request a certificate for restricting Pods' access to the network.</li><li>Or generate a <b>802.1x EAP User Ethernet Certificate</b> or <b>802.1x EAP User WiFi Certificate</b> CSR to seek a certificate for your 802.1x wired or wireless network.</li><li>Or <b>Browse</b> to load an existing OpenSSL&#160;config file for a self-signed certificate to Pods. Click <b>View</b> to see an example of an OpenSSL config file.</li><li>Click <b>Create</b> to generate the Certificate Signing Request.</li></ol></li>
+            <li>Once an appropriate trusted CA or self-signed certificate has been generated, select <b>Install certificate</b> and click <b>Open</b>.<ol style="list-style-type: lower-alpha;"><li>Select the appropriate type of certificate: <b>Pod server</b>, <b>802.1x EAP&#160;Ethernet User Certificate</b>, or <b>802.1x EAP WiFi User Certificate</b>.</li><li><b>Browse</b> and select the appropriate certificate file.<p class="note">Solstice supports PFX and PEM&#160;certificate formats. Note that only PEM certificates with the .crt file extension are supported.</p></li><li>If you are uploading a PFX certificate, enter its password in <b>PKCS #12 Password</b>. </li><li>Click <b>Import</b> to load the certificate to selected Pods.</li></ol></li>
+            <li>If the certificate to be installed has a private key, select <b>Install certificate and private key</b> and click <b>Open</b>.<ol style="list-style-type: lower-alpha;"><li><b>Browse</b> to select the appropriate certificate and private key files.</li><li>Click <b>Import</b> to load the certificate and private key to selected Pods.</li></ol></li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

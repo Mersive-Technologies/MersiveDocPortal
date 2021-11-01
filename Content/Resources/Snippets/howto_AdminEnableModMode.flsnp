@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Moderator Mode allows a user to start a moderated session in which they can approve or deny subsequent requests for users to join the session or post content to the display. Moderator mode is enabled by default.</p>
+        <p>Moderator Mode allows a user to make a session moderated, meaning they can approve or deny subsequent requests for users to join the session or post content to the display. Moderator mode is enabled by default.</p>
         <ol>
             <li>In Solstice Dashboard, select your displays from the list of Your Solstice Instances.</li>
             <li>Go to the <b>Security</b> tab.</li>

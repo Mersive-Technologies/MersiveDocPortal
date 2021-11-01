@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Browser look-in gives users a full resolution view of the collaboration session on their device by entering the Solstice display's IP address into their web browser.</p>
+        <ol>
+            <li>In Solstice Dashboard, select your displays from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Appearance and Usage</b> tab.</li>
+            <li>In the Usage and Feature Management section, select one of the following <b>Browser Look-in</b> options: <ul><li><b>Enabled</b>:&#160;Users will be able to view the session remotely.</li><li><b>Disabled</b>:&#160;Users will not be able to view the session remotely. </li><li><b>Determine at Runtime</b>:&#160;In-room users will determine if browser look-in functionality is enabled when a collaboration session begins. </li></ul></li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

@@ -24,7 +24,7 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Serve Solstice Client/App via Port 443</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Serve Solstice App/Client via Port 443</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminServeClientPort443.flsnp" />
@@ -51,15 +51,7 @@
                 <MadCap:dropDownHotspot>Redirect to HTTPS Hostname</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p><a name="Redirect_HTTPS"></a>If this option is enabled, when a user enters the Pod IP address in their browser, they will be automatically redirected to the HTTPS hostname as determined by a reverse DNS&#160;lookup by the defined DNS server.</p>
-                <p class="note">This feature requires a DNS Hostname to redirect to, and for the Pod to have a valid client-to-server certificate. Note that Pods ship with a generic default client-to-server certificate that can be replaced using the <b>Certificate Tools</b> on the  Security tab of the Solstice Dashboard. Enter the Pod's valid DNS Hostname on the Dashboard &gt; Network tab under <b>Wireless Settings</b> and/or <b>Ethernet Settings</b>, depending on your network configurations. </p>
-                <ol>
-                    <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
-                    <li>Go to the <b>Security</b> tab.</li>
-                    <li>In the Administration section, check <b>Redirect to HTTPS hostname</b>. </li>
-                    <li>A message containing additional DNS lookup information related to this setting will appear. Click <b>OK</b> to acknowledge. </li>
-                    <li>Click <b>Apply</b>.</li>
-                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSecurityHTTPSHostnameRedirect.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -68,6 +60,14 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminEnableScreenKey.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable/Disable Browser Look-In Feature</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSecurityBrowserLookIn.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -91,28 +91,8 @@
                 <MadCap:dropDownHotspot>Certificate Management</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>By default, Solstice Pods are configured with a self-signed certificate from Mersive. However, for enterprises where this is insufficient, Solstice admins can use the following enterprise certificate management tools to centrally manage certificates in Solstice Dashboard.. These tools allow Solstice admins to manage client-server communication certificates and 802.1x certificates within Solstice. For detailed information about certificate management in Solstice, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Certificate-Management.htm" target="_blank">Enterprise Certificate Management</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-certificate-management.htm">Enterprise Certificate Management</a>.</MadCap:conditionalText></p>
-                <p> (Security tab &gt; Certificate Tools)</p>
-                <ol>
-                    <li>In Solstice Dashboard, select your Pods from the list of Your Solstice Instances.</li>
-                    <li>Go to the <b>Security</b> tab.</li>
-                    <li>If a new certificate is needed, select <b>Generate certificate signing request</b> and click <b>Open</b> to generate a Certificate Signing Request that can be submitted to request a trusted CA certificate.<ol style="list-style-type: lower-alpha;"><li>Generate a <b>Pod client/server communications</b> CSR to request a certificate for restricting Pods' access to the network.</li><li>Or generate a <b>802.1x EAP User Ethernet Certificate</b> or <b>802.1x EAP User WiFi Certificate</b> CSR to seek a certificate for your 802.1x wired or wireless network.</li><li>Or <b>Browse</b> to load an existing OpenSSL&#160;config file for a self-signed certificate to Pods. Click <b>View</b> to see an example of an OpenSSL config file.</li><li>Click <b>Create</b> to generate the Certificate Signing Request.</li></ol></li>
-                    <li>Click <b>Apply</b>.</li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Enable/Disable Browser Look-In Feature</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <p>Enables users to get a full resolution view of the collaboration session on their client device by entering the Solstice display's IP address into a web browser.</p>
-                <ol>
-                    <li>Select the Pod from the list of Solstice Instances.</li>
-                    <li>Go to the <b>Appearance and Usage</b> tab.</li>
-                    <li>In the Usage and Feature Management section, select <b>Browser Look-in</b> option: <ul><li><b>Enabled</b>:&#160;Users will be able to view the session remotely.</li><li><b>Disabled</b>:&#160;Users will not be able to view the session remotely. </li><li><b>Determine at Runtime</b>:&#160;In-room users will determine if it is enabled when a collaboration session begins. </li></ul></li>
-                    <li>Click <b>Apply</b>.</li>
-                </ol>
+                <p>By default, Solstice Pods are configured with a self-signed certificate from Mersive. However, for enterprises where this is insufficient, Solstice admins can use the following enterprise certificate management tools to centrally manage certificates in Solstice Dashboard. These tools allow Solstice admins to manage client-server communication certificates and 802.1x certificates within Solstice. For detailed information about certificate management in Solstice, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Certificate-Management.htm" target="_blank">Enterprise Certificate Management</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-certificate-management.htm">Enterprise Certificate Management</a>.</MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_AdminSecurityCertificateMgmt.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <p>&#160;</p>

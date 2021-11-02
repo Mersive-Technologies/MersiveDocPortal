@@ -14,11 +14,14 @@
     <Word Comment="">analytics</Word>
     <Word Comment="">Analytics</Word>
     <Word Comment="">uptime</Word>
-    <Word>checkbox</Word>
-    <Word>802.1x</Word>
-    <Word>DHCP</Word>
-    <Word>IP</Word>
-    <Word>uncheck</Word>
-    <Word>Uncheck</Word>
-    <Word>unsecure</Word>
+    <Word Comment="">checkbox</Word>
+    <Word Comment="">802.1x</Word>
+    <Word Comment="">DHCP</Word>
+    <Word Comment="">IP</Word>
+    <Word Comment="">uncheck</Word>
+    <Word Comment="">Uncheck</Word>
+    <Word Comment="">unsecure</Word>
+    <Word>HTTPS</Word>
+    <Word>login</Word>
+    <Word>Login</Word>
 </SpellingDictionary>

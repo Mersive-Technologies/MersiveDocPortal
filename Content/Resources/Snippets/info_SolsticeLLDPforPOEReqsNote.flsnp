@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note">This option should only be enabled for Pods that use Power over Ethernet as a sole power supply and when the switch supplying power supports LLDP (Link Layer Discovery Protocol) and LLDP-MED (Media Endpoint Discovery).</p>
+    </body>
+</html>

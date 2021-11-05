@@ -7,15 +7,15 @@
             <li>Enable <b>Wireless Settings</b>.</li>
             <li>	Select <b>Attached to Existing Network</b> radio button.</li>
             <li>Click <b>Apply</b> to populate a list of networks. The list may take a few seconds to populate.</li>
-            <li>Select a wireless network from the dropdown menu.</li>
+            <li>Select your desired wireless network from the Networks Available list.</li>
             <li>If you are unable to find the network you want to connect to:<ol style="list-style-type: lower-alpha;"><li>Click <b>Add Wireless Network</b>.</li><li>Enter in the name of the network in the <b>SSID</b> field.</li><li>Select the type of network from the radio buttons listed below it.</li><li>Click <b>Ok</b>.</li></ol></li>
-            <li>In the <b>Password</b> field, enter the network password.</li>
+            <li>In the <b>Password</b> field, enter the WiFi password for the selected network.</li>
             <li>
                 <p>If you wish to utilize DNS&#160;resolution  and have added a DNS&#160;entry in your DNS&#160;server to resolve to the Pod's IP&#160;address, you can enter in the <b>DNS&#160;Hostname</b> (for example, hostname.domain) that you wish to show on the display's welcome screen. <MadCap:conditionalText MadCap:conditions="Default.Exclude">For more information on DNS&#160;resolution, see <a href="../../Topics/Admin-DNS-Resolution.htm">DNS&#160;Resolution</a>. </MadCap:conditionalText></p>
             </li>
             <li>Select either <b>DHCP</b>, for the Pod to be dynamically assigned an IP address, or <b>Static IP</b>, to enter your network configuration manually.</li>
+            <li>If your network is 802.1x authenticated:<ol style="list-style-type: lower-alpha;"><li>First, request and install an 802.1x user certificate for the Pod in the <a href="../../Topics/Admin-Security-Settings.htm#Cert_Mgmt" target="_blank">Security tab &gt;&#160;Certificate Tools</a>.<p class="note">Network access between the Pod and the Windows machine running Dashboard is required. The Pod also needs access to a timeserver so that it can validate the certificate.</p></li><li>Select the appropriate <b>EAP Method</b> and the <b>Phase 2 Authentication</b> (if applicable) from the menus.</li><li><b>Browse</b> to select the CA certificate. PEM&#160;and PFX certificates are supported. You can <b>View</b> the certificate once it has been successfully loaded.</li><li>Fill in the <b>Identity</b> as required by your certificate authority.</li></ol></li>
             <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow administrative configuration access</b> checkbox.</li>
-            <li>If your network is 802.1x authenticated:<ol style="list-style-type: lower-alpha;"><li>First, ensure there is network access between the Pod and the Windows machine running Dashboard. You must also ensure that the Pod has access to a timeserver so that it can validate the certificate.</li><li>Go to the <b>Security</b> tab and scroll down to Certificate Tools.</li><li>Select <b>Install certificate</b> and click <b>Open</b>.</li><li>Choose <b>802.1x EAP WiFi User Certificate</b> and <b>Browse</b> to select the certificate needed. Supported certificate file types are .cer, .der, .crt, .pem, .pfx, and .p12.</li><li>If you are uploading a PFX certificate, enter its password in <b>PKCS #12 Password</b>.</li><li>Click <b>Import</b>.</li></ol></li>
             <li>Click <b>Apply</b>.</li>
         </ol>
     </body>

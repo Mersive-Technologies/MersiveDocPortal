@@ -5,10 +5,10 @@
     </head>
     <body>
         <h1>Configuring the Solstice App with CFPreferences on macOS</h1>
-        <p>Preferences for the Solstice app on macOS can be configured using the <b>Settings</b> screen in the Solstice app or by configuring a Solstice plist (property list) using the macOS command line utility <code>defaults</code>.</p>
+        <p>Preferences for the Solstice app on macOS can be configured using the <b>Settings</b> section of the Solstice app or by configuring a Solstice plist (property list) using the macOS command line utility <code>defaults</code>.</p>
         <h2>Solstice App Settings for macOS</h2>
         <p>The following application options can be set using the <code>defaults</code> utility.</p>
-        <p class="note">Both the Solstice app and <code>defaults</code> write to the plist. If a user changes a setting in the application, a value that was set using <code>defaults</code> may be overwritten, and vice-versa. </p>
+        <p class="note">Both the Solstice app and <code>defaults</code> write to the plist. If a user changes a setting in the application, a value that was set using <code>defaults</code> may be overwritten, and vice versa. See the <a href="#Examples">Examples</a> section for more on how changes to the plist affect in-app settings.</p>
         <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: #f5f6f6;border-right-style: solid;border-right-width: 1px;border-right-color: #f5f6f6;border-top-style: solid;border-top-width: 1px;border-top-color: #f5f6f6;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #f5f6f6;border-collapse: separate;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
             <col style="width: 361px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <col style="width: 66px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
@@ -24,17 +24,17 @@
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/AUTOSHAREDESKTOP</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If set to TRUE, Solstice will automatically share your desktop to the Solstice display once you connect to the Pod (corresponds to Settings &gt; Control &gt;&#160;Quick Share Desktop).</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If set to TRUE, the Quick Share Desktop setting is turned on, enabling Solstice to automatically share the user's desktop as soon as they connect to a Solstice display.</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/AUTOSHAREAUDIOWITHDESKTOP</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">If set to TRUE, Solstice will automatically stream your desktop audio to the Solstice display when you share your desktop (Settings &gt; Control &gt;&#160;Auto share audio with desktop).</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">If set to TRUE, the Auto Share Audio with Desktop setting is turned on, enabling Solstice to automatically stream desktop audio to the Solstice display when the user shares their desktop.</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/CALENDAR_CONFIG/REFRESH_TOKEN</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"> If set to TRUE, an Office 365 calendar has been integrated with the Solstice app. You can set the value to FALSE&#160;to terminate the calendar integration. However, the calendar integration needs to be configured in the Solstice app (Settings &gt; Conference) to authenticate with Office 365. </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"> If set to TRUE, an Office 365 calendar has been integrated with the Solstice app. Set the value to FALSE&#160;to terminate the calendar integration. However, the calendar integration needs to be configured in the Conference settings of the Solstice app to authenticate with Office 365. </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/CPUWARNINGCHECKCOUNT</td>
@@ -59,7 +59,7 @@
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/HIDEUIWHENSHARING</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">If set to TRUE, the Solstice app will be automatically hidden when you share your desktop (Settings &gt;&#160;Control &gt;&#160;Hide desktop on share).</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">If set to TRUE, the Hide Desktop on Share setting is turned on, which hides the Solstice app when the user shares their desktop.</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/ISFIRSTRUN</td>
@@ -84,29 +84,29 @@
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1" MadCap:conditions="Default.5-4_Release">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/LOCATIONSERVICESTOGGLE</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If set to TRUE, location services are enabled (Settings &gt; Control &gt; Solstice Location Services) to locate the nearest Pods. If set to FALSE, location services are disabled. (The user must also grant permissions to use location services.)</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If set to TRUE, the Solstice Location Services setting is turned on to and the Solstice app uses location information to try to determine the nearest Pods. If set to FALSE, location services are disabled. (The user must also grant permissions to use location services.)</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/MANUALMRUDISPLAYS</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">???</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Reserved.</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/MANUALSDSADDRESS</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If your organization has implemented the Solstice Discovery Service (SDS), set this value to the SDS&#160;IP address. The Solstice app then uses the Solstice Discovery Service Address (Settings &gt; General) to show nearby available Solstice displays.</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If your organization has implemented the Solstice Discovery Service (SDS), set this value to the SDS&#160;IP address. The Solstice app then uses this Solstice Discovery Service Address setting to show nearby available Solstice displays.</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/NAME</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Set the value to how you would like your to appear in a collaboration session. Use quotation marks around the value (such as "First Last"). </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Set the value to the user's name as it should appear in a collaboration session. Use quotation marks around the value (such as "First Last"). </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/NOTIFICATIONLEVEL</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p>Set which notifications you would like to receive:<br />0 – Do not display any notifications. <br />1 – Display only critical notifications.<br />2 – Display all notifications. </p>
-                        <MadCap:snippetBlock src="../Resources/Snippets/Solstice-App-Notifications-Conference.flsnp" />
+                        <p>Set which notifications you would like the user to receive:<br />0 – Do not display any notifications. <br />1 – Display only critical notifications.<br />2 – Display all notifications. </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/info_UserAppNotificationsOffConfWarning.flsnp" />
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
@@ -132,12 +132,12 @@
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/RELAYSHORTCUT</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Enter a value to set the Conference HotKey shortcut (Settings &gt; Conference) to Cmd+Opt+[value] for quickly opening the Start Conference box without having to go to the system tray. The default value is 'C', which corresponds to the shortcut Cmd+Opt+C.</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Entering a value sets the Conference HotKey shortcut   for opening the quick-access Start Conference box to Cmd+Opt+[value]. The default value is 'C', which corresponds to the shortcut Cmd+Opt+C.</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1" MadCap:conditions="Default.5-4_Release">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/RELAYSHOULDSHAREDISPLAY</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If set to TRUE, the Share Pod Display setting for Solstice Conference (Settings &gt; Conference) is enabled, allowing a Solstice display to be shared with remote conference participants.  If set to FALSE, Share Pod Display is disabled, which may improve performance on some devices.</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If set to TRUE, the Share Pod Display setting for Solstice Conference is enabled, allowing a Solstice display to be shared with remote conference participants.  If set to FALSE, Share Pod Display is disabled, which may improve performance on some devices.</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/RELAYWARNINGDURATION</td>
@@ -156,18 +156,18 @@
                 </tr>
             </tbody>
         </table>
-        <h2>Examples of Using Defaults on macOS</h2>
+        <h2><a name="Examples"></a>Examples of Using Defaults on macOS</h2>
         <p>Here is an example of how to read the values in the Solstice app plist:</p>
         <p class="codeblock"><code>$ <b>defaults -currentHost read com.mersive.solstice.client</b></code>
         </p>
         <p>If a settings option is not currently set in the plist, you can create it by specifying the key type and key value. For example, to configure the Solstice app to automatically share the desktop with the display when it connects, you could enter this:</p>
         <p class="codeblock">$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/TYPE" Bool</b><br />$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/VALUE" T</b></p>
-        <p>Here is an example of how to change a configure setting for the profile name to Jerry:</p>
+        <p>Here is an example of how to change a configured setting for the profile name to Jerry:</p>
         <p class="codeblock"><code>$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/NAME/VALUE" "Jerry"</b></code>
         </p>
         <p>Here is an example of how to delete a configured setting in the Solstice app plist:</p>
         <p class="codeblock">$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/TYPE"</b><br />$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/VALUE"</b></p>
-        <p class="note">The Solstice app reads the plist settings on start up. If you change plist values using the <code>defaults</code>command while the app is running, the app will not show the change on the Settings page. However, the app will behave in accordance with the new plist setting.<br /><br />For example, if the plist setting for AUTOSHAREDESKTOP is FALSE, then the Solstice app will show that Quick Share Desktop is  OFF. However, if the value is changed to TRUE&#160;using the <code>defaults</code> command, the Settings page does not change; however, when the app connects to the display the desktop will be automatically shared. To force the Solstice app to change what is displayed on the Settings page, you will need to exit and restart the app.</p>
+        <p class="note">The Solstice app reads the plist settings on start up. If you change plist values using the <code>defaults</code> command while the app is running, the changes will not appear in the Settings section of the application. However, the app will behave in accordance with the new plist setting.<br /><br />For example, if the plist setting for AUTOSHAREDESKTOP is FALSE when the Solstice app is opened, the Solstice app will show the Quick Share Desktop setting as OFF. If the AUTOSHAREDESKTOP value is changed to TRUE&#160;using the <code>defaults</code> command while the app is running, the Settings page will still show the Quick Share Desktop setting as OFF. However, when the app connects to the display, the desktop will be automatically shared. Exit and restart the Solstice app to refresh the in-app settings to reflect the updated plist configuration.</p>
         <p>&#160;</p>
     </body>
 </html>

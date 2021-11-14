@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note" MadCap:conditions="Default.5-4_Release">The Solstice app for Android versions 5.4 and higher support audio capture with screen mirroring on Android devices running Android 10  and up. Some apps may separately block audio capture.</p>
+    </body>
+</html>

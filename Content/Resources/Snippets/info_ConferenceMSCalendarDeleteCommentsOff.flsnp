@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p class="note">For better integration with Solstice, the Microsoft Exchange server parameter <code>DeleteComments</code>, which removes the body of incoming meeting requests after a response has been sent, should be changed to <code>false</code> for a room's Exchange or O365 calendar account. This allows Solstice to auto-launch a scheduled web conference from a link in the body of the meeting invitation.</p>
+        <p class="note">For Solstice Conference to auto-launch a scheduled web conference from the link in the body of the meeting invitation, the Microsoft Exchange server setting <code>DeleteComments</code> must be changed to <code>$false</code> for the room's Exchange or O365 mailbox account. When set to <code>$true</code> (default), the body of incoming meeting requests is removed, and the web conference cannot be auto-launched. For details, see the <a href="https://docs.microsoft.com/en-us/powershell/module/exchange/set-calendarprocessing?view=exchange-ps" target="_blank">Microsoft documentation</a>.</p>
     </body>
 </html>

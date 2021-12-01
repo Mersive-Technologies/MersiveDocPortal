@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Depending on your macOS&#160;security settings, you may need to give the Solstice app permission to record your desktop to be able to share it to the Solstice display. Follow the directions below to ensure the necessary permissions have been set before using Solstice Conference. </p>
+        <ol>
+            <li>Open your Solstice app and connect to a Solstice display.</li>
+            <li>On the <b>Share</b> panel, click <b>Desktop</b>. If desktop sharing permission is needed, a message will appear with brief directions for enabling it.</li>
+            <li>Open <b>System Preferences</b> from the Dock or the Apple menu, then select <b>Security &amp; Privacy</b>.</li>
+            <li>Go to the <b>Privacy</b> tab and select <b>Screen Recording</b> from the list on the left.</li>
+            <li>If needed, lick the lock icon in the lower left and enter the password to change permissions on your Mac.</li>
+            <li>If the <b>Mersive Solstice</b> app appears on the right, check the box next to it to give it permission to share your desktop to a Solstice display. Then skip to step 8.</li>
+            <li>If Mersive Solstice does not appear in the allowed apps list on the right, do the following:<ol style="list-style-type: lower-alpha;"><li>Click the <b>+</b> button below the apps list.</li><li>Navigate to the location of the Mersive Solstice app.</li><li>Select <b>Mersive Solstice</b> and click <b>Open</b> to add it to the apps list. It should be automatically given screen recording permission.</li></ol></li>
+            <li>Click <b>Quit &amp;&#160;Reopen</b> in the box that appears to allow the Solstice app to be restarted for the change to take effect.</li>
+        </ol>
+    </body>
+</html>

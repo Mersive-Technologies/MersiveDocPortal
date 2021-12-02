@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
+        <p>Depending on your macOS&#160;security settings, you may need to enable desktop audio access for the Solstice app in order to access the full Solstice content sharing functionality. </p>
         <ol>
             <li>Open your Solstice app and connect to a Solstice display.</li>
             <li>On the <b>Share</b> panel, click <b>Desktop</b>. The Solstice app will minimizes. Click <b>Sharing Desktop</b> at the top of your screen to un-minimize the app.</li>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>When enabled, Solstice scans the environment (such as WiFi SSIDs and Bluetooth) to estimate the approximate geographic location of Pods. This allows Solstice app users to quickly connect to a Pod that they are physically nearby and enables Solstice to detect and auto-disconnect users when they leave a meeting while still connected and sharing to a Pod.</p>
+        <p>When enabled, Solstice scans the environment (such as WiFi SSIDs and Bluetooth) to estimate the approximate geographic location of Pods. When Solstice Location Service is also enabled in the Solstice app, users can quickly find and connect to a Pod that is physically nearby them. <MadCap:conditionalText MadCap:conditions="Default.5-4_Release">The app can also over time learn the location of Pods to detect and auto-disconnect users who have left a meeting while still connected and sharing to a Pod.</MadCap:conditionalText></p>
     </body>
 </html>

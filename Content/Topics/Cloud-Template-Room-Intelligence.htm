@@ -5,9 +5,9 @@
     </head>
     <body>
         <h1>Room Intelligence Template</h1>
-        <p>The Room Intelligence template page controls a suite of system preferences that allows your Solstice display to sense a conference room's configuration, status, and location and  provide a simple, intuitive experience with any conferencing solution. </p>
+        <p>The Room Intelligence template page controls a suite of system preferences that allows your Solstice display to sense a conference room's configuration, status, and location and  provide a simple, intuitive experience with any conferencing solution, as well as manage related features such as upcoming meeting messaging. </p>
         <p>
-            <img src="../Resources/Images/Templates-sidebarnav-RoomIntel.png" style="width: 90%;height: auto;" alt="New Room Intelligence template in Manage &gt; Templates section of Solstice Dashboard - contains Enter Template Name textbox, Enable Solstice Conferencing checkbox (checked), Enable location services checkbox (checked), Enable occupancy data checkbox (unchecked), Cancel and Save buttons in upper right" />
+            <img src="../Resources/Images/ex_CloudTemplateRoomIntel.png" style="width: 90%;height: auto;" alt="New Room Intelligence template in Manage &gt; Templates section of Solstice Dashboard - contains Enter Template Name textbox, Enable Solstice Conferencing checkbox (checked), Enable location services checkbox (checked), Enable occupancy data checkbox (unchecked), Cancel and Save buttons in upper right" />
         </p>
         <h2>How To</h2>
         <MadCap:dropDown>
@@ -53,7 +53,7 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/info_EnableLocationServicesHowToIntro.flsnp" />
-                <p class="note">This feature is enabled by default.</p>
+                <p class="note">Location services are enabled for Pods by default. <MadCap:conditionalText MadCap:conditions="Default.5-4_Release">Solstice Location Service in the Solstice user app (Settings &gt; Control) is disabled by default starting in version 5.4.</MadCap:conditionalText></p>
                 <ol>
                     <li>Select <b>Enable location services</b>. </li>
                     <li>Click <b>Save</b>. </li>
@@ -78,7 +78,7 @@
         </MadCap:dropDown>
         <MadCap:dropDown MadCap:conditions="Default.5-4_Release">
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Enable Meeting Conflict Notifications</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Enable Upcoming Meeting Reminders</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>When enabled, Solstice can display messages informing participants in ongoing meetings when a scheduled meeting is about to start in the same meeting space. <MadCap:conditionalText MadCap:conditions="Default.Future">If nearby Solstice-enabled spaces are available, they may be suggested as alternatives for continuing the meeting.</MadCap:conditionalText></p>

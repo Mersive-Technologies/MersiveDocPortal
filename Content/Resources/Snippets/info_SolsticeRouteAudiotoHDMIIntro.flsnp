@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>When a USB device with audio output, such as a composite camera, is connected to a Gen3 Solstice Pod, audio output for the Pod will be routed through the USB port to the USB device by default. However, starting in Solstice 5.4 you can choose for audio to instead be routed to the HDMI output, or HDMI outputs if the Pod is connected to more than one display monitor.</p>
+    </body>
+</html>

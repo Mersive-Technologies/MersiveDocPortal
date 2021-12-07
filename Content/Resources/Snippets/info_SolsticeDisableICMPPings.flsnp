@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Disables the ability to ping Pods over the wireless access point (WAP), wireless, or Ethernet networks and prevents ICMP/Ping flooding that could lock up the Pod. This feature is disabled by default.</p>
+    </body>
+</html>

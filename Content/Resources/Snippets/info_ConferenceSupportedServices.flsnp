@@ -4,7 +4,8 @@
         <link href="../TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <p>Below are the supported conferencing services depending on the operating system of the meeting host laptop. For support listed as "browser-based version only," Solstice Conference's full functionality (i.e. the ability to share the Solstice display to remote users via the conferencing application)&#160;is only supported in the browser-based version of that conferencing application. As a note, please ensure your video conferencing software is updated to the latest version. </p>
+        <p>Below are the supported conferencing services depending on the operating system of the meeting host laptop. For support listed as "browser-based version only," Solstice Conference's full functionality (i.e. the ability to share the Solstice display to remote users via the conferencing application)&#160;is only supported in the browser-based version of that conferencing application. </p>
+        <p class="note">For best compatibility, check that your video conferencing software is updated to the latest version. </p>
         <table style="mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
@@ -15,9 +16,7 @@
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">&#160;</td>
                     <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Windows </td>
                     <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">macOS&#160;</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p class="table-text"><b>Notes</b>
-                        </p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><b>Notes</b>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
@@ -33,7 +32,7 @@
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Full</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Browser-based version only*</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p>Microsoft will fix 3rd-party support</p>
+                        <p>Microsoft will fix 3rd-party support.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
@@ -41,7 +40,7 @@
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Browser-based version only*</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Browser-based version only*</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p>Windows: To share display, select Pod name</p>
+                        <p>Windows: To share display, select Pod name.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
@@ -57,7 +56,7 @@
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Full</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Partial</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p>Windows: To share display, use browser app</p>
+                        <p>Windows: To share display, use browser app.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
@@ -73,15 +72,15 @@
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Full</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Partial</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p>Windows: To share display, use browser app</p>
+                        <p>Windows: To share display, use browser app.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RingCentral Meetings</td>
+                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RingCentral</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Full</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Partial</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p class="table-text">&#160;</p>
+                        <p class="table-text">macOS: Use RingCentral Meetings app.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">

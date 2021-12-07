@@ -38,7 +38,7 @@
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Webex</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Full</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Browser-based version only*</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Browser-based version only*</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
                         <p>Windows: To share display, select Pod name</p>
@@ -77,9 +77,9 @@
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RingCentral</td>
+                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RingCentral Meetings</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Full</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Full</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Partial</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
                         <p class="table-text">&#160;</p>
                     </td>

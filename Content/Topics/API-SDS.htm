@@ -4,7 +4,7 @@
         <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>SDS API</h1>
+        <h1>Solstice Discovery Services (SDS) API</h1>
         <p><b>SDS Server URL:</b> IPAddress/api/discover </p>
         <p>The SDS API reports statistics about the current status of the Solstice Discovery Service directory. These stats are instantaneous and can provide third-party developers with a snapshot of all hosts managed by this SDS server. Note that the target IP address must be the computer with SDS installed, not a Pod or Windows Host. While SDS may be installed on the same machine as a Windows Host, the API should not be used to call the server while the Solstice Software is active. In the Solstice Dashboard, this the IP address shown in the SDS tab, below the "Configure Primary SDS&#160;Host"&#160;button. </p>
         <p>Hitting a target URL of a Solstice host returns a single dictionary of key:value pairs pertaining to that one host. [sds]/api/discover returns an array of dictionaries, where each dictionary contains the same keys but different values, depending on the values associated with the host in question. For example, sending a ‘GET’ to an SDS server with two associated hosts returns something similar to this:</p>
@@ -211,8 +211,9 @@
                 </td>
             </tr>
         </table>
-        <h3>Next Topic</h3>
-        <p><a href="API-TimeZones.htm">Valid Time Zone Values</a>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="API-TimeZones.htm">Valid Time Zone Values</a>
         </p>
+        <p>&#160;</p>
     </body>
 </html>

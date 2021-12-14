@@ -8,6 +8,92 @@
         <p class="tip">Looking for other release notes? View our release notes for <a href="../Topics/Release-Notes-Solstice-Cloud.htm">Solstice Cloud</a> and <a href="../Topics/Release-Notes-Solstice-AL.htm">Solstice Active Learning</a>. </p>
         <MadCap:dropDown>
             <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.4 // December 2021</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note"><a name="5_4"></a><b>Note:</b> Mersive strongly recommends upgrading Pods to software version 5.4 to benefit from the latest security fixes and performance enhancements.</p>
+                <h4>New Features</h4>
+                <ul>
+                    <li><b>Upcoming Meeting Notifications.</b> Solstice administrators can now enable upcoming meeting notifications to appear on the Solstice display if users are still sharing content when a scheduled meeting is about to begin. Admins can enable Solstice to display up to two upcoming meeting reminders, with the option to configure how long before the next meeting the notifications will appear, as well as the duration they will appear on the screen (Solstice Cloud &gt; Room Intelligence template). To use this feature, Solstice Pods must be managed in Solstice Cloud, have a room calendar integrated, and have an active Solstice Subscription.</li>
+                    <li><b>Automatic Disconnect Based on Proximity.</b> Designed as one of Solstice’s intelligent room features, this new capability automatically disconnects users when Solstice detects they are no longer in the room to increase the efficiency of meeting transitions and ensure shared content isn’t unintentionally viewed by others after the meeting ends. When it is detected that a connected user has left the room, the Solstice app will prompt the user with an option to disconnect or continue sharing to the Solstice display. This feature is currently supported for Solstice apps on Windows, macOS, and Android mobile devices.<p><b>Important Note:</b> For this feature to work, organizations must have Location Services enabled for their Pods (Solstice Cloud &gt; Room Intelligence template, or Solstice Dashboard &gt; System tab), have Location Services running long enough to determine a location for each Pod (~10–15+ Solstice app connections to the Pod), and have end users enable ’Solstice Location Service’ and select a disconnect sensitivity level in their Solstice apps (Settings &gt; Control tab; auto-disconnect defaults to off).</p></li>
+                    <li><b>LLDP for PoE+ Power Negotiation.</b> This setting allows a PoE network switch to assign the power priority value of a Solstice Gen3 Pod using LLDP so  a Pod can signal and negotiate its power value with the switch. This option can be enabled in Solstice Dashboard (Network tab) and Solstice Cloud (Advanced template). This option should only be enabled if the Pod uses Power over Ethernet as its sole power supply and the switch supplying power supports LLDP (Link Layer Discovery Protocol) and LLDP-MED (Media Endpoint Discovery).  <b>Note:</b> Enabling LLDP support without turning on “Use LLDP for PoE” for a Pod simply reports the Pod’s information (such as hostname, software and firmware versions, and serial number) on the network.</li>
+                    <li><b>Echo Cancellation for Separate Mic and Speaker Device Sources.</b> Echo cancellation has been added for Solstice’s conferencing support to mitigate an in-room audio echo heard by remote participants when there are separate microphone and speaker components plugged into the Pod. This feature improves handling for more USB mics without on-board AEC processing, specifically when using a Windows device for Solstice Conference. This feature is supported for Gen3 Pods only.</li>
+                    <li><b>Audio Support for Android Screen Mirroring.</b> Solstice now supports audio streaming for Android screen mirroring, in addition to existing audio support for Android video file sharing. This functionality is supported on Android devices running the Android 10 operating system or higher. When mirroring their device screen, users can tap the speaker icon at the top of the Solstice app to stream their device’s audio to the display. <b>Note:</b> Other apps on the user’s device may block audio capture, preventing the Solstice’s app from streaming their audio.</li>
+                    <li><b>New Option to Always Direct Audio to HDMI Out.</b> Administrators can now enable the Solstice Pod to always stream audio through the Pod’s HDMI outputs even when USB audio devices are plugged into the Pod, allowing for more control over where audio is directed within the room setup. This configuration option can be set in Solstice Dashboard (Appearance and Usage tab) or Solstice Cloud (Features template). This feature is supported for Gen3 Pods only and is disabled by default.  <b>Note:</b> If this option is disabled, the Pod will (by default) stream audio through any connected USB audio devices plugged into the Pod, or if there are no detected USB audio devices, will stream audio through HDMI out.&#160;</li>
+                    <li><b>Option for Scheduled Reboots to Ignore HDMI Devices.</b> Admins can now enable a new option to ignore HDMI input devices during a scheduled reboot. This prevents a device connected to the Pod via HDMI input, such as a digital signage player, from preventing the daily reboot. This setting can be enabled in the Solstice Dashboard (System tab).</li>
+                    <li>
+                        <p><b>New Solstice App Setting to Enable/Disable Extended Presentation Mode.</b> A new setting has been added in the Solstice app for Windows to turn on and off support for PowerPoint’s Presenter View. When enabled, the PowerPoint presentation will appear on the display, while the presenter’s notes will appear on the user’s desktop. This option allows users to choose their preferred method for presenting a PowerPoint with Solstice. This feature is supported for Windows devices only. <b>Note:</b> A corresponding configuration option has also been included in the MSI and SCCM installers.</p>
+                    </li>
+                </ul>
+                <h4>Other Fixes and Enhancements</h4>
+                <ul>
+                    <li>When launching a web conference using Solstice’s one-step start, Solstice will automatically redirect macOS devices to open the browser-based version of the video conferencing app for a better user experience.</li>
+                    <li>Added ability to override Solstice’s default USB audio device prioritization using the API. <a href="../Topics/Info-USB-Audio-Priority.htm" target="_blank">Learn More</a></li>
+                    <li>A new option was added to the Solstice app installer for Windows, as well as the MSI and SCCM installers, to set the Solstice app’s “Share Pod Display” setting to be on or off.</li>
+                    <li>Solstice will now perform a check to ensure that a Pod does not reboot when users are connected and sharing content.</li>
+                    <li>MacOS users should no longer need to restart their computers after installing the lightweight drivers required to use Solstice Conference.</li>
+                    <li>The appearance of notifications that appear on the Solstice display have been updated to use colors and icons to differentiate between informational messages and warnings.</li>
+                    <li>The voice for the spoken screen key option has been updated to be easier to understand.</li>
+                    <li>All Solstice apps have now been built as 64-bit applications, with the exception of the Solstice Windows Display Software, which will still run as a 32-bit application.</li>
+                    <li>New event logging has been implemented to better outline an end-user’s actions. These new logs are time-coordinated with general Solstice Pod logs to improve troubleshooting.</li>
+                    <li>Conference driver installs for the Solstice app for Windows have been improved to ensure that any previously installed drivers are removed during the uninstall process and before new installs or upgrades.</li>
+                    <li>Screen key size in digital signage mode is now more consistent with the Welcome Screen.</li>
+                    <li>During MSI/SCCM installation, a process has been put in place that detects if an emulator is in use and will inform any users attempting to install our 64-bit applications on 32-bit operating systems that the process is blocked.</li>
+                    <li>The Solstice app for Windows desktop is now available for download in the Microsoft Store.</li>
+                </ul>
+                <h4>New Supported A/V Devices</h4>
+                <p>The following USB room devices are now supported for Solstice Conference. <a href="../Topics/Solstice-Conference-Supported-Peripherals.htm" target="_blank">View the full list and details here.</a></p>
+                <ul>
+                    <li>Biamp Tesira EX-UBT</li>
+                    <li>Biamp TesiraFORTÉ AVB VT4</li>
+                    <li>Bose Videobar VB1</li>
+                    <li>HuddleCamHD 10X</li>
+                    <li>HuddleCamHD 3XA</li>
+                    <li>HuddleCamHD Pro EPTZ</li>
+                    <li>Jabra PanaCast 50</li>
+                    <li>Lumens VC-B11U</li>
+                    <li>Poly EagleEye Cube</li>
+                    <li>Stem Audio Hub</li>
+                    <li>Stem Audio Table</li>
+                    <li>Stem Audio Wall</li>
+                    <li>Vaddio AV Bridge Mini</li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>Users connecting via a Solstice app downloaded directly from a Solstice Pod will now correctly inherit any applied SDS settings from the Pod.</li>
+                    <li>General stability improvements have been made to digital signage support as well as stability improvements when a user connects to Solstice while digital signage is running.</li>
+                    <li>Application window shares from the Solstice app should no longer prompt users with “Window Obstructed” notices when there are no obstructions.</li>
+                    <li>Digital signage configurations made in Solstice Cloud are now properly applied and reflected on the Solstice Pod being managed.</li>
+                    <li>Moderator alerts will correctly identify the number of items waiting to be reviewed by the moderator.</li>
+                    <li>The stability of the datastore has been improved, resolving some issues that cause a "database locked" message to appear in the event logs.</li>
+                    <li>Solstice Pods should no longer experience issues due to Bluetooth discovery being enabled.</li>
+                    <li>If desktop sharing has been disabled via the Solstice Dashboard and a Solstice app attempts to start a conference session, the Solstice app will no longer hang and will instead start a conference session without sharing the desktop to the display.</li>
+                    <li>When sharing a PowerPoint presentation to Solstice using PowerPoint’s Presenter View, Solstice now has improved syncing to  more accurately reflect the current slide.</li>
+                    <li>The Solstice app now better handles the SDS address being removed from the app settings if the app was previously connected to a large SDS instance (e.g. 1,000 or more Pods).</li>
+                    <li>If a user attempts to start a conference session and the bundled drivers required for conferencing are unable to be located by Windows, a message will now display to the user informing them that Windows is unable to locate the proper drivers.</li>
+                    <li>In the Solstice Dashboard, when clicking to “View” the encryption certificate on the Security tab, a pop-up will now properly display showing the certificate information.</li>
+                </ul>
+                <h4>Important Notes for 5.4</h4>
+                <ul>
+                    <li>Due to the timing of the new operating system releases, Mersive does not currently claim full Solstice compatibility for the new Windows 11 and macOS Monterey operating systems. Mersive will certify compatibility for those operating systems immediately after the 5.4 release.</li>
+                    <li>Solstice 5.4 requires Solstice app version 5.4 or later to operate optimally with Solstice Conference. Mersive always recommends that users have the same Solstice app version as the Solstice Pod software they are connecting to for optimal compatibility and performance.</li>
+                    <li>The ability to upload certificates via the Network tab in the Solstice Dashboard has been deprecated as of 5.4. Administrators will now need to use Security tab &gt; Certificate Tools in the Solstice Dashboard to upload their enterprise certificates.</li>
+                    <li>When Solstice Conference and digital signage are both enabled, Pods may experience issues such as unexpected reboots. Until this is resolved in a future release, Mersive strongly recommends that Pods with both digital signage and Solstice Conference enabled also have nightly reboots enabled to avoid the potential for user disruption.</li>
+                    <li>Starting in Solstice 5.4, the architecture has been put in place to allow Solstice administrators to downgrade future Solstice Pod versions. However, because both the Pod’s current version and the desired downgrade version must both contain this architecture to perform a downgrade, this functionality will not be usable until the next Solstice software release (e.g. 5.5).</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.4 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod (Gen2i and Gen3)</li>
+                    <li>Solstice Display Software for Windows</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. A current Solstice Subscription is required to upgrade Solstice Pods to the latest version. You can schedule the latest software update for your Solstice Pods using Solstice Cloud. If using Solstice Dashboard, remember to update Solstice Dashboard instances to the latest available version before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
                 <MadCap:dropDownHotspot>5.3.4 // August 2021</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>

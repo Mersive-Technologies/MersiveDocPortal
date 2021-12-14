@@ -7,7 +7,7 @@
         <p>See the compatibility chart below for more details on which web browsers are supported for browser-based sharing on your laptop. Note that available sharing options (e.g. desktop sharing, application window sharing) vary by browser. </p>
         <MadCap:dropDown style="padding-bottom: 10px">
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Browser Support by Operating System </MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Find Browser Support by Operating System </MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <table style="width: 90%;mc-table-style: url('../TableStylesheets/SupportTable.css');" class="TableStyle-SupportTable" cellspacing="21">
@@ -40,7 +40,7 @@
                             </td>
                             <td class="TableStyle-SupportTable-BodyD-Column1-Body">
                                 <ul>
-                                    <li> Audio streaming is supported for the desktop and browser tab sharing options  on Google Chrome and Microsoft Edge browsers only. You must ensure "Share Audio" option is checked <u>before</u> sharing.</li>
+                                    <li> On Google Chrome and Microsoft Edge browsers, audio streaming is supported for the desktop and browser tab sharing options   only. You must check "Share Audio" <u>before</u> sharing.</li>
                                 </ul>
                             </td>
                         </tr>
@@ -54,8 +54,8 @@ Catalina, Big Sur                    </p>
                             </td>
                             <td class="TableStyle-SupportTable-BodyD-Column1-Body">
                                 <ul>
-                                    <li>Audio streaming is supported for the browser tab sharing options on Google Chrome browsers only. You must ensure "Share Audio" option is checked <u>before</u> sharing.<br /></li>
-                                    <li>Browser-based sharing is only available for Safari users if the Pod has a DNS hostname configured. </li>
+                                    <li>Audio streaming is supported for the browser tab sharing options on Google Chrome browsers only. You must check "Share Audio" <u>before</u> sharing.<br /></li>
+                                    <li>Browser-based sharing is only available for Safari users if the Solstice Pod has a DNS hostname configured. </li>
                                 </ul>
                             </td>
                         </tr>

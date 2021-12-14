@@ -38,6 +38,6 @@
                 </tr>
             </tbody>
         </table>
-        <p class="tip"><b>Tip:</b> To check your laptop specs, open Command Prompt, enter “dxdiag”, then run.</p>
+        <p class="tip" style="margin-left:15pt">To check your laptop specs, open Command Prompt, enter “dxdiag”, then run.</p>
     </body>
 </html>

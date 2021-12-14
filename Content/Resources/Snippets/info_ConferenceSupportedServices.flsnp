@@ -78,9 +78,9 @@
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
                     <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RingCentral</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Full</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Partial</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Support coming soon</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p class="table-text">macOS: Use RingCentral Meetings app.</p>
+                        <p>Previous macOS support ended when RingCentral retired RingCentral Meetings.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">

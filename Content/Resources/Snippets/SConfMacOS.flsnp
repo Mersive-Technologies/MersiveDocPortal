@@ -39,6 +39,6 @@
                 </tr>
             </tbody>
         </table>
-        <p class="note">If you are using a 4K laptop, Mersive recommends scaling your screen resolution down to 1080p when using Solstice Conference. </p>
+        <p class="note" style="margin-left:15pt">If you are using a 4K laptop, Mersive recommends scaling your screen resolution down to 1080p when using Solstice Conference. </p>
     </body>
 </html>

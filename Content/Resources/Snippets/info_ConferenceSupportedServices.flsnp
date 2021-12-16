@@ -9,7 +9,7 @@
         <table style="mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');width: 80%;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 20%;" />
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <tbody>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
@@ -80,7 +80,7 @@
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Full</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RingCentral Video online (browser-based) only*</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p>RingCentral Meetings was retired by RingCentral. Mersive is working to add support for replacement apps on macOS.</p>
+                        <p>RingCentral Meetings was retired by RingCentral. Mersive is working to add RingCentral app support on macOS.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">

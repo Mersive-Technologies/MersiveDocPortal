@@ -9,19 +9,19 @@
   ConditionTagExpression="include[Default.5-4_Release or Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
+  MasterToc="/Project/TOCs/Solstice Cloud Admin Guide.fltoc"
   OutputFolder="C:\Users\rocky\Docs\Work\Writing and Editing\Projects\Mersive\Flare"
   InjectBookHeadings="true"
-  OutputFile="SolsticeConferenceSupportedPeripherals">
+  OutputFile="SolsticeCloudAdminGuide">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="false"
+    GenerateTOCProxy="true"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice Conference Supported Peripherals" />
+    Title="Solstice Cloud Admin Guide" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

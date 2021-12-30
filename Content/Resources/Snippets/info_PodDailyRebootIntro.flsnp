@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Enable and schedule daily Pod software reboots to refresh the Pod’s memory usage and maximize system performance. <MadCap:conditionalText MadCap:conditions="Default.5-4_Release">If users are connected and sharing content to a Pod at the scheduled reboot time, that Pod's reboot will be skipped until the next scheduled reboot time.</MadCap:conditionalText></p>
+        <p>Enable and schedule daily Pod software reboots to refresh the Pod’s memory usage and maximize system performance. If users are connected and sharing content to a Pod at the scheduled reboot time, that Pod's reboot will be skipped until the next scheduled reboot time.</p>
     </body>
 </html>

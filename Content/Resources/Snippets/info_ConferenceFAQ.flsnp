@@ -35,7 +35,7 @@
                 <p>On macOS, a "hall of mirrors" visual effect may appear when using Solstice Conference if the Conference drivers are not loading correctly. Open <b>Security &amp; Privacy</b> settings and check the make sure you have allowed drivers from Mersive.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <MadCap:dropDown MadCap:conditions="Default.5-4_Release">
+        <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot class="FAQ">Why does changing virtual display settings with Solstice Conference create a "hall of mirrors" on my Mac?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
@@ -43,7 +43,7 @@
                 <p>On macOS, when the Solstice Conference virtual monitor is set as the primary display, a known issue exists in Solstice 5.4 that causes a video effect that resembles a hall of mirrors. Once the issue has been triggered, the Solstice Conference drivers often must be uninstalled and reinstalled to resolve it. Mersive strongly recommends not accessing the display settings while using Solstice Conference to avoid this issue. For help uninstalling and reinstalling Conference drivers, contact <a href="https://mersive.force.com/support" target="_blank">Mersive Support</a>.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <MadCap:dropDown MadCap:conditions="Default.5-4_Release">
+        <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot class="FAQ">Why does my Pod with digital signage enabled spontaneously reboot after being used for Solstice Conference?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>

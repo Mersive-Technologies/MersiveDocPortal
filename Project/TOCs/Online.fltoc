@@ -272,7 +272,10 @@
       Link="/Content/Topics/Admin-MSI-Instuctions.htm"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%] "
-      Link="/Content/Topics/Admin-SCCM-Instuctions.htm" />
+      Link="/Content/Topics/Admin-SCCM-Instuctions.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%] "
+      Link="/Content/Topics/Info-MacOS-CFPreferences.htm" />
     <TocEntry
       Title="Solstice Discovery Service (SDS)"
       Link="/Content/Topics/SDS-Introduction.htm">

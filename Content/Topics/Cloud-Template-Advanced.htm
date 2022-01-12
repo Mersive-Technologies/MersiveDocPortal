@@ -95,13 +95,26 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set Preferred HDMI Input Resolution</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_PreferredHDMIInputResolution.flsnp" />
+                <ol>
+                    <li>Select <b>Enable Preferred HDMI Input Resolution</b> to configure the HDMI input resolution for Pods assigned to this template.</li>
+                    <li>Select your <b>Preferred HDMI Input Resolution</b> for HDMI input, <b>1080p</b> (default), <b>720p</b>, or <b>VGA</b>.</li>
+                    <li>Click <b>Save</b> and reboot affected Pods (Manage &gt; Pods &gt; Pod Actions) to apply this change. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Enable LLDP for PoE Management</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/info_AdminEnableLLDP.flsnp" />
                 <ol>
                     <li>Check <b>Enable LLDP</b> to turn on information reporting from Gen3 Solstice Pods over Link Layer Discovery Protocol.</li>
-                    <li>Check  <b>Enable PoE</b> to enable Gen3 Pods to use LLDP to report and negotiate their Power over Ethernet requirements with a PoE/PoE+ switch. </li>
+                    <li>Check  <b>Use LLDP&#160;for PoE</b> to enable Gen3 Pods to use LLDP to report and negotiate their Power over Ethernet requirements with a PoE/PoE+ switch. </li>
                     <MadCap:snippetBlock src="../Resources/Snippets/info_SolsticeLLDPforPOEReqsNote.flsnp" />
                     <li>Click <b>Save</b>. </li>
                 </ol>

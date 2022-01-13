@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="warning">No video or audio data from an attached camera ever leaves the Solstice Pod. All processing occurs locally, and only an aggregated occupancy count is sent to Solstice Cloud Management.</p>
+    </body>
+</html>

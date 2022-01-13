@@ -4,34 +4,20 @@
     </head>
     <body>
         <h1>Solstice Cloud Analytics: Usage</h1>
-        <p>The  <b>Usage</b> page allows you to see a graph of  Pod usage history. Up to two types of analytics data can be displayed simultaneously on the graph, and the types of data displayed are selectable using drop-downs. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/SolsticeCloudUsage.png" style="width: 785px;height: 710px;" /></MadCap:expandingBody></MadCap:expanding></p>
-        <p>The Usage page is divided into two main parts:</p>
+        <p>The  <b>Analytics &gt; Usage</b> page provides both graphical representations of and granular source data for usage history metrics collected by the Solstice Pods in your organization about Solstice-enabled collaboration sessions. <MadCap:expanding><MadCap:expandingHead>See Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/ex_CloudAnalyticsUsageInfo.png" style="width: 100%;height: auto;" /></MadCap:expandingBody></MadCap:expanding></p>
+        <p>The Usage page is divided into two parts:</p>
         <ul>
-            <li><b>Usage History Graph</b> - This is a graph at the top half of the page that displays up to two types of data on a time line.</li>
-            <li><b>Displays Table</b> - This table can list all the Pods that are being managed in your Solstice Cloud instance, or it can display a filtered subset of Pods. Any filters you apply will affect the data that is displayed in the table. Clicking the check-boxes to the left of filtered Pods will show only the data from the selected Pods on the graph.</li>
+            <li><b>Usage History Graph</b> - The top of the page displays a graph that shows up to two types of usage data for Pods managed in your Solstice Cloud organization on a time line. You can select the type(s) of analytics data to display on the graph and what unit of time to display it in from options in the upper right and lower left of the graph. The time period selected from the options above graph also affects the Pods table below.</li>
+            <li><b>Pods Usage History Table</b> - Below the graph, a table appears containing the usage history data details for your Pods managed in Solstice Cloud. By default, all Pods in the table are selected to display their data in the graph. The table can be filtered to display a subset of Pods using either the Search bar at the top of the table or the Filter button at the top of the page. Any filters you apply will also affect the data that is displayed in the graph.</li>
         </ul>
         <h2>Collected Data</h2>
-        <p>Solstice data is uploaded to Solstice Cloud on a daily basis. After it is uploaded to Solstice Cloud, the data is deleted from the Solstice Pod. Solstice Cloud tracks the following  data for Solstice Pods.</p>
+        <p>Solstice data is uploaded to Solstice Cloud on a daily basis. Once the data from a Solstice Pod has been uploaded to Solstice Cloud, it is then deleted from the Pod. Solstice Cloud tracks the following usage data for Solstice Pods.</p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Usage Data</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Pod Usage Data</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../Resources/Snippets/UsageData.flsnp" />
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>View Your Deployment’s Usage Analytics</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Analytics</b> &gt; <b>Usage</b>. The Usage History graph displays.</li>
-                    <li>The data shown is determined by what displays are selected in the Displays table below the graph. You can select or deselect displays manually or filter them by their assigned categories. Only the data for the displays selected will appear in the graph.</li>
-                    <li>To change the graph view, you can select to view the data in Hours, Days, Weeks, or Months in the top left-hand corner of the graph. You can also select whether to view data from the last 48 hours, week, month, quarter, or a customer date range in the top right-hand corner of the graph.</li>
-                    <li>To change the data shown in the graph, click one of the drop-downs in the bottom left-hand corner of the graph and select an option from the list that appears. For example, you can select to view "Content Per Meeting."</li>
-                    <li>The second drop-down allows you to select another data column to compare the first column to. For example, you can select to view "Total Users." In this example, this will give you a side-by-side comparison of how the total amount of posted content relates to the total amount of users at a given time.</li>
-                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_CloudAnalyticsUsagePotStats.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -39,35 +25,47 @@
                 <MadCap:dropDownHotspot>Room Occupancy Data</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>If your Pod is connected to a USB camera and has Room Occupancy enabled (Features settings), the following room occupancy data can be collected. As a note, room occupancy data is only tracked as an aggregate numerical value. No image or video ever leaves the Solstice Pod.</p>
+                <p>If your Pod is connected to a USB camera and has Room Occupancy enabled (Features settings), the room occupancy data can be collected. Graphs display total numbers for the Pods selected in the table over the time period selected at the top of the page, graphed by hours, days, weeks, or months, based on the menu in the graph's upper right corner. Pods data tables list usage data for the selected time period by individual Pod.</p>
+                <p>The following room occupancy data categories are available:</p>
                 <ul>
-                    <li>
-                        <p><b>Average Hourly Occupancy</b>: 
-						The average number of people detected in the room each hour. Hour increments are determined at the top of the hour. For example, 1:00 p.m. to 2:00 p.m. If a meeting runs from 1:45 p.m. to 2:15 p.m., the number of people in the room will be averaged in to both the 1:00 p.m. and 2:00 p.m. calculations.</p>
-                    </li>
-                    <li>
-                        <p><b>Peak occupancy</b>: 
-						The maximum number of people that have been detected in the room during the course of the meeting.</p>
-                    </li>
+                    <li><b>Average Hourly Occupancy</b> records the average number of people detected in a Pod's meeting space each hour. Hour increments start at the top of the hour—for example, 1:00 p.m. to 2:00 p.m. If a meeting runs from 1:45 p.m. to 2:15 p.m., the number of people in the room will be averaged into both the 1:00 p.m. and 2:00 p.m. calculations.</li>
+                    <li><b>Peak occupancy</b> records the maximum number of people detected in a meeting space during a meeting.</li>
                 </ul>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_OccupancyCountDataNote.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>How To</h2>
-        <p>Below are the instructions on how to use the controls and filters on the Usage History page.</p>
+        <p>See step-by-step instructions in the sections below to learn more about how to access the Usage History for your Solstice deployment and use the available controls and filters to view the data that is most meaningful to you.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Access Usage History Analytics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Log in to <a href="https://cloud.mersive.com/home" target="_blank">Solstice Cloud Management</a> portal.</li>
+                    <li>In the left sidebar menu of Solstice Cloud, go to <b>Analytics &gt; Usage</b>. </li>
+                    <li>In the top right of the Usage History page, select a time period for the usage data you want to view.<ol style="list-style-type: lower-alpha;"><li>You may select a pre-set time period (from 48 Hours to 90 Days).</li><li> Or click <b>Custom</b> to choose the start and end dates of a custom time period from a calendar.</li></ol></li>
+                    <li>A Usage History graph displays at the top of the page. The data displayed in this graph is determined by which Solstice Pods are selected in the Pods table below the graph. </li>
+                    <li>Use the following options to manage selections in the Pods table: <ol style="list-style-type: lower-alpha;"><li>Select or deselect rows for individual Pods manually using the boxes in the first column.</li><li>Use the Search box at the top of the Pods table to filter Pods by Pod name.</li><li>Use the Filter button at the top of the page to filter Pods by Categories defined for your Solstice Cloud Management organization. </li></ol><p class="note">Filtering and changing selections in the Pods table will also change the data graphed above. The Usage History graph displays only data for Pods that currently appear in the Pods table.</p></li>
+                    <li>In addition to changing Pod table selections, you can change the graph view in a couple ways:<ol style="list-style-type: lower-alpha;"><li>Select Hours, Days, Weeks, or Months in the top right corner of the graph to show the data graphed by that increment of time. </li><li>Select up to two usage data categories from the menus below the lower left corner of the graph to compare data for the selected Pods over the same time period. For example, you might select Content Per Meeting from the first menu, then select Total Users from the second menu. You can use this graph to compare how the total amount of posted content relates to the total amount of users over a given time period.</li></ol></li>
+                </ol>
+                <p>Explore the sections below to find more detailed instructions on the functionality described here.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set a Custom Time Period for Usage Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsGraphsCustomTimePeriod.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Specify the Time Increment for Your Graph</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsGraphsSpecifyTimeIncrement.flsnp" />
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Set a Custom Time Period for Your Graph </MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsGraphsCustomTimePeriod.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsGraphsTimeIncrmt.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

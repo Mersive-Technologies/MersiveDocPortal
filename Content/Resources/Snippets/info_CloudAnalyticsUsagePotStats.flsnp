@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Pod usage data captures general information around the utilization of your Solstice Pods. Graphs display total numbers for the Pods selected in the table over the time period selected at the top of the page, graphed by hours, days, weeks, or months, based on the menu in the graph's upper right corner. Pods data tables list usage data for the selected time period by individual Pod.</p>
+        <p>The following Pod usage categories are available:</p>
+        <ul>
+            <li><b>Total Users</b> shows the number of users who connected to or shared content to Pods.</li>
+            <li><b>Meetings</b> shows the number of meetings hosted by Pods. For analytics purposes, a meeting is considered to start when the first user connects to the Pod. Any number of additional users can join the meeting, and the meeting is recorded as ending when the last user disconnects from the Pod (which can be different than when the last user stops sharing content to the Pod). Consequently, it is common for several "analytics meetings" to occur during the course of a single scheduled meeting.</li>
+            <li><b>Content Items</b> 
+
+						are summarized on the Usage and Compare pages as a total number of items that users shared to Pods over the selected time period. More details about types of content shared and connection methods used are provided on the In-Room Tech page.</li>
+            <li><b>Hours in Use</b> shows the number of hours that users were connected to or sharing content to Pods.</li>
+            <li><b>Average Meeting Duration</b> is the calculated average number of meetings that occur in a single day over the selected period of time.</li>
+            <li><b>Content Per Meeting</b> shows the calculated average over the selected time period of number of posts shared by users divided by the number of meetings that occurred.</li>
+        </ul>
+    </body>
+</html>

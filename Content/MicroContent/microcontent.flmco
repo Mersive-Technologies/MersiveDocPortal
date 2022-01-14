@@ -463,10 +463,14 @@
         </MicroContentResponse>
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>New Phrase</MicroContentPhrase>
+        <MicroContentPhrase>change Solstice Cloud account password</MicroContentPhrase>
+        <MicroContentPhrase>set new password in Solstice Cloud</MicroContentPhrase>
         <MicroContentResponse>
-            <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
+                    <xhtml:h4>How to Change a Solstice Cloud Account Password</xhtml:h4>
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudAccountChangePwd.flsnp" />
+                    <xhtml:p>For more about Solstice Cloud user roles and account management, see <xhtml:a xhtml:href="../Topics/Cloud-Roles-Permissions.htm">Manage Users and Roles in Solstice Cloud</xhtml:a>.</xhtml:p>
                     <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>

@@ -1,20 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>You can change the time increment by which to break down the selected Analytics data on the graph—for example, graphing data for the last 48 hours by hourly data points. In this way, you can view the information broken down more finely or summarized into larger time increments like weeks or months.</p>
+        <p>You can change the time increment by which to group your selected Analytics data on the graph—for example, graphing data for the last 48 hours by hourly data points. In this way, you can view the information broken down by smaller time increments or summarized into larger increments like weeks or months.</p>
         <ol>
             <li>
-                <p>In the graph at the top of the page, find the time increments menu in the upper right corner.</p>
-                <p>&#160;</p>
+                <p>In the graph at the top of the Analytics page, locate the menu that contains time increments (usually set to Days by default).</p>
+                <p>
+                    <img src="../Images/ex_CloudAnalyticsGraphTimeMenu.png" />
+                </p>
             </li>
-            <li>The following four time increments can be selected from the :<ul><li>Hours</li><li>Days</li><li>Weeks</li><li>Months</li></ul></li>
+            <li>Select the time increment by which you prefer your currently selected data to be graphed, <b>Hours</b>, <b>Days</b>, <b>Weeks</b>, or <b>Months</b>. Time increment options depend on the time period that is selected in the upper right of the Analytics page. For example, if the 48 Hour time period is selected, hours will be the only available time increment.</li>
+            <li>The graph will display your selected data grouped into data points by the selected time increment. </li>
         </ol>
-        <p>The options listed above that are available for selection are dependent on the time period that is selected on the upper-right hand side of the screen. For example, if the 48 hrs time period is selected, then the only time increment available will be hours. However, if you select a Custom time period, then all options are available for selection.</p>
-        <p>
-            <img src="../Images/AnalyticsTimeIncrementHours.png" />
-        </p>
-        <p>
-            <img src="../Images/AnalyticsTimeIncrementWeeks.png" />
-        </p>
     </body>
 </html>

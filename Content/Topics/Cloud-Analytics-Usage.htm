@@ -35,7 +35,7 @@
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>How To</h2>
-        <p>See step-by-step instructions in the sections below to learn more about how to access the Usage History for your Solstice deployment and use the available controls and filters to view the data that is most meaningful to you.</p>
+        <p>See step-by-step instructions in the sections below to learn how to access the Usage History analytics for your Solstice deployment and use available controls and filters to view the data that is most meaningful to you.</p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Access Usage History Analytics</MadCap:dropDownHotspot>
@@ -62,7 +62,22 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Specify the Time Increment for Your Graph</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Select Data Categories to Graph</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Up to two Pod usage and room occupancy categories may be selected to graph on the Usage History analytics page.</p>
+                <ol>
+                    <li>Locate the two categories menus below the graph. You must select one category from the left menu (blue) to display as a data line on the graph.<p><img src="../Resources/Images/ex_CloudAnalyticsUsageCatSelect.png" /></p></li>
+                    <li>You may select a second category from right (green) category menu to display and compare that data on the same graph with your first selected category. </li>
+                    <li>Or select <b>None</b> in the right (green) menu to show only data from the category in the left (blue) menu.</li>
+                    <li>Data lines for the categories you selected will display in the graph. They appear color coded to the menus they were selected from. </li>
+                    <li>You may also hover over the data point(s) for a time period in the graph to see the specific date(s) and numbers for each selected category displayed on the graph.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Specify a Time Increment for Your Graph</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsGraphsTimeIncrmt.flsnp" />
@@ -70,27 +85,10 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Select Data to Graph</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <p>
-                    <ol>
-                        <li>Below the graph, click the left (blue) drop-down and select the first data line to graph.</li>
-                        <li>Click the right (green) drop-down to select the second data line to graph. <p>You can also select None here if you want to graph just one type of data.</p></li>
-                    </ol>
-                    <p>The data you selected displays on the graph. On the Y-axis, if there is a significant difference in the magnitude of the numbers that need to be graphed for the two selections, the numbers on the left side of the graph are for the first (blue) selection and the numbers on the right side of the graph are for the second (green) selection.</p>
-                    <p>
-                        <img src="../Resources/Images/AnalyticsUsageDataSelection.png" style="width: 705px;height: 548px;" />
-                    </p>
-                </p>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Filter the Pods in Your Data Set by Category</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>By default, data from all the Pods being managed in Solstice Cloud is included in the graphs. You can include or exclude data for a specific Pod or Pods by manually checking or unchecking the box to the left of the Pod name in the Displays table.</p>
+                <p>By default, data from all Pods managed in your Solstice Cloud organization is included in the graphs. You can include or exclude data for a specific Pod or Pods by manually checking or unchecking the box to the left of the Pod name in the Displays table.</p>
                 <p class="note">Only selected Pods are included in the data that is graphed. However, all Pods currently listed in the Displays table, which can be either checked or unchecked, will be included in the CSV export.</p>
                 <p>You can also check or uncheck the "select all" box to the left of the first column header to select or clear all checked Pods.</p>
                 <p>
@@ -101,15 +99,15 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Search for Pods</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Manually Select and Search for Pods</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsSearchforPods.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsSelectSearchTable.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Manage Columns in the Displays Table</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Manage Columns in the Pods Table</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsManageColumns.flsnp" />

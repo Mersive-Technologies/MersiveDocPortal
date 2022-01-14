@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>The selected time period on Solstice Cloud Analytics pages applies to all displayed data and generally defaults to 30 days. You may choose a different time period from a pre-set list or define a custom time period to view the data associated with it.</p>
+        <p>The selected time period on Solstice Cloud Analytics pages applies to all data displayed in graphics and data tables and generally defaults to 30 days. You may choose a different time period from a pre-set list or define a custom time period to view the data associated with it.</p>
         <ol>
             <li>In the upper-right corner of the Analytics page, locate the bar of pre-set time periods. The options shown may vary depending on the Analytics category.<p><img src="../Images/AnalyticsCustomDate.png" /></p></li>
             <li>To view data for a custom time period, click the <b>Custom</b> button at the end of the time periods bar.</li>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>If your Pod is connected to a USB camera and has Room Occupancy enabled (Features settings), the room occupancy data can be collected. Graphs display total numbers for the Pods selected in the table over the time period selected at the top of the page, graphed by hours, days, weeks, or months, based on the menu in the graph's upper right corner. Pods data tables list usage data for the selected time period by individual Pod.</p>
+        <p>The following room occupancy data categories are available:</p>
+        <ul>
+            <li><b>Average Hourly Occupancy</b> records the average number of people detected in a Pod's meeting space each hour. Hour increments start at the top of the hour—for example, 1:00 p.m. to 2:00 p.m. If a meeting runs from 1:45 p.m. to 2:15 p.m., the number of people in the room will be averaged into both the 1:00 p.m. and 2:00 p.m. calculations.</li>
+            <li><b>Peak occupancy</b> records the maximum number of people detected in a meeting space during a meeting.</li>
+        </ul>
+        <MadCap:snippetBlock src="info_OccupancyCountDataNote.flsnp" />
+    </body>
+</html>

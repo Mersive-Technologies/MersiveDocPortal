@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>By default, data from all Pods managed in your Solstice Cloud organization are included in analytics graphs. You can change this by managing Pod selections in the In-Room Tech table to include or exclude data for specific Pods. Use the Search box to quickly find specific Pods in the table.</p>
+        <ol>
+            <li>Scroll down to the table that appears below the data cards on the In-Room Tech Analytics page.<p><img src="../Images/ex_CloudAnalyticsIRTTableTools.png" /></p></li>
+            <li>Use the checkbox that appears to the left of a Pod's name in the table to deselect that Pod, removing it from being included in the data cards, or select it to include it in data cards analytics.</li>
+            <li>To use the <b>Search</b> box to quickly locate specific Pods in the data table, enter a whole or partial Pod attribute that appears in the table, such as a Pod's name. <p class="note">This search will display Pods with data matching the search term in any category, including those that do not display on the In-Room Tech page. For example, searching for "conference" will match Pod Names that contain "Conference" as well as Pods with a Room Type that contains "Conference Room".  If it is not apparent why Pods are matching your search text, use the Filter feature at the top of the page to look at the Filter by Category options that may be matching your query.</p></li>
+            <li>Clear a Search filter by clicking the X icon to the right of the entered search term. It also appears as an applied filter to the right of the Filter button at the top of the page and can be removed there.</li>
+        </ol>
+    </body>
+</html>

@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <p>By default, data from all Pods managed in your Solstice Cloud organization are included in analytics graphs. In addition to manually selecting and deselecting Pods in the Pods table, you can use the Filter by Category pane to select to view data from only Pods that match certain criteria.</p>
+        <p>By default, data from all Pods managed in your Solstice Cloud organization are included in analytics graphs. In addition to manually selecting and deselecting Pods in the data table, you can use the Filter by Category pane to select to view data from only Pods that match certain criteria.</p>
         <p>Filter by Category shows all categories available in your Solstice Cloud organization, both Solstice presets and categories that have been manually defined for your Solstice deployment. (See more about <MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-create-categories.htm">Creating Categories and Assigning Pods</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Cloud-Create-Categories.htm" target="_blank">Creating Categories and Assigning Pods</a>.</MadCap:conditionalText>) You may select one or more attributes from any combination of categories to select the  data you want to view on the Analytics page. </p>
         <MadCap:snippetBlock src="howto_CloudFilterbyCategoryPane.flsnp" />
     </body>

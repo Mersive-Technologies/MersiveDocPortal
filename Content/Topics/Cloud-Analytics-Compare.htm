@@ -4,14 +4,14 @@
     </head>
     <body>
         <h1>Solstice Cloud Analytics: Compare</h1>
-        <p> The Category Compare page allows you to compare Pod usage data based on the categories and options you select. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead>.<MadCap:expandingBody><br /><img src="../Resources/Images/SolsticeCloudCompare.png" style="width: 834px;height: 782px;" /></MadCap:expandingBody></MadCap:expanding><br /></p>
+        <p>The  Compare analytics page in Solstice Cloud allows provides both graphical representations of and source data for  usage data for specific options within a defined category. You can select to graph usage data for up to eight options within a category together and compare the same usage data for different defined options within a category. <MadCap:expanding><MadCap:expandingHead>See Example</MadCap:expandingHead>.<MadCap:expandingBody><br /><img src="../Resources/Images/ex_CloudAnalyticsCompareOverview.png" /></MadCap:expandingBody></MadCap:expanding><br /></p>
         <p>This page is divided into two main parts:</p>
         <ul>
-            <li><b>Category Compare Graph</b> - This is a graph at the top half of the page that displays data by category on a timeline.</li>
-            <li><b>Displays Table</b> - This table can list all the Pods that are being managed in your Solstice Cloud instance, or it can display a filtered subset of Pods. Any filters you apply will affect the data that is displayed in the table. Clicking the check-boxes to the left of filtered Pods will show only the data from the selected Pods on the graph.</li>
+            <li><b>Category Compare Graph</b> - This is a graph at the top half of the page that displays data by category over a selected time period.</li>
+            <li><b>Displays Table</b> - This table can list all the Pods that are being managed in your Solstice Cloud instance, or it can display a filtered subset of Pods. You can change options and apply filters that will change the data that appears in the table as well as apply to the data displayed in the table.</li>
         </ul>
         <h2>Collected Data</h2>
-        <p>Solstice data is uploaded to Solstice Cloud on a daily basis. After it is uploaded to Solstice Cloud, the data is deleted from the Solstice Pod. Solstice Cloud tracks the following  data for Solstice Pods.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/info_CloudAnalyticsCollectedDataIntro.flsnp" />
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Usage Data</MadCap:dropDownHotspot>
@@ -25,17 +25,7 @@
                 <MadCap:dropDownHotspot>Room Occupancy Data</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>If your Pod is connected to a USB camera and has Room Occupancy enabled (Features settings), the following room occupancy data can be collected. As a note, room occupancy data is only tracked as an aggregate numerical value. No image or video ever leaves the Solstice Pod.</p>
-                <ul>
-                    <li>
-                        <p><b>Average Hourly Occupancy</b>: 
-						The average number of people detected in the room each hour. Hour increments are determined at the top of the hour. For example, 1:00 p.m. to 2:00 p.m. If a meeting runs from 1:45 p.m. to 2:15 p.m., the number of people in the room will be averaged in to both the 1:00 p.m. and 2:00 p.m. calculations.</p>
-                    </li>
-                    <li>
-                        <p><b>Peak occupancy</b>: 
-						The maximum number of people that have been detected in the room during the course of the meeting.</p>
-                    </li>
-                </ul>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_CloudAnalyticsRoomOccupancyData.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Insights from Analytics</h2>
@@ -47,32 +37,21 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>To determine how often meeting spaces that contain Mersive Pods are being used:</p>
-                <p class="note">This example assumes you have defined a category named Room Type and that you have assigned Pods to options in that category. The category name used below is arbitrary, and if you have a category that is roughly similar, choose the name of that category instead in step 4.</p>
+                <p class="note">This example assumes you have defined a category named Room Type and that you have assigned Pods to options in that category. The category name used below is arbitrary; if you have a category that is roughly similar, choose the name of that category in step 4.</p>
                 <ol>
-                    <li>
-                        <p>In the left sidebar menu of the Solstice Cloud portal, go to <b>Analytics &gt; Compare</b>.</p>
-                    </li>
-                    <li>
-                        <p>At the top left of the page, click the time increment you want for your graph: <b>Days</b> or <b>Weeks</b>. </p>
-                    </li>
-                    <li>
-                        <p>At the top right of the page, click the time period you want the graph: <b>48 hrs</b>, <b>7 days</b>, <b>30 days</b>, or <b>Custom</b>. </p>
-                        <p>For information on specifying a custom time frame, see <a href="#Set">Set a Custom Time Period for Your Graph</a> .</p>
-                    </li>
-                    <li>
-                        <p>From the category drop-down, which is on the left just below the graph, choose <b>Room Type</b>.</p>
-                    </li>
-                    <li>
-                        <p>From the compare drop-down, choose <b>Meetings</b>.</p>
-                    </li>
-                    <li>Using the check-boxes above the graph, select or unselect the options you want to display.</li>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Analytics &gt; Compare</b>.</li>
+                    <li>At the top right of the page, select the time period you want the graph: <b>48 hrs</b>, <b>7 days</b>, <b>30 days</b>, or <b>Custom</b>. For information on specifying a custom time frame, see <a href="#Set">Set a Custom Time Period for Your Graph</a> .</li>
+                    <li>In menu in the top right of the table, select the time increment you want for your graph: <b>Days</b> or <b>Weeks</b>. </li>
+                    <li>From the category drop-down, which is on the left just below the graph, choose <b>Room Type</b>.</li>
+                    <li>From the compare drop-down, choose <b>Meetings</b>.</li>
+                    <li>Using the check-boxes above the graph, select the options you want to display.</li>
                 </ol>
-                <p>Each meeting space is rendered with a different colored line. By mousing over a plot point on the graph, you can display information about all the meetings spaces for that specific time period. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody> <br /><img src="../Resources/Images/SolsticeCloudAnalytics_compareRoomTypeAndMeetings.png" style="width: 833px;height: 478px;" /></MadCap:expandingBody></MadCap:expanding></p>
-                <p> By selecting additional analytic data or categories in the Displays table, you can gain additional insights into the meeting context for each meeting. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/SolsticeCloudAnalytics_compare_displaysTable.png" style="width: 833px;height: 679px;" /></MadCap:expandingBody></MadCap:expanding></p>
+                <p>Each meeting space is rendered with a different colored line. By mousing over a plot point on the graph, you can display information about all the meetings spaces for that specific time period. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody> <br /><img src="../Resources/Images/ex_CloudAnalyticsCompareExampleGraph.png" /></MadCap:expandingBody></MadCap:expanding></p>
+                <p> By selecting additional analytic data or categories in the Pods table, you can gain additional insights into the meeting context for each meeting. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/ex_CloudAnalyticsCompareExampleTable.png" /></MadCap:expandingBody></MadCap:expanding></p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>How To</h2>
-        <p>Below are the instructions on how to use the controls and filters on the Category Compare page.<br /></p>
+        <p>Below are the instructions on how to use the controls and filters on the Compare page.<br /></p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Specify Time Increments for Your Graph</MadCap:dropDownHotspot>
@@ -96,16 +75,11 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>Below the graph, click the left drop-down and select the category to graph.</li>
-                    <li>Click the right drop-down to select the data you want to graph. This will be the Y-axis of the graph.<p>Above the graph, check-boxes appear that allow you to select the category options you want to graph.</p></li>
-                    <li>
-                        <p>Check, or un-check, the category option boxes you want to graph.</p>
-                    </li>
+                    <li>In the left menu below the graph, select the category you want to graph.</li>
+                    <li>Select the Pod usage data you want to graph for the selected Pods from the right menu below the graph. This will be the vertical axis of the graph.</li>
+                    <li>Above the graph, check-boxes appear that list the available category options that you can display in the graph. Select the boxes for the options you want to compare. The color of the checkbox corresponds to the data line in the graph that shows the Pod usage for that category.<p><img src="../Resources/Images/AnalyticsCategoryCompareCheckMarks.png" /></p></li>
+                    <li>You can mouse over graphed data points to see data details for that time period.</li>
                 </ol>
-                <p>Each category option check box that you select is graphed in a separate color.</p>
-                <p>
-                    <img src="../Resources/Images/AnalyticsCategoryCompareCheckMarks.png" />
-                </p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -113,7 +87,6 @@
                 <MadCap:dropDownHotspot>Filter the Pods in Your Data Set</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>By default, data from all the Pods being managed by Solstice Cloud is included in the graphs. </p>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsFilterByCategory.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -122,7 +95,7 @@
                 <MadCap:dropDownHotspot>Search for Pods</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsSelectSearchTable.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAnalyticsSelectSearchPodsTable.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

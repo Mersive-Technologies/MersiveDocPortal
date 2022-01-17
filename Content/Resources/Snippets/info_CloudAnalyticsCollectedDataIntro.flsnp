@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Solstice data is uploaded to Solstice Cloud on a daily basis. Once the data from a Solstice Pod has been uploaded to Solstice Cloud, it is then deleted from the Pod. Solstice Cloud tracks the following usage data for Solstice Pods.</p>
+    </body>
+</html>

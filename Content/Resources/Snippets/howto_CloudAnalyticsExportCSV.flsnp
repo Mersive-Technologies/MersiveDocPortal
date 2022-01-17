@@ -1,16 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Data will only be exported for Pods that currently match your search or filter criteria. This will include both the Pods displayed on the current page as well as Pods contained on additional pages that may not be currently displayed on the screen. For example, if your table is set to display 25 items per page, but there are 30 pods in the list, data for the five currently undisplayed pods will be exported. Additionally only the columns that are currently displayed—that is, columns selected from the Manage Column check-boxes—will be exported.</p>
-        <p class="note">Only selected Pods are included in the data that is graphed. However, all Pods currently listed in the Displays table, which can be either checked or unchecked, will be included in the CSV export.</p>
-        <p>When the Displays table shows all the Pods and columns you want to export, click <b>Export to CSV</b>.</p>
-        <p>For example, to display all the data for all the Pods being managed by Solstice Cloud:</p>
+        <p>When you have sorted, filtered, and managed columns in the Pods table to see the data you want, you may export that data in a comma separated values file that can be opened with any spreadsheet app. The CSV file will include both the Pods displayed on the current page as well as Pods contained on additional pages that may not be currently displayed on the screen. For example, if your table is set to display 25 items per page, but there are 30 pods in the list, data for the five currently undisplayed Pods will be exported along with the 25 you are currently viewing.</p>
+        <p class="note">Only selected Pods are included in the data that is graphed. However, all Pods currently listed in the Pods table, which can be either checked or unchecked, will be included in the CSV file export.</p>
         <ol>
-            <li>In the Filter by Category section, if you have a filter set, click <b>Clear all filters</b>.</li>
-            <li>In the Search field, if you have entered search criteria, clear it by clicking the <img src="../Images/i_XCircle-Clear.png" />.</li>
-            <li>Click the <b>Manage Columns</b> selector, and select all the check-boxes.</li>
-            <li>At the bottom of the Displays table, click <b>Export to CSV</b>.</li>
+            <li>Scroll down to the Pods table that appears below the graph on the Analytics page.<p><img src="../Images/ex_CloudAnalyticsPodTableExptCSV.png" /></p></li>
+            <li>When the Pods table displays all the Pods and associated columns data you want see in in your preferred sort order, click <b>Export to CSV</b>. For example, to display all the data for all the Pods being managed by Solstice Cloud:<ol style="list-style-type: lower-alpha;"><li>In the Filter by Category section, if you have a filter set, click <b>Clear all filters</b>.</li><li>In the Search field, if you have entered search criteria, clear it by clicking the <img src="../Images/i_XCircle-Clear.png" /> icon.</li><li>Click the <b>Manage Columns</b> selector, and select all the check-boxes.</li><li>At the bottom of the Displays table, click <b>Export to CSV</b>.</li></ol></li>
+            <li>Your browser should download the CSV file to its downloads location or prompt you to choose a location for it, depending on your personal browser settings.</li>
         </ol>
-        <p>Your browser should download the CSV file to its downloads directory.</p>
     </body>
 </html>

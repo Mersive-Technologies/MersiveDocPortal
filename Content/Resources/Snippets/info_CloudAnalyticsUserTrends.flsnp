@@ -3,6 +3,7 @@
     <head>
     </head>
     <body>
+        <p>User Trends analytics data cards include:</p>
         <ul>
             <li><b>Daily Active Users</b> shows a graph of the number of users who connect to Pods during the selected time period. A summary of the  number of unique users connecting to Pods and averages for the time they’ve spent presenting in meetings, number of unique meeting rooms they’ve visited display to the right of the graph.</li>
             <li><b>User Collaboration</b> shows the percentage of users that collaborated in meetings compared with users who were the sole presenter in meetings.</li>

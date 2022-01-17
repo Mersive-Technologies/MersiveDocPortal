@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>You can change the time increment by which to group your selected Analytics data on the graph—for example, graphing data for the last 48 hours by hourly data points. In this way, you can view the information broken down by smaller time increments or summarized into larger increments like weeks or months.</p>
+        <p>You can change the time increment by which to group your selected Analytics data on the graph—for example, graphing data for the last 48 hours by hourly data points. In this way, you can view the information broken down by smaller time increments or aggregated into larger increments like weeks or months.</p>
         <ol>
             <li>
                 <p>In the graph at the top of the Analytics page, locate the menu that contains time increments (usually set to Days by default).</p>

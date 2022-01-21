@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>Log in to Solstice Cloud at <a href="../../PDF/Solstice_22Miles_Digital_Signage.pdf/#https://cloud.mersive.com/">https://cloud.mersive.com/</a>.</li>
+            <li>Log in to Solstice Cloud at <a href="https://cloud.mersive.com/" target="_blank">https://cloud.mersive.com/</a>.</li>
             <li>Go to <b>Manage</b> &gt; <b>Pods</b> and click the name of the Pod you want to display 22Miles Digital Signage content on.</li>
             <li>Scroll down and click the down arrow to expand the <b>Digital Signage</b> settings.</li>
             <li>Check <b>Enable Digital Signage</b> and select a display mode.</li>

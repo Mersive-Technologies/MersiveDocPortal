@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="warning">Turning Miracast WiFi Direct off and  back on in quick succession for a Solstice Pod may result in it temporarily appearing multiple times in the Windows Connect and Wi-Fi connection panels. To resolve this issue, refresh the list of available Miracast WFD devices by turning Wi-Fi off on and back on for affected Windows devices.</p>
+    </body>
+</html>

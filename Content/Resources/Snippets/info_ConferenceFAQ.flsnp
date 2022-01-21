@@ -45,6 +45,14 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot class="FAQ">Why is the Solstice user app failing to share my desktop and app windows on my Windows laptop with dual graphics cards?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the Solstice user app version 5.4 on Windows laptops with dual graphics cards, an issue has been reported that manually setting the dedicated graphics card as primary can prevent the Solstice app from successfully sharing the user's Desktop and App windows. In this case, a Sharing Error may appear in the Solstice app; Media file sharing is usually successful. This issue can usually be resolved by changing the Windows and/or graphics card settings to allow the graphics processor to be automatically selected.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot class="FAQ">Why does my Pod with digital signage enabled spontaneously reboot after being used for Solstice Conference?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>

@@ -1,4 +1,4 @@
-﻿/*<meta />*/
+/*<meta />*/
 
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
@@ -1602,6 +1602,21 @@ div.NewRowClass1 a
 	{
 		font-weight: 600;
 	}
+
+	table.SupportTable
+	{
+		
+	}
+
+	p.note
+	{
+		page-break-inside: avoid;
+	}
+
+	tr
+	{
+		page-break-inside: avoid;
+	}
 }
 
 p.text-indent
@@ -1783,3 +1798,4 @@ ul.checkbox > li > ul
 {
 	list-style-image: none;
 }
+

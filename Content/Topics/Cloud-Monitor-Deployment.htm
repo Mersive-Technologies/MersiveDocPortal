@@ -4,8 +4,8 @@
     </head>
     <body>
         <h1>Monitor Your Deployment</h1>
-        <p>By monitoring your deployment, Solstice Cloud can alert you to any technical issues so they can be resolved before impacting meeting productivity. To help keep track of the status of large deployments, Solstice Cloud gives you a way to quickly identify which Pods have become offline so that any issues can be resolved. Email alert configurations allow you to set up email alerts that are triggered by events such as when a display is unreachable, or when a display is rebooted. These alerts allow you to passively keep tabs on your deployment to resolve issues before they impact your meetings.</p>
-        <p>Additionally, Solstice Cloud also allows you to quickly see which Pods in your deployment have an expired Solstice Subscription, and gives you the option to request subscription renewal within the portal to streamline the process. </p>
+        <p>Solstice Cloud provides tools to monitor your organization's Solstice deployment and alert you to technical issues so they can be resolved before impacting meeting productivity. Quickly check the status of large deployments by identifying offline Pods, and enable email alerts triggered by Solstice display events such as reboots or periods of unreachability for categories of Pods to passively monitor your deployment. </p>
+        <p>You may also monitor  Solstice Subscriptions for your Pods in the Solstice Cloud portal. Quickly see which Pods in your deployment have expired Solstice Subscriptions and optionally streamline the renewal process by having Solstice Cloud generate a subscription renewal request. </p>
         <p>
             <img src="../Resources/Images/ex_CloudMonitorDeployment.png" style="height: auto;width: 90%;" />
         </p>
@@ -24,23 +24,22 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Renew Your Solstice Subscription</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Renew Your Solstice Subscriptions</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
-            <p>To view which of your Solstice Pods have lapsed subscriptions and quickly put together a request to renew them:</p>
+            <p>To view which of your Solstice Pods have lapsed subscriptions and quickly generate a request to renew them:</p>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>In the left sidebar menu of Solstice Cloud, go to either <b>Monitor</b> &gt; <b>Deployment</b> or <b>Monitor</b> &gt; <b>Availability</b>.<p>In both the Deployment and Availability tables, the unlabeled column furthest to the left displays status icons.</p></li>
-                    <li>Click the <img src="../Resources/Images/I_sortIcon.png" /> icon in the status column header row.  Pods with similar status will be sorted together. A yellow triangle  <img src="../Resources/Images/i_yellowTriangle_lapsed_17x15.png" style="width: 17px;height: 15px;" />  indicates the subscription has lapsed. </li>
-                    <li>Mouse over the yellow icon and click <b>Learn More</b> in the tip box that appears.</li>
-                    <li>Click <b>Fix This</b>. <p>The Solstice Cloud Subscription wizard appears.</p></li>
-                    <li>Click <b>Get Started</b>.</li>
-                    <li>Select the Pods you wish to add to the subscription renewal quote, then click <b>Next</b>.</li>
-                    <li>Select any additional Pods that are nearing the end of the subscriptions that you also want to renew and click <b>Next</b>.</li>
-                    <li>Select the date you wish to extend the subscription to, then click <b>Next</b>.</li>
-                    <li>Enter your contact information into the form that appears, then click <b>Next</b>.</li>
-                    <li>To view the details of your subscription renewal quote request, click the <b>Details</b> drop-down.</li>
-                    <li>To submit the request, click <b>Request a Quote</b>. A Mersive representative will be in contact with you shortly regarding your request.</li>
-                    <li>Click <b>Back</b>.</li>
+                    <li>In the left sidebar menu of Solstice Cloud, go to either <b>Monitor</b> &gt; <b>Deployment</b> or <b>Monitor</b> &gt; <b>Availability</b>. In both the Deployment and Availability tables, the unlabeled column furthest to the left displays status icons. A yellow triangle  <img src="../Resources/Images/i_yellowTriangle_lapsed_17x15.png" style="width: 17px;height: 15px;" />  indicates a Pod's Solstice Subscription has lapsed. <p class="tip">Click the sort <img src="../Resources/Images/I_sortIcon.png" /> icon at the top of the status column to display Pods with lapsed subscriptions grouped together. </p></li>
+                    <li>Mouse over a yellow triangle icon and click <b>Learn More</b> in the tip box that appears.</li>
+                    <li>Click <b>Fix This</b> to proceed to the Solstice Cloud Subscription wizard.</li>
+                    <li>Click <b>Get Started</b> to begin building your renewal request quote. Use the following options to move through the renewal request process: <ol style="list-style-type: lower-alpha;"><li>Click <b>Next</b> to save entered information and proceed to the next screen.</li><li>Click <b>Cancel</b> to leave the request process and discard entered information.</li><li>Use the <b>Back</b> arrow in the upper left to return to the previous step.</li></ol></li>
+                    <li>First, select the expired Pods you wish to get a renewal quote for. You may select <b>Filter by Category</b> options to limit the list of Pods by any category defined for your organization in Solstice Cloud.</li>
+                    <li>After selecting expired Pods for renewal, you may additionally select Pods nearing the end of their subscriptions to be included in your renewal quote.</li>
+                    <li>Next, select the month and year through which you wish to extend the subscriptions for selected Pods.</li>
+                    <li>Finally, enter the information a Mersive representative may use to contact you.</li>
+                    <li>Your quote request summary and initial estimate will appear. Click <b>Details</b> to see estimate specifics or <b>Edit</b> the details of your subscription renewal quote request.</li>
+                    <li>To submit the request, click <b>Request a Quote</b>. A Mersive representative contact you shortly regarding your Solstice Subscription renewal quote.</li>
+                    <li>Click <b>Back</b> to return to Solstice Cloud management.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -53,8 +52,8 @@
                 <p class="tip">You can set up email alerts to go to certain email addresses by assigning specific Pods to a category and then configuring email alerts for that category.  For example, you could assign all the Pods at your Seattle headquarters to a category option for that location. Then you could configure an email alert to be sent to your Seattle-based IT administrator if there are technical issues with any of those Pods.</p>
                 <ol>
                     <li>In the left sidebar menu of Solstice Cloud, go to <b>Monitor</b> &gt; <b>Alerts</b>.</li>
-                    <li>Under <b>Alert Settings</b>, toggle the email alerts you wish to receive to enabled. The toggle switch will turn blue when the alert is enabled.</li>
-                    <li>To only receive email alerts for a select group of displays:<ol style="list-style-type: lower-alpha;"><li>Click <b>filter</b><![CDATA[  ]]><img src="../Resources/Images/i_kepler_filter.png" /> next to the corresponding email alert. A list of your categories will appear as a dropdown menu.</li><li>Select the groups of displays you wish to be alerted for.</li><li>To remove selected alert display filters, click the <img src="../Resources/Images/i_XCircle-Clear.png" /> icon next to the filter option, or click <b>remove all</b>.</li></ol></li>
+                    <li>Under <b>Alert Settings</b>, toggle the email alerts you wish to receive to enabled. The toggle switch and filter options turn blue when the alert is enabled.</li>
+                    <li>To receive email alerts only for certain displays in your Solstice Cloud deployment:<ol style="list-style-type: lower-alpha;"><li>Click <b>filter</b><![CDATA[  ]]><img src="../Resources/Images/i_kepler_filter.png" /> next to the corresponding email alert. The categories that Pod alerts may be filtered by will appear as dropdown menus.</li><li>Select options in each category to define which Pods you wish to receive alerts for. Selected options appear below the menus.</li><li>To remove an individual selected filter option, click the <img src="../Resources/Images/i_XCircle-Clear.png" /> icon next to the option. Use <b>remove all</b> to clear all the previously selected filters.</li></ol></li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>

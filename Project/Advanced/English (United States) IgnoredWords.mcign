@@ -21,5 +21,6 @@
     <Word Comment="">renew@mersive.com</Word>
     <Word Comment="">https://cloud.mersive.com</Word>
     <Word Comment="">Miracast</Word>
-    <Word>plist</Word>
+    <Word Comment="">plist</Word>
+    <Word>uptime/downtime</Word>
 </IgnoredWordsDictionary>

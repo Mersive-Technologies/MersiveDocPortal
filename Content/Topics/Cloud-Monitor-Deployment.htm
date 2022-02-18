@@ -4,8 +4,13 @@
     </head>
     <body>
         <h1>Monitor Your Deployment</h1>
-        <p>Solstice Cloud provides tools to monitor your organization's Solstice deployment and alert you to technical issues so they can be resolved before impacting meeting productivity. You may quickly check the status of large deployments by identifying offline Pods, or passively monitor your deployment by enabling email alerts triggered by Solstice display events such as reboots or periods of unreachability. </p>
-        <p>You may also monitor  Solstice Subscriptions for your Pods in Solstice Cloud. Quickly see which Pods in your deployment have expired Solstice Subscriptions and streamline the renewal process by having the Solstice Cloud Subscription wizard generate a subscription renewal request. </p>
+        <p>The Monitor section of Solstice Cloud provides tools for monitoring your organization's Solstice deployment and alerting you to technical issues so they can be resolved before impacting meeting productivity. You may also monitor the subscription status of any Solstice Pods managed in Solstice Cloud for your organization and begin a streamlined subscription renewal process.</p>
+        <p>The following pages are available under Monitor in the left navigation bar of Solstice Cloud:</p>
+        <ul>
+            <li> <b>Availability</b> provides tools for monitoring the connectivity status of large deployments of Solstice Pods. Graphs can alert you to Pods that are offline or experiencing uptime issues, with uptime/downtime details available for each Pod.</li>
+            <li><b>Deployment</b> allows you to quickly see which Pods in your deployment need software updates or have lapsed Solstice Subscriptions. From there, quickly start a streamlined subscription renewal process by  generating a subscription renewal request. </li>
+            <li><b>Alerts</b> allow you to passively monitor your deployment by enabling email alerts triggered by Solstice display events such as reboots or periods of unreachability. A log of past alert events is also available for review at any time.</li>
+        </ul>
         <p>
             <img src="../Resources/Images/ex_CloudMonitorDeployment.png" style="height: auto;width: 90%;" />
         </p>
@@ -17,8 +22,10 @@
             <MadCap:dropDownBody>
                 <p>To view the status of your Solstice Pods at a glance, including whether they are available or unavailable:</p>
                 <ol>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, go to either <b>Monitor</b> &gt; <b>Deployment</b> or <b>Monitor</b> &gt; <b>Availability</b>.<p>In both the Deployment and Availability tables, the unlabeled column furthest to the left displays status icons.</p></li>
-                    <li>Click the <img src="../Resources/Images/I_sortIcon.png" /> icon in the status column header row. Pods with similar status will be sorted together. A red dot <img src="../Resources/Images/i_reddot.png" style="width: 16px;height: 16px;" />  indicates the display is offline. If you mouse over an icon, a tool tip menu displays text about the status.</li>
+                    <li>In the left navigation bar of Solstice Cloud, go to either <b>Monitor</b> &gt;<b>Availability</b> or <b>Monitor</b> &gt;<b>Deployment</b>. </li>
+                    <li>In the table that appears after the graphs, the <b>Status</b> column (furthest to the left) shows the status of each Pod managed in Solstice Cloud: online, offline, or lapsed subscription.</li>
+                    <li>Click the <b>Status</b> column header row to sort Pods together by status. The red dot <img src="../Resources/Images/i_reddot.png" style="width: 16px;height: 16px;" />  indicates the display is offline. </li>
+                    <li>Mouse over a status icon in the Deployment table to see more details about the status of that Pod.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>

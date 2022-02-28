@@ -6,6 +6,17 @@
     <body>
         <h1>Solstice Windows Display Software</h1>
         <p>The Solstice Windows Display is a pure-software version of Mersive's BYOD meeting collaboration and content sharing solution for conference rooms, classrooms, and huddle spaces. This version of Solstice installs on a standard Windows 7, 8, or 10 computer to improve meeting room productivity using existing hardware infrastructure.</p>
+        <h3>Quick Links</h3>
+        <p>Some shortcuts to the Solstice Windows Display Software resources in this guide and beyond:</p>
+        <ul>
+            <li>Key Features list</li>
+            <li>Getting Started with Solstice Windows Display</li>
+            <li>Configuring the Solstice Windows Display<ul style="list-style-type: circle;"><li>Configure Video Feeds / Attached Sources with a Frame Grabber</li></ul></li>
+            <li>Windows Host Technical Requirements</li>
+            <li>How To Check for DirectX 11</li>
+            <li>Licensing</li>
+            <li>Further Resources</li>
+        </ul>
         <h2>Key Features</h2>
         <ul>
             <li>Any number of simultaneous users, sharing unlimited content</li>
@@ -58,12 +69,12 @@
                     <li><b>Access Control</b> allows a user with access to the configuration panel to manually remove the display from moderated mode. The display may also be put into moderated mode in the Solstice user app. This control can be used to manually override moderation in the case that the user with moderator control left the room without releasing the display.</li>
                     <li><b>Lock</b> can be used by end-user collaborators during their meetings (if needed). Locking the display disables access to the display by any new users for the remainder of the session. Only users already connected to the display can share media.</li>
                     <li><b>Disconnect All Users</b> disconnects all users from the session and removes all shared content.</li>
-                    <li><b>System &gt; Configure</b> provides local access to a limited set of Solstice configuration settings, which admins can use to configure settings such as appearance, connection and security options, and system settings. A more complete set of configuration options is accessible via Solstice Dashboard.</li>
+                    <li><b>System &gt; Configure</b> provides local access to a limited set of Solstice configuration settings, which admins can use to configure the Solstice display appearance, connection and security options, and system settings. A complete set of configuration options is accessible via Solstice Dashboard.</li>
                 </ul>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Configuring the Solstice Windows Display</h2>
-        <p>Solstice Dashboard for Enterprise Edition is a centralized management tool that provides the ability for an administrator to configure all Solstice Enterprise Edition Pods and Windows Display Software licenses on a network from one or multiple Windows computers on the same network. Dashboard provides additional configuration and management functionality not available from the Solstice local configuration panel, such as the ability to post bulletin and/or emergency broadcast messages, encrypt Solstice network traffic, configure discovery tags, and more.</p>
+        <p>Solstice Dashboard for Enterprise Edition is a centralized management tool that provides the ability for an administrator to configure all Solstice Enterprise Edition Pods and Windows Display Software licenses on a network from one or multiple Windows computers on the same network. Dashboard provides configuration and management functionality not available from the Solstice local configuration panel, such as the ability to post bulletin and/or emergency broadcast messages, encrypt Solstice network traffic, configure discovery tags, and more.</p>
         <p>
             <img src="../Resources/Images/ex_SolsticeWinDisplayConfigAppear.png" style="width: 75%;" />
         </p>
@@ -73,8 +84,6 @@
                 <MadCap:dropDownHotspot>Access the Solstice Windows Display Options</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p><b>From Solstice Dashboard</b>
-                </p>
                 <ol>
                     <li>Ensure the Solstice Display application is running on the Windows host computer. </li>
                     <li>Open the Solstice Dashboard application on a Windows computer on the same network as the Solstice Windows Display.</li>
@@ -82,60 +91,60 @@
                     <li>If the desired Solstice Windows Display does not appear, click <b>Manual</b> under Import Displays. Enter the <b>IP Address</b> that appears on the Solstice Windows Display and the desired <b>Display Name</b>, then click <b>Add</b>.</li>
                     <li>After selecting the desired Solstice Windows Display, all available configuration options will display in tabs to the right.</li>
                 </ol>
-                <p><b>From the  Local Configuration Panel</b>
-                </p>
-                <ol>
-                    <li>Ensure the Solstice Display application is running on the Windows host computer. </li>
-                    <li>Click the Solstice icon in the bottom right corner of the display interface via mouse or touchscreen.</li>
-                    <li>Click <b>System</b> and select <b>Configure</b>. </li>
-                    <li>The Solstice Windows Display local configuration panel will appear. Note that some configuration options appear only in Solstice Dashboard.</li>
-                </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Appearance and Usage Options</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Appearance and Usage Settings</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Options in the Appearance and Usage tab allow admins to edit the settings for the appearance of the Solstice display, configure sharing options, set the preferences for launching the software, enable the display-side video folder, and enable/configure video feeds for a Solstice Windows Display Software instance. Configuration options include:</p>
+                <p>Options in the Appearance and Usage tab allow admins to edit the settings for the appearance of the Solstice display, configure sharing options, set the preferences for launching the software, enable the display-side video folder, and enable and configure video feeds for a Solstice Windows Display Software instance. </p>
+                <p>Configuration options include:</p>
                 <ul>
-                    <li>In <b>Display Name</b> set the name of the Solstice Windows Display.</li>
-                    <li>The <b>Appearance</b> section provides display options: Choose whether the display name, IP address, and/or Screen Key should appear on the Solstice display, including or in the bottom Presence Bar, change the background during Solstice sessions, and enable/configure the Solstice display welcome screen.<ul style="list-style-type: circle;"><li><b>Welcome Screen</b> options include the Modern Splash Screen, which rotates through up to 6 customizable background images with optional subtle animation to avoid burn-in and shows connection instructions on the right half of the screen. These instructions may be toggled on or off from Solstice Dashboard. If the Classic Splash Screen is selected, calendar information for the space will not display.</li><li><b>Quick Connect</b> provides the option to show the hostname instead of an IP address if set up through your DNS. If enabled, this provides a more streamlined connection experience for users that would otherwise be typing in an IP address, and allows admins to mask the IP address for security reasons without interrupting user workflow.</li></ul></li>
+                    <li>Enter a <b>Display Name</b> to set or edit the name of the Solstice Windows Display.</li>
+                    <li>The <b>Appearance</b> section provides display options: <ul style="list-style-type: circle;"><li>Choose a <b>Display Mode</b> (Full Screen, Windowed, or specify a Fixed Size and location in pixels) for the Solstice Windows Display.</li><li><b>Welcome Screen</b> options include the Modern Splash Screen, which rotates through up to 6 customizable background images with optional subtle animation to avoid burn-in and shows connection instructions on the right half of the screen. These instructions may be toggled on or off from Solstice Dashboard. If the Classic Splash Screen is selected, calendar information for the space will not display.</li><li><b>Quick Connect</b> provides the option to show the hostname instead of an IP address if set up through your DNS. If enabled, this provides a more streamlined connection experience for users that would otherwise be typing in an IP address, and allows admins to mask the IP address for security reasons without interrupting user workflow.</li><li>Choose whether the <b>Presence Bar</b> appears at the bottom of the Solstice display to show the display's IP address, display name, and/or screen key.</li></ul></li>
                     <li><b>Usage and Feature Management</b> provides admin control of the sharing options users see when connected to the specific display, the ability for users to utilize browser look-in, and resource restrictions to limit Solstice’s impact on the network. For Solstice Small Group Edition (SGE) licenses, the maximum number of connections (devices) is limited to four in the ‘Resource Restrictions’ section. <p class="note"><b>Enable AirPlay Discovery Proxy</b> in this section supports iOS mirroring on networks that do not allow UDP broadcast traffic and/or Apple’s Bonjour protocol. Contact your IT administrator and/or refer to the Network Deployment Guide for more information.</p></li>
-                    <li><b>Launch Options</b> controls the behavior of the Solstice Windows Display Software, allowing it to to automatically launch at Windows login or upon a user connection, or to automatically hide upon the last user disconnect.</li>
+                    <li><b>Launch Options</b> controls the behavior of the Solstice Windows Display Software, specifying whether it should automatically launch upon Windows login or a Solstice user connection, as well as if it should automatically hide upon the last user disconnect.</li>
                     <li><b>Display Side Video Folder</b> allows admins to enable/disable user access to a video folder on the Solstice Windows Display host computer, as well as designate the location of the video folder on the host computer.</li>
-                    <li><b>Video Feeds</b> allow the configuration of live Video Feeds that can be shared to the Solstice Winodws Display during a collaboration session. To enable a Video Feed, select <b>Capture Source Feature Enabled</b> and click <b>Apply</b>. A list of attached video sources will appear. Use the list to enable and change settings for one or multiple Video Feed sources. Refer to Video Feeds aka Attached Sources &amp; Using Frame Grabber to learn more.</li>
+                    <li><b>Video Feeds</b> allow the configuration of live Video Feeds that can be shared to the Solstice Winodws Display during a collaboration session. To enable a Video Feed, select <b>Capture Source Feature Enabled</b> and click <b>Apply</b>. A list of attached video sources will appear. Use the list to enable and change settings for one or multiple Video Feed sources. Refer to <a href="#video_feeds">Configure Video Feeds / Attached Sources with a Frame Grabber</a> to learn more.</li>
                 </ul>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Network and Security Options</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Network and Security Settings</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>Most of the network settings used by the Solstice Windows Display Software are inherited from Windows, but the Solstice <b>Network</b> tab controls several Solstice-specific settings, including:</p>
                 <ul>
-                    <li><b>Web Server Proxy</b> allows Solstice Windows Display Software instances to be activated and licensed when deployed behind a secure web server proxy. Both HTTP and HTTPS options are available, with web proxy IP address, port designation, and login credentials required for both.</li>
                     <li><b>Communication Ports</b> allows the administrator to select the Solstice base port and reflects changes to additional ports when the base port is changed. Solstice always uses three sequential ports beginning with the base port, plus port 80 for web configuration and user app access.</li>
+                    <li>In <b>Display Discovery</b>, the admin may specify SDS servers to allow users to easily "discover" and connect to the Solstice Windows Display. See the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">Introduction to Solstice Display Discovery</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Introduction to Solstice Display Discovery</a></MadCap:conditionalText> to learn more about SDS.</li>
+                    <li><b>Web Server Proxy</b> allows Solstice Windows Display Software instances to be activated and licensed when deployed behind a secure web server proxy. Both HTTP and HTTPS options are available, with web proxy IP address, port designation, and login credentials required for both.</li>
+                    <li><b>Quality of Service</b> packet headers can be enabled to allow Solstice traffic to be differentiated and prioritized on the enterprise network by utilizing the IETF-defined quality of service (QoS) header information for enabled enterprise networks that support differentiated network traffic via QoS. Learn more about how to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Network-Settings.htm#QoS" target="_blank">Implement QoS</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-network-settings.htm#QoS">Implement QoS</a>.</MadCap:conditionalText></li>
+                    <li>Set <b>Display Search Tags</b> to group Solstice displays based on criteria such as their location or use, allowing users to filter the Solstice displays listed in their Solstice app to easily find and connect to right display. See how to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Network-Settings.htm#search_tags" target="_blank">Add Search Tags</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-network-settings.htm#search_tags">Add Search Tags</a></MadCap:conditionalText> for Solstice displays.</li>
                 </ul>
                 <p>The <b>Security</b> tab allows admins to designate various security settings, including:</p>
                 <ul>
-                    <li><b>Administration</b> allows for password-protection of access to the Solstice Configuration Panel, in order to restrict access to the configuration options and/or lock a specific configuration. The password set here is required for local and web-based configuration.</li>
+                    <li><b>Administration</b> provides the following options to improve security:<ul style="list-style-type: circle;"><li>Set an <b>Admin Password</b> to restrict access to the Solstice Configuration Panel and lock a specific configuration and optionally <b>Enforce password validation rules</b> (8-character minimum, one uppercase and one lowercase character, one number or special character) for the admin password. This password is required for local and web-based configuration.</li><li>Admins may also choose to <b>Always serve the Solstice client via port 443</b> for unsecured networks where users may be subject to man-in-the-middle redirects. Enabling this configuration may require additional steps for the user to authorize the use of this port on their device.</li><li>Enable <b>Redirect to HTTPS Hostname</b> to automatically redirect a user that enters the Pod IP address in their browser to the HTTPS hostname as determined by a reverse DNS lookup by the defined DNS server.</li></ul></li>
                     <li><b>Access Control</b> designates the security mode that determines how users access the Solstice session and post to the display. The options include:<ul style="list-style-type: circle;"><li><b>Screen Key Enabled</b> requires users to enter the Screen Key, which can be shown in the main Solstice display area and in the bottom presence bar, to connect to a Solstice collaboration sessionto to view the session via browser look-in. Clearing this box allows anyone on the network to connect to a display with no restrictions.</li><li><b>Moderated Approval</b> enables or disallows moderated sessions. If enabled, a user may connect and start a moderated session. The moderator will have full sharing rights and control of the display. Both joining and sharing media posts must be approved by a moderator, and non-moderator users cannot control shared content. Moderators can promote other users to moderator status once they have been admitted to the session.</li></ul></li>
+                    <li><b>Encrypt Client/Server Communications</b> to secure Solstice network traffic between the Solstice Windows Display and Solstice user apps using a standard RSA/SHA cipher with a 2048-bit private key. This includes network traffic related to configuration via Solstice Dashboard. By default, the Solstice Windows Display server is loaded with a self-signed CA certificate from Mersive that is used when a Pod receives HTTPS connections. Admins may also upload a custom CA certificate bundle to be used instead. For more information, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Security-Settings.htm#client-server_encrypt" target="_blank">Enable Network Encryption</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-security-settings.htm#client-server_encrypt">Enable Network Encryption</a></MadCap:conditionalText> directions.</li>
                 </ul>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>System, Activity, Licensing, SDS Options</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Time, Language, Digital Signage, Calendar, Licensing, and Other Settings</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>Some other configuration  options and information available for Solstice Windows Display Software instances include:</p>
                 <ul>
-                    <li>The <b>System</b> tab provides options to designate the time format (12- or 24-hour) and the language (English, Japanese, German, Spanish, French, Italian, Traditional Chinese, and others supported) used on the Solstice Windows Display.</li>
+                    <li>The <b>System</b> tab provides options to designate the time format (12- or 24-hour) and the language used on the Solstice Windows Display. The SDS&#160;(Solstice Discover Service) server may also be downloaded here.</li>
+                    <li><b>Digital Signage</b> options allow the ability to extend HTML-based signage to licensed Solstice displays in meeting rooms, huddle spaces, and transitional areas when they are not being used for wireless collaboration.</li>
+                    <li>Using <b>Calendar</b> options, any Solstice-enabled display can receive and display room calendar information to show the schedule for the meeting space when no one is sharing content. Participants can easily see if the space is currently scheduled or available, as well as the next three upcoming meetings in the space. See <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Room-Calendar.htm" target="_blank">Room Calendar Settings</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-room-calendar.htm">Room Calendar Settings</a></MadCap:conditionalText> for further details.</li>
+                    <li>The <b>Message Center</b> provides options to add RSS feeds that will scroll across the top of the Solstice Welcome Screen and create and publish an one-time emergency message that will be broadcast to all selected displays.</li>
                     <li><b>Activity</b> gives real time information about the display, including the display name, the version of the Solstice Windows Display Software, number of connected users, number of posts, bandwidth usage, and live sources in use.</li>
                     <li><b>Licensing</b> provides details about the current Solstice Windows Display Software license, including license status, display name, software version, maintenance status, and device fulfillment ID (under <b>Device Info</b>). This section also gives options to check for updates, install updates, activate licenses, and recall licenses for use on a different host computer. Non-enterprise Solstice Windows Display Software licenses can also be upgraded to Enterprise Edition via the licensing tab.</li>
-                    <li>The <b>SDS</b> tab contains options for Solstice Discovery Service (SDS), which is an IT-friendly mechanism for display discovery (i.e. click-to-connect capability) that works across an enterprise network without requiring broadcast traffic for discovery. SDS is a complimentary software program that runs in tandem with Solstice Windows Display Software on the network. See <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText> for more about SDS.</li>
+                    <li>Solstice Discovery Service Hosts can also be set in <b>SDS</b>, allowing users to easily "discover" and connect to the Solstice Windows Display. See the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">Introduction to Solstice Display Discovery</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Introduction to Solstice Display Discovery</a></MadCap:conditionalText> to learn more about SDS.</li>
                 </ul>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -144,7 +153,7 @@
                 <MadCap:dropDownHotspot>Configure Video Feeds / Attached Sources with a Frame Grabber</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Solstice Windows Display Software running on a host computer is able to integrate with external video sources using a frame grabber or capture card. Using the Video Feeds feature in the Solstice Windows Display Software configuration, a Solstice session can include live feeds with audio from any video source connected to the display host computer. External video feeds could include video conferencing equipment, DVD/Blu-ray players, video recorders, etc.</p>
+                <p><a name="video_feeds"></a>Solstice Windows Display Software running on a host computer is able to integrate with external video sources using a frame grabber or capture card. Using the Video Feeds feature in the Solstice Windows Display Software configuration, a Solstice session can include live feeds with audio from any video source connected to the display host computer. External video feeds could include video conferencing equipment, DVD/Blu-ray players, video recorders, etc.</p>
                 <p>It is recommended that users connect USB video sources to integrated USB slots on the host computer’s motherboard, rather than stand-alone USB cards, to reduce the processing and memory demands on the computer. Generally, integrated USB slots are located on the back of the host computer.</p>
                 <p>To utilize attached video sources, the Solstice Windows Display Software host computer must have a DirectShow-compatible frame grabber or capture card. Install the card per the manufacturer’s specifications. Install the drivers that came with the card.</p>
                 <p>Audio is only supported on certain frame grabber cards. Check the manufacturer’s specs to determine if the card supports audio. For Apple TV or HDCP-protected content to be shared, a Datapath frame grabber card is required.</p>
@@ -221,7 +230,7 @@ Vprime X1200DE-HDMI - (2 HDMI inputs)</p>
         </table>
         <p class="note">DirectX 11 is not required for Solstice users running the Solstice user app on their laptops or mobile devices. See <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Pages/Using-Solstice.htm" target="_blank">Using Solstice</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pages/using-solstice.htm" target="_blank">Using Solstice</a></MadCap:conditionalText> for more information about Solstice user apps.</p>
         <h2>How To Check for DirectX 11</h2>
-        <p>These steps will help you verify that your Windows host computer has DirectX 11 or better graphics:</p>
+        <p><a name="directX11"></a>These steps will help you verify that your Windows host computer has DirectX 11 or better graphics:</p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Step 1 – Launch the DirectX Diagnostic Tool</MadCap:dropDownHotspot>
@@ -260,8 +269,14 @@ Vprime X1200DE-HDMI - (2 HDMI inputs)</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Licensing</h2>
-        <p>The Solstice Windows Display Software, which runs on a Windows host computer, is a licensed Mersive product, as is the version of the Solstice software integrated on Solstice Pods. A free trial version of the Solstice Windows Display Software is available. Permanent Solstice Pod and Windows Software licenses are available for purchase from Mersive and its authorized resellers. Solstice user apps are free. With a Solstice Unlimited software license (for Windows or Pod) an unlimited number of users can connect to the display. With Solstice Small Group Edition (SGE) license (for Windows or Pod), up to four clients/users can connect to the display at one time. Mersive also offers Solstice Enterprise Edition licenses for both Solstice Pods and Windows Display Software, available in both Unlimited and SGE versions. The Solstice Enterprise Edition license provides support for the Solstice centralized IT management Dashboard and offers additional features designed for the enterprise deployment environment. Non-enterprise Solstice Pods and Windows Software licenses can be upgraded to Enterprise Edition.</p>
+        <p><a name="licensing"></a>The Solstice Windows Display Software, which runs on a Windows host computer, is a licensed Mersive product, as is the version of the Solstice software integrated on Solstice Pods. A free trial version of the Solstice Windows Display Software is available. Permanent Solstice Pod and Windows Software licenses are available for purchase from Mersive and its authorized resellers. Solstice user apps are free. With a Solstice Unlimited software license (for Windows or Pod) an unlimited number of users can connect to the display. With Solstice Small Group Edition (SGE) license (for Windows or Pod), up to four clients/users can connect to the display at one time. Mersive also offers Solstice Enterprise Edition licenses for both Solstice Pods and Windows Display Software, available in both Unlimited and SGE versions. The Solstice Enterprise Edition license provides support for the Solstice centralized IT management Dashboard and offers additional features designed for the enterprise deployment environment. Non-enterprise Solstice Pods and Windows Software licenses can be upgraded to Enterprise Edition.</p>
         <p>Upon purchase of Solstice Windows Display Software, you will receive a welcome email with login credentials to the Mersive Download Center. Once logged in, click the appropriate link to start the download. After the download is complete, follow the prompts to install and launch the software. You will also receive email notifications when subsequent software updates are available for your license. The process for installing updates is similar: use your login credentials to access the Mersive Download Center to download the update, then follow the prompts to install the update.</p>
         <p>If you have a Solstice Windows Display Software trial copy, you will see the reminder screen every time you start the Solstice Windows Display until it expires, after which the expiration notice will not go away. Once you have purchased a license, you will receive an activation code via email. Enter this activation code as it appears in the email into the license key box that appears when you start the Solstice Display application. You will also receive access to the Mersive Download Center via email, through which updates and new versions of the product will be delivered. You will be notified when updates are available by email sent to the email address associated with your account.</p>
+        <h3>Further Resources</h3>
+        <p><a href="Admin-Network-Ports.htm">Open Network Ports</a>
+        </p>
+        <p><a href="SDS-Introduction.htm">Solstice Discovery Service (SDS)</a>
+        </p>
+        <p>&#160;</p>
     </body>
 </html>

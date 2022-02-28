@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p> Solstice Windows Display Software is a version of the Solstice server that runs on a Windows 7, 8, or 10 host computer and is connected to the display by HDMI&#160;video cable. Refer to the table below for minimum required and recommended technical specs for the computer running the Solstice Display Software. </p>
+        <table style="width: 100%;mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <th class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="3">Windows Host Computer Requirements for Solstice Windows Display Software</th>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-weight: bold;">&#160;</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-weight: bold;">Minimum</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-weight: bold;">Recommended</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-weight: bold;">Processor</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Intel i5 or AMD&#160;Ryzen 5 or higher</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Intel i7 or AMD&#160;Ryzen 7 or higher, 4+ core recommended</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-weight: bold;">RAM</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">4 GB</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">8 GB&#160;or higher</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-weight: bold;">Max Display Resolution</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">1080p</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">1080p or 4K</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" valign="top"><b>Operating System</b>
+                    </td>
+                    <td colspan="2" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p>Windows 7, 8, or 10</p>
+                        <p class="note" style="padding-right:20px; margin-top:0px">Solstice Display Software for Windows is not supported in a virtual machine (VM) environment or while using terminal services. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p class="table-text"><b>Graphics</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="2">
+                        <p class="table-text">DirectX 11 or higher, or Dedicated Graphics (i.e. AMD&#160;Radeon or NVIDIA&#160;GeForce) </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p class="table-text"><b>Network</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" colspan="2">
+                        <p class="table-text">Single NIC&#160;Card, Ethernet connection</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1" style="font-weight: bold;">If adding an external video and audio source input</td>
+                    <td colspan="2" class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">
+                        <p>These DirectShow compatible frame grabber cards are supported. </p>
+                        <p>If audio support needed:</p>
+                        <ul>
+                            <li>Avermedia DarkCrystal HD&#160;Capture SDK II (C729) - (1 HDMI, 1 analog input)</li>
+                            <li>VPrime XI200DE-HDMI - (2 HDMI&#160;inputs)</li>
+                        </ul>
+                        <p>If protected content support needed (no audio support):</p>
+                        <ul>
+                            <li>Datapath VisionRGB-E1S - (1 DVI-I&#160;input)</li>
+                            <li>Datapath VisionRGB-E2S - (2 DVI-I inputs)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

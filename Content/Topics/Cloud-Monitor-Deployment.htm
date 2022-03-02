@@ -12,7 +12,7 @@
             <li><b>Alerts</b> allow you to passively monitor your deployment by enabling email alerts triggered by Solstice display events such as reboots or periods of unreachability. A log of past alert events is also available for review at any time.</li>
         </ul>
         <p>
-            <img src="../Resources/Images/ex_CloudMonitorDeployment.png" style="height: auto;width: 90%;" />
+            <img src="../Resources/Images/ex_CloudMonitorDeployment.png" style="height: auto;width: 95%;" />
         </p>
         <h2>How To</h2>
         <MadCap:dropDown>
@@ -25,7 +25,7 @@
                     <li>In the left navigation bar of Solstice Cloud, go to either <b>Monitor</b> &gt;<b>Availability</b> or <b>Monitor</b> &gt;<b>Deployment</b>. </li>
                     <li>In the table that appears after the graphs, the <b>Status</b> column (furthest to the left) shows the status of each Pod managed in Solstice Cloud: online, offline, or lapsed subscription.</li>
                     <li>Click the <b>Status</b> column header row to sort Pods together by status. The red dot <img src="../Resources/Images/i_reddot.png" style="width: 16px;height: 16px;" />  indicates the display is offline. </li>
-                    <li>Mouse over a status icon in the Deployment table to see more details about the status of that Pod.</li>
+                    <li>In <b>Monitor</b> &gt;<b>Deployment</b>, you can mouse over a status icon to see more details about the status of that Pod.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -36,9 +36,8 @@
             <p>To view which of your Solstice Pods have lapsed subscriptions and quickly generate a request to renew them:</p>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>In the left sidebar menu of Solstice Cloud, go to either <b>Monitor</b> &gt; <b>Deployment</b> or <b>Monitor</b> &gt; <b>Availability</b>. In both the Deployment and Availability tables, the column furthest to the left displays status icons. A yellow triangle  <img src="../Resources/Images/i_yellowTriangle_lapsed_17x15.png" style="width: 17px;height: 15px;" />  indicates a Pod's Solstice Subscription has lapsed. <p class="tip">Click the sort <img src="../Resources/Images/I_sortIcon.png" /> icon at the top of the status column to display Pods with lapsed subscriptions grouped together. </p></li>
-                    <li>Mouse over a yellow triangle icon and click <b>Learn More</b> in the tip box that appears.</li>
-                    <li>Click <b>Fix This</b> to proceed to the Solstice Cloud Subscription wizard.</li>
+                    <li>In the left sidebar menu of Solstice Cloud, go to <b>Monitor</b> &gt; <b>Deployment</b>. </li>
+                    <li>In the Solstice Subscription box that displays a graph of your Pods subscription status, click <b>Renew Now</b>  to proceed to the Solstice Cloud Subscription wizard.</li>
                     <li>Click <b>Get Started</b> to begin building your renewal request quote. Use the following options to move through the renewal request process: <ol style="list-style-type: lower-alpha;"><li>Click <b>Next</b> to save entered information and proceed to the next screen.</li><li>Click <b>Cancel</b> to leave the request process and discard entered information.</li><li>Use the <b>Back</b> arrow in the upper left to return to the previous step.</li></ol></li>
                     <li>First, select the Pods with lapsed subscriptions you wish to get a renewal quote for. You may use <b>Filter by Category</b> options to limit the list of Pods by category options defined for your organization in Solstice Cloud.</li>
                     <li>After selecting lapsed Pods for renewal, you may additionally select Pods nearing the end of their subscriptions to be included in your renewal quote.</li>
@@ -66,6 +65,20 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View Deployment Details and Manage Columns</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Many details about Solstice Pods in your deployment managed in Solstice Cloud can be viewed on the Monitor &gt; Deployment page, including hardware and software versions and subscription status. Use the Manage Columns feature to choose which details you want to see in the Deployment table:</p>
+                <ol>
+                    <li>In <b>Manage</b> &gt; <b>Deployment</b>, scroll down to the Deployment table that appears below the graphs. </li>
+                    <li>Click <b>Manage Columns</b> in the upper right corner of the table. An area below the table title bar will appear, displaying a checkbox for each available data option that can be displayed for your Solstice deployment.<p><img src="../Resources/Images/ex_CloudDeploymentManageColumns.png" /></p><p>Solstice Pod deployment details that can be viewed in the Deployment table include:</p><ol style="list-style-type: lower-alpha;"><li>Solstice Subscription status and details – a yellow triangle  <img src="../Resources/Images/i_yellowTriangle_lapsed_17x15.png" style="width: 17px;height: 15px;" />  in the <b>Status</b> column indicates a Pod's Solstice Subscription has lapsed. The subscription end date for the Pod appears in the <b>Subscription</b> column, and the type of Solstice license under <b>License</b>. A circle graph overview of Pod subscription statuses also appears above the table.<p class="tip">Click the sort <img src="../Resources/Images/I_sortIcon.png" /> icon at the top of the Status column to display Pods with lapsed subscriptions grouped together. </p></li><li> Pod <b>Hardware</b> and software <b>Version</b> – the Hardware column lists the generation of a Solstice Pod, and the Version column displays the precise version of Solstice software running on that Pod. The On Latest Version graph above the table shows how many Pods are upgraded to the most recently released version versus those that can be upgraded.</li><li>A Pod's <b>ID</b> may be needed for troubleshooting and subscription renewals.</li><li>View a Pod's <b>IP</b> and <b>MAC</b> addresses on attached Wi-Fi and Ethernet networks.</li><li>See whether <b>SDS</b> <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">(<a href="SDS-Introduction.htm" target="_blank">Solstice Discovery Service</a>)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly">(<a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Solstice Discovery Service</a>)</MadCap:conditionalText> is enabled and <b>SDS Host 1</b> and <b>SDS Host 2</b> settings for a Pod.</li><li><b>Import Date</b> and <b>Deploy Date</b> columns show the date a Pod was imported into Solstice Cloud and deployed.</li><li> <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Network-Settings.htm#search_tags" target="_blank">Search Tags</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-network-settings.htm#search_tags">Search Tags</a></MadCap:conditionalText> appear as <b>Tag</b> columns, and a <b>Tag Count</b> can also be shown.</li><li>Use the icon in the <b>Delete</b> column (furthest to the right) to remove a Pod from Solstice Cloud management.</li></ol><MadCap:snippetBlock src="../Resources/Snippets/info_CloudPodDataTablesHorizScrollTip.flsnp" /></li>
+                    <li>Select the data options you want to display as columns in the Deployment table. Changes will immediately appear in the table below.</li>
+                    <li>When the desired details appear in the Pods table, click <b>Manage Columns</b> again to hide the checkboxes.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Filter Pods by Category		</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <p>In both the Monitor &gt; Deployment and Monitor &gt; Availability tables (accessible from the left sidebar menu of Solstice Cloud), the list of Solstice Pods can be filtered by your available categories.</p>
@@ -78,18 +91,16 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Export a CSV File of the Pods Table</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Export a CSV File of Monitoring Data</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>In both the Monitor &gt; Deployment and Monitor &gt; Availability tables (accessible from the left sidebar menu of Solstice Cloud), the list of Solstice Pods can be filtered by your available categories. </p>
-                <p>Data will only be exported for Pods that currently match your search or filter criteria. This will include both the Pods displayed on the current page as well as Pods contained on additional pages that may not be currently displayed on the screen. For example, if your table is set to display 25 items per page, but there are 30 pods in the list, data for the five currently undisplayed pods will be exported. Additionally, only the columns that are currently displayed—that is, columns selected from the Manage Column check-boxes—will be exported.</p>
-                <p>When the table shows all the Pods and columns you want to export, click <b>Export to CSV</b>.</p>
-                <p>For example, to display all the data for all the Pods:</p>
+                <p>In both the Monitor &gt; Deployment and Monitor &gt; Availability tables (accessible from the left sidebar menu of Solstice Cloud), the Solstice Pods details displayed in the data table can be exported. </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_CloudPodsTablesExportCSVDesc.flsnp" />
                 <ol>
-                    <li>Clear all filters by clicking the <img src="../Resources/Images/i_XCircle-Clear.png" /> in any search fields or on any filter labels.</li>
-                    <li>At the bottom of the screen, click <b>Export to CSV</b>.</li>
+                    <li>Scroll down to the Pods details table that appears below the graphs.<p><img src="../Resources/Images/ex_CloudManageDeploymentExptCSV.png" /></p></li>
+                    <li>When the table displays all the Pods and associated columns data you want see in your preferred sort order, click <b>Export to CSV</b>. For example, to display all the data for all the Pods being managed by Solstice Cloud:<ol style="list-style-type: lower-alpha;"><li>Near the Filter button at the top of the page, remove all previously set filters by clicking the <img src="../Resources/Images/i_CloudXonBlue-ClearFilter.png" style="width: 20px;" alt="X" /> icon to remove all blue category  and search filters.</li><li>Or clear the search filter in the table by clicking the <img src="../Resources/Images/i_XCircle-Clear.png" /> icon in the Search box.</li><li>Click <b>Manage Columns</b>, and select all the check-boxes.</li><li>At the bottom of the table, click <b>Export to CSV</b>.</li></ol><MadCap:snippetBlock src="../Resources/Snippets/info_CloudPodDataTablesHorizScrollTip.flsnp" /></li>
+                    <li>Your browser should download the CSV file to its default downloads location or prompt you to choose a location for it, depending on your personal browser settings.</li>
                 </ol>
-                <p>Your browser should download the CSV file to its downloads directory.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>

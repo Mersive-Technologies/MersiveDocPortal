@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Use the Manage Columns feature to choose which categories of Solstice Pod data to show in the Pods table on Analytics pages</p>
+        <p>Use the Manage Columns feature to choose which categories of Solstice Pod data to show in the Pods table on Analytics pages:</p>
         <ol>
             <li>Scroll down to the Pods table that appears below the graph on the Analytics page.</li>
             <li>Click <b>Manage Columns</b> in the upper right corner of the Pods table. An area below the table title bar will appear, displaying a checkbox for each available data option and category defined in your Solstice Cloud account that can be displayed on the selected Analytics page.<p><img src="../Images/ex_CloudAnalyticsManageColumns.png" /></p></li>
-            <li>Select the data categories you want to display as columns in the Pods table. Changes will immediately appear in the table below.</li>
+            <li>Select the data categories you want to display as columns in the Pods table. Changes will immediately appear in the table below.<MadCap:snippetBlock src="info_CloudPodDataTablesHorizScrollTip.flsnp" /></li>
             <li>If a data category you want to hide from the table cannot be unchecked, it may be selected to be displayed in the graph above. Change the selection(s) in the blue and green menus above the table to categories other than ones you wish to hide.</li>
             <li>When your desired data categories appear in the Pods table, click <b>Manage Columns</b> again to hide the category list. <p class="note">Manage Columns options affect only the columns being displayed in the Pods table; they do not affect the data displayed in the graphs above.</p></li>
             <li>You may also click the sort icon <img src="../Images/I_sortIcon.png" alt="double arrow pointing up and down" /> to the right of a column title to change the sort order of the table. Click a second time to reverse the sort order (ascending/descending) for that column.</li>

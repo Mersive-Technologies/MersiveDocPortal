@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>When you have sorted, filtered, and managed columns in a Pods details table to see the data you want, you may export that data in a comma separated values file that can be opened with any spreadsheet app. The CSV file will include both the Pods displayed on the current page as well as Pods contained on additional pages that may not be currently displayed on the screen. For example, if your table is set to display 25 items per page, but there are 30 pods in the list, data for the five currently undisplayed Pods will be exported along with the 25 you are currently viewing.</p>
+    </body>
+</html>

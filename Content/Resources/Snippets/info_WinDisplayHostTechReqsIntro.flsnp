@@ -25,8 +25,8 @@
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-weight: bold;">RAM</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">4 GB</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">8 GB&#160;or higher</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">8 GB</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">16 GB&#160;or higher</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-weight: bold;">Max Display Resolution</td>
@@ -37,7 +37,7 @@
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" valign="top"><b>Operating System</b>
                     </td>
                     <td colspan="2" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p>Windows 7, 8, or 10</p>
+                        <p>Windows 8 or 10</p>
                         <p class="note" style="padding-right:20px; margin-top:0px">Solstice Display Software for Windows is not supported in a virtual machine (VM) environment or while using terminal services. </p>
                     </td>
                 </tr>

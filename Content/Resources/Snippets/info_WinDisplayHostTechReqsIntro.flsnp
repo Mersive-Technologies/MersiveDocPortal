@@ -4,14 +4,14 @@
         <link href="../TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <p> Solstice Windows Display Software is a version of the Solstice server that runs on a Windows 7, 8, or 10 host computer and is connected to the display by HDMI&#160;video cable. Refer to the table below for minimum required and recommended technical specs for the computer running the Solstice Display Software. </p>
+        <p> Solstice Windows Display Software is a version of the Solstice server that runs on a Windows 8 or 10 host computer and is connected to the display by HDMI&#160;video cable. Refer to the table below for minimum required and recommended technical specs for the computer running the Solstice Display Software. </p>
         <table style="width: 100%;mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <tbody>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <th class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="3">Windows Host Computer Requirements for Solstice Windows Display Software</th>
+                    <th colspan="3" style="padding-top: 3px;padding-bottom: 4px;" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Windows Host Computer Requirements for Solstice Windows Display Software</th>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
                     <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-weight: bold;">&#160;</td>
@@ -42,26 +42,18 @@
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
-                        <p class="table-text"><b>Graphics</b>
-                        </p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><b>Graphics</b>
                     </td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="2">
-                        <p class="table-text">DirectX 11 or higher, or Dedicated Graphics (i.e. AMD&#160;Radeon or NVIDIA&#160;GeForce) </p>
-                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="2">DirectX 11 or higher, or Dedicated Graphics (i.e. AMD&#160;Radeon or NVIDIA&#160;GeForce) </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
-                        <p class="table-text"><b>Network</b>
-                        </p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><b>Network</b>
                     </td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" colspan="2">
-                        <p class="table-text">Single NIC&#160;Card, Ethernet connection</p>
-                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" colspan="2">Single NIC&#160;Card, Ethernet connection</td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1" style="font-weight: bold;">If adding an external video and audio source input</td>
-                    <td colspan="2" class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-weight: bold;">If adding an external video and audio source input</td>
+                    <td colspan="2" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
                         <p>These DirectShow compatible frame grabber cards are supported. </p>
                         <p>If audio support needed:</p>
                         <ul>
@@ -73,6 +65,13 @@
                             <li>Datapath VisionRGB-E1S - (1 DVI-I&#160;input)</li>
                             <li>Datapath VisionRGB-E2S - (2 DVI-I inputs)</li>
                         </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2" style="font-weight: bold;">If adding an external video and audio source input</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2" colspan="2">
+                        <p colspan="2">If audio support is needed, DirectShow compatible frame grabber cards with 1-2 HDMI and/or analog ports are recommended. </p>
+                        <p colspan="2">If protected content support is needed (no audio support), DirectShow compatible frame grabber cards with 1 or 2 DVI-I inputs are recommended. </p>
                     </td>
                 </tr>
             </tbody>

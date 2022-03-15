@@ -22,5 +22,12 @@
     <Word Comment="">https://cloud.mersive.com</Word>
     <Word Comment="">Miracast</Word>
     <Word Comment="">plist</Word>
-    <Word>uptime/downtime</Word>
+    <Word Comment="">uptime/downtime</Word>
+    <Word>IETF-defined</Word>
+    <Word>DirectShow-compatible</Word>
+    <Word>DDI</Word>
+    <Word>enable/disable</Word>
+    <Word>RSA/SHA</Word>
+    <Word>Datapath</Word>
+    <Word>HDCP-protected</Word>
 </IgnoredWordsDictionary>

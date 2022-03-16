@@ -152,9 +152,6 @@
           Title="Room Intelligence"
           Link="/Content/Topics/Cloud-Template-Room-Intelligence.htm" />
         <TocEntry
-          Title="Message Center "
-          Link="/Content/Topics/Cloud-Template-Message-Center.htm"></TocEntry>
-        <TocEntry
           Title="Ethernet "
           Link="/Content/Topics/Cloud-Template-Ethernet.htm"></TocEntry>
         <TocEntry
@@ -178,6 +175,9 @@
         <TocEntry
           Title="Power Management "
           Link="/Content/Topics/Cloud-Template-Power-Mgmt.htm" />
+        <TocEntry
+          Title="Message Center "
+          Link="/Content/Topics/Cloud-Template-Message-Center.htm"></TocEntry>
       </TocEntry>
       <TocEntry
         Title="Analytics"

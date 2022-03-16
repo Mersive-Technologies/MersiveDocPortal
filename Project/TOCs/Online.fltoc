@@ -218,17 +218,14 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Admin-GetStarted-Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
-        Title="Using the Solstice Dashboard"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Admin-Using-Dashboard.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Admin-Appearance-Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
-        Title="Content Sharing Settings"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Admin-Sharing-Options.htm">
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/Topics/Admin-Sharing-Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Topics/Admin-Enabling-AirPlay.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

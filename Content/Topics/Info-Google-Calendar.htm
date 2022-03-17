@@ -6,11 +6,16 @@
         <h1>Google Workspace Settings for Integrating Resource Calendars with Solstice</h1>
         <p>Integrating the calendar for a room that is set up as a resource in Google Workspace allows you to use the Solstice Pod's display to show  the calendar information for the resource when there is no other content being shared. Looking at the Pod display, participants can see if the space is currently scheduled or available, as well as the next three upcoming meetings in the space. </p>
         <p>If your organization is using Solstice Conference, integrating a room also lets Solstice detect  the web conferencing information in the calendar invite when users book a web conference and invite the room. This allows Solstice to start the scheduled web conferencing when the meeting host connects to the Solstice display. </p>
-        <p>The following procedures assume: </p>
+        <h3>Before Starting Your Solstice Integration</h3>
+        <p>The Solstice integration directions below assume the following:</p>
         <ul>
-            <li>For each space with a Solstice Pod, your organization has created resources in the Google platform that can be scheduled by users. The calendars for these  resources will be displayed on the Pod when the integration is complete. You will need the Resource email to configure the Solstice Pod's settings. <p>An example of a Resource created for the space AB Conference Room is shown below. Google Workspace  resources can be located and managed at <i>Google Admin &gt; Directory &gt; Buildings and resources &gt; Manage resources</i> (for example, https://admin.google.com/ac/calendarresources/resources). <MadCap:expanding><MadCap:expandingHead><a name="Example"></a>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/ex_IntegrateGCalResourceInfo.png" class="noborder" style="width: 40%;" /></MadCap:expandingBody></MadCap:expanding></p></li>
-            <li>Your organization has enabled the Google Calendar API in Google Cloud Platform. This API can be located and managed at <i>Google Cloud Platform &gt; Calendar API</i> (for example, https://console.cloud.google.com/home/dashboard).</li>
-            <li>If you want  to show meeting organizers on the Pod display, those users must have "Active" profiles. User profile settings can be located and managed at <i>Google Admin &gt; Directory &gt; Users</i> (for example, https://admin.google.com/ac/users).</li>
+            <li>
+                <p>For each space with a Solstice Pod, <b>your organization has created resources in the Google platform</b> that can be scheduled by users. The calendars for these resources will be displayed on the Pod when the integration is complete. You will need the Resource email to configure the Solstice Pod's settings.</p>
+                <p>An example of a Resource created for the space AB Conference Room is shown below. Google Workspace  resources can be located and managed at <i>Google Admin &gt; Directory &gt; Buildings and resources &gt; Manage resources</i> (for example, https://admin.google.com/ac/calendarresources/resources). </p>
+                <p><a name="Example"></a>Example resource:<br /><img src="../Resources/Images/ex_IntegrateGCalResourceInfo.png" class="noborder" style="width: 40%;" /></p>
+            </li>
+            <li><b>Your organization has enabled the Google Calendar API</b> in Google Cloud Platform. This API can be located and managed at <i>Google Cloud Platform &gt; Calendar API</i> (for example, https://console.cloud.google.com/home/dashboard).</li>
+            <li>If you want  to show meeting organizers on the Pod display, those <b>users must have "Active" profiles</b>. User profile settings can be located and managed at <i>Google Admin &gt; Directory &gt; Users</i> (for example, https://admin.google.com/ac/users).</li>
         </ul>
         <p>The general steps for configuring a resource in Google Workspace to allow its calendar to be displayed on a Solstice Pod display are as follows: </p>
         <ol>
@@ -29,13 +34,11 @@
                     <li>From the Google Cloud Platform dashboard, use the left bar to navigate to <b>IAM &amp; Admin &gt; Service Accounts</b>.<p><img src="../Resources/Images/ex_IntegrateGCalSvcAccts.png" class="noborder" style="width: 55%;" /></p></li>
                     <li>Click <b>Create Service Account</b>.<p><img src="../Resources/Images/ex_IntegrateGCalCreateSvcAcct.png" class="noborder" style="width: 75%;" /></p></li>
                     <li>Enter a name for the service account and click <b>Create and Continue</b>.<p><img src="../Resources/Images/ex_IntegrateGCalNameSvcAcct.png" class="noborder" style="width: 90%;" /></p></li>
-                    <li>In the <b>Grant this service account access...</b> step, select the role of <b>Viewer</b>, then click <b>Continue</b>.<p><img src="../Resources/Images/ex_IntegrateGCalSvcAcctAccess.png" class="noborder" style="width: 90%;" /></p></li>
-                    <li>Click <b>Done</b> to create the new service account.</li>
-                    <li>In the Service Accounts table, click the account you just created.</li>
+                    <li>In the <b>Grant this service account access...</b> step, select the role of <b>Viewer</b>.<p><img src="../Resources/Images/ex_IntegrateGCalSvcAcctAccess.png" class="noborder" style="width: 90%;" /></p></li>
+                    <li><b>Continue</b> to complete the access setup, and finish creating the new service account.</li>
+                    <li>In the Service Accounts table, click to select the account you just created.</li>
                     <li><a name="ServiceAccount_Details"></a>Under <b>Service  account details</b>, note the <b>Email</b> and <b>Unique ID</b> for the service account. You will need this information in Steps 2 and 3.<p><img src="../Resources/Images/ex_IntegrateGCalSvcAcctDetails.png" class="noborder" style="width: 60%;" /></p></li>
-                    <li>Under <b>Service account status</b>, expand the <b>Show Domain-Wide Delegation</b> section.</li>
-                    <li>Check <b>Enable Google Workspace Domain-wide Delegation</b> and click <b>Save</b>.</li>
-                    <li>Navigate to <b>Keys</b> under the Service Account name. Select <b>Add Key &gt; Create new key &gt; JSON</b> and click <b>Create</b>.<p><img src="../Resources/Images/ex_IntegrateGCalSvcAcctKeyJSON.png" class="noborder" style="width: 80%;" /></p></li>
+                    <li>Navigate to the <b>Keys</b> area for the selected Service Account. Select <b>Add Key &gt; Create new key &gt; JSON</b> and <b>Create</b> the key.<p><img src="../Resources/Images/ex_IntegrateGCalSvcAcctKeyJSON.png" class="noborder" style="width: 80%;" /></p></li>
                     <li>Save the downloaded JSON file to a safe location. You will also need to provide the key as service credentials when configuring the Pod's calendar display settings in Solstice Dashboard or Solstice Cloud. </li>
                 </ol>
             </MadCap:dropDownBody>
@@ -46,13 +49,14 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>Log in to Google Admin, then use the left bar to navigate to <b>Security &gt; API controls</b>.</li>
-                    <li>At the bottom of the API&#160;controls screen, click <b>Manage Domain Wide Delegation</b>.</li>
-                    <li>On the Domain-wide Delegation page, click <b>Add new</b>.</li>
-                    <li>On the <b>Add a new client ID</b> screen, enter the Unique ID of the service account you created for the Solstice Pod, (for example, "117590591008199121085" - see the <a href="#ServiceAccount_Details">service account details screen</a> above).</li>
-                    <li>In the OAuth scopes field, enter this URL: https://www.googleapis.com/auth/calendar.readonly<p><img src="../Resources/Images/ex_IntegrateGCalDomainDelegate.png" style="width: 50%;" /></p></li>
-                    <li>Click <b>Authorize</b>. The delegation scope is now added for the resource.</li>
+                    <li>Log in to Google Admin, then navigate to the <b>API controls</b> (usually in the Security section under Access and data control).</li>
+                    <li>At the bottom of the API&#160;controls screen, go to <b>Manage Domain Wide Delegation</b>.</li>
+                    <li>On the Domain-wide Delegation page, select <b>Add new</b>.</li>
+                    <li>In <b>Add a new client ID</b>, enter the Unique ID of the service account you created for the Solstice Pod, (for example, "117590591008199121085" - see the <a href="#ServiceAccount_Details">service account details screen</a> above) as the <b>Client ID</b>.</li>
+                    <li>Enter the URL <b>https://www.googleapis.com/auth/calendar.readonly</b> on the first <b>OAuth scopes</b> line.<p><img src="../Resources/Images/ex_IntegrateGCalDomainDelegate.png" style="width: 50%;" /></p></li>
+                    <li>Click to <b>Authorize</b> the delegation scope for the service account.</li>
                 </ol>
+                <p>&#160;</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -61,19 +65,21 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>From Google Admin, open Google Calendar.</li>
+                    <li>When logged in to Google Admin, open Google Calendar.</li>
                     <li>From the <b>My calendars</b> section on the left, hover over the resource whose calendar you want to share, click the options dots, and select <b>Settings and sharing</b>.<p><img src="../Resources/Images/ex_IntegrateGCalSettings.png" class="noborder" style="width: 40%;" /></p></li>
                     <li>Scroll down to the <b>Share with specific people</b> section and click <b>Add People</b>.</li>
-                    <li>Enter the email address of the service account for the Solstice Pod located in that space (see the <a href="#ServiceAccount_Details">service account details screen</a> above) and then click <b>Send</b>. The resource's calendar information is now shared with the service account.<p><img src="../Resources/Images/ex_IntegrateGCalShare.png" class="noborder" style="width: 65%;" /></p><p class="note">External sharing access for secondary calendars must also be granted so that Solstice displays can show meeting details from resource calendars. From Google Admin, navigate to Apps &gt;&#160;Google Workspace &gt; Calendar &gt; General. Under <b>External sharing options for secondary calendars</b>, select one of the <b>Share all information...</b> options. See <a href="https://support.google.com/a/answer/60765#zippy=%2Callow-or-restrict-external-sharing" target="_blank">Google Workspace Admin Help</a> for more about each sharing level.</p></li>
+                    <li>Enter the email address of the service account for the Solstice Pod located in that space (see the <a href="#ServiceAccount_Details">service account details screen</a> above) and then click <b>Send</b>. The resource's calendar information is now shared with the service account.<p><img src="../Resources/Images/ex_IntegrateGCalShare.png" class="noborder" style="width: 65%;" /></p></li>
+                    <li>Also in the resource calendar settings, go to <b>Integrate Calendar</b>. Take note of the email address that appears under <b>Calendar ID</b>. This is what you will enter as the Room Email in the Calendar configuration for the associated Solstice display.<p><img src="../Resources/Images/ex_IntegrateGCalCalendarID.png" /></p></li>
                 </ol>
+                <p class="note">External sharing access for secondary calendars must also be granted so that Solstice displays can show meeting details from resource calendars. From Google Admin, navigate to Apps &gt;&#160;Google Workspace &gt; Calendar &gt; General. Under <b>External sharing options for secondary calendars</b>, select one of the <b>Share all information...</b> options. See <a href="https://support.google.com/a/answer/60765#zippy=%2Callow-or-restrict-external-sharing" target="_blank">Google Workspace Admin Help</a> for more about each sharing level.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Next Step:&#160;Configure Solstice Pod to Display the Resource's Calendar</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Next Step:&#160;Configure Solstice to Display the Resource's Calendar</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>You are now ready to configure the Solstice Pod to access the Google Workspace resource calendar you have just set up for it. Follow the appropriate link below for more information about doing so in the Solstice management tool used by your organization.</p>
+                <p>You are now ready to configure a Solstice display to access the Google Workspace resource calendar you have just set up for it. Follow the appropriate link below for more information about doing so in the Solstice management tool used by your organization.</p>
                 <p><a href="Cloud-Template-Calendar.htm">Solstice Cloud:&#160;Room Calendar Template Settings</a>
                 </p>
                 <p><a href="Admin-Room-Calendar.htm">Solstice Dashboard:&#160;Room Calendar Settings</a>
@@ -83,5 +89,6 @@
         <h3 MadCap:conditions="Default.ScreenOnly">Related Topic</h3>
         <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Calendar.htm"><a href="Info-O365-Calendar.htm">O365 Settings for Calendar Integration with Solstice</a></a>
         </p>
+        <p MadCap:conditions="Default.ScreenOnly">&#160;</p>
     </body>
 </html>

@@ -27,10 +27,11 @@
     <Word Comment="">immersive</Word>
     <Word Comment="">unreachability</Word>
     <Word Comment="">resizable</Word>
-    <Word>QoS</Word>
-    <Word>RSS</Word>
-    <Word>DirectX</Word>
-    <Word>iOS</Word>
-    <Word>UDP</Word>
-    <Word>Bonjour</Word>
+    <Word Comment="">QoS</Word>
+    <Word Comment="">RSS</Word>
+    <Word Comment="">DirectX</Word>
+    <Word Comment="">iOS</Word>
+    <Word Comment="">UDP</Word>
+    <Word Comment="">Bonjour</Word>
+    <Word>API</Word>
 </SpellingDictionary>

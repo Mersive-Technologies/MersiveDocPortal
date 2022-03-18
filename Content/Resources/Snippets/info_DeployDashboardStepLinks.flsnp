@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Below are the recommended steps for getting a standard Solstice deployment up and running using Solstice Dashboard, our on-premises management tool. This method is recommended if you are unable to use Solstice Cloud. </p>
+        <ul>
+            <li><a href="../../Topics/Deploy-Install-Dashboard.htm">Step 1: Install Solstice Dashboard and Import Pods</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Connect-Network.htm">Step 2: Connect the Pods to the Network</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Rename-Customize.htm">Step 3: Rename the Pod and Customize the Appearance</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Set-DateTime.htm">Step 4: Set the Pod's Date and Time</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Security-Settings.htm">Step 5: Set the Base Security Settings</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Room-Calendar.htm">Step 6: Add a Room Calendar</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Display-Discovery.htm">Step 7: Set Up Display Discovery</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Content-Sharing.htm">Step 8: Set the Content Sharing Options</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Validate-Deployment.htm">Step 9: Validate Your Deployment</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Other-Considerations.htm">Other Considerations</a>
+            </li>
+        </ul>
+    </body>
+</html>

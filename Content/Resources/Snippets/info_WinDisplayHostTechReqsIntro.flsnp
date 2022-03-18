@@ -67,7 +67,7 @@
                         </ul>
                     </td>
                 </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2" MadCap:conditions="Default.Exclude">
                     <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2" style="font-weight: bold;">If adding an external video and audio source input</td>
                     <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2" colspan="2">
                         <p colspan="2">If audio support is needed, DirectShow compatible frame grabber cards with 1-2 HDMI and/or analog ports are recommended. </p>

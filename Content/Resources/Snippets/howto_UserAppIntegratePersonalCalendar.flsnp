@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>By integrating your O365 calendar with your Solstice app, Solstice can launch web conferences scheduled on your personal calendar when you connect to a Solstice display, making it easier to meet with remote participants. This capability is supported for Windows or macOS laptops only. </p>
-        <p>When integrating your calendar, you will be prompted to sign into your Office 365 account using the secure Microsoft Graph API OAuth2 authorization flow. Microsoft will present you with the option to grant Solstice read-only access to your calendar. This allows the Solstice App to retrieve your calendar entries for upcoming meetings and enable a one-step start for scheduled video conferences. </p>
+        <p>By integrating your Microsoft 365 calendar with your Solstice app, Solstice can launch web conferences scheduled on your personal calendar when you connect to a Solstice display, making it easier to meet with remote participants. This capability is supported for Windows or macOS laptops only. </p>
+        <p>When integrating your calendar, you will be prompted to sign into your Microsoft 365 account using the secure Microsoft Graph API OAuth2 authorization flow. Microsoft will present you with the option to grant Solstice read-only access to your calendar. This allows the Solstice App to retrieve your calendar entries for upcoming meetings and enable a one-step start for scheduled video conferences. </p>
         <ol>
             <li>In the Solstice desktop app, click <b>Settings</b> &gt; <b>Conference</b>. </li>
             <li>In the <b>Calendar integration</b> section, click <b>Sign in with Microsoft</b>. The Microsoft Online login page will open in a web browser.</li>
-            <li>Enter your Microsoft O365 login credentials and sign in. If successful, the browser will display a "Success" message. </li>
-            <li>Close the browser and return to your Solstice app.<p class="note">If you are unable to save your O365 credentials and are prompted to re-enter them each time you launch the Solstice app, the Credential Manager service in Windows may have been disabled by your IT&#160;team. </p></li>
-            <li>If you wish to disconnect your O365 calendar at any time, go back to <b>Settings</b> &gt;&#160;<b>Conference</b> &gt; <b>Calendar integration</b> and click <b>Sign out</b>. </li>
+            <li>Enter your Microsoft 365 login credentials and sign in. If successful, the browser will display a "Success" message. </li>
+            <li>Close the browser and return to your Solstice app.<p class="note">If you are unable to save your Microsoft 365 credentials and are prompted to re-enter them each time you launch the Solstice app, the Credential Manager service in Windows may have been disabled by your IT&#160;team. </p></li>
+            <li>If you wish to disconnect your Microsoft 365 calendar at any time, go back to <b>Settings</b> &gt;&#160;<b>Conference</b> &gt; <b>Calendar integration</b> and click <b>Sign out</b>. </li>
         </ol>
-        <p class="note">If your O365 calendar is authenticated with Azure AD, your IT&#160;administrator may need to grant admin consent for the Solstice user app in the <a href="https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-in-app-registrations" target="_blank">Azure Active Directory app registrations</a>.</p>
+        <p class="note">If your Microsoft 365 calendar is authenticated with Azure AD, your IT&#160;administrator may need to grant admin consent for the Solstice user app in the <a href="https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-in-app-registrations" target="_blank">Azure Active Directory app registrations</a>.</p>
         <p class="note">For more information on how to set up an integrated room calendar for a Solstice-enabled workspace, which enables the Solstice display to show and interact with meetings scheduled for the space, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Cloud-Template-Calendar.htm" target="_blank">Solstice Cloud: Calendar Template</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-calendar.htm">Solstice Cloud: Calendar Template</a>.</MadCap:conditionalText></p>
     </body>
 </html>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Video Room Integration</h1>
+        <p>Solstice Pods running Solstice version 5.5 and higher can be configured to automatically switch between a dedicated video room system such as Zoom or Teams and Solstice's multi-source wireless content sharing and BYOM&#160;conferencing.</p>
+        <h2>System Components</h2>
+        <p>By connecting the room's display monitor to the HDMI-in port on the front of a Solstice Pod, Solstice can be configured to automatically detect and switch between Solstice wireless sharing and/or conferencing and conferencing via the video room system. Attach a supported USB&#160;switching device to also switch connected peripheral audio and video devices between Solstice and the video room system as needed. See supported USB&#160;Switches and supported all-in-one AV peripheral devices.</p>
+        <p>More detailed components list needed?</p>
+        <h3>Sample Solstice Video Room Integration Diagram</h3>
+        <p>
+            <img src="../Resources/Images/quickstart_diagram.png" style="width: 511px;height: 317px;" />
+        </p>
+        <h2>How To Configure Solstice for Video Room Integration</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set HDMI Input Mode to 'Persistent Post'</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>In Solstice Cloud</h4>
+                <p>Cloud &gt;&#160;Features &gt; HDMI Input Behavior</p>
+                <h4>In Solstice Dashboard</h4>
+                <p>Appearance and Usage &gt; Usage and Feature Management &gt; HDMI Input Mode</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Disable Digital Signage on Solstice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If desired, it is recommended that digital signage is enabled on the dedicated room codec (e.g. Zoom Rooms or MTR) rather than through Solstice in this configuration.</p>
+                <h4>In Solstice Cloud</h4>
+                <p>&#160;</p>
+                <h4>In Solstice Dashboard</h4>
+                <p>&#160;</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Requirements &amp;&#160;Recommendations</h2>
+        <p>Because the Pod does not store user credential information, unencrypted passwords, or users’ data that has been shared to the display, the physical Pods do not have to be located in secure locations. However, other considerations related to theft and environmental conditions should be considered.</p>
+        <ul>
+            <li>Solstice supports plug-and-plug USB&#160;devices. Devices, such as room cameras, should be connected to the Pod via USB and must be in-room. View list of<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"> <a href="Solstice-Conference-Supported-Peripherals.htm" target="_blank">supported devices</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="https://documentation.mersive.com/content/pdf/solsticeconferencesupportedperipherals.pdf">supported devices</a>.</MadCap:conditionalText> Note&#160;that DSPs and other processing hubs may not be compatible and should be avoided. </li>
+            <li>Display monitors must be directly connected to a Solstice Pod through HDMI video cables to an HDMI&#160;port on the back of the Pod. </li>
+            <li>
+                <MadCap:snippetText src="../Resources/Snippets/info_PodAudioOutNote.flsnp" />
+            </li>
+            <li>
+                Select an appropriate physical mounting solution for the Pod that cannot be detached. Consider the use of mounting locks and/or hidden VESA mounting systems behind the display. Specific mounting orientation is not an important factor as the Pod is operational in any orientation.</li>
+            <li>  Ensure that appropriate environmental controls have been taken into account. The device should operate within an ambient temperature range of 0° C (32° F) to 50° C (122° F). This may require ventilation or active airflow.  Solstice Pods should never be stacked on top of each other.</li>
+            <li>The Pod should not be mounted in direct contact with a surface that exceeds 30° C (86° F).</li>
+        </ul>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Admin-Network-Ports.htm">Network Requirements</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

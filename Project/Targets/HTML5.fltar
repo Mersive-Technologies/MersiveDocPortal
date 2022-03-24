@@ -11,7 +11,7 @@
   GetLatestBeforeCompile="false"
   EquationsOutputType="SVG"
   DisableAutoSync="false"
-  ConditionTagExpression="include[Default.5-4_Release or Default.ScreenOnly], exclude[Default.Exclude or Default.Future or Default.PrintOnly]"
+  ConditionTagExpression="include[Default.5-5_Release or Default.ScreenOnly], exclude[Default.Exclude or Default.Future or Default.PrintOnly]"
   OutputFile="index"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
   GenerateAllSkins="true"

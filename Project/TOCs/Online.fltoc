@@ -454,6 +454,10 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/API-TimeZones.htm" />
     </TocEntry>
+    <TocEntry
+      Title="Video Room Integration"
+      Link="/Content/Topics/Integration-Video-Room.htm"
+      conditions="Default.5-5_Release" />
   </TocEntry>
   <TocEntry
     Title="PDF Guides"

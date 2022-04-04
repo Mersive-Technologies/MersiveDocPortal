@@ -4,14 +4,23 @@
     </head>
     <body>
         <h1>Video Room Integration</h1>
-        <p>Solstice Pods running Solstice version 5.5 and higher can be configured to automatically switch between a dedicated video room system such as Zoom or Teams and Solstice's multi-source wireless content sharing and BYOM&#160;conferencing.</p>
+        <p>Solstice Pods running Solstice 5.5 and higher can be configured to automatically switch between a dedicated video room system such as Zoom or Teams and the Solstice Pod's multi-source wireless content sharing and agnostic video&#160;conferencing support. Pods can also be configured to support switching between Solstice and a supported all-in-one video conferencing device such as the Poly Studio X30 or X50.</p>
         <h2>System Components</h2>
-        <p>By connecting the room's display monitor to the HDMI-in port on the front of a Solstice Pod, Solstice can be configured to automatically detect and switch between Solstice wireless sharing and/or conferencing and conferencing via the video room system. Attach a supported USB&#160;switching device to also switch connected peripheral audio and video devices between Solstice and the video room system as needed. See supported USB&#160;Switches and supported all-in-one AV peripheral devices.</p>
+        <p>Use the following components to integrate Solstice with a computer-based video room system:</p>
+        <ul>
+            <li>Gen3 Solstice Pod running Solstice 5.5 or higher (licensing?)</li>
+            <li>Zoom Room or Microsoft Teams Room device</li>
+            <li>Supported USB&#160;switcher that accepts RS-232 or REST API commands</li>
+            <li>Display monitor, video, and audio peripherals</li>
+            <li>Optional USB to RS-232 cord (for RS-232 switcher)</li>
+        </ul>
+        <p>When the video room system, display monitor, and USB audio and video peripherals (via a USB&#160;switching device) are connected to the Solstice Pod, Solstice 5.5 and higher can be configured to automatically switch between and the video room system and Solstice wireless sharing and agnostic video conferencing as needed. See supported USB&#160;Switches and supported all-in-one AV peripheral devices.</p>
         <p>More detailed components list needed?</p>
         <h3>Sample Solstice Video Room Integration Diagram</h3>
         <p>
             <img src="../Resources/Images/quickstart_diagram.png" style="width: 511px;height: 317px;" />
         </p>
+        <p>A second configuration for all-in-one video conferencing devices, such as the Poly Studio X30 and X50, is also possible. In this configuration, the all-in-one device is connected to the Solstice Pod via HDMI-In and USB. API commands sent to the Poly Studio X30 and X50 switch audio and video to be sent to the Solstice Pod, so a USB&#160;switch is not needed.</p>
         <h2>How To Configure Solstice for Video Room Integration</h2>
         <MadCap:dropDown>
             <MadCap:dropDownHead>

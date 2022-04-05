@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>The Video Room Integration configuration page can currently be accessed via the Solstice Pod's local configuration panel by attaching a USB&#160;mouse and keyboard to the Pod or via browser at <code>https://[podIP]:5443/videoroomintegration</code>. Solstice Cloud configuration for video room integration will be added in a following release.</p>
+    </body>
+</html>

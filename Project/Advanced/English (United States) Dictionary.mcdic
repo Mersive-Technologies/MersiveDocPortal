@@ -33,5 +33,7 @@
     <Word Comment="">iOS</Word>
     <Word Comment="">UDP</Word>
     <Word Comment="">Bonjour</Word>
-    <Word>API</Word>
+    <Word Comment="">API</Word>
+    <Word>HDMI</Word>
+    <Word>HDMI-In</Word>
 </SpellingDictionary>

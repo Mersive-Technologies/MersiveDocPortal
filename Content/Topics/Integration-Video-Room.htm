@@ -4,24 +4,76 @@
     </head>
     <body>
         <h1>Video Room Integration</h1>
-        <p>Solstice Pods running Solstice 5.5 and higher can be configured to automatically switch between a dedicated video room system such as Zoom or Teams and the Solstice Pod's multi-source wireless content sharing and agnostic video&#160;conferencing support. Pods can also be configured to support switching between Solstice and a supported all-in-one video conferencing device such as the Poly Studio X30 or X50.</p>
+        <p>Solstice Pods running Solstice 5.5 and higher can be configured to automatically switch between a dedicated Zoom Room, Microsoft Teams Room, or Cisco Webex Room and the Solstice Pod's multi-source wireless content sharing and agnostic video&#160;conferencing support. Pods can also be configured to support switching between Solstice and a supported all-in-one audio, video, and conferencing device.</p>
         <h2>System Components</h2>
         <p>Use the following components to integrate Solstice with a computer-based video room system:</p>
         <ul>
             <li>Gen3 Solstice Pod running Solstice 5.5 or higher (licensing?)</li>
-            <li>Zoom Room or Microsoft Teams Room device</li>
+            <li>Device running Zoom Room or Microsoft Teams Room software</li>
             <li>Supported USB&#160;switcher that accepts RS-232 or REST API commands</li>
             <li>Display monitor, video, and audio peripherals</li>
-            <li>Optional USB to RS-232 cord (for RS-232 switcher)</li>
+            <li>Optional USB to RS-232 cord (for RS-232 USB&#160;switch)</li>
         </ul>
-        <p>When the video room system, display monitor, and USB audio and video peripherals (via a USB&#160;switching device) are connected to the Solstice Pod, Solstice 5.5 and higher can be configured to automatically switch between and the video room system and Solstice wireless sharing and agnostic video conferencing as needed. See supported USB&#160;Switches and supported all-in-one AV peripheral devices.</p>
-        <p>More detailed components list needed?</p>
+        <p>When the video room system, display monitor, and USB audio and video peripherals (via a USB&#160;switching device) are connected to the Solstice Pod, Solstice 5.5 and higher can be configured to signal a USB&#160;switch with RS-232 or API commands to switch back and forth between and the video room system and Solstice's wireless sharing and agnostic video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
         <h3>Sample Solstice Video Room Integration Diagram</h3>
         <p>
             <img src="../Resources/Images/quickstart_diagram.png" style="width: 511px;height: 317px;" />
         </p>
-        <p>A second configuration for all-in-one video conferencing devices, such as the Poly Studio X30 and X50, is also possible. In this configuration, the all-in-one device is connected to the Solstice Pod via HDMI-In and USB. API commands sent to the Poly Studio X30 and X50 switch audio and video to be sent to the Solstice Pod, so a USB&#160;switch is not needed.</p>
+        <p>A second configuration is also possible to integrate Solstice with a supported all-in-one conferencing device that contains a camera, speakerphone, and conferencing software, such as the Poly Studio X30. In this type of integration, the supported all-in-one device is connected to the Solstice Pod via HDMI-In and USB. The Solstice Pod can then be configured to send API commands to switch the all-in-one device between its native functionality and  an external device mode that passes AV input and output to the Solstice Pod.</p>
         <h2>How To Configure Solstice for Video Room Integration</h2>
+        <p>Use the information below to configure a Solstice Pod for integration with a Microsoft Teams Room, Zoom Room, or Cisco Webex Room.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Attach Solstice Pod to Room System and Peripherals</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Attach the Solstice Pod to power and the local Ethernet and wireless networks, as appropriate for your Solstice deployment.</li>
+                    <li>The video room system (Zoom or Teams) device should also be powered on and connected to Ethernet on the same network as the Solstice Pod.</li>
+                    <li>Connect the display monitor to one of the Solstice Pod’s HDMI outputs (HDMI 1 or HDMI&#160;2 on the back of the Pod).</li>
+                    <li>Connect the video room system device's HDMI output to the HDMI-In port on the front of the Solstice Pod.</li>
+                    <li>Connect any peripheral cameras, speakers, and/or microphones to the USB switch's USB&#160;output ports.</li>
+                    <li>Connect one of the USB ports on the back of the Solstice Pod to a USB input port on the USB&#160;switch.</li>
+                    <li>Connect a USB&#160;ports on the video room system device to a USB&#160;input port on the USB switch.</li>
+                    <li>Optional: If using an RS-232 USB&#160;switch, connect the other USB&#160;port on the back of the Solstice Pod to the RS-232 port on the USB&#160;switch using a USB to RS-232 cord.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Configure Solstice for Dynamic Switching with Video Room System</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_VRIPodSetupIntro.flsnp" />
+                <ol>
+                    <li><a name="VRI_switching"></a>Open the Video Room Integration configuration page and enter login information if required.</li>
+                    <li>Check <b>Enable Video Room Integration</b> and select your <b>Room System Type</b>.</li>
+                    <li>Select the Device Switching Protocol based on the type of USB&#160;switch being used. If using an RS-232 switch, select <b>RS-232</b>. <ol style="list-style-type: lower-alpha;"><li>In <b>Command to Select Solstice</b>, enter the RS-232 command that corresponds with the port Solstice connects to on the USB&#160;switch.</li><li>In Command to Select Room System, enter RS-232 command corresponding with the port the video room system connects to on the USB&#160;switch.</li></ol></li>
+                    <li>If using a USB&#160;switch that accepts REST API commands, select <b>HTTP/HTTPS</b>.<ol style="list-style-type: lower-alpha;"><li>Under <b>Command(s) to Select Solstice</b>, enter an <b>Order</b>, <b>Verb</b>, <b>Headers</b>, <b>Payload</b>, and <b>URL</b> as needed to create an API command that will instruct the USB&#160;switch (or all-in-one device) to switch to the port connected to the Solstice Pod.</li><li>Click <b>Add HTTP&#160;Command</b> to add rows for additional API commands as needed.</li><li>Click the <b>Delete</b> (trash can) icon at the end of a command row to remove the associated API command.</li><li>Under <b>Command(s) to Select Room System</b> use the tools described in steps a–c to create an API command that will signal the USB switch to switch to the port connected to the video room system device.</li></ol></li>
+                    <li>Click <b>Apply</b> at the bottom of the configuration page to save your changes.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Display a Custom Solstice Connection Message on Video Room System</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_VRIPodSetupIntro.flsnp" />
+                <ol>
+                    <li>Open the Video Room Integration configuration page and enter login information if required.</li>
+                    <li>If <b>Enable Video Room Integration</b> is not selected, first complete the directions for <a href="#VRI_switching">configuring Solstice for video room system switching</a> above.</li>
+                    <li>
+                        <p>In <b>Instructions Text Overlay</b> section at the bottom of the page, enter the Solstice connection instructions you would like to appear to users on the video room system display. The variables [RoomName], [ScreenKey], [WifiNetworkName], [WifiIP], [EthernetName], and [EthIP] will automatically be replaced with specific details for that Solstice Pod.</p>
+                        <p>For example, entering the overlay text "To access Solstice, connect to [WiFiNetworkName], choose [RoomName], and enter screen key [ScreenKey]" would generate something similar to the following instructions: </p>
+                        <p>To access Solstice, connect to Company_Network, choose Conference Room, and enter screen key 4868</p>
+                    </li>
+                    <li>Select a <b>Text Overlay Position</b> where you would like the Solstice connection instructions to be appear on the video room system screen.</li>
+                    <li>You may also choose a light or dark background from the <b>Color Scheme</b> menu.</li>
+                    <li>Click <b>Apply</b> at the bottom of the configuration page to save your changes.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Set HDMI Input Mode to 'Persistent Post'</MadCap:dropDownHotspot>
@@ -46,21 +98,21 @@
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Requirements &amp;&#160;Recommendations</h2>
-        <p>Because the Pod does not store user credential information, unencrypted passwords, or users’ data that has been shared to the display, the physical Pods do not have to be located in secure locations. However, other considerations related to theft and environmental conditions should be considered.</p>
+        <p>Follow these guidelines to achieve the best results with your Solstice video room integration:</p>
         <ul>
-            <li>Solstice supports plug-and-plug USB&#160;devices. Devices, such as room cameras, should be connected to the Pod via USB and must be in-room. View list of<MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"> <a href="Solstice-Conference-Supported-Peripherals.htm" target="_blank">supported devices</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"> <a href="https://documentation.mersive.com/content/pdf/solsticeconferencesupportedperipherals.pdf">supported devices</a>.</MadCap:conditionalText> Note&#160;that DSPs and other processing hubs may not be compatible and should be avoided. </li>
-            <li>Display monitors must be directly connected to a Solstice Pod through HDMI video cables to an HDMI&#160;port on the back of the Pod. </li>
-            <li>
-                <MadCap:snippetText src="../Resources/Snippets/info_PodAudioOutNote.flsnp" />
-            </li>
-            <li>
-                Select an appropriate physical mounting solution for the Pod that cannot be detached. Consider the use of mounting locks and/or hidden VESA mounting systems behind the display. Specific mounting orientation is not an important factor as the Pod is operational in any orientation.</li>
-            <li>  Ensure that appropriate environmental controls have been taken into account. The device should operate within an ambient temperature range of 0° C (32° F) to 50° C (122° F). This may require ventilation or active airflow.  Solstice Pods should never be stacked on top of each other.</li>
-            <li>The Pod should not be mounted in direct contact with a surface that exceeds 30° C (86° F).</li>
+            <li>Configure any devices to signaled by Solstice via API commands, such as the USB switch, to have a static IP on the same network as the Solstice Pod.</li>
+            <li>Set the USB switch to route to the Zoom Room or Microsoft Teams Room device by default.</li>
         </ul>
-        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
-        <p MadCap:conditions="Default.ScreenOnly"><a href="Admin-Network-Ports.htm">Network Requirements</a>
-        </p>
+        <h4>Zoom Room Configuration</h4>
+        <ul>
+            <li>Disable device error notifications on the Zoom Room device (NEED MORE DETAILS HERE)</li>
+            <li>Set power mode for Zoom Room device to never sleep and never suspend display, except for times when the room won’t be used for any meetings, such as at night.</li>
+        </ul>
+        <h4>Microsoft Teams Room Configuration</h4>
+        <ul>
+            <li>Set power mode for Teams Room device to never sleep and never suspend display, except for times when the room won’t be used for any meetings, such as at night.</li>
+        </ul>
+        <h2>Supported Devices for Solstice Video Room Integration</h2>
         <p>&#160;</p>
     </body>
 </html>

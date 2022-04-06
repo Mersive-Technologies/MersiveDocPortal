@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
     <head><title>[%=Heading.Level1%]</title>
     </head>
     <body>
-        <h1>Deploy the Solstice App with MSI</h1>
-        <p>The MSI installer package of the Solstice app allows for a GUI-based installation on a local machine or GPO deployment in Active Directory. This allows your IT administrator to centrally deploy the Solstice app for Windows users. The installer requires admin privileges to install system-wide, making it easier to use the MSI in a remote deployment where either an administrator or the SYSTEM account can install this properly.  The MSI installer can be run either interactively, specifying options through the GUI, or silently, specifying installation parameters directly on the command line and making it easier automate deployment.</p>
+        <h1>Deploy Solstice User App with MSI</h1>
+        <p>The MSI installer package of the Mersive Solstice app allows for a GUI-based installation on a local machine or GPO deployment in Active Directory. This allows your IT administrator to centrally deploy the Solstice app for Windows users. The installer requires admin privileges to install system-wide, making it easier to use the MSI in a remote deployment where either an administrator or the SYSTEM account can install this properly.  The MSI installer can be run either interactively, specifying options through the GUI, or silently, specifying installation parameters directly on the command line and making it easier automate deployment.</p>
         <p>&#160;</p>
         <p class="warning"><b>Important Note:</b> If Solstice Conference capabilities are currently installed from a 5.3 or 5.3.1 version of the Solstice app, admins centrally upgrading the app via MSI <b style="text-decoration: underline;">will first need to remotely reboot the user machine</b> and then uninstall the previous version of the app via MSI before upgrading. Admins can use the following command lines for uninstalling the 5.3 or 5.3.1 versions of the app: <br /><br /><b>5.3:</b><br />msiexec /x “{8cca01d5-9b6f-4474-9409-d5a586c3c2e7}” AFTERBOOT=1 /quiet<br /><br /><b>5.3.1:</b><br />msiexec /x “{b4efba4f-8b7f-42e4-a991-c779da1bff58}” AFTERBOOT=1 /quiet<br /><br />After running the uninstall command, admins can then install the newer version of the app via MSI as normal. If Solstice Conference capabilities are not currently installed, admins can upgrade or uninstall as normal. </p>
         <p>&#160;</p>
@@ -83,8 +83,10 @@
                 <p class="codeblock">msiexec /x SolsticeClient32-5.4.msi /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <h3 MadCap:conditions="Default.ScreenOnly">Related Topics</h3>
-        <p MadCap:conditions="Default.ScreenOnly"><a href="Admin-SCCM-Instuctions.htm">Deploy the Solstice App with SCCM</a>
+        <h3>Related Topics</h3>
+        <p><a href="Admin-SCCM-Instuctions.htm">Deploy Mersive Solstice App on Windows with SCCM</a>
+        </p>
+        <p><a href="Info-MacOS-CFPreferences.htm">Configure Mersive Solstice App Defaults on macOS</a>
         </p>
         <p>&#160;</p>
     </body>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
-    <head><title>Configure the Solstice App with CFPreferences</title>
+    <head><title></title>
         <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Configuring the Solstice App with CFPreferences on macOS</h1>
-        <p>Preferences for the Solstice app on macOS can be configured using the <b>Settings</b> section of the Solstice app or by configuring a Solstice plist (property list) using the macOS command line utility <code>defaults</code>.</p>
-        <h2>Solstice App Settings for macOS</h2>
+        <h1>Solstice User App Defaults on macOS</h1>
+        <p>Core foundation preferences (CFPreferences) for the Mersive Solstice app on a Mac computer can be configured using the <b>Settings</b> section of the app or by configuring a plist (property list) using the macOS command line utility <code>defaults</code>.</p>
+        <h2>Mersive Solstice App Settings for macOS</h2>
         <p>The following application options can be set using the <code>defaults</code> utility.</p>
-        <p class="note">Both the Solstice app and <code>defaults</code> write to the plist. If a user changes a setting in the application, a value that was set using <code>defaults</code> may be overwritten, and vice versa. See the <a href="#Examples">Examples</a> section for more on how changes to the plist affect in-app settings.</p>
+        <p class="note">Both the Mersive Solstice app and <code>defaults</code> write to the plist. If a user changes a setting in the application, a value that was set using <code>defaults</code> may be overwritten, and vice versa. See the <a href="#Examples">Examples</a> section for more on how changes to the plist affect in-app settings.</p>
         <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: #f5f6f6;border-right-style: solid;border-right-width: 1px;border-right-color: #f5f6f6;border-top-style: solid;border-top-width: 1px;border-top-color: #f5f6f6;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #f5f6f6;border-collapse: separate;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
             <col style="width: 361px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
             <col style="width: 66px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
@@ -229,6 +229,11 @@
         <p>Here is an example of how to delete a configured setting in the Solstice app plist:</p>
         <p class="codeblock">$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/TYPE"</b><br />$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/VALUE"</b></p>
         <p class="note">The Solstice app reads the plist settings on start up. If you change plist values using the <code>defaults</code> command while the app is running, the changes will not appear in the Settings section of the application. However, the app will behave in accordance with the new plist setting.<br /><br />For example, if the plist setting for AUTOSHAREDESKTOP is FALSE when the Solstice app is opened, the Solstice app will show the Quick Share Desktop setting as OFF. If the AUTOSHAREDESKTOP value is changed to TRUE&#160;using the <code>defaults</code> command while the app is running, the Settings page will still show the Quick Share Desktop setting as OFF. However, when the app connects to the display, the desktop will be automatically shared. Exit and restart the Solstice app to refresh the in-app settings to reflect the updated plist configuration.</p>
+        <h3>Related Topics</h3>
+        <p><a href="Admin-MSI-Instuctions.htm">Deploy Mersive Solstice App on Windows with MSI</a>
+        </p>
+        <p><a href="Admin-SCCM-Instuctions.htm">Deploy Mersive Solstice App on Windows with SCCM</a>
+        </p>
         <p>&#160;</p>
     </body>
 </html>

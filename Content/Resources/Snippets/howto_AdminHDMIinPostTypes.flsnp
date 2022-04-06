@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <li>Select one of the following options HDMI input behavior mode options:<ol style="list-style-type: lower-alpha;"><li><b>Standard Post</b> (default): If a wired HDMI-in source is connected to the Solstice Pod, it will be treated as a standard Solstice content post. For example, choose this if guest users often use the HDMI-in port to connect to the Solstice sharing space without network access.</li><li><b>Persistent Post</b>: A wired HDMI-in source persistently connected to the Solstice Pod, will display full screen while there are no other posts shared to Solstice. When another post is shared, the wired HDMI-in source is automatically moved off screen to the dock. When all wireless posts are deleted, the wired HDMI-in source automatically returns to full screen. This mode is designed to support wired inputs that should appear anytime users are not actively sharing content to Solstice.<MadCap:snippetBlock src="info_HDMIinPersistentPostNote.flsnp" /></li></ol></li>
+    </body>
+</html>

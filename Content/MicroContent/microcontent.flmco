@@ -9,7 +9,8 @@
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
                     <xhtml:h4>How to Set the Default Behavior for a Wired HDMI-in Source</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_AdminAppearanceHDMIBehavior.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_AdminHDMIinPostIntro.flsnp" />
+                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_DashboardAppearanceHDMIinPost.flsnp" />
                 </xhtml:body>
             </xhtml:html>
         </MicroContentResponse>

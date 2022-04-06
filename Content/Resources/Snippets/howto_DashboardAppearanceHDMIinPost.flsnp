@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In Solstice Dashboard, select the desired Gen3 Pod(s)&#160;from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Appearance and Usage</b> tab and scroll to Usage and Feature Management. </li>
+            <MadCap:snippetBlock src="howto_AdminHDMIinPostTypes.flsnp" />
+            <li>
+                <p>Click <b>Apply</b>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

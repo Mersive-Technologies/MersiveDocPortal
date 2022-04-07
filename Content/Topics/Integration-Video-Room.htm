@@ -5,9 +5,9 @@
     </head>
     <body>
         <h1>Video Room Integration</h1>
-        <p>Solstice Pods running Solstice 5.5 and higher can automatically switch between a dedicated Zoom Room, Microsoft Teams Room, or Cisco Webex Room and the Solstice Pod's multi-source wireless content sharing and agnostic video&#160;conferencing support. Pods can also be configured to support switching between Solstice and a supported all-in-one audio, video, and conferencing device.</p>
-        <h2>System Components</h2>
-        <p>Use the following components to integrate Solstice with a computer-based video room system:</p>
+        <p>Solstice Pods running Solstice 5.5 and higher can automatically switch between a dedicated Zoom Room, Microsoft Teams Room, or Cisco Webex Room and the Solstice Pod's multi-source wireless content sharing and agnostic video&#160;conferencing support. This configuration can also support switching between Solstice and a supported all-in-one audio, video, and conferencing device.</p>
+        <h2>System Components &amp;&#160;Requirements</h2>
+        <p>The following components and related configurations are required to integrate Solstice with a computer-based video room system:</p>
         <ul>
             <li>Gen3 Solstice Pod running Solstice 5.5 or higher (licensing?)</li>
             <li>Device running Zoom Room or Microsoft Teams Room software with Mersive lightweight(?) app installed</li>
@@ -15,12 +15,12 @@
             <li>Display monitor, video, and audio peripherals</li>
             <li>Optional USB to RS-232 cord (for RS-232 USB&#160;switch)</li>
         </ul>
-        <p>When the video room system, display monitor, and USB audio and video peripherals (via a USB&#160;switching device) are connected to the Solstice Pod, Solstice 5.5 and higher can be configured to signal a USB&#160;switch with RS-232 or API commands to switch back and forth between and the video room system and Solstice's wireless sharing and agnostic video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
+        <p>When the video room system, display monitor, and USB audio and video peripherals are connected to the Solstice Pod via a USB&#160;switching device, Solstice can be configured to signal the USB&#160;switch with RS-232 or API commands to toggle between and the video room system and Solstice's wireless sharing and agnostic video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
         <h3>Sample Solstice Video Room Integration Diagram</h3>
         <p>
-            <img src="../Resources/Images/quickstart_diagram.png" style="width: 511px;height: 317px;" />
+            <img src="../Resources/Images/dgm_VideoRoomIntegrationWiring.png" style="width: 511px;height: 317px;" />
         </p>
-        <p>A second configuration is also possible to integrate Solstice with a supported all-in-one conferencing device that contains a camera, speakerphone, and conferencing software, such as the Poly Studio X30. In this type of integration, the supported all-in-one device is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to switch the all-in-one device between its native functionality and  an external device mode that passes AV input and output to the Solstice Pod.</p>
+        <p>A second configuration is also possible to integrate Solstice with a supported all-in-one video conference device, such as the Poly Studio X30, with a camera, speakerphone, and conferencing software. In this type of integration, the all-in-one device is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that can pass AV input and output to the Solstice Pod.</p>
         <h2>How To Configure Solstice for Video Room Integration</h2>
         <p>Use these steps to configure a Solstice Pod for integration with a Microsoft Teams Room, Zoom Room, or Cisco Webex Room.</p>
         <MadCap:dropDown>
@@ -30,14 +30,14 @@
             <MadCap:dropDownBody>
                 <ol>
                     <li>Attach the Solstice Pod to power and the local Ethernet and wireless networks, as appropriate for your Solstice deployment.</li>
-                    <li>The video room system (Zoom or Teams) device should also be powered on and connected to Ethernet on the same network as the Solstice Pod.</li>
-                    <li>Install the lightweight (?) app from Mersive on the video room system device.</li>
+                    <li>The video room system (Zoom, Teams, etc.) device should also be powered on and connected to Ethernet on the same network as the Solstice Pod.</li>
+                    <li>Install the lightweight (?) app from Mersive on the video room system device. [NEED&#160;MORE&#160;INFO]</li>
                     <li>Connect the display monitor to one of the Solstice Pod’s HDMI outputs (HDMI 1 or HDMI&#160;2 on the back of the Pod).</li>
                     <li>Connect the video room system device's HDMI output to the HDMI-in port on the front of the Solstice Pod.</li>
                     <li>Connect any peripheral cameras, speakers, and/or microphones to the USB switch's USB&#160;output ports. </li>
                     <li>Connect one of the USB ports on the back of the Solstice Pod to a USB input port on the USB&#160;switch.</li>
-                    <li>Connect a USB&#160;ports on the video room system device to a USB&#160;input port on the USB switch.</li>
-                    <li>Optional: If using an RS-232 USB&#160;switch, connect the other USB&#160;port on the back of the Solstice Pod to the RS-232 port on the USB&#160;switch using a USB to RS-232 cord.</li>
+                    <li>Connect a USB&#160;port on the video room system device to a USB&#160;input port on the USB switch.</li>
+                    <li>(Optional) If using an RS-232 USB&#160;switch, connect the other USB&#160;port on the back of the Solstice Pod to the RS-232 port on the USB&#160;switch using a USB to RS-232 cord.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -51,7 +51,7 @@
                     <li><a name="VRI_switching"></a>Open the Video Room Integration configuration page and enter login information if required.</li>
                     <li>Check <b>Enable Video Room Integration</b> and select your <b>Room System Type</b>.</li>
                     <li>Select the Device Switching Protocol based on the type of USB&#160;switch being used. If using an RS-232 switch, select <b>RS-232</b>. <ol style="list-style-type: lower-alpha;"><li>In <b>Command to Select Solstice</b>, enter the RS-232 command that corresponds with the port Solstice connects to on the USB&#160;switch.</li><li>In Command to Select Room System, enter RS-232 command corresponding with the port the video room system connects to on the USB&#160;switch.</li></ol></li>
-                    <li>If using a USB&#160;switch that accepts REST API commands, select <b>HTTP/HTTPS</b>.<ol style="list-style-type: lower-alpha;"><li>Under <b>Command(s) to Select Solstice</b>, enter an <b>Order</b>, <b>Verb</b>, <b>Headers</b>, <b>Payload</b>, and <b>URL</b> as needed to create an API command that will instruct the USB&#160;switch (or all-in-one device) to switch to the port connected to the Solstice Pod.</li><li>Click <b>Add HTTP&#160;Command</b> to add rows for additional API commands as needed.</li><li>Click the <b>Delete</b> (trash can) icon at the end of a command row to remove the associated API command.</li><li>Under <b>Command(s) to Select Room System</b> use the tools described in steps a–c to create an API command that will signal the USB switch to switch to the port connected to the video room system device.</li></ol></li>
+                    <li>If using a USB&#160;switch that accepts REST API commands, select <b>HTTP/HTTPS</b>.<ol style="list-style-type: lower-alpha;"><li>Under <b>Command(s) to Select Solstice</b>, enter an <b>Order</b>, <b>Verb</b>, <b>Headers</b>, <b>Payload</b>, and <b>URL</b> as needed to create an API command that will instruct the USB&#160;switch (or all-in-one device) to switch to the port connected to the Solstice Pod.</li><li>Click <b>Add HTTP&#160;Command</b> to add rows for additional API commands as needed.</li><li>Click the <b>Delete</b> (trash can) icon at the end of a command row to remove the associated API command.</li><li>Under <b>Command(s) to Select Room System</b>, use the tools described in steps a–c to create an API command that will signal the USB switch to switch to the port connected to the video room system device.</li></ol></li>
                     <li>Click <b>Apply</b> at the bottom of the configuration page to save your changes.</li>
                 </ol>
             </MadCap:dropDownBody>
@@ -68,9 +68,9 @@
                     <li>
                         <p>In <b>Instructions Text Overlay</b> section at the bottom of the page, enter the Solstice connection instructions you would like to appear to users on the video room system display. The variables [RoomName], [ScreenKey], [WifiNetworkName], [WifiIP], [EthNetworkName], and [EthIP] will automatically be replaced with specific details for that Solstice Pod.</p>
                         <p>For example, entering the overlay text "To access Solstice, connect to [WiFiNetworkName], choose [RoomName], and enter screen key [ScreenKey]" would generate connection directions similar to: </p>
-                        <p>To access Solstice, connect to Company_Network, choose Large Conference Room, and enter screen key 4868</p>
+                        <p style="margin-left:30px; line-height:0.8; width:350px">To access Solstice, connect to Company_Network, choose Large Conference Room, and enter screen key 4868</p>
                     </li>
-                    <li>Select a <b>Text Overlay Position</b> where you would like the Solstice connection instructions to be appear on the video room system screen.</li>
+                    <li>Select the <b>Text Overlay Position</b> where you would like the Solstice connection instructions to appear on the video room system screen.</li>
                     <li>You may also choose a light or dark background from the <b>Color Scheme</b> menu.</li>
                     <li>Click <b>Apply</b> at the bottom of the configuration page to save your changes.</li>
                 </ol>
@@ -80,9 +80,9 @@
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Step 4: Set HDMI Input Mode to 'Persistent Post'</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
-            <p>Follow the directions below appropriate to your Solstice management tool to set the HDMI-in behavior mode for the Solstice Pod integrated with a video room system to Persistent Post.</p>
-            <MadCap:snippetBlock src="../Resources/Snippets/info_HDMIinPersistentPostNote.flsnp" />
             <MadCap:dropDownBody>
+                <p>Follow the directions below appropriate to your Solstice management tool to set the HDMI-in behavior mode for the Solstice Pod integrated with a video room system to Persistent Post.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_HDMIinPersistentPostNote.flsnp" />
                 <h4>In Solstice Cloud</h4>
                 <ol>
                     <li>In Solstice Cloud, use the left sidebar to navigate to <b>Manage</b> &gt; <b>Pods</b>.</li>
@@ -127,7 +127,7 @@
         <p>Mersive also recommends the following video room system configuration options to achieve the best results with your Solstice video room integration:</p>
         <h4>Zoom Room Configuration</h4>
         <ul>
-            <li>Disable device error notifications on the Zoom Room device (NEED MORE DETAILS HERE)</li>
+            <li>Disable device error notifications on the Zoom Room device [NEED MORE DETAILS HERE]</li>
             <li>Set power mode for Zoom Room device to never sleep and never suspend display, except for times when the room won’t be used for any meetings, such as at night.</li>
         </ul>
         <h4>Microsoft Teams Room Configuration</h4>
@@ -149,11 +149,11 @@
                     <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" colspan="4">Supported USB Switches</th>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 10pt;">Make and Model</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 10pt;">USB Version
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Make and Model</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">USB Version
 </th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 10pt;">Command Protocols</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="font-size: 10pt;text-align: center;">Device Size</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Command Protocols</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="text-align: center;font-size: 11pt;">Device Size</th>
                 </tr>
             </thead>
             <tbody>
@@ -199,9 +199,9 @@
                     <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" colspan="3">Supported All-in-One Appliance Devices</th>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 10pt;">Make and Model</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 10pt;">Command Protocols</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="font-size: 10pt;text-align: center;">Device Size</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Make and Model</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Command Protocols</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="text-align: center;font-size: 11pt;">Device Size</th>
                 </tr>
             </thead>
             <tbody>
@@ -219,28 +219,42 @@
             </tbody>
         </table>
         <p class="table-text">&#160;</p>
-        <h4>Example RS-232/API Commands Per Device</h4>
-        <p>Lightware UCX Series (no auth)</p>
-        <ul>
-            <li>Verb: POST</li>
-            <li>Header: HTTP/1.1</li>
-            <li>Payload: U1:H1 or U2:H1</li>
-            <li>URL: http://&lt;device_ip&gt;/api/V1/MEDIA/USB/XP/switch</li>
-        </ul>
-        <p>Extron SW2 USB</p>
-        <ul>
-            <li>1!</li>
-            <li>2!</li>
-        </ul>
-        <p>Inogeni Toggle</p>
-        <ul>
-            <li>1\r</li>
-            <li>2\r</li>
-        </ul>
-        <p>Poly Studio x30/x50</p>
-        <ul>
-            <li>?</li>
-        </ul>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');margin-left: 0;margin-right: auto;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
+                    <th colspan="4" style="text-align: left;" class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1">Example RS-232/API Commands Per Device</th>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Lightware UCX Series (no auth)</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Extron SW2 USB</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Inogeni Toggle</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="font-size: 11pt;">Poly Studio x30/x50</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p class="table-text">Verb: POST</p>
+                        <p class="table-text">Header: HTTP/1.1</p>
+                        <p class="table-text">Payload: U1:H1 or U2:H1</p>
+                        <p class="table-text">URL: http://&lt;device_ip&gt;/api/V1/MEDIA/USB/XP/switch</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p>1!</p>
+                        <p>2!</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p>1\r</p>
+                        <p>2\r</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">?</td>
+                </tr>
+            </tbody>
+        </table>
         <p>&#160;</p>
     </body>
 </html>

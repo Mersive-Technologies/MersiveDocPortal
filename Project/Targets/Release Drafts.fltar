@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="PDF"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  ConditionTagExpression="include[Default.5-5_Release or Default.PrintOnly], exclude[Default.5-5_Exclude or Default.Exclude or Default.Future or Default.ScreenOnly]"
+  PatchHeadingLevels="true"
+  GetLatestBeforeCompile="false"
+  MasterToc="/Project/TOCs/Release Drafts.fltoc"
+  OutputFolder="C:\Users\abennington\Documents\Flare"
+  InjectBookHeadings="true"
+  OutputFile="MSI and CFPreferences">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    OutputFormat="doc" />
+  <DocumentProperties
+    Author="Mersive Documentation"
+    Title="Solstice 5.5 pre-release draft" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="Fit"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle" />
+</CatapultTarget>

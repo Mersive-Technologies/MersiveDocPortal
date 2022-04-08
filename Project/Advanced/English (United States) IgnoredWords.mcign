@@ -30,7 +30,8 @@
     <Word Comment="">RSA/SHA</Word>
     <Word Comment="">Datapath</Word>
     <Word Comment="">HDCP-protected</Word>
-    <Word>https://admin.google.com/ac/calendarresources/resources</Word>
-    <Word>https://console.cloud.google.com/home/dashboard</Word>
-    <Word>https://admin.google.com/ac/users</Word>
+    <Word Comment="">https://admin.google.com/ac/calendarresources/resources</Word>
+    <Word Comment="">https://console.cloud.google.com/home/dashboard</Word>
+    <Word Comment="">https://admin.google.com/ac/users</Word>
+    <Word>SolsticeClient-5.4.msi</Word>
 </IgnoredWordsDictionary>

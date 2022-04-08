@@ -6,7 +6,7 @@
         <h1>Deploy Solstice User App with MSI</h1>
         <p>The MSI installer package of the Mersive Solstice app allows for a GUI-based installation on a local machine or GPO deployment in Active Directory. This allows your IT administrator to centrally deploy the Solstice app for Windows users. The installer requires admin privileges to install system-wide, making it easier to use the MSI in a remote deployment where either an administrator or the SYSTEM account can install this properly.  The MSI installer can be run either interactively, specifying options through the GUI, or silently, specifying installation parameters directly on the command line and making it easier automate deployment.</p>
         <p>&#160;</p>
-        <p class="warning"><b>Important Note:</b> If Solstice Conference capabilities are currently installed from a 5.3 or 5.3.1 version of the Solstice app, admins centrally upgrading the app via MSI <b style="text-decoration: underline;">will first need to remotely reboot the user machine</b> and then uninstall the previous version of the app via MSI before upgrading. Admins can use the following command lines for uninstalling the 5.3 or 5.3.1 versions of the app: <br /><br /><b>5.3:</b><br />msiexec /x “{8cca01d5-9b6f-4474-9409-d5a586c3c2e7}” AFTERBOOT=1 /quiet<br /><br /><b>5.3.1:</b><br />msiexec /x “{b4efba4f-8b7f-42e4-a991-c779da1bff58}” AFTERBOOT=1 /quiet<br /><br />After running the uninstall command, admins can then install the newer version of the app via MSI as normal. If Solstice Conference capabilities are not currently installed, admins can upgrade or uninstall as normal. </p>
+        <p class="warning"><b>Important Note:</b> If Solstice Conference capabilities are currently installed from a 5.3 or 5.3.1 version of the Mersive Solstice app, admins centrally upgrading the app via MSI <b style="text-decoration: underline;">will first need to remotely reboot the user machine</b> and then uninstall the previous version of the app via MSI before upgrading. Admins can use the following command lines for uninstalling the 5.3 or 5.3.1 versions of the app: <br /><br /><b>5.3:</b><br />msiexec /x “{8cca01d5-9b6f-4474-9409-d5a586c3c2e7}” AFTERBOOT=1 /quiet<br /><br /><b>5.3.1:</b><br />msiexec /x “{b4efba4f-8b7f-42e4-a991-c779da1bff58}” AFTERBOOT=1 /quiet<br /><br />After running the uninstall command, admins can then install the newer version of the app via MSI as normal. If Solstice Conference capabilities are not currently installed, admins can upgrade or uninstall as normal. </p>
         <p>&#160;</p>
         <p>The current values that can be set during installation are as follows:</p>
         <p class="note">The Mersive MSI&#160;installer is case sensitive. Installation options must be specified in capital letters. </p>
@@ -17,9 +17,13 @@
         <p><b>SDSADDRESS=address</b> where 'address' can be a domain name (e.g., sdshost.yourcompany.com) or an IP address (e.g., 123.4.5.67).  This sets the initial value of the Solstice Discovery Service Address in the app (Settings &gt; General).  If this parameter is not given, the app’s SDS Address will not be modified. </p>
         <p><b>NAME=”user name with spaces”</b> sets a user's Display Name value in the app (Settings &gt; General). If this value is not set, the user will be asked to enter a name when they first run the app.  If a name value contains spaces, it needs to be surrounded by quotes.</p>
         <p><b>DEFAULTNAME={0|1}</b> controls whether to set the user's Display Name in the app (Settings &gt; General) to be the name of the computer the app is being installed on. A value of 1 set the user's name to the computer name. If both DEFAULTNAME=1 and a NAME&#160;value are specified, the Display Name will be set to the machine name (DEFAULTNAME setting takes precedence).</p>
-        <p><b>AUTOSHAREAUDIO={0|1}</b>    sets whether desktop audio is automatically shared  when the user's desktop is shared. A value of 1 sets Auto Share Audio with Desktop (Settings &gt; Control) to on; 0 disables it.</p>
+        <p MadCap:conditions="Default.5-5_Release"><b>NOTIFICATIONLEVEL={0-2}</b>    sets how many Notifications (Settings &gt; General) the user will see. A value of 0 disables all notifications; 1 displays only critical notifications; 2 results in the user seeing all notifications.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/info_UserAppNotificationsOffConfWarning.flsnp" MadCap:conditions="Default.5-5_Release" />
+        <p MadCap:conditions="Default.5-5_Exclude"><b>AUTOSHAREAUDIO={0|1}</b>    sets whether desktop audio is automatically shared  when the user's desktop is shared. A value of 1 sets Auto Share Audio with Desktop (Settings &gt; Control) to on; 0 disables it.</p>
+        <p MadCap:conditions="Default.5-5_Release"><b>AUTOSHAREDESKTOP={0|1}</b>    sets whether Solstice automatically shares the user's desktop as soon as they connect to a Solstice display. A value of 1 sets Quick Share Desktop (Settings &gt; Control) to on; 0 disables it.</p>
+        <p MadCap:conditions="Default.5-5_Release"><b>AUTOSHAREAUDIO={0|1}</b>    sets whether audio is automatically shared  when the user shares their desktop or an application window. A value of 1 sets Auto Share Audio (Settings &gt; Control) to on; 0 disables it.</p>
         <p><b>HIDEUIWHENSHARING={0|1}</b>  controls whether the app's User Interface (UI) is hidden when the desktop is being shared.  This is a convenient shortcut so it doesn’t get in the way of content being shared.  A value of 1 sets Hide on Desktop Share (Settings &gt;&#160;Control) to on; 0 disables automatic desktop sharing.</p>
-        <p><b>SLSDISCONNECTSENSITIVITY=[0–5]</b> sets how aggressively the Solstice Location Service&#160;will apply auto-disconnect logic to the user's Pod connection. Choose an auto-disconnect sensitivity between 1 (very low) and 5 (very high). A value of 0 disables the auto-disconnect functionality.</p>
+        <p><b>SLSDISCONNECTSENSITIVITY=[0-5]</b> sets how the Solstice Location Service&#160;will apply auto-disconnect logic to the user's Pod connection. Choose an auto-disconnect sensitivity between 1 (very low) and 5 (very high). A value of 0 disables auto-disconnect.</p>
         <p><b>POWERPOINTEXTENDDISPLAY={0|1}</b> controls the Extended Presentation Mode setting (Settings &gt; Control) upon install. A value of 1 turns on Extended Presentation Mode; 0 turns it off. If no value is specified, defaults to 1.</p>
         <p><b>ADDCONFERENCE={0|1}</b> determines if the lightweight drivers required for Solstice app users to utilize <a href="Solstice-Conference-Introduction.htm">Solstice Conference</a> capabilities are automatically installed. This allows administrators to deploy Solstice Conference capabilities in case end-users do not have the elevated permissions needed to install. A value of 1 automatically installs the Solstice Conference drivers.</p>
         <p><b>SHAREPODDISPLAY={0|1}</b> determines whether the Share Pod Display setting for Solstice Conference (Settings &gt; Conference) is enabled or disabled. A value of 1 turns on the Share Pod Display toggle; 0 turns it off for better performance on some devices. If this parameter is not given, the Share Pod Display setting will be set to on.</p>
@@ -33,7 +37,7 @@
                 <br />
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p class="note">When you install a new version of the 64-bit app, the installer first removes any previously installed version of the 64-bit app. However, the 64-bit client installer will not remove a previously installed 32-bit version of the app. Mersive recommends uninstalling any 32-bit versions of the Solstice app before installing the 64-bit version.</p>
+                <p class="note">Mersive recommends uninstalling any 32-bit versions of the Mersive Solstice app for Windows before installing a 64-bit version. The 64-bit installer will remove any previously installed version of the 64-bit app, but it will not remove a previously installed 32-bit version. The Mersive Solstice app for Windows versions 5.3 and newer were released only in 64-bit. </p>
                 <p>Here is an example of how to use <code>msiexec</code> to install the Solstice app with the following options:</p>
                 <ul>
                     <li>Set the SDS address to sdshost.yourcompany.com</li>
@@ -43,7 +47,7 @@
                     <li>Install the app silently</li>
                     <li>Write an installation log file named C:\SolsticeClient.log</li>
                 </ul>
-                <p class="codeblock">msiexec /i SolsticeClient-5.4.msi SDSADDRESS=sdshost.yourcompany.com  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 /quiet /log c:\SolsticeClient.log</p>
+                <p class="codeblock">msiexec /i <MadCap:conditionalText MadCap:conditions="Default.5-5_Exclude">SolsticeClient-5.4.msi</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.5-5_Release">SolsticeClient-5.5.msi</MadCap:conditionalText> SDSADDRESS=sdshost.yourcompany.com  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -55,7 +59,7 @@
                 <p class="note">If you are deploying centrally to multiple PCs, you can use Microsoft’s Group Policy or another third-party tool to add the Mersive publisher certificate to the Trusted Publishers certificate store.</p>
                 <ol>
                     <li>Download the MSI version of the Solstice client app installer from <a href="https://www.mersive.com/download-admin/" target="_blank">mersive.com/download-admin</a> &gt; Deployment Management.</li>
-                    <li>From a computer that does not have the Solstice Conference feature of the Solstice app, run <b>SolsticeClient-5.4.msi</b>. (If you are working with a computer that already has this feature installed, skip to step 5.)</li>
+                    <li>From a computer that does not have the Solstice Conference feature of the Solstice app, run <b MadCap:conditions="Default.5-5_Exclude">SolsticeClient-5.4.msi</b><b MadCap:conditions="Default.5-5_Release">SolsticeClient-5.5.msi</b>. (If you are working with a computer that already has this feature installed, skip to step 5.)</li>
                     <li>Work through the installation wizard, and select the <b>Install Solstice Conference</b> option. <p><img src="../Resources/Images/ex_UserAppMSIInstallerInstlConf.png" style="width: 550px;" /></p></li>
                     <li>Continue the installation wizard.<p>When the installation starts, you will be prompted to trust Mersive software.</p><p><img src="../Resources/Images/ex_UserAppMSIInstallerTrust.png" /></p></li>
                     <li>Check <b>Always trust software from "Mersive Technologies, Inc."</b> and click <b>Install</b>. The Mersive trust certificate will be installed on the computer.</li>
@@ -63,15 +67,15 @@
                     <li>From the <i>certmgr</i> dialog, navigate to <b>Trusted Publishers &gt; Certificates</b>.</li>
                     <li>Right click the Mersive certificate and select <b>All Tasks &gt; Export</b>.</li>
                     <li>Click <b>Next</b>, and then click <b>Next</b> again.</li>
-                    <li>Enter the file name for the Mersive certificate. For example, you could enter <code>mersive_cert.cer</code>. You can also use the Browse dialog to specify both the name and the location of the file.</li>
+                    <li>Enter the file name for the Mersive certificate (for example, <code>mersive_cert.cer</code>). You can also use the Browse dialog to specify both the name and the location of the file.</li>
                     <li>Click <b>Next</b>, and then click <b>Finish</b>.</li>
-                    <li>Place the <code>SolsticeClient-5.4.msi</code> file and the trust certificate you just exported, into the same folder or on the same share where they can used for installation.</li>
+                    <li>Place the <code MadCap:conditions="Default.5-5_Exclude">SolsticeClient-5.4.msi</code><code MadCap:conditions="Default.5-5_Release">SolsticeClient-5.5.msi</code> file and the trust certificate you just exported, into the same folder or on the same share where they can used for installation.</li>
                     <li>On the Windows computer where you want to perform the silent install, open a command prompt with Administrator permissions.</li>
-                    <li>Install the certificate by entering <code style="font-weight: bold;">certutil -addstore "TrustedPublisher" &lt;certificate name&gt;.</code></li>
-                    <li>Using <i>msiexec</i> run <i>SolsticeClient-5.4.msi</i> with the "quiet" (or silent) option.</li>
+                    <li>Install the certificate by entering <code style="font-weight: normal;">certutil -addstore "TrustedPublisher" &lt;certificate name&gt;</code>.</li>
+                    <li>Using <code>msiexec</code> run <code MadCap:conditions="Default.5-5_Exclude">SolsticeClient-5.4.msi</code><code MadCap:conditions="Default.5-5_Release">SolsticeClient-5.5.msi</code> with the <code>quiet</code> (silent) option.</li>
                 </ol>
-                <p>For example, to run both certutil and msiexec from the same command, you could enter:</p>
-                <p class="codeblock">certutil -addstore "TrustedPublisher" mersive_cert.cer &amp;&amp; msiexec /i SolsticeClient-5.4.msi SDSADDRESS=192.168.2.129  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 ADDCONFERENCE=1 /quiet /log c:\SolsticeClient.log</p>
+                <p>For example, to run both <code>certutil</code> and <code>msiexec</code> from the same command, you could enter:</p>
+                <p class="codeblock">certutil -addstore "TrustedPublisher" mersive_cert.cer &amp;&amp; msiexec /i <MadCap:conditionalText MadCap:conditions="Default.5-5_Exclude">SolsticeClient-5.4.msi</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.5-5_Release">SolsticeClient-5.5.msi</MadCap:conditionalText> SDSADDRESS=192.168.2.129  INSTALLDIR="C:\Program Files\Mersive\SolsticeClient" STARTONLOGIN=0 HIDEUIWHENSHARING=1 ADDCONFERENCE=1 /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -80,7 +84,7 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>See below for an example command showing how to use <code>msiexec</code> to uninstall the Solstice app.</p>
-                <p class="codeblock">msiexec /x SolsticeClient32-5.4.msi /quiet /log c:\SolsticeClient.log</p>
+                <p class="codeblock">msiexec /x <MadCap:conditionalText MadCap:conditions="Default.5-5_Exclude">SolsticeClient-5.4.msi</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.5-5_Release">SolsticeClient-5.5.msi</MadCap:conditionalText> /quiet /log c:\SolsticeClient.log</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h3>Related Topics</h3>

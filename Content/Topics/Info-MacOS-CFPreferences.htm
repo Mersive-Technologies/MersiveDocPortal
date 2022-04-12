@@ -5,14 +5,14 @@
     </head>
     <body>
         <h1>Solstice User App Defaults on macOS</h1>
-        <p>Core foundation preferences (CFPreferences) for the Mersive Solstice app on a Mac computer can be configured using the <b>Settings</b> section of the app or by configuring a plist (property list) using the macOS command line utility <code>defaults</code>.</p>
+        <p>Core foundation preferences (CFPreferences) for the Mersive Solstice app on a Mac computer can be configured using the Settings section of the app or by configuring a plist (property list) using the macOS command line utility <code>defaults</code>.</p>
         <h2>Mersive Solstice App Settings for macOS</h2>
         <p>The following application options can be set using the <code>defaults</code> utility.</p>
         <p class="note">Both the Mersive Solstice app and <code>defaults</code> write to the plist. If a user changes a setting in the application, a value that was set using <code>defaults</code> may be overwritten, and vice versa. See the <a href="#Examples">Examples</a> section for more on how changes to the plist affect in-app settings.</p>
         <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: #f5f6f6;border-right-style: solid;border-right-width: 1px;border-right-color: #f5f6f6;border-top-style: solid;border-top-width: 1px;border-top-color: #f5f6f6;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #f5f6f6;border-collapse: separate;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
-            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 430px;" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 80px;" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 429px;" />
             <thead>
                 <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
                     <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1">Option</th>
@@ -22,218 +22,220 @@
             </thead>
             <tbody>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/AUTOSHAREDESKTOP</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/AUTOSHAREDESKTOP</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>If set to TRUE, the Quick Share Desktop setting is turned on, enabling Solstice to automatically share the user's desktop as soon as they connect to a Solstice display.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2" MadCap:conditions="Default.5-5_Exclude">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/AUTOSHAREAUDIOWITHDESKTOP</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/AUTOSHAREAUDIOWITHDESKTOP</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>If set to TRUE, the Auto Share Audio with Desktop setting is turned on, enabling Solstice to automatically stream desktop audio to the Solstice display when the user shares their desktop.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1" MadCap:conditions="Default.5-5_Release">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/AUTOSHAREAUDIO</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p>If set to TRUE, the Auto Share Audio setting is turned on, enabling Solstice to automatically stream audio to the Solstice display when the user shares their desktop or an application window.</p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p>PROFILE/AUTOSHAREAUDIO</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p>If set to TRUE, the Auto Share Audio setting is turned on, enabling Solstice to automatically stream audio to the Solstice display when the user shares their desktop or an application window. (Equivalent to PROFILE/AUTOSHAREAUDIOWITHDESKTOP for Mersive Solstice app version 5.4 and earlier.)</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/CALENDAR_CONFIG/REFRESH_TOKEN</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p> If set to TRUE, an Office 365 calendar has been integrated with the Solstice app. Set the value to FALSE&#160;to terminate the calendar integration. However, the calendar integration needs to be configured in the Conference settings of the Solstice app to authenticate with Office 365. </p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/CALENDAR_CONFIG/REFRESH_TOKEN</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
+                        <p> If set to TRUE, an Office 365 calendar has been integrated with the Mersive Solstice app. Set the value to FALSE&#160;to terminate the calendar integration. However, the calendar integration needs to be configured in the Conference settings of the app to authenticate with Office 365. </p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/CPUWARNINGCHECKCOUNT</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/CPUWARNINGCHECKCOUNT</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/CPUWARNINGCHECKINTERVALMS</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/CPUWARNINGCHECKINTERVALMS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/CPUWARNINGFAILPERCENTAGE</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/CPUWARNINGFAILPERCENTAGE</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/CPUWARNINGTOTALUSAGETHRESHOLD</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/CPUWARNINGTOTALUSAGETHRESHOLD</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/HIDEUIWHENSHARING</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p>If set to TRUE, the Hide Desktop on Share setting is turned on, which hides the Solstice app when the user shares their desktop.</p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/HIDEUIWHENSHARING</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p>If set to TRUE, the Hide Desktop on Share setting is turned on, which hides the app window when the user shares their desktop.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/ISFIRSTRUN</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p>When the Solstice app is first installed, this option is set to TRUE. This causes the Solstice app to start with a "get started" screen that prompts the user to enter a profile name. After the app is first run, this value will be set to FALSE.</p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/ISFIRSTRUN</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
+                        <p>When the Mersive Solstice app is first installed, this option is set to TRUE. This causes the app to start with a "get started" screen that prompts the user to enter a profile name. After the app is first run, this value will be set to FALSE.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/ISFIRSTTIMEINMINUI</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p>When the Solstice app is first installed, this option is set to TRUE. This causes the app to display a "got it" prompt the first time the application window is automatically hidden or minimized. (See PROFILE/HIDEUIWHENSHARING.)  After the app is first run, this value is set to FALSE.</p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/ISFIRSTTIMEINMINUI</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p>When the Mersive Solstice app is first installed, this option is set to TRUE. This causes the app to display a "got it" prompt the first time the application window is automatically hidden or minimized. (See PROFILE/HIDEUIWHENSHARING.)  After the app is first run, this value is set to FALSE.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/ISFIRSTWALKTHROUGHRUN</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p>When the Solstice app is first installed, this option is set to TRUE. This causes the Solstice app to display a "walk through" animation about how to use the app to connect to a Solstice display.  After the app is first run, this value is set to FALSE.</p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/ISFIRSTWALKTHROUGHRUN</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
+                        <p>When the Mersive Solstice app is first installed, this option is set to TRUE. This causes the app to display a "walk through" animation about how to use the app to connect to a Solstice display.  After the app is first run, this value is set to FALSE.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1" MadCap:conditions="">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/LOCATIONNUDGECOUNT</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">UInt32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/LOCATIONNUDGECOUNT</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">UInt32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Reserved.<MadCap:conditionalText MadCap:conditions="Default.Exclude"> This option tracks the number of times the user has been prompted to enable location-based discovery of the nearest Solstice displays. When set to a value greater than 10, the prompt is disabled.</MadCap:conditionalText></p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2" MadCap:conditions="">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/LOCATIONSERVICESTOGGLE</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                        <p>If set to TRUE, the Solstice Location Services setting is turned on to and the Solstice app uses location information to try to determine the nearest Pods. If set to FALSE, location services are disabled. (The user must also grant permissions to use location services.)</p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/LOCATIONSERVICESTOGGLE</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
+                        <p>If set to TRUE, the Solstice Location Services setting is turned on to and the app uses location information to try to determine the nearest Pods. If set to FALSE, location services are disabled. (The user must also grant permissions to use location services.)</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/MANUALMRUDISPLAYS</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/MANUALMRUDISPLAYS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/MANUALSDSADDRESS</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/MANUALSDSADDRESS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>If your organization has implemented the Solstice Discovery Service (SDS), set this value to the SDS&#160;IP address. The Solstice app then uses this Solstice Discovery Service Address setting to show nearby available Solstice displays.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/NAME</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/NAME</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Set the value to the user's name as it should appear in a collaboration session. Use quotation marks around the value (such as "First Last"). </p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/NOTIFICATIONLEVEL</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/NOTIFICATIONLEVEL</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>Set which notifications you would like the user to receive:<br />0 – Do not display any notifications. <br />1 – Display only critical notifications.<br />2 – Display all notifications. </p>
                         <MadCap:snippetBlock src="../Resources/Snippets/info_UserAppNotificationsOffConfWarning.flsnp" />
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/PINGWARNINGCHECKCOUNT</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/PINGWARNINGCHECKCOUNT</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/PINGWARNINGCHECKINTERVALMS</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/PINGWARNINGCHECKINTERVALMS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/PINGWARNINGFAILPERCENTAGE</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/PINGWARNINGFAILPERCENTAGE</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/PINGWARNINGLATENCYTHRESHOLD</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/PINGWARNINGLATENCYTHRESHOLD</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/RELAYSHORTCUT</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/RELAYSHORTCUT</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Entering a value sets the Conference HotKey shortcut   for opening the quick-access Start Conference box to Cmd+Opt+[value]. The default value is 'C', which corresponds to the shortcut Cmd+Opt+C.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2" MadCap:conditions="">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/RELAYSHOULDSHAREDISPLAY</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/RELAYSHOULDSHAREDISPLAY</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>If set to TRUE, the Share Pod Display setting for Solstice Conference is enabled, allowing a Solstice display to be shared with remote conference participants.  If set to FALSE, Share Pod Display is disabled, which may improve performance on some devices.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/RELAYWARNINGDURATION</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">PROFILE/RELAYWARNINGDURATION</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/RELAYWARNINGINTERVALMINS</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">PROFILE/RELAYWARNINGINTERVALMINS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body1" MadCap:conditions="">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">
                         <p>PROFILE/SLSDISCONNECTSENSITIVITY</p>
                     </td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                        <p>Set how aggressively the app's Solstice Location Service&#160;will apply auto-disconnect logic to the user's Pod connection. Value values range from 0 to 5, where 1 = very low, 5 = very high, and 0 turns off auto-disconnect.</p>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-size: 10pt;">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p>Affects how the Solstice Location Service&#160;applies auto-disconnect logic to a user's Pod connection. Auto-disconnect sensitivity values range from 0 to 5, where 1 = very low, 5 = very high, and 0 turns off auto-disconnect.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">PROFILE/UUID</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">String</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2" style="font-size: 10pt;">PROFILE/UUID</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2" style="font-size: 10pt;">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2" style="font-size: 10pt;">
                         <p>Reserved.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
         <h2><a name="Examples"></a>Examples of Using Defaults on macOS</h2>
-        <p>Here is an example of how to read the values in the Solstice app plist:</p>
+        <p>Here is an example of how to read the values in the Mersive Solstice app plist:</p>
         <p class="codeblock"><code>$ <b>defaults -currentHost read com.mersive.solstice.client</b></code>
         </p>
-        <p>If a settings option is not currently set in the plist, you can create it by specifying the key type and key value. For example, to configure the Solstice app to automatically share the desktop with the display when it connects, you could enter this:</p>
+        <p>If a settings option is not currently set in the plist, you can create it by specifying the key type and key value. For example, to configure the app to automatically share the desktop with the Solstice display when it connects, you could enter this:</p>
         <p class="codeblock">$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/TYPE" Bool</b><br />$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/VALUE" T</b></p>
         <p>Here is an example of how to change a configured setting for the profile name to Jerry:</p>
         <p class="codeblock"><code>$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/NAME/VALUE" "Jerry"</b></code>
         </p>
-        <p>Here is an example of how to delete a configured setting in the Solstice app plist:</p>
+        <p>Here is an example of how to delete a configured setting in the Mersive Solstice app plist:</p>
         <p class="codeblock">$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/TYPE"</b><br />$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/VALUE"</b></p>
-        <p class="note">The Solstice app reads the plist settings on start up. If you change plist values using the <code>defaults</code> command while the app is running, the changes will not appear in the Settings section of the application. However, the app will behave in accordance with the new plist setting.<br /><br />For example, if the plist setting for AUTOSHAREDESKTOP is FALSE when the Solstice app is opened, the Solstice app will show the Quick Share Desktop setting as OFF. If the AUTOSHAREDESKTOP value is changed to TRUE&#160;using the <code>defaults</code> command while the app is running, the Settings page will still show the Quick Share Desktop setting as OFF. However, when the app connects to the display, the desktop will be automatically shared. Exit and restart the Solstice app to refresh the in-app settings to reflect the updated plist configuration.</p>
+        <p class="note">The Mersive Solstice app reads the plist settings on start-up. If you change plist values using the <code>defaults</code> command while the app is running, the changes will not appear in the Settings section of the application. However, the app will behave in accordance with the new plist setting.<br /><br />For example, if the plist setting for AUTOSHAREDESKTOP is FALSE when the app is opened, the app will show the Quick Share Desktop setting as OFF. If the AUTOSHAREDESKTOP value is changed to TRUE&#160;using the <code>defaults</code> command while the app is running, the Settings page will still show the Quick Share Desktop setting as OFF. However, when the app connects to the display, the desktop will be automatically shared. Exit and restart the Mersive Solstice app to refresh the in-app settings to reflect the updated plist configuration.</p>
         <h3>Related Topics</h3>
         <p><a href="Admin-MSI-Instuctions.htm">Deploy Mersive Solstice App on Windows with MSI</a>
         </p>

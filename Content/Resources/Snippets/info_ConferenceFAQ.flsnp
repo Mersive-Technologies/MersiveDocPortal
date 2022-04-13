@@ -4,10 +4,10 @@
         <h2>FAQ</h2>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot class="FAQ">Why can't I minimize or close my Solstice app window?</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot class="FAQ">Why can't I minimize or close my Mersive Solstice app window?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Your Solstice app might be docked to your system tray. To remove this setting and regain controls for the Solstice app window, right click the Solstice icon in your system tray and deselect <b>Dock to system tray</b>. </p>
+                <p>Your Mersive Solstice app might be docked to your system tray. To remove this setting and regain controls for the app window, right click the Solstice icon in your system tray and deselect <b>Dock to system tray</b>. </p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -48,7 +48,7 @@
                 <MadCap:dropDownHotspot class="FAQ">Why is the Solstice user app failing to share my desktop and app windows on my Windows laptop with dual graphics cards?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>In the Solstice user app version 5.4 on Windows laptops with dual graphics cards, an issue has been reported that manually setting the dedicated graphics card as primary can prevent the Solstice app from successfully sharing the user's Desktop and App Windows. In this case, a Sharing Error may appear in the Solstice app; Media File sharing is usually successful. This issue can usually be resolved by changing the Windows and/or graphics card settings to allow the graphics processor to be automatically selected.</p>
+                <p>In the Mersive Solstice app version 5.4 on Windows laptops with dual graphics cards, an issue has been reported that manually setting the dedicated graphics card as primary can prevent the app from successfully sharing the user's Desktop and App Windows. In this case, a sharing error may appear in the Mersive Solstice app; Media File sharing is usually successful. This issue can usually be resolved by changing the Windows and/or graphics card settings to allow the graphics processor to be automatically selected.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

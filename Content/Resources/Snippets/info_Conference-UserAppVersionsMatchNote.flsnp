@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note" MadCap:conditions="Default.5-5_Release">In versions 5.5 and later, if the Solstice Conference version is not the same as the version of the Mersive Solstice app, an alert will appear when starting Solstice Conference and the Solstice Conference connection will be denied. Mersive strongly recommends the Solstice Conference version always match the Mersive Solstice app version.</p>
+    </body>
+</html>

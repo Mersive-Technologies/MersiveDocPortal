@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>By integrating your Microsoft 365 calendar with your Solstice app, Solstice can launch web conferences scheduled on your personal calendar when you connect to a Solstice display, making it easier to meet with remote participants. This capability is supported for Windows or macOS laptops only. </p>
+        <p>By integrating your Microsoft 365 calendar with your Mersive Solstice app, Solstice can launch web conferences scheduled on your personal calendar when you connect to a Solstice display, making it easier to meet with remote participants. This capability is supported on Windows and macOS only. </p>
         <p>When integrating your calendar, you will be prompted to sign into your Microsoft 365 account using the secure Microsoft Graph API OAuth2 authorization flow. Microsoft will present you with the option to grant Solstice read-only access to your calendar. This allows the Solstice App to retrieve your calendar entries for upcoming meetings and enable a one-step start for scheduled video conferences. </p>
         <ol>
             <li>In the Solstice desktop app, click <b>Settings</b> &gt; <b>Conference</b>. </li>

@@ -50,11 +50,11 @@
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Integrating a Room Calendar</h2>
-        <p><a name="calendar"></a>Integrating a room or personal calendar with Solstice lets Solstice detect  the web conferencing information in the calendar invite when users book a web conference and invite the room. This allows Solstice to start the scheduled web conferencing when the meeting host connects to the Solstice display. Solstice administrators can integrate Microsoft Exchange, Microsoft O365, and Google Workspace room calendars with Solstice displays. There are two ways to integrate a room calendar:&#160;using Solstice Cloud, or using the Solstice Dashboard. As a note, Solstice Pods must have internet access for these settings to be applied. </p>
-        <p class="note">Note that users that host Solstice Conferences can also integrate their personal Microsoft Exchange or O365 calendars with their Mersive Solstice apps to auto-launch scheduled web conferences. For more information, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="User-Solstice-User-App.htm" target="_blank">Solstice User App</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/user-solstice-user-app.htm">Solstice User App</a>.</MadCap:conditionalText></p>
+        <p><a name="calendar"></a>Integrating a room or personal calendar with Solstice lets Solstice detect  the web conferencing information in the calendar invite when users book a web conference and invite the room. This allows Solstice to start the scheduled web conferencing when the meeting host connects to the Solstice display. Solstice administrators can integrate Microsoft Exchange, Microsoft 365, and Google Workspace room calendars with Solstice displays. There are two ways to integrate a room calendar:&#160;using Solstice Cloud, or using the Solstice Dashboard. As a note, Solstice Pods must have internet access for these settings to be applied. </p>
+        <p class="note">Note that users that host Solstice Conferences can also integrate their personal Microsoft Exchange or Microsoft 365 calendars with their Mersive Solstice apps to auto-launch scheduled web conferences. For more information, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="User-Solstice-User-App.htm" target="_blank">Solstice User App</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/user-solstice-user-app.htm">Solstice User App</a>.</MadCap:conditionalText></p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>How to Integrate a Microsoft Exchange or O365 Calendar Using Solstice Cloud
+                <MadCap:dropDownHotspot>How to Integrate a Microsoft Exchange or 365 Calendar Using Solstice Cloud
                 </MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
@@ -63,20 +63,20 @@
                     <li>Create a new template, or edit an existing template. </li>
                     <li>Select the <b>Enable Calendar Feature</b> checkbox.</li>
                     <li>
-                        <p>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating [for the room]: Microsoft Exchange or Office 365. </p>
+                        <p>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating (for the room): <b>Microsoft Exchange</b> or <b>Office 365</b>. </p>
                     </li>
                     <li>
                         <p>If you are using Microsoft Exchange server, enter the Microsoft Exchange  <b>Server URL</b>.</p>
                     </li>
                     <li>
-                        <p>In the <b>Authentication type</b> drop-down, select the type of authentication your server is using: Basic or NTLM.</p>
+                        <p>In the <b>Authentication type</b> drop-down, select the type of authentication your server is using: <b>Basic</b> or <b>NTLM</b>.</p>
                     </li>
                     <li>
                         <p>If you are a using either an <b>Impersonation</b> or a <b>Delegation Mailbox</b>, select the corresponding radio button.</p>
-                        <ul>
+                        <ol style="list-style-type: lower-alpha;">
                             <li>If you selected <b>No</b>, skip to step 7.</li>
                             <li>If you selected either <b>Impersonation</b> or <b>Delegation</b>, you will need to enter in the user name and password for the impersonation or delegation account (required).<p class="note">The login credentials for email accounts will need to be entered individually for each Pod on the <b>Manage</b> &gt; <b>All Pods</b> page.</p></li>
-                        </ul>
+                        </ol>
                     </li>
                     <li>If you wish to hide meeting titles or meeting organizers from being visible on the room display, deselect <b>Show meeting titles</b> and/or <b>Show meeting organizers</b>.</li>
                     <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display.</li>
@@ -116,7 +116,7 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>How to Integrate a Microsoft Exchange or O365 Calendar Using Solstice Dashboard</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>How to Integrate a Microsoft Exchange or 365 Calendar Using Solstice Dashboard</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
@@ -124,9 +124,9 @@
                     <li>Select the displays you wish to integrate a room calendar for from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Calendar</b> tab.</li>
                     <li>Select the <b>Enabled</b> option.</li>
-                    <li>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating: Microsoft Exchange or Office 365. </li>
+                    <li>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating: <b>Microsoft Exchange</b> or <b>Office 365</b>. </li>
                     <li>In the <b>Server URL</b> field, enter the Microsoft Exchange server URL if that is the type of calendar you are integrating.</li>
-                    <li>In the <b>Authentication type</b> drop-down, select the type of authentication your Microsoft Exchange server is using: Basic or NTLM.</li>
+                    <li>In the <b>Authentication type</b> drop-down, select the type of authentication your server is using: <b>Basic</b> or <b>NTLM</b>.</li>
                     <li>Enter in the <b>Username</b> and <b>Password</b> for the room calendar account.</li>
                     <li>If you are a using an <b>Impersonation</b> or <b>Delegation Mailbox</b>, enter them into the corresponding fields.</li>
                     <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private.” If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>

@@ -2,18 +2,20 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>In the Solstice Dashboard, click the <b>Calendar</b> tab.</li>
-            <li>If not already selected, select the <b>Enabled</b> check box.</li>
+            <li>Open your Solstice Dashboard. </li>
+            <li>From the list of Your Solstice Instances, select the Solstice Pods you wish to integrate a room calendar for.</li>
+            <li>Go to the <b>Calendar</b> tab.</li>
+            <li>Select the <b>Enabled</b> option.</li>
             <li>From the Calendar Type drop-down, select <b>Google Calendar</b>.</li>
             <li>In the <b>Room Email</b> field, enter the Calendar ID email address from the Google Calendar settings.</li>
             <li>Under Load service-account credentials, click <b>Clear</b> and then <b>Yes</b> if necessary.</li>
             <li>Click <b>Upload</b>.</li>
             <li>Navigate to the location of the service account you created for the Pod and select it.</li>
-            <li>Click <b>Test Connection</b>. If the your configuration and credentials are correct a success screen appears. <p><img src="../Images/GoogleCloudIntegratonSuccess.png" style="width: 857px;height: 524px;" /></p></li>
+            <li>Click <b>Test Connection</b>. If the your configuration and credentials are correct a success screen will appear. <p><img src="../Images/GoogleCloudIntegratonSuccess.png" style="width: 857px;height: 524px;" /></p></li>
             <li>On the Success screen click <b>OK</b>.</li>
-            <li>Under Privacy settings, select whether you want to show meeting titles and names of meeting organizers.</li>
-            <li>If want the calender information to update at a slower interval, select the new interval from the <b>Update Interval</b> drop-down.</li>
-            <li>In the bottom corner of the Dashboard screen,  click <b>Apply</b>. The resource's calendar will display on the Pod after the designed amount of time set for the Update Interval. </li>
+            <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private.” If you wish to hide meeting titles or organizers for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
+            <li>If want the calender information to update at a slower interval, select the new interval from the <b>Update Interval</b> menu.</li>
+            <li>In the bottom corner of the Dashboard screen,  click <b>Apply</b>. Calendar information will display on the Solstice Pod after the designed amount of time set for the Update Interval. </li>
         </ol>
     </body>
 </html>

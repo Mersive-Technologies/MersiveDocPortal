@@ -21,7 +21,7 @@
                         </p>
                     </td>
                     <td class="TableStyle-SupportTable-BodyD-Column1-Body">
-                        <p>Intel i5 quad core processor(6th Gen or newer); 8GB memory; processor speed of 1.6 GHz/min or better.  </p>
+                        <p>Intel i5 quad core processor(6th Gen or newer); 8GB memory; processor speed of 1.6 GHz/min or better </p>
                     </td>
                 </tr>
                 <tr class="TableStyle-SupportTable-Body-Body">
@@ -31,13 +31,13 @@
                     </td>
                     <td class="TableStyle-SupportTable-BodyA-Column1-Body">
                         <ul>
-                            <li>Laptop machines with dual-core processors not currently supported.</li>
-                            <li> Microsoft Surface laptop devices and similar tablet-like devices are not currently supported, including (but not limited to)&#160;Microsoft Surface Laptop, Surface Book, and Surface Pro. <![CDATA[               ]]></li>
+                            <li>Laptop computers with dual-core processors not currently supported.</li>
+                            <li> Microsoft Surface laptop devices and similar tablet-like devices are not currently supported, including (but not limited to)&#160;Microsoft Surface Laptop, Surface Book, and Surface Pro.            </li>
                         </ul>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <p class="tip" style="margin-left:15pt">To check your laptop specs, open Command Prompt, enter “dxdiag”, then run.</p>
+        <p class="tip" style="margin-left:15pt">To check your Windows laptop specs, open Command Prompt and enter the <code>dxdiag</code> command.</p>
     </body>
 </html>

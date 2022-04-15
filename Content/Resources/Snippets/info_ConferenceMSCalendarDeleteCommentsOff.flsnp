@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p class="note">For Solstice Conference to auto-launch a scheduled web conference from the link in the body of the meeting invitation, the Microsoft Exchange server setting <code>DeleteComments</code> must be changed to <code>$false</code> for the room's Exchange or 365 mailbox account. When set to <code>$true</code> (default), the body of incoming meeting requests is removed, and the web conference cannot be auto-launched. For details, see the <a href="https://docs.microsoft.com/en-us/powershell/module/exchange/set-calendarprocessing?view=exchange-ps" target="_blank">Microsoft documentation</a>.</p>
+        <p class="note">For Solstice Conference to auto-launch a scheduled video conference from the link in the body of the meeting invitation, the Microsoft Exchange server setting <code>DeleteComments</code> must be changed to <code>$false</code> for the room's Exchange or 365 mailbox account. When set to <code>$true</code> (default), the body of incoming meeting requests is removed, and the video conference cannot be auto-launched. For details on this Microsoft server setting, see the <a href="https://docs.microsoft.com/en-us/powershell/module/exchange/set-calendarprocessing?view=exchange-ps" target="_blank">Microsoft documentation</a>.</p>
     </body>
 </html>

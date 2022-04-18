@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Depending on your macOS&#160;security settings, you may need to enable desktop audio access for the Solstice app in order to access the full Solstice content sharing functionality. </p>
+        <p>Depending on your macOS&#160;security settings, you may need to enable desktop audio access for the Mersive Solstice app in order to access the full Solstice content sharing functionality. </p>
         <ol>
-            <li>Open your Solstice app and connect to a Solstice display.</li>
-            <li>On the <b>Share</b> panel, click <b>Desktop</b>. The Solstice app will minimizes. Click <b>Sharing Desktop</b> at the top of your screen to un-minimize the app.</li>
-            <li>If <b>Auto share audio with desktop</b> is enabled (default) in Settings &gt; Control, audio sharing should be enabled automatically. If it is not, click the speaker icon after the name of the connected Solstice display to turn it on. </li>
+            <li>Open your Mersive Solstice app and connect to a Solstice display.</li>
+            <li>On the <b>Share</b> panel, click <b>Desktop</b>. The Mersive Solstice app will minimize. Click <b>Sharing Desktop</b> at the top of your screen to show the app window.</li>
+            <li>If <b>Auto share audio</b> is enabled in Settings &gt; Control, audio sharing should be turned on automatically. If the speaker icon after the name of the connected Solstice display appears gray with a red slash, click the icon to turn on audio sharing. </li>
             <li>In the prompt that appears, click <b>Yes</b>. <p><img src="../Images/ex_UserSharingMacAudioDriver.png" style="height: auto;width: 570px;" /><br /></p></li>
             <li>If needed, enter your admin password and click <b>OK</b>. A  System Extension Blocked pop-up should then appear. </li>
             <li>Click <b>Open Security Preferences</b> to open the Security &amp;&#160;Privacy settings. </li>
@@ -13,8 +13,9 @@
             <li>Open <b>System Preferences</b> &gt;&#160;<b>Sound</b>. </li>
             <li>From the <b>Play sound effects through</b> drop-down, select <b>Desktop Streaming Audio Device</b>. </li>
             <li>Check the <b>Show volume in menu bar</b> option.<p><img src="../Images/ex_UserSharingMacSoundSettings.png" style="height: auto;width: 570px;" /><br /></p></li>
-            <li>Go back to the Solstice app, stop sharing, and click <b>Disconnect</b>. </li>
-            <li>Reconnect to the Solstice display, then share your desktop. Your desktop audio will automatically be streamed to the in-room display. <p class="note">If your desktop audio isn't streaming to the display, make sure the speaker icon after the connected display name in your Solstice app isn't turned off (appearing with a red slash), and that Desktop Streaming Audio Device is selected from your Mac's Volume control. </p></li>
+            <li>Go back to the Mersive Solstice app, stop sharing, and click <b>Disconnect</b>. </li>
+            <li>Reconnect to the Solstice display, then share your desktop. Audio will automatically be streamed to the in-room display. </li>
         </ol>
+        <p class="note">If your desktop audio isn't streaming to the display, make sure the speaker icon after the connected display name in your Solstice app isn't turned off (gray with a red slash), and that Desktop Streaming Audio Device is selected from your Mac's Volume control. </p>
     </body>
 </html>

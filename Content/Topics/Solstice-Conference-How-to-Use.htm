@@ -4,15 +4,14 @@
     </head>
     <body>
         <h1>How to Use Solstice Conference</h1>
-        <p>These instructions outline steps for <b>meeting hosts</b> to use Solstice Conference to bridge their web or video conference to Solstice. </p>
+        <p>These instructions outline steps for <b>meeting hosts</b> to use Solstice Conference to connect their video conference to Solstice content sharing and USB&#160;peripherals. </p>
         <p MadCap:conditions="Default.ScreenOnly"><iframe width="550" height="310" src="https://www.youtube.com/embed/lNGHi-czMa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
         </p>
-        <h3>Scheduled Conferences vs. Non-Scheduled Conferences</h3>
-        <p>Scheduled conferences are those which are scheduled on a room calendar integrated with a Solstice Pod, or those which are scheduled on a personal calendar integrated in the Mersive Solstice app. The details for the conference - e.g. Meeting ID, Passcode, etc. - need to be included in the body of the scheduled event. Clicking <b>Start</b> will connect the Pod to the scheduled conference (see <a href="#Launch">Launch a Scheduled Web Conference</a>). If conflicting conferences are scheduled simultaneously in the Pod's calendar and in the meeting host computer calendar, the Mersive Solstice app will start the conference specified for the meeting host computer.</p>
-        <p>Mersive recommends that you start Solstice Conferences using scheduled conferences. </p>
-        <p>However, Solstice can also "bridge" into a non-scheduled conference. If a remote conference is currently in progress, you can connect to the Pod and then click <b>Bridge without a calendar event,</b> and then click <b>Start</b>. After you are connected to Solstice you can then connect to the remote conference using your conferencing application and share the Solstice screen with the conference. (See <a href="#Bridge">Bridge an In-progress Meeting to Solstice Conference</a>.)</p>
+        <h3>Scheduled Conferences vs Unscheduled Conferences</h3>
+        <p>Scheduled conferences are those which are scheduled either on a room calendar integrated with the Solstice Pod or on a personal calendar integrated in the Mersive Solstice app. The details for the conference – meeting ID, passcode, URL, etc. – must be included in the body of the scheduled event. Integrating a room or personal calendar, along  with Solstice Pod configuration, enables one-step starts for Solstice-connected video conferences. See <a href="#Launch">Launch a Scheduled Web Conference</a> for more details. Mersive recommends enabling one-step starts for video conferences for the best user experience. </p>
+        <p>The Mersive Solstice app can connect Solstice content sharing and Pod-connected room peripherals to a video conference not previously scheduled on an integrated calendar. In this scenario, the video conference needs to be started separately using the host's preferred conferencing service. See <a href="#Bridge">Bridge an In-progress Meeting to Solstice Conference</a> for more details.</p>
         <h3><a name="Using"></a>Using Solstice Conference with Dual Displays</h3>
-        <p>If the Pod is using dual displays, the display shared to the conference will be the display connected to HDMI 1 of the Pod. The screen connected to HDMI 2 will be labeled as a Private Display and will be visible to participants in the room but will not be shared as part of the conference. In the Mersive Solstice app layout screen, the display shared with the conference is the screen on the left.</p>
+        <p>If the Pod is using dual display monitors, the display shared to the conference will be the display connected to HDMI 1 of the Pod. The screen connected to HDMI 2 will be labeled as a Private Display and will be visible to participants in the room but will not be shared as part of the conference. In the Mersive Solstice app layout screen, the display shared with the conference is the screen on the left.</p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>Example Dual Screen Layout in Solstice App</MadCap:dropDownHotspot>
@@ -30,31 +29,7 @@
                 <MadCap:dropDownHotspot>Install the Solstice App and Solstice Conference</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Below are the steps you can take to download and install the Mersive Solstice app and additional Solstice Conference capabilities. </p>
-                <ol>
-                    <li>Open a browser on your laptop device and enter the IP address visible on the Solstice display. The Solstice Quick Connect page opens.</li>
-                    <img src="../Resources/Images/ex_quickconnect.png" style="width: 568px;height: 345px;">
-                    </img>
-                    <li>Click the <b>Get the App &amp; Join</b> button.</li>
-                    <li>
-                        <p>	If you are on a laptop PC:</p>
-                        <ol style="list-style-type: lower-alpha;">
-                            <li>
-                         The Solstice app installer (SolsticeClientWin.exe) will download. Click the downloaded file to install the Mersive Solstice app. 
-                    </li>
-                            <li>
-                        Once installed, the app will open automatically. 
-                    </li>
-                            <li>
-                        To install Solstice Conference, go to Conference tab and click <b>Install</b>. 
-                    </li>
-                            <li>
-					Walk through the InstallShield wizard to install Solstice Conference. 
-</li>
-                            <p class="note">Installing Solstice Conference requires elevated permissions. If you do not have elevated permissions, contact your IT&#160;administrator. 					</p>
-                        </ol>
-                    </li>
-                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_SolsticeUserAppDirectDownload.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -83,24 +58,37 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot><a name="Launch"></a>Launch a Scheduled Web Conference</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot><a name="Launch"></a>Launch a Scheduled Video Conference on Your Personal Calendar</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>	Launch the Mersive Solstice app on your laptop. 
-</li>
-                    <li>Connect to the Solstice display by clicking on the display name. If prompted, enter in the 4-digit screen key listed on the display. </li>
-                    <li>
+                    <li>	Launch the Mersive Solstice app on your laptop.</li>
+                    <li MadCap:conditions="Default.5-5_Release">
+                        <p>Starting in version 5.5 of the Mersive Solstice app, a yellow icon will appear next to Conference in the left navbar of when the app detects an upcoming video conference in your integrated personal calendar. </p>
+                        <p>
+                            <img src="../Resources/Images/ex_UserAppUpcomingMeetingIcon.png" style="width: 75%;" />
+                        </p>
+                        <p>Meetings starting within 15 minutes appear in the conference tab when video conference details (URL, meeting ID, passcode, etc.) show in the body of the calendar event. See directions above for integrating your personal calendar with the Mersive Solstice app. </p>
+                    </li>
+                    <li MadCap:conditions="Default.5-5_Exclude">Connect to the Solstice display by clicking on the display name. If prompted, enter in the 4-digit screen key listed on the display. </li>
+                    <li MadCap:conditions="Default.5-5_Release">
+                        <p>Click <b>Conference</b> (camera icon) in the left navbar. Information about your upcoming meeting will show on the left. </p>
+                        <p>Screenshot: Conference tab - not connected to Pod, w/ upcoming meeting and SDS (screen key)</p>
+                    </li>
+                    <li MadCap:conditions="Default.5-5_Release">For Solstice deployments using the Solstice Discovery Service (SDS), type in the screen key that appears on the Solstice display and hit the <b>Enter</b> key. </li>
+                    <li MadCap:conditions="Default.5-5_Release">If SDS has not been enabled, you will be prompted to enter the URL that appears on the Solstice display (usually a numeric IP address) and then the screen key (if enabled). Contact your IT administrator about enabling SDS for your organization.</li>
+                    <li MadCap:conditions="Default.5-5_Exclude">
 Once connected, go to the <b>Conference</b> tab in your Solstice app. </li>
-                    <img src="../Resources/Images/ex_conferencetab.png" style="width: 561px;height: 368px;" />
-                    <li>Click <b>Start</b>. Once the process begins:
+                    <img src="../Resources/Images/ex_conferencetab.png" style="width: 561px;height: 368px;" MadCap:conditions="Default.5-5_Exclude" />
+                    <li MadCap:conditions="Default.5-5_Exclude">Click <b>Start</b>. Once the process begins:
 </li>
+                    <li MadCap:conditions="Default.5-5_Release">Once Solstice Conference has been started to connect with a video conference:</li>
                     <ul>
-                        <li>Your desktop will be shared to the in-room display.
+                        <li>Your desktop will be shared to the connected Solstice display.
 </li>
-                        <li>Any available USB room camera or mic will be wirelessly connected to your  laptop.
-</li>
-                        <li>If a calendar entry was recognized as a web conference, the conferencing application will launch and start the appropriate meeting. Some conferencing applications may require an additional step to launch the meeting.
+                        <li>Any USB audio and video peripherals plugged into the Solstice Pod will be wirelessly connected to your  laptop.<MadCap:conditionalText MadCap:conditions="Default.5-5_Release">
+ Starting in version 5.5 of the Mersive Solstice app, a list of audio and video resources available to the video conference will show on the right.</MadCap:conditionalText></li>
+                        <li>Your scheduled video conference If a calendar entry was recognized as a web conference, the conferencing application will launch and start the appropriate meeting. Some conferencing applications may require an additional step to launch the meeting.
 </li>
                     </ul>
                     <li>	Once you have joined your web conference meeting, if there is a room camera and microphone connected to Solstice, you will be able to select the room camera and microphone as the meeting's audio and video sources. 
@@ -112,6 +100,49 @@ Once connected, go to the <b>Conference</b> tab in your Solstice app. </li>
                 <MadCap:snippetBlock src="../Resources/Snippets/info_Conference-UserAppVersionsMatchNote.flsnp" />
                 <p>After you are done hosting the conference, stop sharing the display, end the video call, and disconnect from the Solstice display.
 </p>
+                <p>If conflicting conferences are scheduled simultaneously in the Pod's calendar and in the meeting host computer calendar, the Solstice app will start the conference specified for the meeting host computer.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.5-5_Release">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Launch a Scheduled Video Conference on the Room Calendar</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>	Launch the Mersive Solstice app on your laptop.</li>
+                    <li>Click the name of the Solstice display to connect. If prompted, enter the 4-digit screen key shown on the display. </li>
+                    <li>
+                        <p>Starting in version 5.5 of the Mersive Solstice app, a yellow icon will appear next to Conference in the left navbar of when the app detects an upcoming video conference in your integrated personal calendar. </p>
+                        <p>
+                            <img src="../Resources/Images/ex_UserAppUpcomingMeetingIcon.png" style="width: 75%;" />
+                        </p>
+                        <p>Meetings starting within 15 minutes appear in the conference tab when video conference details (URL, meeting ID, passcode, etc.) show in the body of the calendar event. See directions above for integrating your personal calendar with the Mersive Solstice app. </p>
+                    </li>
+                    <li>
+                        <p>Click <b>Conference</b> (camera icon) in the left navbar. Information about your upcoming meeting will show on the left. </p>
+                        <p>Screenshot: Conference tab - not connected to Pod, w/ upcoming meeting and SDS (screen key)</p>
+                    </li>
+                    <li>For Solstice deployments using the Solstice Discovery Service (SDS), type in the screen key that appears on the Solstice display and hit the <b>Enter</b> key. </li>
+                    <li>If SDS has not been enabled, you will be prompted to enter the URL that appears on the Solstice display (usually a numeric IP address) and then the screen key (if enabled). Contact your IT administrator about enabling SDS for your organization.</li>
+                    <li>Once Solstice Conference has been started to connect with a video conference:</li>
+                    <ul>
+                        <li>Your desktop will be shared to the connected Solstice display.
+</li>
+                        <li>Any USB audio and video peripherals plugged into the Solstice Pod will be wirelessly connected to your  laptop.
+ Starting in version 5.5 of the Mersive Solstice app, a list of audio and video resources available to the video conference will show on the right.</li>
+                        <li>Your scheduled video conference If a calendar entry was recognized as a web conference, the conferencing application will launch and start the appropriate meeting. Some conferencing applications may require an additional step to launch the meeting.
+</li>
+                    </ul>
+                    <li>	Once you have joined your web conference meeting, if there is a room camera and microphone connected to Solstice, you will be able to select the room camera and microphone as the meeting's audio and video sources. 
+</li>
+                    <li>To share the Solstice display to  remote attendees, select <b>Screen 2</b> from the sharing options within the video conferencing application. (If the Pod is configured with dual displays, see <a href="#Using">Using Solstice Conference with Dual Displays</a> to determine which display will be shared with the conference.)</li>
+                    <li>After you are done hosting the conference, stop sharing the display, end the video call, and disconnect from the Solstice display.
+</li>
+                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_Conference-UserAppVersionsMatchNote.flsnp" />
+                <p>After you are done hosting the conference, stop sharing the display, end the video call, and disconnect from the Solstice display.
+</p>
+                <p>If conflicting conferences are scheduled simultaneously in the Pod's calendar and in the meeting host computer calendar, the Solstice app will start the conference specified for the meeting host computer.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

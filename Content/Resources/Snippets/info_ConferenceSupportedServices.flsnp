@@ -4,7 +4,7 @@
         <link href="../TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <p>The table below shows a list of supported video conferencing services on Windows and macOS laptops based on Mersive's latest testing. Services listed as "browser-based version only" support Solstice Conference's full functionality, including the ability to share the Solstice display to remote users in the video conference,&#160;only in the online version of that video conferencing service accessed via a supported web browser*. </p>
+        <p>The table below shows a list of supported video conferencing services on Windows and macOS laptops based on Mersive's latest testing. Services listed as "browser-based version only" support fully Solstice Conference functionality, including the ability to share the Solstice display to remote users in the video conference,&#160;only in the online version of that video conferencing service accessed via a supported web browser*. </p>
         <p class="note">For best compatibility, check that your video conferencing app is updated to the latest version. </p>
         <table style="mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');width: 90%;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
             <col class="TableStyle-Alternate-Row-Color-Column-Column1" />

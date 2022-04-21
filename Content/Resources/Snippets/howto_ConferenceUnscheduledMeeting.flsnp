@@ -7,24 +7,24 @@
             <li>	Either before or after starting the video conference in the conferencing app, launch the Mersive Solstice app on your laptop.</li>
             <li>Connect to a Solstice display by clicking on the display name. Enter the 4-digit screen key listed on the display if prompted to do so. </li>
             <li MadCap:conditions="Default.5-5_Exclude">
-Once connected, go to the <b>Conference</b> tab in your Solstice app and click the <b>Bridge without a calendar event</b> checkbox.</li>
+Once connected, go to the <b>Conference</b> tab in your Solstice app.</li>
             <li MadCap:conditions="Default.5-5_Release">
                 <p>Once connected, click <b>Conference</b> (camera icon) in the left navbar.</p>
-                <p>Screenshot: Conference tab - connected to Pod, no meeting shown, audio/video devices</p>
+                <p>
+                    <img src="../Images/ex_UserConfSolCnxNoMeeting.png" style="width: 75%;" />
+                </p>
             </li>
             <li MadCap:conditions="Default.5-5_Exclude">If a conflicting meeting appears on the room calendar integrated with the Solstice Pod, check <b>Bridge without this calendar event</b>. If this option is not selected, Solstice will auto-launch a video conference on the room calendar starting within 15 minutes.</li>
             <li MadCap:conditions="Default.5-5_Exclude">Click <b>Start</b>.</li>
             <li MadCap:conditions="Default.5-5_Release">If a conflicting meeting appears on the room calendar integrated with the Solstice Pod, check the <b>Connect display to a different video conference</b> box. If this option is not selected, Solstice will auto-launch a video conference on the room calendar starting within 15 minutes.</li>
             <li MadCap:conditions="Default.5-5_Release">Click <b>Connect to meeting</b>. </li>
+            <li>Once the video conference connection (Solstice Conference) has been started, any USB audio and video peripherals plugged into the Solstice Pod will be made wirelessly available to the video conferencing app.<MadCap:conditionalText MadCap:conditions="Default.5-5_Release">
+ Available audio and video resources are listed on the right side of the app window. A green check icon also appears in the left navbar when Solstice Conference is active.</MadCap:conditionalText><p MadCap:conditions="Default.5-5_Release"><img src="../Images/ex_UserConfCnxAudioVideoSrcs.png" style="width: 75%;" /></p></li>
+            <li MadCap:conditions="Default.5-5_Release">If you have not already done so, start your video conference and select the room audio and video sources in the video conferencing application.</li>
+            <li>To share the Solstice display to  remote attendees, select the Solstice Conference virtual monitor from the sharing options within the video conferencing application. The Solstice display usually appears as <b>Screen 2</b>.<MadCap:conditionalText MadCap:conditions="Default.5-5_Release"> The connected Solstice display is also listed under <b>Available audio and video devices</b>.</MadCap:conditionalText><p class="note">If the Pod is configured with dual display monitors, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Solstice-Conference-How-to-Use.htm#Using">Using Solstice Conference with Dual Displays</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/solstice-conference-how-to-use.htm#Using">Using Solstice Conference with Dual Displays</a></MadCap:conditionalText> for information about which display screen will be shared with the video conference.</p></li>
             <li>
-                <p>Once the video conference connection (Solstice Conference) has been started, any USB audio and video peripherals plugged into the Solstice Pod will be wirelessly connected to your  laptop.<MadCap:conditionalText MadCap:conditions="Default.5-5_Release">
- Starting in version 5.5 of the Mersive Solstice app, a list of audio and video resources available to the video conference will show on the right. A green check icon appears next to Conference in the left navbar when Solstice Conference is active.</MadCap:conditionalText></p>
-                <p>Screenshot:&#160;Conference tab - connected to other meeting w/ audio/video devices</p>
-            </li>
-            <li>If you have not already done so, start your video conference in the video conferencing application. Room devices connected to the Solstice Pod should appear to be selected as audio and video sources in the video conference.</li>
-            <li>To share the Solstice display to  remote attendees, select the Solstice Conference virtual monitor from the sharing options within the video conferencing application. The Solstice display usually appears as <b>Screen 2</b>. (The number may be higher – Screen 3, for example – if the laptop is connected to an additional monitor.) The connected Solstice display is also listed under <b>Available audio and video devices</b>.<p class="note">If the Pod is configured with dual displays, see <a href="#Using">Using Solstice Conference with Dual Displays</a> for information about which display will be shared with the video conference.</p></li>
-            <li>
-After you have ended the video conference and exited the video conferencing app, click <b>Disconnect</b> in the upper right of the Conference page to stop sharing the Solstice display and disconnect from the Solstice Pod.</li>
+After you have ended the video conference and exited the video conferencing app, click <b>Disconnect</b> in the upper right of the app window to stop sharing the Solstice display and disconnect from the Solstice Pod.</li>
         </ol>
+        <MadCap:snippetBlock src="info_Conference-UserAppVersionsMatchNote.flsnp" />
     </body>
 </html>

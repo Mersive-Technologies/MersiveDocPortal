@@ -1,480 +1,545 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MicroContentSet Comment="Default micro content set.">
-    <MicroContent>
-        <MicroContentPhrase>persistent wired hdmi-in</MicroContentPhrase>
-        <MicroContentPhrase>how to set a persistent hdmi-in</MicroContentPhrase>
-        <MicroContentPhrase>wired input source</MicroContentPhrase>
-        <MicroContentPhrase>persistent post</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Set the Default Behavior for a Wired HDMI-in Source</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_AdminHDMIinPostIntro.flsnp" />
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_DashboardAppearanceHDMIinPost.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>How to share with a web browser</MicroContentPhrase>
-        <MicroContentPhrase>browser-based sharing</MicroContentPhrase>
-        <MicroContentPhrase>app-free sharing</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:head>
-                    <xhtml:link xhtml:href="../Resources/TableStylesheets/SupportTable.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
-                </xhtml:head>
-                <xhtml:body>
-                    <xhtml:h4>How to Share to Solstice using a Web Browser</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_UserBrowserSharingIntro.flsnp" />
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_UserBrowserSharingSupportChart.flsnp" />
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserBrowserBasedSharing.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>How to rename a Pod</MicroContentPhrase>
-        <MicroContentPhrase>rename Solstice display</MicroContentPhrase>
-        <MicroContentPhrase>Change Pod name</MicroContentPhrase>
-        <MicroContentPhrase>Change display name</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Rename a Solstice Pod Display</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudManagePodRename.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>How to add search tags to displays</MicroContentPhrase>
-        <MicroContentPhrase>easy display search</MicroContentPhrase>
-        <MicroContentPhrase>display tag</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Add Search Tags to Solstice Displays</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_DashboardNetworkTagsAdd.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>download solstice app from Pod</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Download the Solstice App Directly from the Pod</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_SolsticeUserAppDirectDownload.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Quick Connect Solstice Display</MicroContentPhrase>
-        <MicroContentPhrase>keyboard shortcuts</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserSolsticeAppQuickConnect.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>connect to Solstice display with Solstice app</MicroContentPhrase>
-        <MicroContentPhrase>connect to Solstice Pod in Solstice user app</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Connect to a Display with the Solstice App</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_UserSolsticeAppBeforeConnect.flsnp" />
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserAppConnectToDisplay.flsnp" />
-                    <xhtml:p>For more about using the Solstice app to share a wide variety of content to a Solstice display, see <xhtml:a xhtml:href="../Topics/User-Sharing-Content.htm">Sharing Content Using the Solstice App</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>moderate a collaboration session</MicroContentPhrase>
-        <MicroContentPhrase>moderator mode Solstice app</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Moderate a Session in the Solstice Desktop App</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserModerateSessionDsktp.flsnp" />
-                    <xhtml:h4>How to Moderate a Session in the Solstice Mobile App</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserModerateSessionMobile.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>share content display using laptop</MicroContentPhrase>
-        <MicroContentPhrase>share content display using Mac</MicroContentPhrase>
-        <MicroContentPhrase>share content display using Windows</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Share Content Using a Laptop</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserShareContentLaptop.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>share content display using mobile device</MicroContentPhrase>
-        <MicroContentPhrase>share content display using cell phone</MicroContentPhrase>
-        <MicroContentPhrase>share content display using iPad</MicroContentPhrase>
-        <MicroContentPhrase>share content display using tablet</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Share Content Using a Mobile Device</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserShareContentMobile.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Set up Solstice Conference</MicroContentPhrase>
-        <MicroContentResponse href="../Topics/Solstice-Conference-Introduction.htm" />
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Use Solstice Conference</MicroContentPhrase>
-        <MicroContentResponse href="../Topics/Solstice-Conference-How-to-Use.htm" />
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>enable firewall</MicroContentPhrase>
-        <MicroContentPhrase>disable firewall</MicroContentPhrase>
-        <MicroContentPhrase>enable ports</MicroContentPhrase>
-        <MicroContentPhrase>disable ports</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Enable Firewall</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_AdminNetworkFirewallOptions.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>install solstice dashboard</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Install Solstice Dashboard</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_AdminDashboardInstall.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>enable network encryption</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Enable Network Encryption</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudSecurityEnableNetworkEncryption.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>change Solstice Pod date time and time zone in Solstice Cloud</MicroContentPhrase>
-        <MicroContentPhrase>setting Pod date time and timezone</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Change Date and Time for Solstice Pods in Solstice Cloud</xhtml:h4>
-                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>. Either edit an existing or create a new Time/Locale template.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudTimeLocalePodDateTime.flsnp" />
-                    <xhtml:p>This date/time configuration will be applied to any Pods assigned to use the selected Time/Locale template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Time-Locale.htm">Solstice Cloud: Time/Locale Template</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>integrate Microsoft 365 room calendar</MicroContentPhrase>
-        <MicroContentPhrase>integrate 365 calendar with Solstice Pod</MicroContentPhrase>
-        <MicroContentPhrase>integrate Microsoft Office 365 calendar</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>Integrate a Microsoft 365 Room Calendar with a Solstice Pod</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Calendar</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCalendarIntegrate365.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>customize connection instructions on welcome screen</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Customize Connection Instructions on Welcome Screen</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Welcome Screen</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudWelcomeCustCnxInstructions.flsnp" />
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>password protect Solstice Pod configurations in Solstice Cloud</MicroContentPhrase>
-        <MicroContentPhrase>configure administrator password for Solstice Pod settings</MicroContentPhrase>
-        <MicroContentPhrase>set admin password</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Password Protect Solstice Configurations in Solstice Cloud</xhtml:h4>
-                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar  to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>. Either edit an existing or create a new Security template.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudSecurityPasswordProtectConfigs.flsnp" />
-                    <xhtml:p>This configuration change will be applied to any Pods assigned to use the selected Security template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Security.htm">Solstice Cloud: Security Template</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>create Solstice Cloud account and onboard Pods</MicroContentPhrase>
-        <MicroContentPhrase>import Solstice Pods into Solstice Cloud</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>Creating a Solstice Cloud Account and Onboarding Pods</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudPodOnboardingMasterAccount.flsnp" />
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudPodOnboardingRequirements.flsnp" />
-                    <xhtml:h4>How to Create a Solstice Cloud Account and Onboard Pods</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCreateAccountOnboardPods.flsnp" />
-                    <xhtml:p>For more about using Solstice Cloud to manage your organization's Solstice deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Introduction.htm">Get Started with Solstice Cloud</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>solstice discovery services</MicroContentPhrase>
-        <MicroContentPhrase>deploy SDS</MicroContentPhrase>
-        <MicroContentPhrase>install SDS</MicroContentPhrase>
-        <MicroContentResponse href="../Topics/SDS-Introduction.htm" />
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Solstice Cloud user roles and permissions</MicroContentPhrase>
-        <MicroContentResponse href="../Topics/Cloud-Roles-Permissions.htm" />
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Deploy the Solstice App with MSI</MicroContentPhrase>
-        <MicroContentResponse href="../Topics/Admin-MSI-Instuctions.htm" />
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Deploy the Solstice App with SCCM</MicroContentPhrase>
-        <MicroContentResponse href="../Topics/Admin-SCCM-Instuctions.htm" />
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Update Solstice Pods Using Solstice Cloud</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Update Solstice Pods Using Solstice Cloud</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudManageUpdatePods.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>change language for Solstice Pod in Solstice Cloud</MicroContentPhrase>
-        <MicroContentPhrase>setting Solstice display language</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Change the Language for Solstice Pods in Solstice Cloud</xhtml:h4>
-                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;&#160;<xhtml:b>Time/Locale</xhtml:b>. Either edit an existing or create a new Time/Locale template.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudTimeLocalePodLanguage.flsnp" />
-                    <xhtml:p>This language configuration will be applied to any Pods assigned to use the selected Time/Locale template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Time-Locale.htm">Solstice Cloud: Time/Locale Template</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>add digital signage feed to Solstice display in Solstice Cloud</MicroContentPhrase>
-        <MicroContentPhrase>enable digital signage feed on Solstice Pod</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Add A Digital Signage Feed to a Solstice Display</xhtml:h4>
-                    <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Digital Signage</xhtml:b>. Either edit an existing or create a new Digital Signage template.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_DigitalSignageIntro.flsnp" />
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudDigitalSignageEnable.flsnp" />
-                    <xhtml:p>This configuration will be applied to any Pods assigned to use the selected Digital Signage template. For more options, see <xhtml:a xhtml:href="../Topics/Cloud-Template-Digital-Signage.htm">Solstice Cloud: Digital Signage Template</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>display screen key on Solstice Pod</MicroContentPhrase>
-        <MicroContentPhrase>Enable screen key on Solstice Pod</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Display Screen Key on Solstice Pod</xhtml:h4>
-                    <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Features</xhtml:b>.</xhtml:p>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudFeaturesEnableScreenKey.flsnp" />
-                    <xhtml:p>A message displays confirming that the Pod configuration has been updated.</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>add a personal calendar to Solstice app</MicroContentPhrase>
-        <MicroContentPhrase>integrate personal 365 calendar with Mersive Solstice app</MicroContentPhrase>
-        <MicroContentPhrase>add Microsoft Office 365 calendar in user app</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>Connect a Personal Microsoft 365 Calendar to the Mersive Solstice App</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserAppIntegratePersonalCalendar.flsnp" />
-                    <xhtml:p>For more details about using Solstice Conference to share Solstice collaboration resources with a video conference, see <xhtml:a xhtml:href="../Topics/Solstice-Conference-How-to-Use.htm">How to Use Solstice Conference</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Enable browser sharing</MicroContentPhrase>
-        <MicroContentPhrase>Enable browser-based sharing</MicroContentPhrase>
-        <MicroContentPhrase>Enable app-free sharing</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Enable Browser-Based Sharing</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_UserBrowserSharingIntro.flsnp" />
-                    <xhtml:ol>
-                        <xhtml:li>In the Solstice Dashboard, select the Pod(s)&#160;from the list of Your Solstice Instances.</xhtml:li>
-                        <xhtml:li>Go to the <xhtml:b>Appearance and Usage</xhtml:b> tab &gt;&#160;<xhtml:b>Client Sharing Options</xhtml:b> section. </xhtml:li>
-                        <xhtml:li>Under the <xhtml:b>Resource Restriction</xhtml:b> section, enable the <xhtml:b>Browser Sharing</xhtml:b> option. </xhtml:li>
-                        <xhtml:li>Click <xhtml:b>Apply</xhtml:b>.</xhtml:li>
-                    </xhtml:ol>
-                    <xhtml:p xhtml:class="note">Mersive recommends loading a CA-signed certificate (Dashboard &gt; Security tab &gt;&#160;Encryption section) onto the Pod to avoid users seeing a security prompt in their web browser.</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>manage categories to classify Pods in Solstice Cloud</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:head>
-                </xhtml:head>
-                <xhtml:body>
-                    <xhtml:h4>Manage Categories to Classify Pods in Solstice Cloud</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudCreateCategoriesIntro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-                    <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-                        <MadCap:dropDownHead>
-                            <MadCap:dropDownHotspot>How to Manage a Category</MadCap:dropDownHotspot>
-                        </MadCap:dropDownHead>
-                        <MadCap:dropDownBody>
-                            <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCategoriesEditDelete.flsnp" />
-                        </MadCap:dropDownBody>
-                    </MadCap:dropDown>
-                    <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>create categories to classify Pods in Solstice Cloud</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:head>
-                    <xhtml:link xhtml:href="../Resources/TableStylesheets/Alternate-Row-Color.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
-                </xhtml:head>
-                <xhtml:body>
-                    <xhtml:h4>Create Categories to Classify Pods in Solstice Cloud</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/ex_CloudCreateCategoriesSampleScheme.flsnp" />
-                    <xhtml:p>&#160;</xhtml:p>
-                    <MadCap:dropDown>
-                        <MadCap:dropDownHead>
-                            <MadCap:dropDownHotspot>How to Add a New Category</MadCap:dropDownHotspot>
-                        </MadCap:dropDownHead>
-                        <MadCap:dropDownBody>
-                            <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCategoriesCreate.flsnp" />
-                        </MadCap:dropDownBody>
-                    </MadCap:dropDown>
-                    <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>assign Pods to category options in Solstice Cloud</MicroContentPhrase>
-        <MicroContentPhrase>put Solstice Pods into categories</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>Assign Pods to Category Options in Solstice Cloud</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/info_CloudCreateCategoriesIntro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-                    <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-                        <MadCap:dropDownHead>
-                            <MadCap:dropDownHotspot>How to Assign Pods to Category Options</MadCap:dropDownHotspot>
-                        </MadCap:dropDownHead>
-                        <MadCap:dropDownBody>
-                            <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudCategoriesAssignPods.flsnp" />
-                        </MadCap:dropDownBody>
-                    </MadCap:dropDown>
-                    <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Enable desktop audio streaming on a Mac</MicroContentPhrase>
-        <MicroContentPhrase>install macos audio driver</MicroContentPhrase>
-        <MicroContentPhrase>solstice app mac audio</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Enable Desktop Audio Streaming on a Mac</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserAppMacAudioDriver.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>Enable Solstice desktop sharing on a Mac</MicroContentPhrase>
-        <MicroContentPhrase>macos desktop sharing permissions</MicroContentPhrase>
-        <MicroContentPhrase>Solstice app Mac screen recording</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Enable Solstice Desktop Sharing on a Mac</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserAppMacDsktpPermissions.flsnp" />
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
-    <MicroContent>
-        <MicroContentPhrase>change Solstice Cloud account password</MicroContentPhrase>
-        <MicroContentPhrase>set new password in Solstice Cloud</MicroContentPhrase>
-        <MicroContentResponse>
-            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-                <xhtml:body>
-                    <xhtml:h4>How to Change a Solstice Cloud Account Password</xhtml:h4>
-                    <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_CloudAccountChangePwd.flsnp" />
-                    <xhtml:p>For more about Solstice Cloud user roles and account management, see <xhtml:a xhtml:href="../Topics/Cloud-Roles-Permissions.htm">Manage Users and Roles in Solstice Cloud</xhtml:a>.</xhtml:p>
-                    <xhtml:p>&#160;</xhtml:p>
-                </xhtml:body>
-            </xhtml:html>
-        </MicroContentResponse>
-    </MicroContent>
+<MicroContentSet
+  Comment="Default micro content set.">
+  <MicroContent>
+    <MicroContentPhrase>persistent wired hdmi-in</MicroContentPhrase>
+    <MicroContentPhrase>how to set a persistent hdmi-in</MicroContentPhrase>
+    <MicroContentPhrase>wired input source</MicroContentPhrase>
+    <MicroContentPhrase>persistent post</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Set the Default Behavior for a Wired HDMI-in Source</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_AdminHDMIinPostIntro.flsnp" />
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_DashboardAppearanceHDMIinPost.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>How to share with a web browser</MicroContentPhrase>
+    <MicroContentPhrase>browser-based sharing</MicroContentPhrase>
+    <MicroContentPhrase>app-free sharing</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:head>
+          <xhtml:link
+            xhtml:href="../Resources/TableStylesheets/SupportTable.css"
+            xhtml:rel="stylesheet"
+            MadCap:stylesheetType="table" />
+        </xhtml:head>
+        <xhtml:body>
+          <xhtml:h4>How to Share to Solstice using a Web Browser</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_UserBrowserSharingIntro.flsnp" />
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_UserBrowserSharingSupportChart.flsnp" />
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserBrowserBasedSharing.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>How to rename a Pod</MicroContentPhrase>
+    <MicroContentPhrase>rename Solstice display</MicroContentPhrase>
+    <MicroContentPhrase>Change Pod name</MicroContentPhrase>
+    <MicroContentPhrase>Change display name</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Rename a Solstice Pod Display</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudManagePodRename.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>How to add search tags to displays</MicroContentPhrase>
+    <MicroContentPhrase>easy display search</MicroContentPhrase>
+    <MicroContentPhrase>display tag</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Add Search Tags to Solstice Displays</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_DashboardNetworkTagsAdd.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>download solstice app from Pod</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Download the Solstice App Directly from the Pod</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserAppDirectDownload.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Quick Connect Solstice Display</MicroContentPhrase>
+    <MicroContentPhrase>keyboard shortcuts</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserSolsticeAppQuickConnect.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>connect to Solstice display with Solstice app</MicroContentPhrase>
+    <MicroContentPhrase>connect to Solstice Pod in Solstice user app</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Connect to a Display with the Solstice App</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_UserSolsticeAppBeforeConnect.flsnp" />
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserAppConnectToDisplay.flsnp" />
+          <xhtml:p>For more about using the Solstice app to share a wide variety of content to a Solstice display, see <xhtml:a
+              xhtml:href="../Topics/User-Sharing-Content.htm">Sharing Content Using the Solstice App</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>moderate a collaboration session</MicroContentPhrase>
+    <MicroContentPhrase>moderator mode Solstice app</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Moderate a Session in the Solstice Desktop App</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserModerateSessionDsktp.flsnp" />
+          <xhtml:h4>How to Moderate a Session in the Solstice Mobile App</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserModerateSessionMobile.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>share content display using laptop</MicroContentPhrase>
+    <MicroContentPhrase>share content display using Mac</MicroContentPhrase>
+    <MicroContentPhrase>share content display using Windows</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Share Content Using a Laptop</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserShareContentLaptop.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>share content display using mobile device</MicroContentPhrase>
+    <MicroContentPhrase>share content display using cell phone</MicroContentPhrase>
+    <MicroContentPhrase>share content display using iPad</MicroContentPhrase>
+    <MicroContentPhrase>share content display using tablet</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Share Content Using a Mobile Device</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserShareContentMobile.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Set up Solstice Conference</MicroContentPhrase>
+    <MicroContentResponse
+      href="../Topics/Solstice-Conference-Introduction.htm" />
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Use Solstice Conference</MicroContentPhrase>
+    <MicroContentResponse
+      href="../Topics/Solstice-Conference-How-to-Use.htm" />
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>enable firewall</MicroContentPhrase>
+    <MicroContentPhrase>disable firewall</MicroContentPhrase>
+    <MicroContentPhrase>enable ports</MicroContentPhrase>
+    <MicroContentPhrase>disable ports</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Enable Firewall</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_AdminNetworkFirewallOptions.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>install solstice dashboard</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Install Solstice Dashboard</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_AdminDashboardInstall.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>enable network encryption</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Enable Network Encryption</xhtml:h4>
+          <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudSecurityEnableNetworkEncryption.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>change Solstice Pod date time and time zone in Solstice Cloud</MicroContentPhrase>
+    <MicroContentPhrase>setting Pod date time and timezone</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Change Date and Time for Solstice Pods in Solstice Cloud</xhtml:h4>
+          <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Time/Locale</xhtml:b>. Either edit an existing or create a new Time/Locale template.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudTimeLocalePodDateTime.flsnp" />
+          <xhtml:p>This date/time configuration will be applied to any Pods assigned to use the selected Time/Locale template. For more options, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Template-Time-Locale.htm">Solstice Cloud: Time/Locale Template</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>integrate Microsoft 365 room calendar</MicroContentPhrase>
+    <MicroContentPhrase>integrate 365 calendar with Solstice Pod</MicroContentPhrase>
+    <MicroContentPhrase>integrate Microsoft Office 365 calendar</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>Integrate a Microsoft 365 Room Calendar with a Solstice Pod</xhtml:h4>
+          <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Calendar</xhtml:b>.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudCalendarIntegrate365.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>customize connection instructions on welcome screen</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Customize Connection Instructions on Welcome Screen</xhtml:h4>
+          <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Welcome Screen</xhtml:b>.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudWelcomeCustCnxInstructions.flsnp" />
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>password protect Solstice Pod configurations in Solstice Cloud</MicroContentPhrase>
+    <MicroContentPhrase>configure administrator password for Solstice Pod settings</MicroContentPhrase>
+    <MicroContentPhrase>set admin password</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Password Protect Solstice Configurations in Solstice Cloud</xhtml:h4>
+          <xhtml:p>Log in to Solstice Cloud and use the left sidebar  to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Security</xhtml:b>. Either edit an existing or create a new Security template.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudSecurityPasswordProtectConfigs.flsnp" />
+          <xhtml:p>This configuration change will be applied to any Pods assigned to use the selected Security template. For more options, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Template-Security.htm">Solstice Cloud: Security Template</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>create Solstice Cloud account and onboard Pods</MicroContentPhrase>
+    <MicroContentPhrase>import Solstice Pods into Solstice Cloud</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>Creating a Solstice Cloud Account and Onboarding Pods</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_CloudPodOnboardingMasterAccount.flsnp" />
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_CloudPodOnboardingRequirements.flsnp" />
+          <xhtml:h4>How to Create a Solstice Cloud Account and Onboard Pods</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudCreateAccountOnboardPods.flsnp" />
+          <xhtml:p>For more about using Solstice Cloud to manage your organization's Solstice deployment, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Introduction.htm">Get Started with Solstice Cloud</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>solstice discovery services</MicroContentPhrase>
+    <MicroContentPhrase>deploy SDS</MicroContentPhrase>
+    <MicroContentPhrase>install SDS</MicroContentPhrase>
+    <MicroContentResponse
+      href="../Topics/SDS-Introduction.htm" />
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Solstice Cloud user roles and permissions</MicroContentPhrase>
+    <MicroContentResponse
+      href="../Topics/Cloud-Roles-Permissions.htm" />
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Deploy the Solstice App with MSI</MicroContentPhrase>
+    <MicroContentResponse
+      href="../Topics/Admin-MSI-Instuctions.htm" />
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Deploy the Solstice App with SCCM</MicroContentPhrase>
+    <MicroContentResponse
+      href="../Topics/Admin-SCCM-Instuctions.htm" />
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Update Solstice Pods Using Solstice Cloud</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Update Solstice Pods Using Solstice Cloud</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudManageUpdatePods.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>change language for Solstice Pod in Solstice Cloud</MicroContentPhrase>
+    <MicroContentPhrase>setting Solstice display language</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Change the Language for Solstice Pods in Solstice Cloud</xhtml:h4>
+          <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Time/Locale</xhtml:b>. Either edit an existing or create a new Time/Locale template.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudTimeLocalePodLanguage.flsnp" />
+          <xhtml:p>This language configuration will be applied to any Pods assigned to use the selected Time/Locale template. For more options, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Template-Time-Locale.htm">Solstice Cloud: Time/Locale Template</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>add digital signage feed to Solstice display in Solstice Cloud</MicroContentPhrase>
+    <MicroContentPhrase>enable digital signage feed on Solstice Pod</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Add A Digital Signage Feed to a Solstice Display</xhtml:h4>
+          <xhtml:p>Log in to Solstice Cloud and use the left sidebar to navigate to <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt;  <xhtml:b>Digital Signage</xhtml:b>. Either edit an existing or create a new Digital Signage template.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_DigitalSignageIntro.flsnp" />
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudDigitalSignageEnable.flsnp" />
+          <xhtml:p>This configuration will be applied to any Pods assigned to use the selected Digital Signage template. For more options, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Template-Digital-Signage.htm">Solstice Cloud: Digital Signage Template</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>display screen key on Solstice Pod</MicroContentPhrase>
+    <MicroContentPhrase>Enable screen key on Solstice Pod</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Display Screen Key on Solstice Pod</xhtml:h4>
+          <xhtml:p>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <xhtml:b>Manage</xhtml:b> &gt; <xhtml:b>Templates</xhtml:b> &gt; <xhtml:b>Features</xhtml:b>.</xhtml:p>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudFeaturesEnableScreenKey.flsnp" />
+          <xhtml:p>A message displays confirming that the Pod configuration has been updated.</xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>add a personal calendar to Solstice app</MicroContentPhrase>
+    <MicroContentPhrase>integrate personal 365 calendar with Mersive Solstice app</MicroContentPhrase>
+    <MicroContentPhrase>add Microsoft Office 365 calendar in user app</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>Connect a Personal Microsoft 365 Calendar to the Mersive Solstice App</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserAppIntegratePersonalCalendar.flsnp" />
+          <xhtml:p>For more details about using Solstice Conference to share Solstice collaboration resources with a video conference, see <xhtml:a
+              xhtml:href="../Topics/Solstice-Conference-How-to-Use.htm">How to Use Solstice Conference</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Enable browser sharing</MicroContentPhrase>
+    <MicroContentPhrase>Enable browser-based sharing</MicroContentPhrase>
+    <MicroContentPhrase>Enable app-free sharing</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Enable Browser-Based Sharing</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_UserBrowserSharingIntro.flsnp" />
+          <xhtml:ol>
+            <xhtml:li>In the Solstice Dashboard, select the Pod(s) from the list of Your Solstice Instances.</xhtml:li>
+            <xhtml:li>Go to the <xhtml:b>Appearance and Usage</xhtml:b> tab &gt; <xhtml:b>Client Sharing Options</xhtml:b> section. </xhtml:li>
+            <xhtml:li>Under the <xhtml:b>Resource Restriction</xhtml:b> section, enable the <xhtml:b>Browser Sharing</xhtml:b> option. </xhtml:li>
+            <xhtml:li>Click <xhtml:b>Apply</xhtml:b>.</xhtml:li>
+          </xhtml:ol>
+          <xhtml:p
+            xhtml:class="note">Mersive recommends loading a CA-signed certificate (Dashboard &gt; Security tab &gt; Encryption section) onto the Pod to avoid users seeing a security prompt in their web browser.</xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>manage categories to classify Pods in Solstice Cloud</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:head></xhtml:head>
+        <xhtml:body>
+          <xhtml:h4>Manage Categories to Classify Pods in Solstice Cloud</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_CloudCreateCategoriesIntro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+            <MadCap:dropDownHead>
+              <MadCap:dropDownHotspot>How to Manage a Category</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+              <MadCap:snippetBlock
+                xhtml:src="../Resources/Snippets/howto_CloudCategoriesEditDelete.flsnp" />
+            </MadCap:dropDownBody>
+          </MadCap:dropDown>
+          <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>create categories to classify Pods in Solstice Cloud</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:head>
+          <xhtml:link
+            xhtml:href="../Resources/TableStylesheets/Alternate-Row-Color.css"
+            xhtml:rel="stylesheet"
+            MadCap:stylesheetType="table" />
+        </xhtml:head>
+        <xhtml:body>
+          <xhtml:h4>Create Categories to Classify Pods in Solstice Cloud</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/ex_CloudCreateCategoriesSampleScheme.flsnp" />
+          <xhtml:p> </xhtml:p>
+          <MadCap:dropDown>
+            <MadCap:dropDownHead>
+              <MadCap:dropDownHotspot>How to Add a New Category</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+              <MadCap:snippetBlock
+                xhtml:src="../Resources/Snippets/howto_CloudCategoriesCreate.flsnp" />
+            </MadCap:dropDownBody>
+          </MadCap:dropDown>
+          <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>assign Pods to category options in Solstice Cloud</MicroContentPhrase>
+    <MicroContentPhrase>put Solstice Pods into categories</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>Assign Pods to Category Options in Solstice Cloud</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/info_CloudCreateCategoriesIntro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+            <MadCap:dropDownHead>
+              <MadCap:dropDownHotspot>How to Assign Pods to Category Options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+              <MadCap:snippetBlock
+                xhtml:src="../Resources/Snippets/howto_CloudCategoriesAssignPods.flsnp" />
+            </MadCap:dropDownBody>
+          </MadCap:dropDown>
+          <xhtml:p>For more about using Categories in Solstice Cloud to classify the Pods in your Solstice Deployment, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Create-Categories.htm">Create Categories and Assign Pods</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Enable desktop audio streaming on a Mac</MicroContentPhrase>
+    <MicroContentPhrase>install macos audio driver</MicroContentPhrase>
+    <MicroContentPhrase>solstice app mac audio</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Enable Desktop Audio Streaming on a Mac</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserAppMacAudioDriver.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>Enable Solstice desktop sharing on a Mac</MicroContentPhrase>
+    <MicroContentPhrase>macos desktop sharing permissions</MicroContentPhrase>
+    <MicroContentPhrase>Solstice app Mac screen recording</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Enable Solstice Desktop Sharing on a Mac</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_UserAppMacDsktpPermissions.flsnp" />
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
+  <MicroContent>
+    <MicroContentPhrase>change Solstice Cloud account password</MicroContentPhrase>
+    <MicroContentPhrase>set new password in Solstice Cloud</MicroContentPhrase>
+    <MicroContentResponse>
+      <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <xhtml:body>
+          <xhtml:h4>How to Change a Solstice Cloud Account Password</xhtml:h4>
+          <MadCap:snippetBlock
+            xhtml:src="../Resources/Snippets/howto_CloudAccountChangePwd.flsnp" />
+          <xhtml:p>For more about Solstice Cloud user roles and account management, see <xhtml:a
+              xhtml:href="../Topics/Cloud-Roles-Permissions.htm">Manage Users and Roles in Solstice Cloud</xhtml:a>.</xhtml:p>
+          <xhtml:p> </xhtml:p>
+        </xhtml:body>
+      </xhtml:html>
+    </MicroContentResponse>
+  </MicroContent>
 </MicroContentSet>

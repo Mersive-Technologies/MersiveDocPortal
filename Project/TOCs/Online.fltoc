@@ -89,10 +89,10 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Topics/User-Solstice-Display-Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="[%=System.LinkedTitle%]"
+      Title="Mersive Solstice App"
       Link="/Content/Topics/User-Solstice-User-App.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="[%=System.LinkedTitle%]"
+      Title="Share Content Using the App"
       Link="/Content/Topics/User-Sharing-Content.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"

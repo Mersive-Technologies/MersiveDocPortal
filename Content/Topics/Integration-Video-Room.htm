@@ -4,23 +4,23 @@
         <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Video Room Integration</h1>
-        <p>Solstice Pods running Solstice 5.5 and higher can automatically switch between a dedicated Zoom Room, Microsoft Teams Room, or Cisco Webex Room and the Solstice Pod's multi-source wireless content sharing and agnostic video&#160;conferencing support. This configuration can also support switching between Solstice and a supported all-in-one audio, video, and conferencing device.</p>
+        <h1>Solstice Video Room Integration</h1>
+        <p>Starting in Solstice 5.5, Solstice Pods can automatically switch between a dedicated Zoom Room, Microsoft Teams Room, or Cisco Webex Room and the Solstice Pod's multi-source wireless content sharing and bring-your-own-meeting (BYOM)&#160;video&#160;conferencing support. This configuration can also support switching between Solstice and a supported all-in-one video conferencing appliances.</p>
         <h2>System Components &amp;&#160;Requirements</h2>
         <p>The following components and related configurations are required to integrate Solstice with a computer-based video room system:</p>
         <ul>
-            <li>Gen3 Solstice Pod running Solstice 5.5 or higher (licensing?)</li>
-            <li>Device running Zoom Room or Microsoft Teams Room software with Mersive lightweight(?) app installed</li>
-            <li>Supported USB&#160;switcher that accepts RS-232 or REST API commands<ul style="list-style-type: circle;"><li>Configure any devices to signaled by Solstice via API commands, such as the USB switch, to have a static IP on the same network as the Solstice Pod.</li><li>Set the USB switch to route to the Zoom Room or Microsoft Teams Room device by default.</li></ul></li>
+            <li>Gen3 Solstice Pod running Solstice 5.5 or higher with an active Solstice Subscription</li>
+            <li>Device running Zoom Room or Microsoft Teams Room software with lightweight Mersive ?? app installed</li>
+            <li>Supported USB&#160;switcher that accepts RS-232 or HTTP-based API commands<ul style="list-style-type: circle;"><li>Configure any devices to be signaled by Solstice via API commands, such as the USB switch, to have a static IP on the same network as the Solstice Pod.</li><li>Set the USB switch to route to the Zoom Room or Microsoft Teams Room device by default.</li></ul></li>
             <li>Display monitor, video, and audio peripherals</li>
             <li>Optional USB to RS-232 cord (for RS-232 USB&#160;switch)</li>
         </ul>
-        <p>When the video room system, display monitor, and USB audio and video peripherals are connected to the Solstice Pod via a USB&#160;switching device, Solstice can be configured to signal the USB&#160;switch with RS-232 or API commands to toggle between and the video room system and Solstice's wireless sharing and agnostic video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
+        <p>When the video room system, display monitor, and USB audio and video peripherals are connected to the Solstice Pod via a USB&#160;switching device, Solstice can be configured to signal the USB&#160;switch with RS-232 or HTTP-based API commands to toggle between and the video room system and Solstice's wireless sharing and agnostic video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
         <h3>Sample Solstice Video Room Integration Diagram</h3>
         <p>
-            <img src="../Resources/Images/dgm_VideoRoomIntegrationWiring.png" style="width: 511px;height: 317px;" />
+            <img src="../Resources/Images/dgm_VideoRoomIntegrationWiring.png" style="width: 75%;height: auto;" />
         </p>
-        <p>A second configuration is also possible to integrate Solstice with a supported all-in-one video conference device, such as the Poly Studio X30, with a camera, speakerphone, and conferencing software. In this type of integration, the all-in-one device is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that can pass AV input and output to the Solstice Pod.</p>
+        <p>A second configuration is also possible to integrate Solstice with a supported all-in-one video conference device, such as the Poly Studio X30, that contains a camera, speakerphone, and conferencing software and accepts R-232 or HTTP-based API commands. In this type of integration, the all-in-one device is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that can pass AV input and output to the Solstice Pod.</p>
         <h2>How To Configure Solstice for Video Room Integration</h2>
         <p>Use these steps to configure a Solstice Pod for integration with a Microsoft Teams Room, Zoom Room, or Cisco Webex Room.</p>
         <MadCap:dropDown>
@@ -50,7 +50,7 @@
                 <ol>
                     <li><a name="VRI_switching"></a>Open the Video Room Integration configuration page and enter login information if required.</li>
                     <li>Check <b>Enable Video Room Integration</b> and select your <b>Room System Type</b>.</li>
-                    <li>Select the Device Switching Protocol based on the type of USB&#160;switch being used. If using an RS-232 switch, select <b>RS-232</b>. <ol style="list-style-type: lower-alpha;"><li>In <b>Command to Select Solstice</b>, enter the RS-232 command that corresponds with the port Solstice connects to on the USB&#160;switch.</li><li>In Command to Select Room System, enter RS-232 command corresponding with the port the video room system connects to on the USB&#160;switch.</li></ol></li>
+                    <li>Select the Device Switching Protocol based on the type of USB&#160;switch being used. If using an RS-232 switch, select <b>RS-232</b>. <ol style="list-style-type: lower-alpha;"><li>In <b>Command to Select Solstice</b>, enter the RS-232 command that corresponds with the port Solstice connects to on the USB&#160;switch.</li><li>In <b>Command to Select Room System</b>, enter RS-232 command corresponding with the port the video room system connects to on the USB&#160;switch.</li></ol></li>
                     <li>If using a USB&#160;switch that accepts REST API commands, select <b>HTTP/HTTPS</b>.<ol style="list-style-type: lower-alpha;"><li>Under <b>Command(s) to Select Solstice</b>, enter an <b>Order</b>, <b>Verb</b>, <b>Headers</b>, <b>Payload</b>, and <b>URL</b> as needed to create an API command that will instruct the USB&#160;switch (or all-in-one device) to switch to the port connected to the Solstice Pod.</li><li>Click <b>Add HTTP&#160;Command</b> to add rows for additional API commands as needed.</li><li>Click the <b>Delete</b> (trash can) icon at the end of a command row to remove the associated API command.</li><li>Under <b>Command(s) to Select Room System</b>, use the tools described in steps a–c to create an API command that will signal the USB switch to switch to the port connected to the video room system device.</li></ol></li>
                     <li>Click <b>Apply</b> at the bottom of the configuration page to save your changes.</li>
                 </ol>
@@ -78,11 +78,24 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 4: Set HDMI Input Mode to 'Persistent Post'</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Step 4: Install Mersive ?? App on Video Room Device</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Follow the directions below appropriate to your Solstice management tool to set the HDMI-in behavior mode for the Solstice Pod integrated with a video room system to Persistent Post.</p>
-                <MadCap:snippetBlock src="../Resources/Snippets/info_HDMIinPersistentPostNote.flsnp" />
+                <p>The Mersive ?? app runs on the video room device to hide the Solstice connection message when a video room system conference is in progress. The lightweight application is quick to install and configure and should have no impact on video room performance.</p>
+                <ol>
+                    <li>Download the Mersive ?? application from <a href="https://www.mersive.com/download-admin/">www.mersive.com/download-admin/</a>.</li>
+                    <li>Run [filename] on the video room system computer or NUC&#160;device.</li>
+                    <li>Enter the IP address of the Solstice Pod integrated with the video room system.</li>
+                    <li>&#160;</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 5: Set HDMI Input Mode to 'Persistent Post'</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Follow the directions below appropriate to your Solstice management tool to set the HDMI-in behavior mode for the Solstice Pod integrated with a video room system to Persistent Post. In Persistent Post mode, the video room display passed through the Solstice Pod's HDMI-in port will be removed during a Solstice-enabled video conference and reinstated when Solstice Conference is ended.</p>
                 <h4>In Solstice Cloud</h4>
                 <ol>
                     <li>In Solstice Cloud, use the left sidebar to navigate to <b>Manage</b> &gt; <b>Pods</b>.</li>
@@ -123,11 +136,11 @@
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <h2>Other Configuration Recommendations</h2>
+        <h2>Other VRI Configuration Recommendations</h2>
         <p>Mersive also recommends the following video room system configuration options to achieve the best results with your Solstice video room integration:</p>
         <h4>Zoom Room Configuration</h4>
         <ul>
-            <li>Disable device error notifications on the Zoom Room device [NEED MORE DETAILS HERE]</li>
+            <li>To avoid recieving alerts each time Solstice-enabled conferencing is used, disable device error notifications on the Zoom Room device (Alert &gt; Client Alert Settings).</li>
             <li>Set power mode for Zoom Room device to never sleep and never suspend display, except for times when the room won’t be used for any meetings, such as at night.</li>
         </ul>
         <h4>Microsoft Teams Room Configuration</h4>
@@ -138,123 +151,143 @@
         <ul>
             <li>Any similar Cisco recommendations?</li>
         </ul>
-        <h2>Supported Devices for Solstice Video Room Integration</h2>
-        <table style="mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');width: 90%;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
-            <col style="width: 35%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 15%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 20%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 15%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <thead>
-                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" colspan="4">Supported USB Switches</th>
-                </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Make and Model</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">USB Version
+        <h4>Poly Studio X30/X50 Configuration</h4>
+        <ul>
+            <li>Turn off sleep mode on the Poly Studio device.</li>
+        </ul>
+        <h2>Device Support for Solstice Video Room Integration</h2>
+        <p>Expand the sections below to find details that can serve as a guide to device selection and configuration and provide the best results for your Solstice VRI configurations.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>USB&#160;Switch Requirements and Tested USB&#160;Switches</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p style="font-weight: bold;">USB&#160;Switch Requirements</p>
+                <ul>
+                    <li>USB 2.0 or 3.0 (or higher) compatibility depending on protocol version required by connected video/audio peripherals</li>
+                    <li>Supports 2 or more host devices (Solstice Pod and video room device or all-in-one video appliance)</li>
+                    <li>Provides commands (RS-232 or API) that set the active host device</li>
+                </ul>
+                <p style="font-weight: bold;">Tested USB&#160;Switches</p>
+                <table style="mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');width: 80%;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+                    <col style="width: 35%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+                    <col style="width: 15%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+                    <col style="width: 20%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
+                            <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Make and Model</th>
+                            <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;text-align: center;">USB Version
 </th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Command Protocols</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="text-align: center;font-size: 11pt;">Device Size</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Inogeni Toggle</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
-                        <p>3.0</p>
-                    </td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RS232</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: center;">Small
-</td>
-                </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Extron SW2 USB</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">2.0</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">RS232</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: center;">Medium
-</td>
-                </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Lightware UCX-2x1-HC30</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">3.1 Gen 1</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">RS232/API</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: center;">Medium
-</td>
-                </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Lightware UCX-4X2-HC30</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">3.1 Gen 1</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">RS232/API</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2" style="text-align: center;">Medium
-</td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="table-text">&#160;</p>
-        <table style="mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');width: 80%;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
-            <col style="width: 35%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 20%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 15%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <thead>
-                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" colspan="3">Supported All-in-One Appliance Devices</th>
-                </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Make and Model</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Command Protocols</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="text-align: center;font-size: 11pt;">Device Size</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Poly Studio x30</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">HTTP/REST API</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: center;">Medium</td>
-                </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Poly Studio x50</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">HTTP/REST API</td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2" style="text-align: center;">Medium
-</td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="table-text">&#160;</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');margin-left: 0;margin-right: auto;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
-            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <col style="width: 25%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
-            <thead>
-                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th colspan="4" style="text-align: left;" class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1">Example RS-232/API Commands Per Device</th>
-                </tr>
-                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Lightware UCX Series (no auth)</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Extron SW2 USB</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Inogeni Toggle</th>
-                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="font-size: 11pt;">Poly Studio x30/x50</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
-                        <p class="table-text">Verb: POST</p>
-                        <p class="table-text">Header: HTTP/1.1</p>
-                        <p class="table-text">Payload: U1:H1 or U2:H1</p>
-                        <p class="table-text">URL: http://&lt;device_ip&gt;/api/V1/MEDIA/USB/XP/switch</p>
-                    </td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
-                        <p>1!</p>
-                        <p>2!</p>
-                    </td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
-                        <p>1\r</p>
-                        <p>2\r</p>
-                    </td>
-                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">?</td>
-                </tr>
-            </tbody>
-        </table>
+                            <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="font-size: 11pt;text-align: center;">Command Protocols</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                            <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Inogeni Toggle</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: center;">
+                                <p>3.0</p>
+                            </td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: center;">RS232</td>
+                        </tr>
+                        <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                            <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Extron SW2 USB</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: center;">2.0</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: center;">RS232</td>
+                        </tr>
+                        <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                            <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Lightware UCX-2x1-HC30</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: center;">3.1 Gen 1</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: center;">RS232/API</td>
+                        </tr>
+                        <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                            <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Lightware UCX-4X2-HC30</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2" style="text-align: center;">3.1 Gen 1</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2" style="text-align: center;">RS232/API</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="table-text">&#160;</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>All-in-One Video Appliance Requirements and Tested Devices</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="table-text" style="font-weight: bold;">All-in-One Video Appliance Requirements</p>
+                <ul>
+                    <li>Appliance allows built-in camera/audio devices to be used externally via USB 2.0 or 3.0 (or higher)</li>
+                    <li>Provides commands (RS-232 or API) to enable and disable external use of built-in camera/audio devices</li>
+                </ul>
+                <p style="font-weight: bold;">Tested All-in-One Video Appliances</p>
+                <table style="mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');width: 65%;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+                    <col style="width: 35%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+                    <col style="width: 20%;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
+                            <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1" style="font-size: 11pt;">Make and Model</th>
+                            <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1" style="font-size: 11pt;">Command Protocols</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                            <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Poly Studio x30</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">HTTP/REST API</td>
+                        </tr>
+                        <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                            <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Poly Studio x50</td>
+                            <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2">HTTP/REST API</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="table-text">&#160;</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Supported USB–to–RS-232 Converters</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Based on publicly available information, the following USB–to–serial converter chips should be supported:</p>
+                <ul>
+                    <li>FTDI FT232R, FT232H, FT2232H, FT4232H, FT230X, FT231X, FT234XD</li>
+                    <li>Prolific PL2303</li>
+                    <li>Silicon Labs CP2102 and all other CP210x</li>
+                    <li>Qinheng CH340, CH341A</li>
+                </ul>
+                <p>These chips can be found in many generally available USB–to–RS-232 converters.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Example RS-232 and API Commands per Device</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p style="font-weight: bold;">Lightware UCX Series <span style="font-weight: normal;">(no authentication)</span></p>
+                <ul>
+                    <li><b>Verb:</b> POST</li>
+                    <li><b>Header:</b> HTTP/1.1</li>
+                    <li><b>Payload:</b> U1:H1 or U2:H1</li>
+                    <li><b>URL:</b> http://&lt;device_ip&gt;/api/V1/MEDIA/USB/XP/switch</li>
+                </ul>
+                <p style="font-weight: bold;">Extron SW2 USB</p>
+                <ul>
+                    <li>1!</li>
+                    <li>2!</li>
+                </ul>
+                <p style="font-weight: bold;">Inogeni Toggle</p>
+                <ul>
+                    <li>1\r</li>
+                    <li>2\r</li>
+                </ul>
+                <p style="font-weight: bold;">Poly Studio x30/x50</p>
+                <ul>
+                    <li>Authentication<ul style="list-style-type: circle;"><li><b>Verb:</b> POST</li><li><b>Header:</b> Content-Type: application/json</li><li><b>Payload:</b> {“user”: “admin”, “password”: “&lt;device password&gt;”}</li><li><b>URL:</b> https://&lt;device_ip&gt;/rest/session</li></ul></li>
+                    <li>Enable device mode<ul style="list-style-type: circle;"><li><b>Verb:</b> POST</li><li><b>Header:</b> Content-Type: application/json</li><li><b>Payload:</b> n/a</li><li><b>URL:</b> https://&lt;device_ip&gt;/rest/system/mode/device</li></ul></li>
+                    <li>Disable device mode<ul style="list-style-type: circle;"><li><b>Verb:</b> DELETE</li><li><b>Header:</b> Content-Type: application/json</li><li><b>Payload:</b> n/a</li><li><b>URL:</b> https://&lt;device_ip&gt;/rest/system/mode/device</li></ul></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
         <p>&#160;</p>
     </body>
 </html>

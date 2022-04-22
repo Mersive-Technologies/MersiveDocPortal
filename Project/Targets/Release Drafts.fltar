@@ -12,16 +12,16 @@
   MasterToc="/Project/TOCs/Release Drafts.fltoc"
   OutputFolder="C:\Users\abennington\Documents\Flare"
   InjectBookHeadings="true"
-  OutputFile="MSI and CFPreferences">
+  OutputFile="SolsticeConferenceGuide_draft">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="false"
+    GenerateTOCProxy="true"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice 5.5 pre-release draft" />
+    Title="Solstice Conference Documentation Topics [draft]" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

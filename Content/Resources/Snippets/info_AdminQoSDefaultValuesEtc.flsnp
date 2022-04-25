@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>By default, the Video Stream DSCP field is set to 101110, which is "Expedited Forwarding" with a precedence value of 46. The Audio Stream DSCP&#160;field defaults to 101000, which is CS5 with a precedence value of 40. Packets with a lower precedence value might be dropped by QoS-enabled routers on the network in favor of higher precedence packets. Mersive recommends using the DSCP Pool 1 Codepoints defined by the IETF.</p>
+    </body>
+</html>

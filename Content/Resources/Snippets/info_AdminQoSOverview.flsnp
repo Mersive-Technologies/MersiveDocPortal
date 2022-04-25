@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p><a name="QoS"></a>For enterprise networks that support differentiated network traffic via QoS, packet headers can be enabled to allow Solstice traffic to be differentiated and prioritized on the enterprise network by utilizing the IETF-defined quality of service (QoS) header information. The Solstice Pod does not manage QoS traffic into or out of the Pod. It simply adds QoS tags to the packet headers, which allows routers on the network to better manage heavy network traffic.&#160;</p>
+    </body>
+</html>

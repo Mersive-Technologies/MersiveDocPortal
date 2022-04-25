@@ -1814,7 +1814,7 @@ The JWT is valid for 1 hour. There is no need to cache the JWT. But, it is possi
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<pre class="highlight tab tab-shell"><code>curl -k -X POST \
+<pre class="highlight tab tab-shell"><code>curl -k -X PATCH \
 --header <span class="hljs-string">"Authorization: Bearer &lt;JWT&gt;"</span> \
 --header <span class="hljs-string">"Content-Type: application/json"</span> \
 https://&lt;podip&gt;:5443/v2/content/activerouting \

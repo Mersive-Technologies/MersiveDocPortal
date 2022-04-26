@@ -3,8 +3,8 @@
     <head>
     </head>
     <body>
-        <p>On the Share tab of the Solstice mobile app, you can wirelessly share an unlimited amount of content to the Solstice display using any of the following options. Note that the content shared to Solstice will never leave your device, only pixels will be streamed to the display. 			<ul><li><b>Mirror Screen</b>: Share a real-time view of your mobile device screen. Tap the speaker icon after the connected Solstice display name to capture audio along with screen mirroring.<MadCap:snippetBlock src="info_AndroidScreenMirroringAudioNote.flsnp" /></li><li><b>Media File</b>: Share media files such as images and videos from the device’s media library.
+        <p>On the Share tab of the Mersive Solstice mobile app, you can wirelessly share an unlimited amount of content to the Solstice display using the following options. Note that the content shared to Solstice will never leave your device, only pixels will be streamed to the display. 			<ul><li><b>Mirror Screen</b>: Share a real-time view of your mobile device screen. Tap the speaker icon after the connected Solstice display name to capture audio along with screen mirroring.<MadCap:snippetBlock src="info_AndroidScreenMirroringAudioNote.flsnp" /></li><li><b>Media File</b>: Share media files such as images and videos from your mobile device’s media library.
 				</li><li><b>Camera</b>: Take a picture with your mobile device and share it to the display.</li><li><b>Take Video</b>: Take a video with your mobile device and share it to the display.</li></ul></p>
-        <p class="note">To share media files, pictures, and videos be sure to grant permission for the Solstice mobile app to access your mobile device's media files, camera, and microphone.</p>
+        <p class="note">To share media files, pictures, and videos, be sure to grant permissions for the Mersive Solstice app to access your mobile device's media files, camera, and microphone.</p>
     </body>
 </html>

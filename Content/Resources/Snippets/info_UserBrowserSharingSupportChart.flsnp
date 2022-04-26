@@ -34,7 +34,7 @@
                         </tr>
                         <tr style="height: 24px;" class="TableStyle-SupportTable-Body-Body">
                             <td class="TableStyle-SupportTable-BodyE-Column1-Body" style="font-weight: normal;">Windows
-8/10                    </td>
+8/10<MadCap:conditionalText MadCap:conditions="Default.5-5_Release">/11</MadCap:conditionalText><![CDATA[                   ]]></td>
                             <td class="TableStyle-SupportTable-BodyE-Column1-Body">
                                 <p>Firefox, Chrome, Microsoft Edge</p>
                             </td>
@@ -47,10 +47,10 @@
                         <tr class="TableStyle-SupportTable-Body-Body">
                             <td class="TableStyle-SupportTable-BodyE-Column1-Body" style="font-weight: normal;">
                                 <p class="TableParagraph_2">macOS
-Catalina, Big Sur                    </p>
+Catalina, Big Sur<MadCap:conditionalText MadCap:conditions="Default.5-5_Release">, Monterey</MadCap:conditionalText><![CDATA[                   ]]></p>
                             </td>
                             <td class="TableStyle-SupportTable-BodyE-Column1-Body">
-                                <p class="TableParagraph_2">Firefox, Chrome, Safari 13 or 14</p>
+                                <p class="TableParagraph_2">Firefox, Chrome, Safari <MadCap:conditionalText MadCap:conditions="Default.5-5_Exclude">13 or </MadCap:conditionalText>14<MadCap:conditionalText MadCap:conditions="Default.5-5_Release"> or 15</MadCap:conditionalText></p>
                             </td>
                             <td class="TableStyle-SupportTable-BodyD-Column1-Body">
                                 <ul>

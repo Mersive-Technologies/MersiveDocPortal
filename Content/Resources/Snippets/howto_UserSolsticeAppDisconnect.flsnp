@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>As the host, when your meeting is finished you will need to end your video conference and disconnect from Solstice. Here are some ways you can disconnect from Solstice:</p>
         <ul>
             <li>Click the <b>Disconnect</b> button in the top right of the Mersive Solstice app window. You will be prompted to confirm that you want to disconnect from the display. </li>
             <li>Close the Mersive Solstice app window:            	<ul style="list-style-type: circle;"><li>On a laptop, click the Close 'X' icon. You will be asked if you wish to disconnect from the display and stop sharing all content. If yes, click <b>Disconnect</b>.</li><li>On a mobile device, close the app window and Solstice will automatically disconnect the device from the display.</li></ul></li>

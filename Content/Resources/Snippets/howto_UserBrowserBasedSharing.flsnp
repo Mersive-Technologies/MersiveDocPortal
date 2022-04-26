@@ -2,10 +2,10 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>Connect your laptop device to a network listed on the Solstice display.</li>
+            <li>Connect your laptop to a network listed on the Solstice display.</li>
             <li>Open a Chrome or Firefox web browser and go to the URL on the display. If multiple ULRs are listed, choose the one that corresponds to the same network you're connected to. </li>
             <li>Click the link to share using your web browser.            <p class="note">Don't see a link on your browser for sharing your screen? Your IT administrator may need to enable this feature for the Solstice Pod display.</p></li>
-            <li>If you see a security warning in your browser, click <b>Advanced</b>, and then the option to proceed to the URL. </li>
+            <li>If you see a security warning in your browser, follow the option to proceed to the URL. This may appear under <b>Advanced</b> in some browsers.</li>
             <li>Enter the screen key shown on the room display (if prompted) and your name, then click <b>Launch</b>.</li>
             <li>Select the sharing option you wish to use. For example, you may be presented with options to share your entire screen, an application window, or a browser tab, as well as whether to share audio. </li>
             <li>Click  to <b>Share</b> or <b>Allow</b> to share the selected content to the Solstice display. </li>

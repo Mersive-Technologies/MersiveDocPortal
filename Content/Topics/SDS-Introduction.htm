@@ -5,13 +5,13 @@
     <body>
         <h1>Solstice Discovery Service (SDS) </h1>
         <p>Display discovery refers to the ability for a user to "discover" what Solstice displays are available to connect to. By default, Solstice utilizes UDP broadcast packets to enable discovery. We realize not every network allows broadcast traffic, so we built Solstice Discovery Service (SDS) to make connecting to a Solstice display fast and easy for users on those networks. </p>
-        <p>The Solstice Discovery Service (SDS) is a lightweight network application for display discovery that allows users to discover and click-to-connect to Solstice displays from their own devices to start sharing content. Users point their Solstice App to that same SDS host machine’s IP address (or they can inherit that setting from the first SDS-configured display they connect to) to see every available Solstice display. The result is the easy click-to-connect experience without the network congestion or security concerns associated with broadcast traffic. </p>
+        <p>The Solstice Discovery Service (SDS) is a lightweight network application for display discovery that allows users to discover and click-to-connect to Solstice displays from their own devices to start sharing content. Users point their Mersive Solstice app to that same SDS host machine’s IP address (or they can inherit that setting from the first SDS-configured display they connect to) to see every available Solstice display. The result is the easy click-to-connect experience without the network congestion or security concerns associated with broadcast traffic. </p>
         <h3>Do I&#160;Need SDS? </h3>
         <p>Typically, SDS is used when multiple Solstice displays are deployed on an enterprise network (or any network that does not allow UDP broadcast traffic), and is installed during the initial deployment phase. SDS should be installed on your network to enable and support these scenarios:</p>
         <ul>
             <li>To enable users to connect to Solstice without entering an IP address </li>
-            <li>To enable a one-step meeting start by simply entering the&#160;Solstice display's screen key into the Solstice app</li>
-            <li>To enable ease of use with Solstice Conference </li>
+            <li>To enable a one-step meeting start by simply entering the&#160;Solstice display's screen key in the Mersive Solstice app</li>
+            <li>To enable ease of use with Solstice-enabled video conferences</li>
             <li>To enable users to view which displays/rooms are in use and by how many people</li>
             <li>To choose which displays do and do not appear to users for connection</li>
         </ul>
@@ -20,7 +20,7 @@
         <p>You must install SDS on a Windows machine with a static IP address and has IP routes to all subnets used by Solstice Pods and client applications. This is because Solstice displays and user apps will use this IP address to communicate with the directory. This can be a PC running Windows 8 or 10, or a Windows Server running 2012 R2  or later and a quad core processor with a minimum of 12GB RAM. A Windows 2016 Server may be used if desktop experience is enabled. </p>
         <p class="note">SDS uses lightweight TCP/IP packets over network ports 53200, 53201, 53202, and port 80. SDS traffic through these ports will need to be allowed through the SDS host machine’s firewall and on the network. </p>
         <p>Many deployments use the same computer for SDS and the Solstice Dashboard, although that is not a requirement.</p>
-        <p class="note">Pods on Solstice 5.1 or later should be compatible with older versions of SDS. However, Mersive recommends updating your SDS version to 5.1 to benefit from the latest enhancements and retain screen key support for Solstice Pods and Solstice apps on version 5.1 or later. Visit <a href="https://www.mersive.com/download/get-sds/" target="_blank">mersive.com/download/get-sds</a> to get the latest version. </p>
+        <p class="note">Pods on Solstice 5.1 or later should be compatible with older versions of SDS. However, Mersive recommends updating your SDS version to 5.1 to benefit from the latest enhancements and retain screen key support for Solstice Pods and Mersive Solstice apps on version 5.1 or later. Visit <a href="https://www.mersive.com/download/get-sds/" target="_blank">mersive.com/download/get-sds</a> to get the latest version. </p>
         <h2>How To</h2>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
@@ -55,23 +55,21 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 4: Configure SDS&#160;in Solstice User Apps</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Step 4: Configure SDS&#160;in Mersive Solstice Apps</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>For users to see the Solstice displays listed in the SDS directory, each user will need to do a one-time configuration to enter the SDS host IP address in their Solstice app’s Settings. After entering the SDS host, the user will be able to see Solstice displays available for connection every time they open the app.</p>
-                <p>
+                <p>For users to see the Solstice displays listed in the SDS directory, the SDS server's network address must be entered in the Settings of the Mersive Solstice app on each user's device. This can be entered manually, or it will be filled in automatically when the app connects to a Solstice display with SDS enabled. Once an SDS address has been entered in the app, the user will be able to see Solstice displays available for connection every time they open the app.</p>
+                <p MadCap:conditions="Default.5-5_Exclude">
                     <img src="../Resources/Images/ex_app_sdshost.png" style="width: 430px;height: 280px;" />
                 </p>
-                <p>If centrally deploying the app to end-users using <a href="Admin-MSI-Instuctions.htm" MadCap:conditions="Default.ScreenOnly" MadCap:excludeAction="unbind">MSI</a>&#160;or <a href="Admin-SCCM-Instuctions.htm" MadCap:conditions="Default.ScreenOnly" MadCap:excludeAction="unbind">SCCM</a>, SDS information can be pre-configured during the installation process. </p>
-                <p>Alternatively, if you have already applied the Discovery template containing the SDS information to your Solstice Pods, SDS will be automatically configured in a user's app when they connect to one of these displays by entering the display's URL&#160;in the app's search bar. </p>
-                <p>
-                    <img src="../Resources/Images/ex_displayURL_solsticeapp.png" style="width: 375px;height: 249px;" />
-                    <br />
+                <p MadCap:conditions="Default.5-5_Release">
+                    <img src="../Resources/Images/ex_SDSIntroUserAppSettings.png" style="width: 50%;" />
                 </p>
+                <p>If centrally deploying the app to end-users using <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Client-Installs.htm" target="_blank">MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">MSI or SCCM</a></MadCap:conditionalText>, SDS information can be pre-configured during the installation process. </p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h3 MadCap:conditions="Default.ScreenOnly">Related Topics</h3>
-        <p MadCap:conditions="Default.ScreenOnly"><a href="SDS-AutoRestart.htm">Configure SDS&#160;to Auto-restart (recommended)</a>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="SDS-AutoRestart.htm">Configure SDS&#160;to Auto-Restart (recommended)</a>
         </p>
         <p MadCap:conditions="Default.ScreenOnly"><a href="SDS-Subnets.htm">Configure SDS for Multiple Subnets</a>
         </p>

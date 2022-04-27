@@ -4,13 +4,13 @@
     </head>
     <body>
         <ol>
-            <li>Open the Solstice app and select the desired Solstice Pod display to start a collaboration session.</li>
-            <li>Select <b>Meeting</b> from the bottom navigation bar.</li>
+            <li>Open the Mersive Solstice mobile app and connect to a Solstice display to start a collaboration session.</li>
+            <li>Select <b>Meeting</b> from the bottom navbar.</li>
             <li>Switch the <b>Moderate Meeting</b> toggle to on (blue).</li>
-            <li>When a new collaborator tries to connect to the display, an alert will appear in the navigation bar. Tap <b>Meeting</b> to view the request. Three options display for the connection request:<ul><li><b>Deny</b>: Connection is denied. The collaborator will be notified that their connection attempt was canceled by the moderator.</li><li><b>Approve</b>: The collaborator will be connected to the display.</li><li><b>Approve as Moderator</b>: The collaborator will join with full moderator rights to approve and reject requests to join and post media content.</li></ul></li>
-            <li>When a collaborator tries to post media content to the display, an alert will again appear in the <b>Meeting</b> section of the navigation bar. Two options display for the media post request:<ul><li><b>Reject</b>: The post will not appear on the display. Rejecting the request will not alert the user that their post has been rejected.</li><li><b>Approve</b>: The post will appear on the display.</li></ul></li>
-            <li> To manage participants posts, select <b>Layout</b> from the navigation bar. An icon appears for each participant at the bottom of the layout window. Tap a participant's icon for options including showing all posts, hiding all posts, stacking posts, and deleting all posts for the selected participant.</li>
-            <li>To exit moderator mode, go to <b>Meeting</b> in the navigation bar and switch the <b>Moderate Meeting</b> toggle to off (gray).</li>
+            <li>When a new collaborator attempts to connect to the display, an alert will appear in the navbar. Tap <b>Meeting</b> to view the request. The moderator may choose one of three options:&#160;&#160;<ul><li><b>Deny</b> the connection: The collaborator will be notified that their connection attempt was canceled by the moderator.</li><li><b>Approve</b> the connection: The collaborator will be connected to the display.</li><li><b>Approve as Moderator</b>: The collaborator will join with full moderator rights to approve and reject requests to join and post content.</li></ul></li>
+            <li>When a collaborator posts media content to the display, an alert will again appear in the <b>Meeting</b> section of the navigation bar. Two options display for a post request:<ul><li><b>Reject</b>: The post will not appear on the display. Rejecting the request will not alert the user that their post has been rejected.</li><li><b>Approve</b>: The post will appear on the display.</li></ul></li>
+            <li> To manage participants' posts, select <b>Layout</b> from the navigation bar. An icon appears for each participant at the bottom of the layout window. Tap a participant's icon for options including showing all posts, hiding all posts, stacking posts, and deleting all posts for the selected participant.</li>
+            <li>To exit moderator mode, go to <b>Meeting</b> in the bottom navbar and switch the <b>Moderate Meeting</b> toggle to off (gray).</li>
         </ol>
     </body>
 </html>

@@ -30,7 +30,8 @@
     Link="/Content/Topics/User-Moderating-Sessions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/Topics/User-Multi-Room-Sessions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    Link="/Content/Topics/User-Multi-Room-Sessions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="Default.5-5_Exclude" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/Topics/User-View-Collaboration-Session.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

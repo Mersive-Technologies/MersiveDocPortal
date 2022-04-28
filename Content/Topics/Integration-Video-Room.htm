@@ -9,8 +9,8 @@
         <h2>System Components &amp;&#160;Requirements</h2>
         <p>The following components and related configurations are required to integrate Solstice with a computer-based video room system:</p>
         <ul>
-            <li>Gen3 Solstice Pod running Solstice 5.5 or higher with an active Solstice Subscription</li>
-            <li>Device running Zoom Room or Microsoft Teams Room software with lightweight Mersive ?? app installed</li>
+            <li>Gen3 Solstice Pod running Solstice 5.5 or higher with an active Solstice Subscription<ul style="list-style-type: circle;"><li>Configure the Pod  with a static IP address or hostname that can be resolved by the video room system device.</li></ul></li>
+            <li>Device running Zoom Room or Microsoft Teams Room software <ul style="list-style-type: circle;"><li>Download and install the lightweight Mersive ?? app installed</li></ul></li>
             <li>Supported USB&#160;switcher that accepts RS-232 or HTTP-based API commands<ul style="list-style-type: circle;"><li>Configure any devices to be signaled by Solstice via API commands, such as the USB switch, to have a static IP on the same network as the Solstice Pod.</li><li>Set the USB switch to route to the Zoom Room or Microsoft Teams Room device by default.</li></ul></li>
             <li>Display monitor, video, and audio peripherals</li>
             <li>Optional USB to RS-232 cord (for RS-232 USB&#160;switch)</li>
@@ -81,12 +81,18 @@
                 <MadCap:dropDownHotspot>Step 4: Install Mersive ?? App on Video Room Device</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>The Mersive ?? app runs on the video room device to hide the Solstice connection message when a video room system conference is in progress. The lightweight application is quick to install and configure and should have no impact on video room performance.</p>
+                <p>The Mersive ?? app runs on the video room device to hide the Solstice connection message when a video room system conference is in progress. This lightweight application is quick to install and configure and should have no impact on video room performance.</p>
                 <ol>
-                    <li>Download the Mersive ?? application from <a href="https://www.mersive.com/download-admin/">www.mersive.com/download-admin/</a>.</li>
-                    <li>Run [filename] on the video room system computer or NUC&#160;device.</li>
-                    <li>Enter the IP address of the Solstice Pod integrated with the video room system.</li>
-                    <li>&#160;</li>
+                    <li>Download the Mersive ?? application from <a href="https://www.mersive.com/download-admin/">mersive.com/download-admin</a>.</li>
+                    <li>Run [filename] on the video room system computer or NUC&#160;device to install the application. It is designed to run in the background will be configured to run on start-up and will be run on start-up and </li>
+                    <li>When the ?? application is running, a camera icon appears in the system tray, which turns green when a connected camera is in use.</li>
+                    <li>
+                        <p>Click the camera icon in the system tray and select <b>Configure</b>.</p>
+                        <p>
+                            <img src="../Resources/Images/ex_VRICameraDetectAppConfig.png" style="width: 35%;" />
+                        </p>
+                    </li>
+                    <li>Enter the IP address of the Solstice Pod integrated with the video room system in <b>Pod Hostname</b> and close the configuration box. The application will now signal Solstice to turn off its connection info overlay when a connected camera is in use.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>

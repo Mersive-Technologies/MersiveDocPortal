@@ -5,22 +5,22 @@
     </head>
     <body>
         <h1>Solstice Video Room Integration</h1>
-        <p>Starting in Solstice 5.5, Solstice Pods can automatically switch between a dedicated Zoom Room, Microsoft Teams Room, or Cisco Webex Room and the Solstice Pod's multi-source wireless content sharing and bring-your-own-meeting (BYOM)&#160;video&#160;conferencing support. This configuration can also support switching between Solstice and a supported all-in-one video conferencing appliances.</p>
+        <p>Starting in Solstice 5.5, Solstice Pods can automatically switch between a dedicated Zoom Room, Microsoft Teams Room, or Cisco Webex Room and the Solstice Pod's multi-source wireless content sharing and bring-your-own-meeting (BYOM)&#160;video&#160;conferencing support. This configuration can also support switching between Solstice and certain all-in-one video conferencing appliances.</p>
         <h2>System Components &amp;&#160;Requirements</h2>
         <p>The following components and related configurations are required to integrate Solstice with a computer-based video room system:</p>
         <ul>
             <li>Gen3 Solstice Pod running Solstice 5.5 or higher with an active Solstice Subscription<ul style="list-style-type: circle;"><li>Configure the Pod  with a static IP address or hostname that can be resolved by the video room system device.</li></ul></li>
-            <li>Device running Zoom Room or Microsoft Teams Room software <ul style="list-style-type: circle;"><li>Download and install the lightweight Mersive ?? app installed</li></ul></li>
+            <li>Device running Zoom Room or Microsoft Teams Room software <ul style="list-style-type: circle;"><li>Download and install the <a href="#install_app">Mersive lightweight app</a> that detects camera usage and turns off the Solstice overlay.</li></ul></li>
             <li>Supported USB&#160;switcher that accepts RS-232 or HTTP-based API commands<ul style="list-style-type: circle;"><li>Configure any devices to be signaled by Solstice via API commands, such as the USB switch, to have a static IP on the same network as the Solstice Pod.</li><li>Set the USB switch to route to the Zoom Room or Microsoft Teams Room device by default.</li></ul></li>
-            <li>Display monitor, video, and audio peripherals</li>
             <li>Optional USB to RS-232 cord (for RS-232 USB&#160;switch)</li>
+            <li>Display monitor, video, and audio peripherals</li>
         </ul>
-        <p>When the video room system, display monitor, and USB audio and video peripherals are connected to the Solstice Pod via a USB&#160;switching device, Solstice can be configured to signal the USB&#160;switch with RS-232 or HTTP-based API commands to toggle between and the video room system and Solstice's wireless sharing and agnostic video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
+        <p>When the video room system, display monitor, and USB audio and video peripherals are connected to the Solstice Pod via a USB&#160;switching device, Solstice can be configured to signal the USB&#160;switch with RS-232 or HTTP-based API commands to toggle between and the video room system and Solstice's wireless sharing and BYOM&#160;video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
         <h3>Sample Solstice Video Room Integration Diagram</h3>
         <p>
             <img src="../Resources/Images/dgm_VideoRoomIntegrationWiring.png" style="width: 75%;height: auto;" />
         </p>
-        <p>A second configuration is also possible to integrate Solstice with a supported all-in-one video conference device, such as the Poly Studio X30, that contains a camera, speakerphone, and conferencing software and accepts R-232 or HTTP-based API commands. In this type of integration, the all-in-one device is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that can pass AV input and output to the Solstice Pod.</p>
+        <p>A second configuration is also possible to integrate Solstice with a supported all-in-one video conferencing appliance, such as the Poly Studio X30, that contains a camera and speakerphone and also accepts R-232 or HTTP-based API commands. In this type of integration, the all-in-one appliance is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that can pass AV input and output to the Solstice Pod.</p>
         <h2>How To Configure Solstice for Video Room Integration</h2>
         <p>Use these steps to configure a Solstice Pod for integration with a Microsoft Teams Room, Zoom Room, or Cisco Webex Room.</p>
         <MadCap:dropDown>
@@ -29,15 +29,14 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>Attach the Solstice Pod to power and the local Ethernet and wireless networks, as appropriate for your Solstice deployment.</li>
+                    <li>Attach the Solstice Pod to power and to the local Ethernet and wireless networks, as appropriate for your Solstice deployment.</li>
                     <li>The video room system (Zoom, Teams, etc.) device should also be powered on and connected to Ethernet on the same network as the Solstice Pod.</li>
-                    <li>Install the lightweight (?) app from Mersive on the video room system device. [NEED&#160;MORE&#160;INFO]</li>
-                    <li>Connect the display monitor to one of the Solstice Pod’s HDMI outputs (HDMI 1 or HDMI&#160;2 on the back of the Pod).</li>
+                    <li>Connect a display monitor to one of the Solstice Pod’s HDMI outputs (HDMI 1 or HDMI&#160;2 on the back of the Pod). Mersive does not recommend using dual displays  in a VRI&#160;configuration at this time.</li>
                     <li>Connect the video room system device's HDMI output to the HDMI-in port on the front of the Solstice Pod.</li>
                     <li>Connect any peripheral cameras, speakers, and/or microphones to the USB switch's USB&#160;output ports. </li>
                     <li>Connect one of the USB ports on the back of the Solstice Pod to a USB input port on the USB&#160;switch.</li>
                     <li>Connect a USB&#160;port on the video room system device to a USB&#160;input port on the USB switch.</li>
-                    <li>(Optional) If using an RS-232 USB&#160;switch, connect the other USB&#160;port on the back of the Solstice Pod to the RS-232 port on the USB&#160;switch using a USB to RS-232 cord.</li>
+                    <li>Optional: If using an RS-232 USB&#160;switch, connect the other USB&#160;port on the back of the Solstice Pod to the RS-232 port on the USB&#160;switch using a USB–to–RS-232 cord.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -65,11 +64,7 @@
                 <ol>
                     <li>Open the Video Room Integration configuration page and enter login information if required.</li>
                     <li>If <b>Enable Video Room Integration</b> is not selected, first complete the directions in <a href="#VRI_switching">Step 2</a> above.</li>
-                    <li>
-                        <p>In <b>Instructions Text Overlay</b> section at the bottom of the page, enter the Solstice connection instructions you would like to appear to users on the video room system display. The variables [RoomName], [ScreenKey], [WifiNetworkName], [WifiIP], [EthNetworkName], and [EthIP] will automatically be replaced with specific details for that Solstice Pod.</p>
-                        <p>For example, entering the overlay text "To access Solstice, connect to [WiFiNetworkName], choose [RoomName], and enter screen key [ScreenKey]" would generate connection directions similar to: </p>
-                        <p style="margin-left:30px; line-height:0.8; width:350px">To access Solstice, connect to Company_Network, choose Large Conference Room, and enter screen key 4868</p>
-                    </li>
+                    <li>In <b>Instructions Text Overlay</b> section at the bottom of the page, enter the Solstice connection instructions you would like to appear to users on the video room system display. The variables [RoomName], [ScreenKey], [WifiNetworkName], [WifiIP], [EthNetworkName], and [EthIP] will automatically be replaced with specific details for that Solstice Pod.<p>For example, entering the overlay text "To access Solstice, connect to [WiFiNetworkName], choose [RoomName], and enter screen key [ScreenKey]" would generate connection directions similar to: </p><p style="margin-left:30px; line-height:0.8; width:350px">To access Solstice, connect to Company_Network, choose Large Conference Room, and enter screen key 4868</p></li>
                     <li>Select the <b>Text Overlay Position</b> where you would like the Solstice connection instructions to appear on the video room system screen.</li>
                     <li>You may also choose a light or dark background from the <b>Color Scheme</b> menu.</li>
                     <li>Click <b>Apply</b> at the bottom of the configuration page to save your changes.</li>
@@ -81,18 +76,18 @@
                 <MadCap:dropDownHotspot>Step 4: Install Mersive ?? App on Video Room Device</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>The Mersive ?? app runs on the video room device to hide the Solstice connection message when a video room system conference is in progress. This lightweight application is quick to install and configure and should have no impact on video room performance.</p>
+                <p><a name="install_app"></a>The Mersive ?? app runs on the video room device to hide the Solstice connection message when a video conference is in progress. This lightweight application is quick to install and configure and should have no impact on video room performance.</p>
                 <ol>
                     <li>Download the Mersive ?? application from <a href="https://www.mersive.com/download-admin/">mersive.com/download-admin</a>.</li>
-                    <li>Run [filename] on the video room system computer or NUC&#160;device to install the application. It is designed to run in the background will be configured to run on start-up and will be run on start-up and </li>
+                    <li>Run [filename] on the video room system computer or NUC&#160;device to install the application. It is designed to run in the system tray on startup. Trying to start the application when it is already running will produce an error message.</li>
                     <li>When the ?? application is running, a camera icon appears in the system tray, which turns green when a connected camera is in use.</li>
                     <li>
                         <p>Click the camera icon in the system tray and select <b>Configure</b>.</p>
                         <p>
-                            <img src="../Resources/Images/ex_VRICameraDetectAppConfig.png" style="width: 35%;" />
+                            <img src="../Resources/Images/ex_VRICameraDetectAppConfig.png" style="width: 45%;" />
                         </p>
                     </li>
-                    <li>Enter the IP address of the Solstice Pod integrated with the video room system in <b>Pod Hostname</b> and close the configuration box. The application will now signal Solstice to turn off its connection info overlay when a connected camera is in use.</li>
+                    <li>Enter the static IP address of the Solstice Pod integrated with the video room system in <b>Pod Hostname</b> and close the configuration box. The application will now signal Solstice to turn off its instructions overlay when a connected camera is in use.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -101,18 +96,18 @@
                 <MadCap:dropDownHotspot>Step 5: Set HDMI Input Mode to 'Persistent Post'</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Follow the directions below appropriate to your Solstice management tool to set the HDMI-in behavior mode for the Solstice Pod integrated with a video room system to Persistent Post. In Persistent Post mode, the video room display passed through the Solstice Pod's HDMI-in port will be removed during a Solstice-enabled video conference and reinstated when Solstice Conference is ended.</p>
+                <p>Follow the directions below to use  either Solstice Cloud or Solstice Dashboard to set the HDMI-in behavior mode to Persistent Post for the Solstice Pod integrated with a video room system. In a video room system configuration, the video room display is configured as an HDMI-in post to the Solstice Pod. In Persistent Post mode, Solstice hides the room system post when users connect wirelessly to the Solstice Pod and reinstates it when all users have disconnected from Solstice.</p>
                 <h4>In Solstice Cloud</h4>
                 <ol>
                     <li>In Solstice Cloud, use the left sidebar to navigate to <b>Manage</b> &gt; <b>Pods</b>.</li>
-                    <li>Click the name of the Solstice Gen3 Pod to be integrated with the video room system.</li>
+                    <li>Click the name of the Gen3 Solstice Pod to be integrated with the video room system.</li>
                     <li>Scroll down and expand the <b>Features</b> configuration section.  If a template has previously been assigned to the Pod, click <b>Edit</b> to change the configuration of the selected Pod.</li>
                     <li>Under HDMI Input Behavior, select <b>Persistent Post</b>.</li>
                     <li>Click <b>Save as Unassigned</b> to save the configuration for the selected Pod only.</li>
                 </ol>
                 <h4>In Solstice Dashboard</h4>
                 <ol>
-                    <li>In Solstice Dashboard, select the Solstice Gen3 Pod&#160;to be integrated with the video room system from the list of Your Solstice Instances.</li>
+                    <li>In Solstice Dashboard, select the Gen3 Solstice Pod&#160;to be integrated with the video room system from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Appearance and Usage</b> tab and scroll to Usage and Feature Management. </li>
                     <li>Under HDMI Input Mode, select <b>Persistent Post</b>.</li>
                     <li>Click <b>Apply</b>.</li>
@@ -124,18 +119,18 @@
                 <MadCap:dropDownHotspot>Step 5: Disable Digital Signage on Solstice</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Follow the directions below appropriate to your Solstice management tool to disable digital signage on the Solstice Pod integrated with a video room system. In this integration configuration, it is recommended that digital signage  instead be enabled on the video room system.</p>
+                <p>Follow the directions below to use Solstice Cloud or Solstice Dashboard to disable digital signage on the Solstice Pod integrated with a video room system. In this type of integration, it is recommended that digital signage  instead be enabled on the video room system.</p>
                 <h4>In Solstice Cloud</h4>
                 <ol>
                     <li>In Solstice Cloud, use the left sidebar to navigate to <b>Manage</b> &gt; <b>Pods</b>.</li>
-                    <li>Click the name of the Solstice Gen3 Pod to be integrated with the video room system.</li>
+                    <li>Click the name of the Gen3 Solstice Pod to be integrated with the video room system.</li>
                     <li>Scroll down and expand the <b>Digital Signage</b> configuration section.  If a template has previously been assigned to the Pod, click <b>Edit</b> to change the configuration of the selected Pod.</li>
                     <li>If <b>Enable Digital Signage</b> is selected, uncheck it. The digital signage settings will become unavailable.</li>
                     <li>Click <b>Save as Unassigned</b> to save the configuration for the selected Pod only.</li>
                 </ol>
                 <h4>In Solstice Dashboard</h4>
                 <ol>
-                    <li>In Solstice Dashboard, select the Solstice Gen3 Pod&#160;to be integrated with the video room system from the list of Your Solstice Instances.</li>
+                    <li>In Solstice Dashboard, select the Gen3  Solstice Pod&#160;to be integrated with the video room system from the list of Your Solstice Instances.</li>
                     <li>Go to the <b>Digital Signage</b> tab. </li>
                     <li>If <b>Enabled</b> is selected, uncheck it. The digital signage settings will become unavailable.</li>
                     <li>Click <b>Apply</b>.</li>
@@ -146,7 +141,7 @@
         <p>Mersive also recommends the following video room system configuration options to achieve the best results with your Solstice video room integration:</p>
         <h4>Zoom Room Configuration</h4>
         <ul>
-            <li>To avoid recieving alerts each time Solstice-enabled conferencing is used, disable device error notifications on the Zoom Room device (Alert &gt; Client Alert Settings).</li>
+            <li>To avoid receiving alerts each time Solstice-enabled conferencing is used, disable device error notifications on the Zoom Room device (Alert &gt; Client Alert Settings).</li>
             <li>Set power mode for Zoom Room device to never sleep and never suspend display, except for times when the room won’t be used for any meetings, such as at night.</li>
         </ul>
         <h4>Microsoft Teams Room Configuration</h4>
@@ -220,7 +215,7 @@
                 <MadCap:dropDownHotspot>All-in-One Video Appliance Requirements and Tested Devices</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p class="table-text" style="font-weight: bold;">All-in-One Video Appliance Requirements</p>
+                <p style="font-weight: bold;">All-in-One Video Appliance Requirements</p>
                 <ul>
                     <li>Appliance allows built-in camera/audio devices to be used externally via USB 2.0 or 3.0 (or higher)</li>
                     <li>Provides commands (RS-232 or API) to enable and disable external use of built-in camera/audio devices</li>
@@ -254,19 +249,19 @@
                 <MadCap:dropDownHotspot>Supported USB–to–RS-232 Converters</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>Based on publicly available information, the following USB–to–serial converter chips should be supported:</p>
+                <p>Based on publicly available information, the following USB-to-serial converter chips should be supported:</p>
                 <ul>
                     <li>FTDI FT232R, FT232H, FT2232H, FT4232H, FT230X, FT231X, FT234XD</li>
                     <li>Prolific PL2303</li>
                     <li>Silicon Labs CP2102 and all other CP210x</li>
                     <li>Qinheng CH340, CH341A</li>
                 </ul>
-                <p>These chips can be found in many generally available USB–to–RS-232 converters.</p>
+                <p>These chips can be found in many generally available USB–to–RS-232 converters. Contact <a href="https://mersive.force.com/support/s/" target="_blank">Mersive Support</a> for more information.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Example RS-232 and API Commands per Device</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Example RS-232 and API Commands by Device</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p style="font-weight: bold;">Lightware UCX Series <span style="font-weight: normal;">(no authentication)</span></p>

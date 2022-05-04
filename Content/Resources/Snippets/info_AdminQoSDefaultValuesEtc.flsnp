@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>By default, the Video Stream DSCP field is set to 101110, which is "Expedited Forwarding" with a precedence value of 46. The Audio Stream DSCP&#160;field defaults to 101000, which is CS5 with a precedence value of 40. Packets with a lower precedence value might be dropped by QoS-enabled routers on the network in favor of higher precedence packets. Mersive recommends using the DSCP Pool 1 Codepoints defined by the IETF.</p>
+        <p>By default, the Video Stream DSCP field is set to 101 110, which is Expedited Forwarding with a precedence value of 46. The Audio Stream DSCP&#160;field defaults to 101 000, which is CS5 with a precedence value of 40. Packets with a lower precedence value might be dropped by QoS-enabled routers on the network in favor of higher precedence packets. See <a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus1000/sw/4_0_4_s_v_1_3/qos/configuration/guide/n1000v_qos/n1000v_qos_6dscpval.html" target="_blank">commonly used DSCP values</a> described in RFC 2475 by the IETF.</p>
     </body>
 </html>

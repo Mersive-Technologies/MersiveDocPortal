@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>When enabled, Solstice scans the environment (such as WiFi SSIDs and Bluetooth) to estimate the approximate geographic location of Pods. When Solstice Location Service is also enabled in the Solstice app, users can quickly find and connect to Pods that are physically nearby them. Solstice can also over time refine the location of Pods, allowing the user app to detect and auto-disconnect users who have left a meeting while still connected and sharing to a Pod. This feature can be turned on and the sensitivity used to auto-disconnect a user device can be adjusted in the Solstice user app for Windows.</p>
+        <p>When enabled, Solstice scans the environment (such as WiFi SSIDs and Bluetooth) to estimate the approximate geographic location of Pods. </p>
+        <p>When Solstice Location Service is also enabled in the Mersive Solstice app, users can quickly find and connect to Pods that are physically near them. Solstice can also over time refine the location of Pods, allowing the user app to detect and auto-disconnect users who have left a meeting while still connected and sharing to a Pod. This feature can be turned on and the sensitivity used to auto-disconnect a user device can be adjusted in the Mersive Solstice app for Windows.</p>
+        <p class="note">Location services are enabled for Solstice Pods by default. However, Solstice Location Service in the Mersive Solstice app (Settings &gt; Control) defaults to off and must be turned on to enable auto-disconnect functionality.</p>
+        <p class="note">How long it takes for users to be prompted to auto-disconnect depends on the WiFi signal strength used for the connection between the Mersive Solstice app and the Solstice Pod. Mersive recommends setting the auto-disconnect sensitivity in the Mersive Solstice app for Windows (Settings &gt; Control &gt; Solstice Location Service) to a value of Low or Normal to start.</p>
     </body>
 </html>

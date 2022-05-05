@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note">Auto-disconnect sensitivity is dependent on the WiFi signal strength in the meeting space. Mersive recommends starting with a value of <b>Low</b> or <b>Normal</b>. If needed, ask your IT&#160;department for more information about WiFi strength in your Solstice-enabled meeting space and how it might affect auto-disconnect functionality. </p>
+    </body>
+</html>

@@ -18,7 +18,7 @@
         <p>When the video room system, display monitor, and USB audio and video peripherals are connected to the Solstice Pod via a USB&#160;switching device, Solstice can be configured to signal the USB&#160;switch with RS-232 or HTTP-based API commands to toggle between and the video room system and Solstice's wireless sharing and BYOM&#160;video conferencing as needed. The diagram below shows how these components are typically connected. Also see the list of supported USB&#160;Switches and all-in-one AV peripheral devices.</p>
         <h3>Sample Solstice Video Room Integration Diagram</h3>
         <p>
-            <img src="../Resources/Images/dgm_VideoRoomIntegrationWiring.png" style="width: 75%;height: auto;" />
+            <img src="../Resources/Images/dgm_VideoRoomIntegrationWiring.png" style="height: auto;width: 90%;" MadCap:mediastyle="@media print { width: 100%;height: auto; }" />
         </p>
         <p>A second configuration is also possible to integrate Solstice with a supported all-in-one video conferencing appliance, such as the Poly Studio X30, that contains a camera and speakerphone and also accepts R-232 or HTTP-based API commands. In this type of integration, the all-in-one appliance is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that can pass AV input and output to the Solstice Pod.</p>
         <h2>How To Configure Solstice for Video Room Integration</h2>
@@ -73,21 +73,22 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 4: Install Mersive ?? App on Video Room Device</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Step 4: Install Mersive Camera Monitor App on Video Room Device</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p><a name="install_app"></a>The Mersive Camera Monitor app runs on the video room device to hide the Solstice connection message when a video conference is in progress. This lightweight application is quick to install and configure and should have no impact on video room performance.</p>
                 <ol>
                     <li>Download the Mersive Camera Monitor application from <a href="https://www.mersive.com/download-admin/">mersive.com/download-admin</a>.</li>
-                    <li>Run <code>MersiveCamMonitor.msi</code> on the video room system computer or NUC&#160;device to install the application. The Mersive Camera Monitor will run in the system tray on startup. Note that trying to start this application when it is already running will produce an error message.</li>
-                    <li>When the Mersive Camera Monitor is running, a camera icon appears in the system tray. The icon appears gray with a slash through it when the camera is not in use andturns green when a connected camera is in use.</li>
+                    <li>Run <code>MersiveCamMonitor.msi</code> on the Windows video room system computer or NUC&#160;device to start the installer.</li>
+                    <li>You may enter the static hostname (IP address) of the Solstice Pod integrated with the video room system during the installation process.<p><img src="../Resources/Images/ex_VRICameraDetectAppInstlHostname.png" style="height: auto;width: 60%;" /></p></li>
+                    <li>At the end of the installation, select <b>Launch Mersive Camera Monitor</b> to start the application in the system tray. The app will be run when the room system device starts up and should not need to be started manually. Starting the application when it is already running will produce an error message.</li>
+                    <li>When the Mersive Camera Monitor app is running, a camera icon appears in the system tray. The icon appears gray  when the camera is not in use. The icon will turn green when a connected camera is in use.</li>
                     <li>
-                        <p>Click the camera icon in the system tray and select <b>Configure</b>.</p>
-                        <p>
-                            <img src="../Resources/Images/ex_VRICameraDetectAppConfig.png" style="width: 45%;" />
-                        </p>
+                        <p>To set or change the hostname of the Solstice Pod integrated with the video room system at any time, click the camera icon in the system tray and select <b>Config</b>. </p>
+                        <p>&lt;Config windows screenshot with Save/Cancel buttons to come&gt;</p>
+                        <p>Click <b>Save &amp; Close</b> to save any changes.</p>
                     </li>
-                    <li>Enter the static IP address of the Solstice Pod integrated with the video room system in <b>Pod Hostname</b> and close the configuration box. The application will now signal Solstice to turn off its instructions overlay when a connected camera is in use.</li>
+                    <li>The application will now signal the Pod to turn off the Solstice instructions overlay when a connected camera is in use.</li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -207,7 +208,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <p class="table-text">&#160;</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -241,7 +241,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <p class="table-text">&#160;</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

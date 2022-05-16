@@ -34,5 +34,6 @@
     <Word Comment="">https://console.cloud.google.com/home/dashboard</Word>
     <Word Comment="">https://admin.google.com/ac/users</Word>
     <Word Comment="">SolsticeClient-5.4.msi</Word>
-    <Word>Uint32</Word>
+    <Word Comment="">Uint32</Word>
+    <Word>mersive.com/download-admin</Word>
 </IgnoredWordsDictionary>

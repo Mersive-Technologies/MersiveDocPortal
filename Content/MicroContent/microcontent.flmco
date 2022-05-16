@@ -272,7 +272,7 @@
         <MicroContentResponse href="../Topics/Cloud-Roles-Permissions.htm" />
     </MicroContent>
     <MicroContent>
-        <MicroContentPhrase>Deploy the Solstice App with MSI</MicroContentPhrase>
+        <MicroContentPhrase>Deploy Mersive Solstice app with MSI</MicroContentPhrase>
         <MicroContentResponse href="../Topics/Admin-MSI-Instuctions.htm" />
     </MicroContent>
     <MicroContent>

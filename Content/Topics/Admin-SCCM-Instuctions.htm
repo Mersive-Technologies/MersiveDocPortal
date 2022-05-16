@@ -4,25 +4,34 @@
     </head>
     <body>
         <h1>Deploy Solstice User Apps with SCCM</h1>
-        <p>The SCCM installer package of the Mersive Solstice app allows an IT administrator to centrally and remotely deploy the app for users on a Windows computer.     Generic deployment details follow, but please contact <a href="https://mersive.force.com/support/s/" target="_blank">Mersive Support</a>  if you have any questions or concerns about your specific situation. </p>
-        <p MadCap:conditions="Default.5-5_Release">Starting in Solstice 5.5, the installer for the Mersive Solstice app  has been separated from the Solstice Conference drivers installer. Use the information below to first install the Mersive Solstice app (SolsticeClientSetup-5.5_SCCM.exe), and then centrally deploy the Solstice Conference drivers (SolsticeConferenceDrivers-1.3.msi) with <a href="Admin-MSI-Instuctions.htm" target="_blank">MSI</a>.</p>
-        <p>Doing a silent install requires that the installer knows how to handle the questions that are asked during the installation wizard. The options '/s /v/qn' require that there is a separate data file with the answers to the questions. By default this file is called 'setup.iss' and it needs to be in the same directory as the installer. As a note, admin or system privileges are needed to install system-wide but the installer does not explicitly check for these privileges. </p>
+        <p>The SCCM installer package of the Mersive Solstice app allows an IT administrator to centrally and remotely deploy the app for users on a Windows computer.     General deployment details can be found below, and <a href="https://mersive.force.com/support/s/" target="_blank">Mersive Support</a>  can help answer any questions or concerns about specific situations.</p>
+        <p MadCap:conditions="Default.5-5_Release">Starting in Solstice 5.5, the installer for the Mersive Solstice app  has been separated from the Solstice Conference drivers installer. Use the information below to first install the Mersive Solstice app (SolsticeClientSetup-5.5_SCCM.exe). You can then centrally deploy the Solstice Conference drivers (SolsticeConferenceDrivers-1.3.msi) with <a href="Admin-MSI-Instuctions.htm" target="_blank">MSI</a>.</p>
+        <p>Silent installs using SCCM require that the installer knows what actions to take on options offered by the installation wizard. You can record a data file once with the desired set of actions and use it to silently install the Mersive Solstice App across your deployment. The options to run in silent mode (<code>/s /v/qn</code>) require a separate data file containing preferences for those actions. Note that administrator or system privileges are needed to install system-wide, but the installer does not explicitly check for these privileges.</p>
         <h3>Silent Install Instructions</h3>
         <ol>
-            <li>Download the SCCM version of the Solstice client app installer from <a href="https://www.mersive.com/download-admin/" target="_blank">mersive.com/download-admin</a> &gt; Deployment Management.</li>
-            <li>Run the installer on a machine once via a command window and use the command line option '/r'. This will run through the wizard and record a response file that will be used later. Note that the command must be issued from a command prompt with system or admin rights. Example command: </li>
-            <p class="codeblock">SolsticeClientSetup-5.2_SCCM.exe /r</p>
-            <li>			Run through the install wizard and set your desired configurations. <br /><br /> <img src="../Resources/Images/SCCMconfigoptions2.png" style="width: 481px;height: 360px;" /> <img src="../Resources/Images/SCCM_config.png" style="width: 491px;height: 361px;" /></li>
-            <li>Once the install wizard is completed, a file is created with the selected configurations recorded. The file is called 'setup.iss' and is located in the system’s Windows folder (e.g. C:\Windows\setup.iss).</li>
-            <p class="note">If you want to completely uninstall silently, run through the installer to uninstall and use the command line option “/r” as well. This will run the installer in repair/maintenance/uninstall mode. Select the <b>Remove</b> option and uninstall as normal. As a note, this does not apply to installing an upgrade, only to uninstalling the Solstice Client software. For upgrades, only use the install response file created above as the upgrade will uninstall the previous version and install the new version automatically.</p>
-            <li>Save a copy of this setup.iss file (e.g. setup_install.iss). Once the response file(s) have been created, copy them to the system you want to install on as well as the Solstice Client install package, in this case, SolsticeClientSetup.exe.</li>
-            <li>Once the response file(s) have been created, they can be used for this version of the installer over and over. These response files are keyed to unique GUIDs in the install package so there is a possibility that they will need to be created for each version of the Client installer (although the uninstall one should only be done on the version that will be uninstalled).</li>
-            <li>In a command window, run the line below to silently install. For this example we’ve assumed the response files have been written to C:\. Change the command line to match their location. For example: </li>
-            <p class="codeblock">To install: SolsticeClientSetup-5.2_SCCM.exe /s /f1"c:\setup_install.iss"
-		</p>
-            <p class="codeblock">To uninstall: SolsticeClientSetup-5.2_SCCM.exe /x /s /f1"c:\setup_uninstall.iss"</p>
-            <p class="note">The "/f1" option allows the response file to be in any directory, not just the same directory as the install package. The path used to specify the response files should be given as an absolute path instead of a relative one. Using a relative path gives unpredictable results.</p>
+            <li>Download the SCCM version of the Mersive Solstice app installer from <a href="https://www.mersive.com/download-admin/" target="_blank">mersive.com/download-admin</a> &gt; Deployment Management.</li>
+            <li>Run the installer on a machine once via a command window using the command line option <code>/r</code>. This will run through the wizard and record a response file that will be used later. Note that the command must be run with SYSTEM or administrator rights. Example command: </li>
+            <p class="codeblock">SolsticeClientSetup-5.5_SCCM.exe /r</p>
+            <li>
+                <p>			Run through the install wizard and set your desired configurations. </p>
+                <p MadCap:conditions="Default.5-5_Release">
+                    <img src="../Resources/Images/ex_SCCMinstallOptionsScreen1.png" style="width: 60%;height: auto;" />
+                </p>
+                <p MadCap:conditions="Default.5-5_Release">
+                    <img src="../Resources/Images/ex_SCCMinstallOptionsScreen2.png" style="width: 60%;height: auto;" />
+                </p>
+                <p MadCap:conditions="Default.5-5_Exclude">
+                    <img src="../Resources/Images/SCCMconfigoptions2.png" style="width: 481px;height: 360px;" />
+                    <img src="../Resources/Images/SCCM_config.png" style="width: 491px;height: 361px;" />
+                </p>
+            </li>
+            <li>Once the install wizard is completed, a file is created with the selected configurations recorded. The file is called 'setup.iss' and is located in the system’s Windows folder (e.g., <code>C:\Windows\setup.iss</code>).</li>
+            <p class="note">If you also want to silently uninstall the Mersive Solstice app, run the installer again to uninstall, using the command line option <code>/r</code> to create an uninstall response file. Select the <b>Remove</b> option and uninstall as normal. Note that the SCCM&#160;installer will remove previous versions of the Mersive Solstice app before installing the latest version. An uninstall response file should only be needed to silently remove the Mersive Solstice app from devices.</p>
+            <li>Save a copy of the 'setup.iss' file with a meaningful name that includes the purpose and app version. Once all your response file(s) have been created, copy them to the system you want to install on, along with the Mersive Solstice app installer file (e.g., SolsticeClientSetup_SCCM-5.5.exe).<p class="note">Response file(s) can be used multiple times for the version of the installer the were created with. However, they may need to be re-created new versions of the Mersive Solstice app installer. Uninstall response files should only be used to uninstall matching versions of the app.</p></li>
+            <li>To silently install the Mersive Solstice app with an SCCM&#160;response file, run the following command in a command window. This example uses a response file located in the top level of the C:\ drive. Modify the path to your response files as needed. <p class="codeblock">SolsticeClientSetup-5.5_SCCM.exe /s /f1"c:\setup_install_5-5.iss"</p><p class="note">The <code>/f1</code> option allows the response file to be in any directory, rather than being restricted to the same directory as the install package. Mersive recommends using an absolute path to specify a response file's location, since using a relative path can produce unpredictable results.</p></li>
+            <li>To silently uninstall the Mersive Solstice app with an SCCM&#160;response file, run the following command in a command window. As in the example above, modify the path to your response files as needed. <p class="codeblock">SolsticeClientSetup-5.5_SCCM.exe /x /s /f1"c:\setup_uninstall_5-5.iss"</p></li>
         </ol>
+        <MadCap:snippetBlock src="../Resources/Snippets/info_MSI-SCCMInstallerSettingsPath.flsnp" />
         <p class="table-text">&#160;</p>
         <h3>Related Topics</h3>
         <p><a href="Admin-MSI-Instuctions.htm">Deploy Mersive Solstice App on Windows with MSI</a>

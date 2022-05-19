@@ -35,5 +35,6 @@
     <Word Comment="">https://admin.google.com/ac/users</Word>
     <Word Comment="">SolsticeClient-5.4.msi</Word>
     <Word Comment="">Uint32</Word>
-    <Word>mersive.com/download-admin</Word>
+    <Word Comment="">mersive.com/download-admin</Word>
+    <Word>VRI</Word>
 </IgnoredWordsDictionary>

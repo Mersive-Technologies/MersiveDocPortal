@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="tip">Version 1.0.7 of the Solstice Conference drivers, released with Mersive Solstice version 5.4, does not need to be upgraded to Mersive Solstice Conference drivers version 1.3. These drivers versions are functionally the same, and version 1.0.7 is recognized as compatible by version 5.5 of the Mersive Solstice app.</p>
+    </body>
+</html>

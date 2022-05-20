@@ -36,5 +36,7 @@
     <Word Comment="">SolsticeClient-5.4.msi</Word>
     <Word Comment="">Uint32</Word>
     <Word Comment="">mersive.com/download-admin</Word>
-    <Word>VRI</Word>
+    <Word Comment="">VRI</Word>
+    <Word>msciexec</Word>
+    <Word>msiexec</Word>
 </IgnoredWordsDictionary>

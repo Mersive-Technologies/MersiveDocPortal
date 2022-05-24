@@ -12,7 +12,7 @@
                 <ul style="list-style-type: circle;">
                     <li><a href="#std_config">Standard Solstice VRI Configuration</a>
                     </li>
-                    <li><a href="#alt_config">Alternate Solstice VRI Configuration</a>
+                    <li><a href="#alt_config">Appliance Solstice VRI Configuration</a>
                     </li>
                 </ul>
             </li>
@@ -27,7 +27,7 @@
         <p>The following components and related configurations are required to integrate Solstice with a computer-based video room system:</p>
         <ul>
             <li>Gen3 Solstice Pod running Solstice 5.5 or higher with an active Solstice Subscription<ul style="list-style-type: circle;"><li>Configure the Pod  with a static IP address or static hostname that can be resolved by the video room system device.</li></ul></li>
-            <li>Device running Zoom Room or Microsoft Teams Room software <ul style="list-style-type: circle;"><li>If displaying Solstice connection instructions, install the <a href="#install_SVRS">Solstice Video Room Service</a> on the video room system device.</li></ul></li>
+            <li>Device running Zoom Room or Microsoft Teams Room software <ul style="list-style-type: circle;"><li>If displaying Solstice connection instructions, install the <a href="#install_SVRS">Solstice Video Room Service</a> on the supported video room system device.</li></ul></li>
             <li>Supported USB&#160;switcher that accepts RS-232 or HTTP-based API commands<ul style="list-style-type: circle;"><li>Configure any devices to be signaled by Solstice via API commands, such as the USB switch, to have a static domain name or IP address on the same network as the Solstice Pod.</li><li>Set the USB switch to route to the Zoom Room or Microsoft Teams Room device by default.</li></ul></li>
             <li>Optional: USB to RS-232 cord (for RS-232 USB&#160;switch)</li>
             <li>Display monitor, video, and audio peripherals</li>
@@ -39,8 +39,8 @@
         <p>
             <img src="../Resources/Images/dgm_VideoRoomIntegrationWiring.png" style="height: auto;width: 90%;" MadCap:mediastyle="@media print { width: 100%;height: auto; }" />
         </p>
-        <h3><a name="alt_config"></a>Alternate Solstice VRI&#160;Configuration</h3>
-        <p>A second configuration is also possible to integrate Solstice with an all-in-one video conferencing appliance that contains a camera, microphone, and speakers and also accepts R-232 or HTTP-based API commands. In this type of integration, the all-in-one appliance is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that passes AV input and output to the Solstice Pod. </p>
+        <h3><a name="alt_config"></a>Appliance Solstice VRI&#160;Configuration</h3>
+        <p>A second configuration is also possible to integrate Solstice with an all-in-one video conferencing appliance that contains a camera, microphone, and speakers and also accepts RS-232 or HTTP-based API commands. In this type of integration, the all-in-one appliance is connected to the Solstice Pod via HDMI-in and USB. The Solstice Pod can then be configured to send API commands to toggle the all-in-one device between its native functionality and  an external device mode that passes AV input and output to the Solstice Pod. </p>
         <p>See the <a href="#device_support">Device Support</a> section for more information about requirements for all-in-one video appliances and tested devices.</p>
         <h2><a name="howto_config"></a>How To Configure Solstice for Video Room Integration</h2>
         <p>Use these steps to configure a Solstice Pod for integration with a video room system, such as a Microsoft Teams Room or Zoom Room.</p>
@@ -94,10 +94,10 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 4: Install Solstice Video Room Service on Video Room Device</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Step 4: Install Solstice Video Room Service on Video Room Device (Optional)</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p><a name="install_SVRS"></a>The Solstice Video Room Service runs on the video room device to hide the Solstice connection message when a video room conference session is in progress. This lightweight service is quick to install and configure and should have no impact on video room system performance. It will be available shortly after the Solstice 5.5 release.</p>
+                <p><a name="install_SVRS"></a>The Solstice Video Room Service runs on the video room device to optionally hide the Solstice connection message when a video room conference session is in progress. This lightweight service is quick to install and configure and should have no impact on video room system performance. It will be available shortly after the Solstice 5.5 release.</p>
                 <ol>
                     <li>Download the Solstice Video Room Service from <a href="https://www.mersive.com/download-admin/">mersive.com/download-admin</a>. </li>
                     <li>Run <code>SolsticeVideoRoomService.msi</code> on the Windows video room system computer or NUC&#160;device to start the installer.</li>
@@ -115,7 +115,7 @@
                 </ul>
                 <p>If the Solstice Video Room Service cannot be installed (such as on all-in-one video appliances), the Solstice connection instructions overlay will always show when non-Solstice meetings are hosted on the appliance. </p>
                 <ul>
-                    <li>To avoid this, disable the Solstice custom connection instructions by clearing the <b>Instructions Text Overlay</b> box in the Video Room Integration configuration page.</li>
+                    <li>If you wish to turn off the Solstice custom connection instructions, clear the <b>Instructions Text Overlay</b> box in the Video Room Integration configuration page.</li>
                 </ul>
             </MadCap:dropDownBody>
         </MadCap:dropDown>

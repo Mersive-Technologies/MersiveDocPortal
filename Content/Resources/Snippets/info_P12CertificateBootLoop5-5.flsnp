@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="warning">A known issue exists in Solstice 5.5 where loading a custom PFX (.p12) certificate to encrypt Solstice client/server traffic causes a fatal boot loop. Installing a custom .p12 certificate should be avoided for Solstice Pods running version 5.5, and Mersive is working to fix the issue in following versions.</p>
+    </body>
+</html>

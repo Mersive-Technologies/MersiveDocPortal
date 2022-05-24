@@ -16,7 +16,6 @@
             <li>
 After you have ended the video conference and exited the video conferencing app, click <b>Disconnect</b> in the upper right of the app window to stop sharing the Solstice display and disconnect from the Solstice Pod.</li>
         </ol>
-        <MadCap:snippetBlock src="info_ConferenceRoomPsnlCalConflictNote.flsnp" />
         <MadCap:snippetBlock src="info_Conference-UserAppVersionsMatchNote.flsnp" />
     </body>
 </html>

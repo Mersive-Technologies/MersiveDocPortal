@@ -27,7 +27,7 @@
         <p>The following components and related configurations are required to integrate Solstice with a computer-based video room system:</p>
         <ul>
             <li>Gen3 Solstice Pod running Solstice 5.5 or higher with an active Solstice Subscription<ul style="list-style-type: circle;"><li>Configure the Pod  with a static IP address or static hostname that can be resolved by the video room system device.</li></ul></li>
-            <li>Device running Zoom Room or Microsoft Teams Room software <ul style="list-style-type: circle;"><li>If displaying Solstice connection instructions, install the <a href="#install_app">Solstice Video Room Service</a> on the video room system device.</li></ul></li>
+            <li>Device running Zoom Room or Microsoft Teams Room software <ul style="list-style-type: circle;"><li>If displaying Solstice connection instructions, install the <a href="#install_SVRS">Solstice Video Room Service</a> on the video room system device.</li></ul></li>
             <li>Supported USB&#160;switcher that accepts RS-232 or HTTP-based API commands<ul style="list-style-type: circle;"><li>Configure any devices to be signaled by Solstice via API commands, such as the USB switch, to have a static domain name or IP address on the same network as the Solstice Pod.</li><li>Set the USB switch to route to the Zoom Room or Microsoft Teams Room device by default.</li></ul></li>
             <li>Optional: USB to RS-232 cord (for RS-232 USB&#160;switch)</li>
             <li>Display monitor, video, and audio peripherals</li>
@@ -78,7 +78,7 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Step 3: Configure Solstice Connection Message on Video Room System</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Step 3: Configure Solstice Connection Instructions on Video Room System</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/info_VRIPodSetupIntro.flsnp" />
@@ -101,11 +101,22 @@
                 <ol>
                     <li>Download the Solstice Video Room Service from <a href="https://www.mersive.com/download-admin/">mersive.com/download-admin</a>. </li>
                     <li>Run <code>SolsticeVideoRoomService.msi</code> on the Windows video room system computer or NUC&#160;device to start the installer.</li>
-                    <li>Enter the static hostname or static IP address of the Solstice Pod integrated with the video room system when prompted during the installation process.<p MadCap:conditions="Default.Exclude"><img src="../Resources/Images/ex_VRICameraDetectAppInstlHostname.png" style="height: auto;width: 60%;" /></p></li>
-                    <li>At the end of the installation, select <b>Launch Solstice Video Room Service</b> to start the service.  As a system service, the program will automatically start up with the room system.</li>
-                    <li>To change the hostname or IP address after the initial installation:<ol style="list-style-type: lower-alpha;"><li><p>Either edit the <code>PodHostname</code> value in the configuration file, usually located at:</p><p><code>C:\Program Files\Mersive Technologies, Inc\Solstice\VideoRoomService\SolsticeVideoRoomService.exe.config</code></p></li><li>Or simply run the installer again and enter the new static hostname or IP address when prompted.</li></ol></li>
+                    <li>Enter the static hostname or static IP address of the Solstice Pod integrated with the video room system when prompted during the installation process.<p><img src="../Resources/Images/ex_VRI-SVRSInstallHostname.png" style="height: auto;width: 60%;" /></p></li>
+                    <li> As a system service, the program will automatically start up with the room system device.</li>
+                    <li>To change the hostname or IP address after the initial installation:<ol style="list-style-type: lower-alpha;"><li><p>Either edit the <code>PodHostname</code> value in the configuration file, usually located at:</p><p><code>C:\Program Files\Mersive Technologies, Inc\Solstice\SolsticeVideoRoomService\SolsticeVideoRoomService.exe.config</code></p></li><li>Or simply run the installer again and enter the new static hostname or IP address when prompted.</li></ol></li>
                     <li>The Solstice Video Room Service will signal the Pod to turn off the Solstice instructions overlay when a connected camera is in use for a video room call.</li>
                 </ol>
+                <h4>Solstice Video Room Service Limitations</h4>
+                <p>The Solstice Video Room Service, which runs on Windows-based devices to disable the Solstice overlay during video room calls, does not currently work when an HDMI-in device is plugged into the computer running a Zoom Room. You can work around this issue in a number of ways:</p>
+                <ul>
+                    <li>Disable the HDMI-in "camera" device in Windows' Device Manager on the Zoom Room computer. Since this prevents the HDMI-in device from being used with Zoom, this solution is most useful when the HDMI-in device is not intended to be used with the Zoom Room. One example of this might be when a meeting room controller such as the Logitech Tap is connected to the Zoom Room computer and the HDMI-in port on the Tap will not be used.</li>
+                    <li>Embed Solstice connection instructions similar to those described in Step 3 above in a custom background for the Zoom Room.</li>
+                    <li>Disable the Solstice custom connection instructions by clearing the <b>Instructions Text Overlay</b> box in the Video Room Integration configuration page.</li>
+                </ul>
+                <p>If the Solstice Video Room Service cannot be installed (such as on all-in-one video appliances), the Solstice connection instructions overlay will always show when non-Solstice meetings are hosted on the appliance. </p>
+                <ul>
+                    <li>To avoid this, disable the Solstice custom connection instructions by clearing the <b>Instructions Text Overlay</b> box in the Video Room Integration configuration page.</li>
+                </ul>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

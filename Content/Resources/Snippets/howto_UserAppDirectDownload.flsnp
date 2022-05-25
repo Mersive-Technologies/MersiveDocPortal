@@ -6,17 +6,17 @@
             <li>Open a browser on your laptop device and enter the IP address visible on the Solstice display. This opens the Solstice Quick Connect page:<p><img src="../Images/ex_SolsticeBrowserQuickConnectDnld.png" style="width: 75%;" /></p></li>
             <li>Click <b>Get the App</b>.<MadCap:snippetBlock src="info_SolsticeInstallAppConfPermissions.flsnp" /></li>
             <li>On a Windows laptop:<ol style="list-style-type: lower-alpha;"><li>
-                         The Solstice app installer (SolsticeClientWin.exe) will download. </li><li>When the download is complete, open the file to install the Mersive Solstice app.
+                         The Solstice app installer (e.g., SolsticeClientWin.exe) will download. </li><li>When the download is complete, open the file to install the Mersive Solstice app.
                  
                       Once installed, the Mersive Solstice app will open automatically.</li><li>
                         To install Solstice Conference capabilities, go to Conference tab and click <b>Install</b>. 
                     </li><li>
 					Walk through the InstallShield wizard to install Solstice Conference. </li></ol></li>
-            <li MadCap:conditions="Default.5-5_Release">
+            <li>
                 <p>On a Mac laptop:</p>
                 <ol style="list-style-type: lower-alpha;">
                     <li>
-                         The Solstice app installer (SolsticeClient-5.5.dmg) will download. </li>
+                         The Solstice app installer (e.g., SolsticeClient.dmg) will download. </li>
                     <li>When the download is complete, open the file to install the Mersive Solstice app.
                  
                       Once installed, the Mersive Solstice app will open automatically.</li>

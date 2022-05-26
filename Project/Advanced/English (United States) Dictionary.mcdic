@@ -42,5 +42,6 @@
     <Word Comment="">macOS</Word>
     <Word Comment="">Gen3</Word>
     <Word Comment="">preinstall</Word>
-    <Word>BYOM</Word>
+    <Word Comment="">BYOM</Word>
+    <Word>SSO</Word>
 </SpellingDictionary>

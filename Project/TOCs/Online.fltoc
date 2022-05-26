@@ -203,14 +203,18 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Cloud-Monitor-Deployment.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
-        Title="View and Manage USB Devices"
+        Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Cloud-Management-USB-Devices.htm"></TocEntry>
       <TocEntry
         Title="Schedule Software Updates"
         Link="/Content/Topics/Cloud-Schedule-Updates.htm"></TocEntry>
       <TocEntry
+        Title="Set Up Single Sign-On"
+        Link="/Content/Topics/Cloud-Single-Sign-On.htm" />
+      <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Topics/Cloud-Roles-Permissions.htm" />
+        Link="/Content/Topics/Cloud-Roles-Permissions.htm"
+        ReplaceMergeNode="false" />
     </TocEntry>
     <TocEntry
       Title="Solstice Dashboard"

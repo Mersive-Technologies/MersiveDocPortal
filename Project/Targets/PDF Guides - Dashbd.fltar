@@ -6,13 +6,13 @@
   Destinations=""
   ShowMadCapBacklink="true"
   MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
-  ConditionTagExpression="include[Default.5-5_Release or Default.Cloud or Default.PrintOnly], exclude[Default.5-5_Exclude or Default.Dashboard or Default.Exclude or Default.Future or Default.ScreenOnly]"
+  ConditionTagExpression="include[Default.5-5_Release or Default.Dashboard or Default.PrintOnly], exclude[Default.5-5_Exclude or Default.Cloud or Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Deployment Guide - Cloud.fltoc"
+  MasterToc="/Project/TOCs/Solstice Dashboard Admin Guide.fltoc"
   OutputFolder="C:\Users\abennington\Documents\Flare"
   InjectBookHeadings="true"
-  OutputFile="SolsticeCloudDeploymentGuide">
+  OutputFile="SolsticeDashboardAdminGuide">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -21,7 +21,7 @@
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice Cloud Deployment Guide" />
+    Title="Solstice Dashboard Admin Guide" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

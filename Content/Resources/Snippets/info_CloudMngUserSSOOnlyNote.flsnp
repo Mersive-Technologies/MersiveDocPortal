@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note">Note that a user added as SSO Only cannot later be changed to authenticate with a password. The user account must be removed and re-invited without SSO Only selected to enable password authentication.</p>
+    </body>
+</html>

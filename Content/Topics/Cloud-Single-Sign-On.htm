@@ -4,61 +4,31 @@
     </head>
     <body>
         <h1>Configure Single Sign-On (SSO) in Solstice Cloud</h1>
-        <p>Administrators can now configure their Solstice Cloud organization to work with the SSO identity providers Okta and Azure Active Directory to provide single sign-on access to Solstice Cloud management for SSO configured&#160;users. SSO administrators will also need to configure the organization's identity provider account to connect with Solstice Cloud, including entering each SSO&#160;user's email address in both Solstice Cloud and in the identity provider configuration. </p>
+        <p>Administrators can configure their Solstice Cloud organization to work with the SSO identity providers Okta and Azure Active Directory to provide single sign-on access to Solstice Cloud management for SSO configured&#160;users. SSO administrators will also need to configure the organization's identity provider account to connect with Solstice Cloud, including entering each SSO&#160;user's email address in both Solstice Cloud and in the identity provider configuration. </p>
         <p>See the directions below to learn how to configure your Solstice Cloud organization for SSO. See <a href="Cloud-Roles-Permissions.htm" target="_blank">Manage Users and Roles</a> for SSO&#160;user configuration information.</p>
-        <p>&#160;</p>
-        <h2>How To</h2>
-        <p>Configure Solstice Cloud for SSO with Azure AD or Okta</p>
-        <p>Solstice Cloud SSO Login Process</p>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Invite Users and Assign User Roles</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li>Log in to your Solstice Cloud account. </li>
-                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b></li>
-                    <li>In the <b>Invite someone to Solstice Cloud</b> field, enter in the email address of the user you would like to invite to access your organization's Solstice Cloud account.</li>
-                    <li>From the <b>Choose a Role</b> drop-down, select the role and corresponding permissions you would like to apply to the user. As a note, a user's role can be changed later. </li>
-                    <li>Click <b>Send Invite</b>. Solstice Cloud will then send an email invite with a link to create an account to the email address provided. </li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Edit a User's Role</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li>Log in to your Solstice Cloud account. </li>
-                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b></li>
-                    <li>In the <b>Edit</b> column of the Current Solstice Cloud Users table, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon. </li>
-                    <li>Click <b>Role</b>, then select the new role you would like to apply to the user account. The role change is automatically saved. </li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Delete a User Account</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <ol>
-                    <li>Log in to your Solstice Cloud account. </li>
-                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b></li>
-                    <li>In the <b>Edit</b> column of the Current Solstice Cloud Users table, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon. </li>
-                    <li>Click <b>Delete User</b>. A prompt appears to confirm you want to delete the account.</li>
-                    <li>Click <b>Delete</b>. The user account is deleted. </li>
-                </ol>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Change Your Account Password</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../Resources/Snippets/howto_CloudAccountChangePwd.flsnp" />
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+        <p>
+            <img src="../Resources/Images/ex_CloudManageOrgSSOSetup.png" style="width: 90%;height: auto;" />
+        </p>
+        <h3>How to Configure Solstice Cloud for SSO with Azure or Okta</h3>
+        <ol>
+            <li>Log into Solstice Cloud using a Super Admin account.</li>
+            <li>Use the left navbar to go to <b>Manage &gt; Organization &gt;&#160;SSO</b>. </li>
+            <li>Select the <b>Identity Provider</b> your organization is set up to use. Current options are <b>Azure</b> or <b>Okta</b>. Selecting an identity provider populates the Service Provider URL&#160;on the right side of the panel.</li>
+            <li>Use the Identity Provider info on the right side of this setup panel to configure your identity provider to connect with your Solstice Cloud organization. Select </li>
+            <li>Once Solstice Cloud integration has been configured in your identity provider, the identity provider will generate a sign-on URL&#160;and signing certificate.</li>
+            <li>Copy the sign-on URL&#160;from your identity provider into the <b>Sign On URL</b>&#160;field.</li>
+            <li>Copy or download the X.509 certificate from your identity provider, then enter it under <b>Verification Certificate</b> in one of these ways:<ol style="list-style-type: lower-alpha;"><li>Paste the copied certificate into the text entry box.</li><li>Click <b>Upload Certificate</b> and select the <code>.cert</code> file that you downloaded from your identity provider.</li></ol></li>
+            <li>When the Solstice Cloud info on the left of the setup panel has been completed, click <b>Save</b> to store the SSO configuration for your organization. </li>
+            <li>Users configured with your identity provider for SSO access to Solstice Cloud will now be offered the option to log in with SSO.<p class="note">Users may also be set as SSO&#160;Only. Accounts with this setting will not be given the option to log in with a password and must use SSO&#160;authentication. See <a href="Cloud-Roles-Permissions.htm" target="_blank">Manage Users and Roles</a> to learn more.</p></li>
+        </ol>
+        <h3>Solstice Cloud SSO User Authentication</h3>
+        <p>Once you have configured Solstice Cloud and your SSO identity provider (Okta or Azure AD) to work together, users' email addresses must also be set up as authorized Solstice Cloud users in the identity provider. A matching user email in Solstice Cloud and the identity provider activates that user's ability to log in to Solstice Cloud using single sign-on.</p>
+        <p>The general Solstice Cloud login flow options are as follows:</p>
+        <ol>
+            <li>The Solstice Cloud login page first requires the user's email address to be entered to determine if that user is configured to log in with a password, SSO, or both.</li>
+            <li>Once the user has entered their email address and clicked <b>Log In</b>, there are three basic login scenarios:<ol style="list-style-type: lower-alpha;"><li>A user without SSO&#160;access enabled will only be prompted for their password.</li><li>A user with SSO&#160;access enabled but not set to SSO&#160;Only will be given the choice to log in with their password or log in with SSO.</li><li>A user whose Solstice Cloud account is set to SSO Only will be taken directly to SSO&#160;authentication with the selected identity provider.</li></ol></li>
+            <li>If a user is not authorized for Solstice Cloud with the SSO&#160;identity provider, an error will be displayed when they try to log in.</li>
+        </ol>
         <p>&#160;</p>
     </body>
 </html>

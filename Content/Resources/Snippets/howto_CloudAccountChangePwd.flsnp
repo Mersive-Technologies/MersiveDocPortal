@@ -3,7 +3,7 @@
     <body>
         <ol>
             <li>Log in to your Solstice Cloud account. </li>
-            <li>Click the <b>User</b> <img src="../Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner and select <b>Change Password</b> from the menu.<p><img src="../Images/ex_CloudAccountChangePassword.png" style="width: 90%;" /></p></li>
+            <li>Click the <b>User</b> <img src="../Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner and select <b>Change Password</b> from the menu.<p><img src="../Images/ex_CloudAccountChangePassword.png" style="width: 90%;" /></p><p class="note">If you do not see the Change Password option, your account may be set to SSO Only authentication.</p></li>
             <li>Enter your <b>Current Password</b> at the top of the page.</li>
             <li>Then enter a <b>New Password</b> that contains at least 10 characters, one uppercase character, and one number. </li>
             <li>Retype your new password in <b>Repeat Password</b>.</li>

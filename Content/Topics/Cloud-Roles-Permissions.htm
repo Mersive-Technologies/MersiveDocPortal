@@ -4,7 +4,8 @@
     </head>
     <body>
         <h1>Manage Users and Roles in Solstice Cloud</h1>
-        <p>Solstice Cloud provides the ability to  invite users to your Solstice Cloud organization and assign a role to each user account that determines the level of access and permissions each admin or user has<MadCap:conditionalText MadCap:conditions="Default.Future">, including permissions to make changes to Pod settings</MadCap:conditionalText>. You will only be able to add or edit user accounts that are at or below the access level  of your own account. The following roles and permissions are available to assign to users in your organization. </p>
+        <p>Solstice Cloud provides the ability to  invite users to your Solstice Cloud organization and manage their level of access. Administrators can also configure users to be authenticated with single sign-on (SSO) using either Okta or Azure Active Directory as an identity provider. See the directions below to learn how to configure user accounts with and without SSO. See <a href="Cloud-Single-Sign-On.htm" target="_blank">Configure Single Sign-On</a> for details on configuring your Solstice Cloud organization to connect with an SSO identity provider.</p>
+        <p> Each user account is assigned a role that determines the level of access and permissions that user has. Users may only add or edit user accounts that are at or below the access level  of their own accounts. The following roles and permissions are available to assign to users in your organization:</p>
         <ul>
             <li><b>Super Admin</b>: Can perform all tasks and manage all Pods within the associated Solstice Cloud organization. This level is best reserved for users that administrate an entire Solstice deployment. </li>
             <li><b>Viewer</b>: Can monitor the Solstice deployment and view analytics but cannot add, delete, or make changes to Pods in the deployment.</li>
@@ -16,29 +17,31 @@
         <h2>How To</h2>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Invite Users and Assign User Roles</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Invite Users and Set Roles and Authentication</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
                     <li>Log in to your Solstice Cloud account. </li>
-                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b></li>
-                    <li>In the <b>Invite someone to Solstice Cloud</b> field, enter in the email address of the user you would like to invite to access your organization's Solstice Cloud account.</li>
-                    <li>From the <b>Choose a Role</b> drop-down, select the role and corresponding permissions you would like to apply to the user. As a note, a user's role can be changed later. </li>
-                    <li>Click <b>Send Invite</b>. Solstice Cloud will then send an email invite with a link to create an account to the email address provided. </li>
+                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b> Super Admin level users may also go to <b>Manage &gt;&#160;Organization &gt;&#160;Users</b> in the left navbar.</li>
+                    <li>In the <b>Invite someone to Solstice Cloud</b> field, enter the email address of the user you would like to invite to access your organization's Solstice Cloud account.</li>
+                    <li>From the <b>Choose Role</b> drop-down, select the role and corresponding permissions you would like to apply to the user. A user's role can  be changed at any time. </li>
+                    <li>If your organization has been configured to use single sign-on (SSO), you have a choice of how to authenticate the new user.<ol style="list-style-type: lower-alpha;"><li>To always authenticate the new user with SSO, select <b>SSO Only</b>.</li><li>To allow the new user the option of authenticating with a password, <u>do not</u> select <b>SSO Only</b>.</li></ol></li>
+                    <li>Click the button to invite or add the new user: <ol style="list-style-type: lower-alpha;"><li>If SSO is not configured for your organization or SSO Only is not selected, click <b>Invite User</b>. Solstice Cloud will send an email invite with a link to set up an account to the email address provided. </li><li>If SSO Only is selected, click <b>Add User</b>. The user's account will be added to authenticate only with single sign-on.</li></ol></li>
                 </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_CloudMngUserSSOOnlyNote.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Edit a User's Role</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Edit User Roles and Authentication</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
                     <li>Log in to your Solstice Cloud account. </li>
-                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b></li>
-                    <li>In the <b>Edit</b> column of the Current Solstice Cloud Users table, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon. </li>
-                    <li>Click <b>Role</b>, then select the new role you would like to apply to the user account. The role change is automatically saved. </li>
+                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b> Super Admin level users may also go to <b>Manage &gt;&#160;Organization &gt;&#160;Users</b> in the left navbar.</li>
+                    <li>In the <b>Edit</b> column of the Current Solstice Cloud Users table, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon. <ol style="list-style-type: lower-alpha;"><li>To change the user's role, click <b>Role</b>, then select the new role you would like to apply to the user account. The role change is automatically saved. </li><li>To set a user to always authenticate with single sign-on (SSO), click <b>SSO&#160;Only</b>. A green check will appear in the SSO Only column of the user table and after SSO Only in the edit menu.</li></ol></li>
                 </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/info_CloudMngUserSSOOnlyNote.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -48,7 +51,7 @@
             <MadCap:dropDownBody>
                 <ol>
                     <li>Log in to your Solstice Cloud account. </li>
-                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b></li>
+                    <li>Click the <b>User</b> <img src="../Resources/Images/i_CloudAccountUser.png" style="width: 23px;height: 22px;" /> icon in the top-right corner, then click <b>Account.</b> Super Admin level users may also go to <b>Manage &gt;&#160;Organization &gt;&#160;Users</b> in the left navbar.</li>
                     <li>In the <b>Edit</b> column of the Current Solstice Cloud Users table, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon. </li>
                     <li>Click <b>Delete User</b>. A prompt appears to confirm you want to delete the account.</li>
                     <li>Click <b>Delete</b>. The user account is deleted. </li>

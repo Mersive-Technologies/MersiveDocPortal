@@ -2,26 +2,22 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p>Solstice Conference can also support video conferences that have not been previously scheduled on a personal calendar integrated into the Mersive Solstice app or on a room calendar integrated with the Solstice Pod. The directions below explain how to connect Solstice content sharing and room devices connected to the Solstice Pod with unscheduled and in-progress video conferences. </p>
-        <MadCap:snippetBlock src="info_SolsticeConferenceRedesign5-5Note.flsnp" MadCap:conditions="Default.5-5_Release" />
+        <MadCap:snippetBlock src="info_SolsticeConferenceRedesign5-5Note.flsnp" />
         <ol>
             <li>	Either before or after starting the video conference in the conferencing app, launch the Mersive Solstice app on your laptop.</li>
             <li>Connect to a Solstice display by clicking on the display name. Enter the 4-digit screen key listed on the display if prompted to do so. </li>
-            <li MadCap:conditions="Default.5-5_Exclude">
-Once connected, go to the <b>Conference</b> tab in your Solstice app.</li>
-            <li MadCap:conditions="Default.5-5_Release">
+            <li>
                 <p>Once connected, click <b>Conference</b> (camera icon) in the left navbar.</p>
                 <p>
                     <img src="../Images/ex_UserConfSolCnxNoMeeting.png" style="width: 75%;height: auto;" />
                 </p>
             </li>
-            <li MadCap:conditions="Default.5-5_Exclude">If a conflicting meeting appears on the room calendar integrated with the Solstice Pod, check <b>Bridge without this calendar event</b>. If this option is not selected, Solstice will auto-launch a video conference on the room calendar starting within 15 minutes.</li>
-            <li MadCap:conditions="Default.5-5_Exclude">Click <b>Start</b>.</li>
-            <li MadCap:conditions="Default.5-5_Release">If a conflicting meeting appears on the room calendar integrated with the Solstice Pod, check the <b>Connect display to a different video conference</b> box. If this option is not selected, Solstice will auto-launch a video conference on the room calendar starting within 15 minutes.</li>
-            <li MadCap:conditions="Default.5-5_Release">Click <b>Connect to meeting</b>. </li>
-            <li>Once the video conference connection (Solstice Conference) has been started, any USB audio and video peripherals plugged into the Solstice Pod will be made wirelessly available to the video conferencing app.<MadCap:conditionalText MadCap:conditions="Default.5-5_Release">
- Available audio and video resources are listed on the right side of the app window. A green check icon also appears in the left navbar when Solstice Conference is active.</MadCap:conditionalText><p MadCap:conditions="Default.5-5_Release"><img src="../Images/ex_UserConfCnxAudioVideoSrcs.png" style="width: 75%;height: auto;" /></p></li>
-            <li MadCap:conditions="Default.5-5_Release">If you have not already done so, start your video conference and select the room audio and video sources in the video conferencing application.</li>
-            <li>To share the Solstice display to  remote attendees, select the Solstice Conference virtual monitor from the sharing options within the video conferencing application. The Solstice display usually appears as <b>Screen 2</b>.<MadCap:conditionalText MadCap:conditions="Default.5-5_Release"> The connected Solstice display is also listed under <b>Available audio and video devices</b>.</MadCap:conditionalText><p class="note">If the Pod is configured with dual display monitors, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Solstice-Conference-How-to-Use.htm#Using">Using Solstice Conference with Dual Displays</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/solstice-conference-how-to-use.htm#Using">Using Solstice Conference with Dual Displays</a></MadCap:conditionalText> for information about which display screen will be shared with the video conference.</p></li>
+            <li>If a conflicting meeting appears on the room calendar integrated with the Solstice Pod, check the <b>Connect display to a different video conference</b> box. If this option is not selected, Solstice will auto-launch a video conference on the room calendar starting within 15 minutes.</li>
+            <li>Click <b>Connect to meeting</b>. </li>
+            <li>Once the video conference connection (Solstice Conference) has been started, any USB audio and video peripherals plugged into the Solstice Pod will be made wirelessly available to the video conferencing app.
+ Available audio and video resources are listed on the right side of the app window. A green check icon also appears in the left navbar when Solstice Conference is active.<p><img src="../Images/ex_UserConfCnxAudioVideoSrcs.png" style="width: 75%;height: auto;" /></p></li>
+            <li>If you have not already done so, start your video conference and select the room audio and video sources in the video conferencing application.</li>
+            <li>To share the Solstice display to  remote attendees, select the Solstice Conference virtual monitor from the sharing options within the video conferencing application. The Solstice display usually appears as <b>Screen 2</b>. The connected Solstice display is also listed under <b>Available audio and video devices</b>.<p class="note">If the Pod is configured with dual display monitors, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Solstice-Conference-How-to-Use.htm#Using">Using Solstice Conference with Dual Displays</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/solstice-conference-how-to-use.htm#Using">Using Solstice Conference with Dual Displays</a></MadCap:conditionalText> for information about which display screen will be shared with the video conference.</p></li>
             <li>
 After you have ended the video conference and exited the video conferencing app, click <b>Disconnect</b> in the upper right of the app window to stop sharing the Solstice display and disconnect from the Solstice Pod.</li>
         </ol>

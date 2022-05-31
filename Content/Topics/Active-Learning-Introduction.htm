@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
     <head>
+        <link href="../Resources/TableStylesheets/SupportTable.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
         <h1>Get Started with Solstice Active Learning</h1>
@@ -57,13 +58,13 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>Deploy the Active Learning app with MSI</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>Deploy the Active Learning app with MSI on Windows</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p><a name="ActiveLearningMSI"></a>The MSI installer package of the Solstice Active Learning app allows for a GUI-based installation on a local machine or GPO deployment in Active Directory. This allows your IT administrator to centrally deploy the Active Learning app on Windows machines and can be set to install silently.   The installer does need privileges to install system-wide, but the installer does not explicitly check for these privileges.  This makes it easier to use the MSI in a remote deployment where either an administrator or the SYSTEM account can install this properly.  </p>
                 <p>The MSI&#160;allows you to set the following installation parameter:</p>
                 <ul>
-                    <li><b>INSTALLDIR=</b> controls where the client will be installed.  The default is: “C:\Program Files (x86)\Mersive Technologies, Inc\Active Learning\”.  Note:  The string “INSTALLDIR” must be written in capital letters.</li>
+                    <li><b>INSTALLDIR=</b> controls where the client will be installed.  The default is: “C:\Program Files (x86)\Mersive Technologies, Inc\Active Learning\”  <p class="note">The string “INSTALLDIR” is case sensitive and must be entered in all caps.</p></li>
                 </ul>
                 <p>The client-specific data that was stored in each user’s home directory will now be stored in a central shared location.  This allows for centralized management of these settings and the ability to update them for all users at installation time.  </p>
                 <p>Example:</p>
@@ -74,6 +75,53 @@
                     <li>Write an installation log file named C:\ActiveLearningClient.log</li>
                 </ul>
                 <p>If stepping through the InstallShield wizard, the installation directory can also be set on the installer's Destination Folder dialog page. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Deploy the Active Learning app with Jamf on iOS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><a name="Jamf"></a>The Solstice Active Learning app can be deployed on iOS devices and  settings can be centrally managed using mobile device management (MDM)  through an MDM&#160;provider such as Jamf. Starting in Solstice Active Learning 1.3, administrators can use MDM to configure application-specific settings throughout their Active Learning deployment. </p>
+                <p>In Jamf this can be done by configuring the Active Learning application under Mobile Device Apps in your Jamf server. Change the settings for the application under the App Configuration tab. Values changed by an administrator will be pushed from the MDM provider to the applications nearly instantaneously.</p>
+                <p>The MDM&#160;configuration keys currently defined for Solstice Active Learning are:</p>
+                <table style="mc-table-style: url('../Resources/TableStylesheets/SupportTable.css');width: 80%;" class="TableStyle-SupportTable" cellspacing="21">
+                    <col class="TableStyle-SupportTable-Column-Column1" />
+                    <col class="TableStyle-SupportTable-Column-Column1" style="width: 23px;" />
+                    <col class="TableStyle-SupportTable-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body"><![CDATA[
+]]><b>Key
+</b><![CDATA[
+
+]]></td>
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body"><b>Type</b>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body"><b>Description
+</b>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body"><code>requiresPasswordForLogout</code>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">boolean</td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">If true, a user must enter the account password to log out of the app.</td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyB-Column1-Body"><code>fullscreenPrimaryPosts</code>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyB-Column1-Body">boolean</td>
+                            <td class="TableStyle-SupportTable-BodyA-Column1-Body">If true, the primary display content appears full screen and covers all posts shared to the team display. 
+If false, primary display content shows side-by-side with team display posts.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>In their configurations administrators may choose whether or not to include each configuration key:</p>
+                <ol>
+                    <li>If a specific key is omitted from the configuration file, control of that setting is relinquished fully to the user.</li>
+                    <li>If a key is included and configured to a value, the setting is then enforced to only be changed by the administrator. Users will not be able to make any changes to that setting locally.</li>
+                </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>FAQ</h2>

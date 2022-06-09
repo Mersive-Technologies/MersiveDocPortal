@@ -4,49 +4,38 @@
     </head>
     <body>
         <h1>Solstice Active Learning Setup </h1>
-        <p>The Solstice Active Learning solution leverages existing TCP/IP-based networking, a flexible software control platform, and the Solstice Pod platform connected to each team table.</p>
+        <p>The Solstice Active Learning solution leverages existing TCP/IP-based networking, a flexible software control platform, and a Solstice Pod device and connected display monitor for each team table.</p>
         <h2>System Components</h2>
         <p>Physical setup and configuration of a Solstice Active Learning room is straightforward. The system only requires a few components:</p>
         <ul>
-            <li><b>Solstice Pods.</b> The Solstice Pod is a network attached wireless sharing device that supports collaboration at each of the team tables as well as the primary display.  It supports HDMI output at up to 4K to the display monitor and attaches to the network via standard Ethernet.</li>
-            <li><b>Student devices.</b> These devices are brought to the room by the students participating in the active learning space.  </li>
+            <li><b>Solstice Pods.</b> The Solstice Pod is a network attached wireless sharing device that supports collaboration at each of the team tables as well as the primary display.  It supports HDMI output of up to 4K to the display monitor and attaches to the network via standard Ethernet.</li>
             <li><b>Facilitator device.</b>  This device is used by the facilitator or faculty member to control multi-screen routing, send messages to the team table displays, and generally interact with the displays.  </li>
-            <li><b>Solstice Active Learning app.</b> The Solstice Active Learning app is what designers and facilitators use to virtually design and sets up active learning rooms, and conduct active learning sessions and route video and content in the active learning room within active learning spaces.  </li>
-            <li><b>Solstice app.</b> The Solstice app is what students can use to share content to the team table displays. The Solstice app can be installed on Windows, macOS, Android and iOS devices. However, there are also multiple app-free sharing options supported such as AirPlay, Miracast, or wired HDMI input. Browser-based sharing is also available and supported for Chromebook, Windows, macOS, and Linux devices. </li>
+            <li><b>Solstice Active Learning app.</b> Learning designers and facilitators use the Solstice Active Learning app to virtually configure active learning rooms and route video and other content to conduct active learning sessions within active learning spaces.  </li>
+            <li><b>Student devices.</b> These devices are brought to the room by the students participating in the active learning space.</li>
+            <li><b>Mersive Solstice app.</b> Students can use the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="User-Solstice-User-App.htm" target="_blank">Mersive Solstice app</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/user-solstice-user-app.htm">Mersive Solstice app</a></MadCap:conditionalText> to share content to the team table displays. The Mersive Solstice app can be installed on Windows, macOS, Android, and iOS devices. There are also multiple <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="User-Sharing-Mirror-Device.htm" target="_blank">app-free sharing</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/user-sharing-mirror-device.htm">app-free sharing</a></MadCap:conditionalText> options supported, including AirPlay, Miracast, or wired HDMI input. Browser-based sharing is available and supported for Chromebook, Windows, macOS, and Linux devices. </li>
         </ul>
         <h2>System Requirements</h2>
         <ul>
-            <li>Each group display monitor must be directly connected to a Solstice Pod through an HDMI video cable plugged into an HDMI&#160;port on the back of the Pod. </li>
-            <li>Each of the Solstice Pods must be directly connected to the same Gigabit switch with a Pod-to-Pod latency of less than 3-4ms.  While there are network topologies that can effectively maintain this performance by segmenting Pod traffic to a dedicated VLAN, for simplicity, we recommend simply wiring Ethernet to a local switch. </li>
+            <li>Each display monitor must be directly connected to a Solstice Pod through an HDMI video cable plugged into an HDMI&#160;port on the back of the Pod. </li>
+            <li>Each of the Solstice Pods must be directly connected to the same Gigabit switch with a Pod-to-Pod latency of less than 3–4ms.  While there are network topologies that can effectively maintain this performance by segmenting Pod traffic to a dedicated VLAN, for simplicity, Mersive recommends simply wiring Ethernet to a local switch. </li>
             <li>Solstice Pods should be assigned static IP&#160;addresses. This can be done by a system administrator during the initial configuration of the Pods' network settings.</li>
-            <li>Student devices and the facilitator device must all be able to route TCP traffic to each of the Pods in the room. For example, a facilitator device may be deployed on an internal faculty network and student devices may be connected to a student network.  However, both of these networks must support peer-to-peer routing between the facilitator or student device and the Solstice Pods.  This allows students at each of the team tables to collaboratively share content from their devices to the group display. You may also need to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Network-Ports.htm">open certain network ports</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-network-ports.htm" target="_blank">open certain network ports</a></MadCap:conditionalText> for Solstice and Solstice Active Learning to work correctly. </li>
+            <li>Student devices and the facilitator device must all be able to route TCP traffic to each of the Pods in the room. For example, if a facilitator device may be deployed on an internal faculty network and student devices may be connected to a student network, both of these networks must support peer-to-peer routing between the facilitator or student device and the Solstice Pods.  This allows students at each of the team tables to collaboratively share content from their devices to the group display. You may also need to <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Network-Ports.htm">open certain network ports</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-network-ports.htm" target="_blank">open certain network ports</a></MadCap:conditionalText> for Solstice and Solstice Active Learning to work correctly. </li>
             <li>The facilitator device must have access to the internet so that management, configuration changes, and the state of the application can be stored.</li>
             <li>   The Solstice Active Learning app is supported on the following devices with a 1024x768 resolution or a 10" screen or greater: </li>
             <ul style="list-style-type: circle;">
-                <li>Windows 10 laptops </li>
-                <li>Mac laptops with Catalina OS </li>
-                <li>iOS tablets with latest OS</li>
+                <li>Windows 10 and 11 laptops </li>
+                <li>Mac laptops with macOS Big Sur or Monterey</li>
+                <li>Apple tablets with latest OS</li>
                 <li>Android tablets with latest OS&#160;</li>
             </ul>
         </ul>
         <h3>Example Network Configuration</h3>
-        <p>Shown below is an example network configuration for an Active Learning Space with several group displays and a primary display.  Each Pod is routed to a local switch that is attached to the campus network.  Different network segments can be configured to carry different device traffic as long as they are routable between one another.  Finally, the facilitator device must be able to reach the cloud for management and configuration. </p>
+        <p>Shown below is an example network configuration for an Active Learning Space with several group displays and a primary display.  Each Pod is routed to a local switch that is attached to the campus network.  Different network segments can be configured to carry different device traffic as long as they are routable to one another.  Finally, the facilitator device must be able to reach the cloud for management and configuration. </p>
         <p>
             <img src="../Resources/Images/ex_ActiveLearningTopology.png" style="width: 1012px;height: 496px;" />
         </p>
         <h2>System Performance</h2>
-        <p>When configured as described, Solstice Active Learning enables users to route content and videos from one display to another within the room. Bandwidth utilization and frame rate are dependent on both the number of simultaneous video sends as well as the compressibility of the content on the source display. To learn more about Mersive's bandwidth and frame rate testing for active learning scenarios, <a href="https://www.mersive.com/wp-content/uploads/2021/01/ActiveLearningPerformanceWhitepaper10.7-1.pdf" target="_blank">view the full whitepaper here</a>. </p>
-        <h2>Active Learning App Settings</h2>
-        <p>The following settings can now be configured in the Solstice Active Learning app:</p>
-        <ul>
-            <li><b>Password required for logout:</b> If enabled, the user must enter the password to log out of the account they are currently using. This helps keep learning facilitators who need to access the Active Learning app in a learning space but may not know the account password from locking themselves out of the app.</li>
-            <li><b>Primary Display Sharing Mode:</b> Choose between two layout options for how the primary display appears when it is routed to a team display. The following options are available:<ul style="list-style-type: circle;"><li> <b>Full screen</b> (default) - the primary display content appears covering content shared by team members to the individual team display</li><li><b>Side by side</b>- team content posts appear in a sidebar format next to the primary display content</li></ul></li>
-        </ul>
-        <p>In the Solstice Active Learning app for iOS, a system administrator may use Mobile Device Management (MDM) settings to lock one or both of the above settings into a desired configuration. A note will appear at the top of the settings window when this occurs. </p>
-        <p>
-            <img src="../Resources/Images/ex_ActiveLearningSettingsJamf.png" style="width: 80%;height: auto;" />
-        </p>
-        <p>In this example, the administrator has locked <b>Primary Display Sharing Mode</b> to the side-by-side format, but the user may enable or disable <b>Password required for logout</b>.</p>
+        <p>When configured as described, Solstice Active Learning enables users to route videos and other content from one display to another within the room. Bandwidth utilization and frame rate are dependent on both the number of simultaneous videos routed as well as the compressibility of the content on the source display. To learn more about Mersive's bandwidth and frame rate testing for active learning scenarios, <a href="https://www.mersive.com/wp-content/uploads/2021/01/ActiveLearningPerformanceWhitepaper10.7-1.pdf" target="_blank">view the full whitepaper here</a>. </p>
         <h2>FAQ</h2>
         <MadCap:dropDown>
             <MadCap:dropDownHead>

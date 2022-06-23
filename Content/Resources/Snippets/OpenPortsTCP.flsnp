@@ -6,6 +6,8 @@
         <ul>
             <li><b>7</b>: Used for gateway check. (Feature deprecated on Pods running Solstice version 5.3.2 and later.) </li>
             <li><b>80, 443</b>: Used if the Solstice host is allowed to connect to the internet for license activation and software upgrades. When pushing a local update file to the Pod, these ports need to be open between the Pod and the Dashboard. These ports are also used by the OpenControl API to interface with 3rd party systems. When network encryption is enabled, the Solstice Dashboard will send SLR updates via port 443. <p class="note">If you are using a Solstice Pod or Solstice Dashboard on 4.1 or higher, communication to Mersive's license server will only occur over https/port 443.</p></li>
+            <li><b>1337</b>: Used for integrating a Microsoft 365 calendar with  the Mersive Solstice user app.</li>
+            <li><b>5443</b>: Used to communicate with the Solstice OpenControl API, including setting passwords for Solstice Pods.</li>
             <li><b>6443</b>: Used for browser-based sharing connections. </li>
             <li><b>7236</b>: Miracast WiFi Direct control port used to establish and manage sessions between the source device and the Pod.</li>
             <li><b>7250</b>: Port on which the Pod listens for Miracast packets when Over Existing Network mode is enabled.</li>

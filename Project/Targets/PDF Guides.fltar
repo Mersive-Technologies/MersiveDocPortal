@@ -9,19 +9,19 @@
   ConditionTagExpression="include[Default.5-5_Release or Default.PrintOnly], exclude[Default.5-5_Exclude or Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Active Learning Guide.fltoc"
+  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
   OutputFolder="C:\Users\abennington\Documents\Flare"
   InjectBookHeadings="true"
-  OutputFile="SolsticeActiveLearningGuide">
+  OutputFile="SolsticeConferenceSupportedPeripherals">
   <PrintedOutput
     CollapseMargins="true"
-    GenerateTOCProxy="true"
+    GenerateTOCProxy="false"
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice Active Learning Guide" />
+    Title="Solstice Conference Supported Peripherals" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

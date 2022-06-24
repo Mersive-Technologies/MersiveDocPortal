@@ -9,10 +9,10 @@
   ConditionTagExpression="include[Default.5-5_Release or Default.Dashboard or Default.PrintOnly], exclude[Default.5-5_Exclude or Default.Cloud or Default.Exclude or Default.Future or Default.ScreenOnly]"
   PatchHeadingLevels="true"
   GetLatestBeforeCompile="false"
-  MasterToc="/Project/TOCs/Solstice Dashboard Admin Guide.fltoc"
+  MasterToc="/Project/TOCs/Solstice Deployment Guide - Dashboard.fltoc"
   OutputFolder="C:\Users\abennington\Documents\Flare"
   InjectBookHeadings="true"
-  OutputFile="SolsticeDashboardAdminGuide">
+  OutputFile="SolsticeDeploymentGuide">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -21,7 +21,7 @@
     OutputFormat="doc" />
   <DocumentProperties
     Author="Mersive Documentation"
-    Title="Solstice Dashboard Admin Guide" />
+    Title="Solstice Dashboard Deployment Guide" />
   <PDF
     ShowUsedBookmarks="false"
     InitialMagnification="Fit"

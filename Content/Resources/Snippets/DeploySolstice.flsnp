@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>There are two key ways to get a standard Solstice deployment up and running: </p>
+        <p>There are two main ways to get a standard Solstice deployment up and running: </p>
         <ul>
-            <li>Using Solstice Cloud, our secure cloud-based management portal.</li>
-            <li>Using Solstice Dashboard, our on-premises management tool, if you are unable to use Solstice Cloud. </li>
+            <li>Using Solstice Cloud, Mersive's secure cloud-based management portal (recommended).</li>
+            <li>Using Solstice Dashboard, a Windows based, on-premises management tool. Mersive recommends using Solstice Dashboard only if you are unable to manage your deployment with Solstice Cloud. </li>
         </ul>
-        <p>Before deploying Solstice, be sure to review the following topics:</p>
+        <p>Before deploying Solstice for your organization, be sure to review the following topics:</p>
         <ul>
             <li><a href="../../Topics/General-Solstice-Introduction.htm">Solstice Overview</a>
             </li>
@@ -15,12 +15,12 @@
             <li><a href="../../Topics/Admin-Network-Ports.htm">Network Requirements</a>
             </li>
         </ul>
-        <h2>Deploying Solstice Using Solstice Cloud (recommended)</h2>
+        <h2>Deploy Solstice Using Solstice Cloud (recommended)</h2>
         <MadCap:snippetBlock src="info_DeployCloudStepLinks.flsnp" />
-        <h2>Deploying Solstice Using Solstice Dashboard</h2>
+        <h2>Deploy Solstice Using Solstice Dashboard</h2>
         <MadCap:snippetBlock src="info_DeployDashboardStepLinks.flsnp" />
         <h2>Other Resources</h2>
-        <p>If you are deploying Solstice Conference or Solstice Active Learning, view our resources below to learn more about the additional configurations needed to get these solutions up and running. </p>
+        <p>If you are deploying Solstice for wireless BYOM video conferencing or for Solstice Active Learning, view the resources below to learn more about the additional configurations needed to get these solutions up and running. </p>
         <p><a href="../../Topics/Solstice-Conference-Introduction.htm">Solstice Conference Guide</a>
         </p>
         <p><a href="../../Topics/Active-Learning-Introduction.htm">Solstice Active Learning Guide</a>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Below are the recommended steps for getting a standard Solstice deployment up and running using Solstice Dashboard, our on-premises management tool. This method is recommended if you are unable to use Solstice Cloud. </p>
+        <p>Below are the recommended steps for getting a standard Solstice deployment up and running using Solstice Dashboard, our on-premises management tool. Solstice Dashboard runs on a Windows computer to manage Solstice devices on the same network. This method is recommended if you are unable to use Solstice Cloud. </p>
         <ul>
             <li><a href="../../Topics/Deploy-Install-Dashboard.htm">Step 1: Install Solstice Dashboard and Import Pods</a>
             </li>

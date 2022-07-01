@@ -40,7 +40,7 @@
                 <MadCap:dropDownHotspot class="FAQ">Why does changing virtual display settings with Solstice Conference create a "hall of mirrors" on my Mac?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>On macOS, when the Solstice Conference virtual monitor is set as the primary display, a known issue exists that causes a video effect that resembles a hall of mirrors. Once the issue has been triggered, the Solstice Conference drivers often must be uninstalled and reinstalled to resolve it. Mersive strongly recommends not accessing the display settings while using Solstice Conference to avoid this issue. For help uninstalling and reinstalling Conference drivers, contact <a href="https://mersive.force.com/support" target="_blank">Mersive Support</a>.</p>
+                <p>When the Solstice Conference virtual monitor (usually appears as Screen 2) is set as the primary display, a known issue exists that causes a video effect that resembles a hall of mirrors. Once the issue has been triggered, the Solstice Conference drivers often must be uninstalled and reinstalled to resolve it. Mersive strongly recommends not accessing the display settings while using Solstice Conference to avoid this issue. For help uninstalling and reinstalling Conference drivers, contact <a href="https://mersive.force.com/support" target="_blank">Mersive Support</a>.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>

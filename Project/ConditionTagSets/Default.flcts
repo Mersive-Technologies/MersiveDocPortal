@@ -50,4 +50,8 @@
     BackgroundColor="#fa8072"
     Name="5-5_Exclude"
     Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="1-59_Release"
+    Comment="" />
 </CatapultConditionTagSet>

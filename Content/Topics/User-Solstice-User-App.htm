@@ -15,7 +15,7 @@
         </p>
         <MadCap:snippetBlock src="../Resources/Snippets/info_SolsticeInstallAppConfPermissions.flsnp" />
         <h3>Supported Operating Systems </h3>
-        <p>The Mersive Solstice app is supported on laptops, tablets, and mobile devices running the follow operating systems. Operating systems marked with an asterisk (*)&#160;support Solstice Conference capabilities. </p>
+        <p>The Mersive Solstice app is supported on laptops, tablets, and mobile devices running the follow operating systems. Operating systems marked with an asterisk (*)&#160;support Solstice video conference connection capabilities. </p>
         <ul>
             <li>Windows 8, 10*, 11*</li>
             <li>Windows Server 2016, 2019, 2022</li>
@@ -23,11 +23,12 @@
             <li>iOS versions 14, 15</li>
             <li>Android versions 11, 12</li>
         </ul>
+        <p class="note">Mersive recommends upgrading to macOS Monterey for Apple M1 laptops since testing shows it to be more stable than macOS Big Sur, particularly for users who regularly host video conferences with Solstice.</p>
         <h3>Other Requirements </h3>
         <p>The version of your Mersive Solstice app in relation to the version of Solstice running on the Solstice display you are connecting to can affect your experience. There are two different compatibility requirements, depending on how you intend to use Solstice:</p>
         <ul>
-            <li>For content sharing, control, and markup capabilities, newer versions of the Solstice app are supported when used with a Solstice Pod within three (3) minor software versions of the app. For example, a user with the 5.4 Solstice app will be able to share content to Solstice Pods running software versions 5.4, 5.3, or 5.2, as well as use markup tools and control sharing options.</li>
-            <li>However, to use Solstice Conference to make content shared to the Solstice display available to a video conference, the Mersive Solstice app must be on the same software version as the Solstice display it is connecting to. For example, if a user is connecting to a Solstice Pod running software version 5.5, users will need the 5.5 version of the Solstice app to use Solstice Conference functionality.</li>
+            <li>For content sharing, control, and markup capabilities, newer versions of the Solstice app are supported when used with a Solstice Pod within three (3) minor software versions of the app. For example, a user with the 5.5 Solstice app will be able to share content to Solstice Pods running software versions 5.5, 5.4, or 5.3, as well as use markup tools and control sharing options.</li>
+            <li>However, to use Solstice to connect to a video conference, the version of the Mersive Solstice app should be the same version as the software running on the Solstice Pod. Earlier versions of the Mersive Solstice app may require the versions to match exactly to connect Solstice resources to a video conference. Starting in version 5.5.1, users will be warned about mismatching versions but will still be able to share the Solstice display and access room cameras and mics connected to the Solstice Pod.</li>
         </ul>
         <h3>Download the App Directly from Solstice</h3>
         <MadCap:snippetBlock src="../Resources/Snippets/howto_UserAppDirectDownload.flsnp" />
@@ -55,11 +56,10 @@
         <h4>Conference
         </h4>
         <ul>
-            <li><b>Calendar integration</b>: You can integrate your personal Microsoft 365 calendar with your Mersive Solstice app, allowing Solstice to detect and auto-launch any scheduled web conferences on your calendar when you connect to a Solstice display. This is supported for Windows and macOS laptops only. See below to learn how to <a href="#integrate_pcal">integrate your calendar</a>.</li>
-            <li><b>Conference HotKey</b>: This setting allows you to configure the shortcut command to quickly open the Conference tab of the Mersive Solstice app without having to click the icon in your system tray. By default, the hotkey setting is Ctrl+Alt+C on Windows and Cmd+Opt+C on macOS. </li>
-            <li><b>Share Pod Display</b>: When enabled, this setting allows you to share the Solstice display's collaboration space to your video conference. In your conferencing software, the Solstice display will appear as a virtual display (usually Screen 2) that can be shared with the meeting. Disabling this feature can improve performance on some devices.</li>
+            <li><b>Calendar integration</b>: You can integrate your personal Microsoft 365 calendar with your Mersive Solstice app, allowing Solstice to detect and auto-launch scheduled video conferences on your calendar when you connect to a Solstice display. This is supported for Windows and macOS laptops only. See below to learn how to <a href="#integrate_pcal">integrate your calendar</a>.</li>
+            <li><b>Conference HotKey</b>: This setting allows you to configure a shortcut command to quickly open the Room Camera + Mic panel of the Mersive Solstice app after connecting to a Solstice Pod. From this location, you can see upcoming video conference meetings on your integrated Microsoft 365 calendar and turn on access to room cameras and audio devices connected to the Solstice Pod. By default, the hotkey setting is Ctrl+Alt+C on Windows and Cmd+Opt+C on macOS. </li>
+            <li><b>Share Pod Display</b>: When enabled, this setting allows you to share the Solstice display's collaboration space to your video conference. In your conferencing software, the Solstice display will appear as a virtual display (usually Screen 2 or Monitor 2) that can be shared with the meeting. Disabling this feature may improve performance on some devices.</li>
         </ul>
-        <MadCap:snippetBlock src="../Resources/Snippets/info_UserAppIconOnlyNavbarTip.flsnp" />
         <h3><a name="integrate_pcal"></a>Integrate Your Personal Microsoft 365 Calendar</h3>
         <MadCap:snippetBlock src="../Resources/Snippets/howto_UserAppIntegratePersonalCalendar.flsnp" />
         <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="MsWord"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  ConditionTagExpression="include[Default.5-5_Release or Default.PrintOnly], exclude[Default.5-5_Exclude or Default.Exclude or Default.Future or Default.ScreenOnly]"
+  PatchHeadingLevels="true"
+  GetLatestBeforeCompile="false"
+  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
+  OutputFolder="C:\Users\abennington\Documents\Flare"
+  InjectBookHeadings="true"
+  OutputFile="SolsticeConferenceSupportedPeripherals.docx">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    OutputFormat="docx" />
+  <DocumentProperties
+    Author="Mersive Documentation"
+    Title="Solstice Conference Supported Peripherals" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="Fit"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle" />
+</CatapultTarget>

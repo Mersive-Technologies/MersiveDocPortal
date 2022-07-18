@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p class="note" style="padding-right:20px">Notification settings also control notifications for Solstice Conference. Selecting <b>None</b>&#160;will turn off performance and compatibility notifications for Solstice Conference.</p>
+        <p class="note" style="padding-right:20px">Notification settings also control notifications for Solstice Conference drivers. Selecting <b>None</b>&#160;will turn off performance and compatibility notifications related to using Solstice resources for a video conference.</p>
     </body>
 </html>

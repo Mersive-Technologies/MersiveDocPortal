@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Starting in Solstice 5.5, QoS tagging was added for Solstice Conference audio and video traffic between the Solstice Pod and the Mersive Solstice app on the following ports. Port numbers are based off the Solstice Base Port number set in Solstice Dashboard. If the base port number is set to 53100 (default), the QoS bit settings defined above will be added to audio and video traffic for the following ports:</p>
+        <p>In Solstice 5.5, QoS tagging was added for Solstice Conference audio and video traffic between the Solstice Pod and the Mersive Solstice app on the ports listed below. Port numbers are based off the Solstice Base Port number set in Solstice Dashboard. If the base port number is set to 53100 (default), the QoS bit settings defined above will be added to audio and video traffic for the following ports:</p>
         <ul>
             <li>macOS audio microphone port (53207 <u>or</u>&#160;custom base port + 100 + 7)</li>
             <li>Windows video port (53210 <u>or</u> custom base port + 100 + 10)</li>
             <li>Windows audio microphone port (53212 <u>or</u> custom base port + 100 +&#160;12)</li>
             <li>Windows audio microphone RTCP port (53213 <u>or</u> custom base port + 100 + 13)</li>
         </ul>
-        <p class="note">Camera and speaker data streams for Solstice Conference on macOS and the speaker data stream for Solstice Conference on Windows are not currently QoS tagged. See <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Admin-Network-Ports.htm" target="_blank">Network Requirements</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-network-ports.htm">Network Requirements</a></MadCap:conditionalText> for more about network ports used by Solstice.</p>
+        <p class="note">Camera and speaker data streams for Solstice Conference drivers on macOS and the speaker data stream for Solstice Conference drivers on Windows are not currently QoS tagged. See <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Admin-Network-Ports.htm" target="_blank">Network Requirements</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-network-ports.htm">Network Requirements</a></MadCap:conditionalText> for more about network ports used by Solstice.</p>
     </body>
 </html>

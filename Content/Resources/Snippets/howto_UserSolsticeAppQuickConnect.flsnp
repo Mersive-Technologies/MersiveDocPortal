@@ -3,16 +3,11 @@
     <head>
     </head>
     <body>
-        <h4 MadCap:conditions="Default.5-5_Exclude">How To Quick Connect to Display with Solstice App</h4>
-        <h4 MadCap:conditions="Default.5-5_Release">Quick Connect to a Video Conference with the Mersive Solstice App</h4>
+        <h4>Quick Connect to a Video Conference with the Mersive Solstice App</h4>
         <ol>
-            <li MadCap:conditions="Default.5-5_Exclude">With the Solstice app running in the background on a laptop, click the Solstice icon in the system tray, or use the keyboard shortcut <b>Crtl +&#160;Alt +&#160;C</b>. A Start Conference pop-up box will appear.
-            <p><img src="../Images/ex_UserSharingQuickConnect.png" /></p></li>
-            <li MadCap:conditions="Default.5-5_Exclude">If prompted, enter the Solstice Pod's IP&#160;address that appears on the display connected to the Solstice Pod. Then enter the screen key that appears on the display. </li>
-            <li MadCap:conditions="Default.5-5_Exclude">You will be connected and your desktop shared to that Solstice display. </li>
-            <li MadCap:conditions="Default.5-5_Release">With the Mersive Solstice app running in the background on a laptop, click the Solstice icon in the system tray, or use the keyboard shortcut <b>Crtl+Alt+C</b> (Windows) or <b>Cmd+Opt+C</b> (macOS). The Conference tab of the Mersive Solstice app will open. (If Solstice Conference isn't installed, the app will open to the user's last location.)<p><img src="../Images/ex_UserConfNoUpcomingMtg.png" style="width: 60%;" /></p></li>
-            <li MadCap:conditions="Default.5-5_Release">Enter the 4-digit screen key shown on the Solstice display. Or if Solstice Discovery Service is not enabled, enter the Solstice display's URL (usually an IP&#160;address), then enter the screen key as prompted. </li>
-            <li MadCap:conditions="Default.5-5_Release">Solstice will automatically do the following, as appropriate, to connect you to your meeting:<ul><li>You will be connected to the Solstice display.</li><li> Your desktop will be shared to the Solstice display. </li><li>If a video conference scheduled on the room calendar shown on the Solstice display or on your personal calendar integrated with the Mersive Solstice app starts soon, the video conference will be automatically launched.</li><li>Any cameras or audio devices plugged into the Solstice Pod will be available to be selected as audio and video resources in the video conference.</li></ul></li>
+            <li>With the Mersive Solstice app running in the background on a laptop, click the Solstice icon in the system tray, or use the keyboard shortcut <b>Crtl+Alt+C</b> (Windows) or <b>Cmd+Opt+C</b> (macOS). The Conference tab of the Mersive Solstice app will open. (If Solstice Conference isn't installed, the app will open to the user's last location.)<p><img src="../Images/ex_UserConfNoUpcomingMtg.png" style="width: 60%;" /></p></li>
+            <li>Enter the 4-digit screen key shown on the Solstice display. Or if Solstice Discovery Service is not enabled, enter the Solstice display's URL (usually an IP&#160;address), then enter the screen key as prompted. </li>
+            <li>Solstice will automatically do the following, as appropriate, to connect you to your meeting:<ul><li>You will be connected to the Solstice display.</li><li> Your desktop will be shared to the Solstice display. </li><li>If a video conference scheduled on the room calendar shown on the Solstice display or on your personal calendar integrated with the Mersive Solstice app starts soon, the video conference will be automatically launched.</li><li>Any cameras or audio devices plugged into the Solstice Pod will be available to be selected as audio and video resources in the video conference.</li></ul></li>
         </ol>
     </body>
 </html>

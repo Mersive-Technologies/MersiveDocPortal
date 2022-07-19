@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>You can set the default behavior for a  wired source connected to the HDMI-in port of a Solstice Gen3 Pod. This is useful if you wish to utilize a persistent wired input source such as a dedicated in-room computer<MadCap:conditionalText MadCap:conditions="Default.5-5_Release">, an integrated video room system device,</MadCap:conditionalText> or a digital signage media player between collaboration sessions.</p>
+        <p>You can set the default behavior for a  wired source connected to the HDMI-in port of a Solstice Gen3 Pod. This is useful if you wish to utilize a persistent wired input source such as a dedicated in-room computer, an integrated video room system device, or a digital signage media player between collaboration sessions.</p>
     </body>
 </html>

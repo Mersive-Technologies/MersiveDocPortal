@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>If using a tool that limits program access, such as an anti-virus program, device management service, or a local firewall such as Windows Defender Firewall, you may need to whitelist or allow  the following programs: </p>
+        <p>Windows deployments using a tool that limits program access, like an anti-virus program, device management service, or a local firewall such as Windows Defender Firewall, may need to whitelist or allow  the following program files required for the Mersive Solstice app for Windows: </p>
         <ul>
             <li>SolsticeClient.exe</li>
             <li>SolsticeConference.exe</li>
             <li>SolsticeVirtualDisplay.exe</li>
             <li>rsusbipclient.exe</li>
         </ul>
-        <p>If the programs are not listed, you can add the programs manually using the installation path of the Mersive Solstice client. Example installation paths are as follows:</p>
+        <p>If the programs are not listed, add the programs manually using the installation path of the Mersive Solstice app. Example installation paths are as follows:</p>
         <ul>
-            <li>QuickConnect Client (downloaded from the Pod): &#160;C:\Users\%username%\AppData\Local\Mersive\SolsticeClient</li>
-            <li>MSI &amp; SCCM Installers:&#160; C:\Program Files\Mersive Technologies, Inc\Solstice\Client</li>
+            <li>QuickConnect (browser download from Solstice Pod) app v5.3+ location: <br />C:\Users\%username%\AppData\Local\Mersive\SolsticeClient</li>
+            <li>MSI &amp; SCCM app v5.3+ installer location:&#160;<br />C:\Program Files\Mersive Technologies, Inc\Solstice\Client</li>
         </ul>
     </body>
 </html>

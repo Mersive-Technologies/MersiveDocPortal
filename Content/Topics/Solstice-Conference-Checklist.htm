@@ -21,7 +21,7 @@
             <MadCap:snippetBlock src="../Resources/Snippets/info_ConferenceMacOSSpecs.flsnp" />
         </p>
         <ul class="checkbox">
-            <li>Latest version of the Mersive Solstice app and Solstice Conference drivers matching the Solstice Pod  installed on the meeting host laptop. Elevated permissions are required to install Solstice Conference drivers. If users do not have elevated permissions, administrators may centrally deploy the Mersive Solstice app using <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Client-Installs.htm" target="_blank">MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">MSI or SCCM</a></MadCap:conditionalText> installers. <MadCap:snippetBlock src="../Resources/Snippets/info_Conference-UserAppVersionsMatchNote.flsnp" /></li>
+            <li>Latest versions of Mersive Solstice app and Solstice Conference drivers  installed on the meeting host's laptop. Elevated permissions are required to install Solstice Conference drivers. If users do not have elevated permissions, administrators may centrally deploy the Mersive Solstice app using <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Client-Installs.htm" target="_blank">MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">MSI or SCCM</a></MadCap:conditionalText> installers. <MadCap:snippetBlock src="../Resources/Snippets/info_Conference-UserAppVersionsMatchNote.flsnp" /></li>
             <li>Screen resolution of 4K laptops scaled down to 1080p when connecting Solstice to a video conference.</li>
             <li> No additional monitors attached to the host laptop during Solstice connections to video conferences.</li>
             <li> Installed conferencing applications (Zoom, Teams, etc.) updated to the latest versions.</li>
@@ -31,31 +31,31 @@
         </ul>
         <h2>Local Area Network Requirements</h2>
         <ul class="checkbox">
-            <li> Pod must be connected to the host network via Ethernet.</li>
-            <li> Connections between host laptop and Pod should have end-to-end latency of 50 ms or less.</li>
-            <li> Ensure your network has a minimum bandwidth of 50 Mbps  per active Solstice Conference session/room.</li>
-            <p class="note">Solstice Conference does not require any additional internet bandwidth beyond what is needed for your video conferencing services.</p>
-            <MadCap:snippetBlock src="../Resources/Snippets/Conference_Ports.flsnp" />
+            <li> Pod is connected to the host network via Ethernet.</li>
+            <li> Connections between host laptop and Solstice Pod have end-to-end latency of 50 ms or less.</li>
+            <li> Network has a minimum bandwidth of 50 Mbps  per active Solstice video conferencing session/room.</li>
+            <p class="note">Solstice-enabled video conferencing does not require any additional internet bandwidth beyond what is needed for the video conferencing service.</p>
+            <MadCap:snippetBlock src="../Resources/Snippets/info_ConferenceOpenPorts.flsnp" />
         </ul>
         <h2>Solstice System Requirements</h2>
         <ul class="checkbox">
-            <li>Gen3 Pod with current Solstice Subscription or Active Learning Subscription</li>
-            <li> Solstice Conference enabled using Solstice Cloud (or Solstice Dashboard)</li>
-            <li> The latest version of Solstice installed – see <a href="http://mersive.com/download">mersive.com/download</a> for latest versions</li>
-            <li> Solstice Discovery Service (SDS) enabled (required for one-step meeting start)</li>
-            <li> Room calendar integrated with the Solstice Pod (strongly recommended for ideal user experience)</li>
+            <li>Gen3 Solstice Pod with a current Solstice Subscription or Active Learning Subscription</li>
+            <li> Solstice Conferencing enabled on the Pod in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Room-Intelligence.htm" target="_blank">Solstice Cloud Room Intelligence</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-room-intelligence.htm">Solstice Cloud Room Intelligence</a></MadCap:conditionalText> settings (or Solstice Dashboard &gt; Appearance and Usage)</li>
+            <li> The latest version of Solstice installed on the Pod – see <a href="http://mersive.com/download">mersive.com/download</a> for latest versions</li>
+            <li> <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Solstice Discovery Service (SDS)</a></MadCap:conditionalText> installed and configured in the Mersive Solstice app (required for location-based connection options)</li>
+            <li> <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Calendar.htm" target="_blank">Room calendar configured</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-calendar.htm">Room calendar configured</a></MadCap:conditionalText> on the Solstice Pod (strongly recommended for best user experience)</li>
         </ul>
         <h2>Audio/Video Peripheral Requirements</h2>
         <ul class="checkbox">
-            <li>Compatible peripherals from the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Solstice-Conference-Supported-Peripherals.htm" target="_blank">Supported Peripherals</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pdf/solsticeconferencesupportedperipherals.pdf">Supported Peripherals</a></MadCap:conditionalText> list</li>
+            <li>Mersive Certified peripherals from the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Solstice-Conference-Supported-Peripherals.htm" target="_blank">Solstice Peripherals List</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pdf/solsticeconferencesupportedperipherals.pdf">Solstice Peripherals List</a></MadCap:conditionalText></li>
             <li> Audio and video devices must be connected to Pod via USB</li>
             <li> Peripheral power supplies should be used when available – Mersive does not recommend powering peripherals via the USB connection to the Pod</li>
         </ul>
         <h2>Limitations</h2>
         <ul>
-            <li>Level of local area network bandwidth required is largely dictated by a combination of conferencing application and video camera used.<p><b>Resolution:</b> Use lower resolution cameras if local area network bandwidth is limited.</p></li>
+            <li>The amount of local area network bandwidth required is largely dictated by a combination of the video conferencing application and video camera used.<p><b>Resolution:</b> Use lower resolution cameras if local area network bandwidth is limited.</p></li>
             <li>Audio crackling, degradation of streaming quality, and other performance issues may occur when the Pod is under high resource utilization.<p><b>Resolution:</b> Reduce number of shares, video content shared, and/or use lower resolution cameras if system performance issues occur.</p></li>
-            <li>PowerPoint should be started prior to initiating a Solstice Conference session if users want to share using PowerPoint’s presentation mode.<p><b>Resolution:</b> If PowerPoint is started after the Solstice Conference session begins, use PowerPoint’s option to "swap presenter view and slide show" under "display settings" when in presentation mode.</p></li>
+            <li MadCap:conditions="Default.Exclude">PowerPoint should be started prior to initiating a Solstice Conference session if users want to share using PowerPoint’s presentation mode.<p><b>Resolution:</b> If PowerPoint is started after the Solstice Conference session begins, use PowerPoint’s option to "swap presenter view and slide show" under "display settings" when in presentation mode.</p></li>
             <li>4K host laptops are generally limited to a single desktop share; anything further may strain the laptop’s resources.<p><b>Resolution:</b> This issue will be resolved in an upcoming software release.</p></li>
             <li>Meetings scheduled on a calendar integrated with the Mersive Solstice app do not appear in the Conference tab until 15 minutes prior to the meeting start time.<p><b>Resolution:</b> This is by design; Mersive will optimize product usability over time based on feedback from customers and partners.</p></li>
             <li>The Mersive Solstice app supports integration with Microsoft 365 calendars only.<p><b>Resolution:</b> Addition of Google calendar support is on the product roadmap for the upcoming year. Other calendars will be added in the future.</p></li>

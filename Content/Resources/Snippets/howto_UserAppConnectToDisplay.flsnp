@@ -4,7 +4,7 @@
     </head>
     <body>
         <ol>
-            <li>Open the Mersive Solstice app. A list of Solstice displays you have previously connected to or that are available via display discovery (if enabled for your Solstice deployment) will appear.<p MadCap:conditions="Default.5-5_Exclude"><img src="../Images/ex_UserSharingDiscoveryConnect53.png" style="height: auto;width: 60%;" /></p><p MadCap:conditions="Default.5-5_Release"><img src="../Images/ex_UserSharingDiscoveryConnect.png" style="width: 60%;" /><br /></p></li>
+            <li>Open the Mersive Solstice app. A list of Solstice displays you have previously connected to or that are available via display discovery (if enabled for your Solstice deployment) will appear.<p><img src="../Images/ex_UserSharingDiscoveryConnect.png" style="width: 60%;" /><br /></p></li>
             <li>Click the name of a Solstice display to connect. </li>
             <li>To find a specific display in the list:<ul><li>Search by name in the search bar.</li><li>Click <b>Tags</b> to filter the list of displays by assigned tags (Enterprise Edition only).</li></ul></li>
             <li>If prompted, enter the screen key that appears on the display.</li>

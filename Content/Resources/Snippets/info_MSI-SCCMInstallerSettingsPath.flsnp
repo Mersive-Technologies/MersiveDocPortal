@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p class="note">
-            <MadCap:conditionalText MadCap:conditions="Default.5-5_Exclude">The app-specific data that was stored in each user’s home directory (e.g. <code>c:\programdata\Mersive\&lt;username&gt;</code>) will now be stored under a central shared location (e.g. <code>C:\ProgramData\Mersive\ALLUSERS\Solstice\Client</code>). </MadCap:conditionalText>
-            <MadCap:conditionalText MadCap:conditions="Default.5-5_Release">MSI and SCCM installs of the Mersive Solstice app store their settings in a central shared location (e.g., <code>C:\ProgramData\Mersive\ALLUSERS\Solstice\Client)</code>, not in each user's home directory. </MadCap:conditionalText>This allows for centralized management of these settings and the ability to update them for all users at installation time. </p>
+        <p class="note">MSI and SCCM installs of the Mersive Solstice app store their settings in a central shared location (e.g., <code>C:\ProgramData\Mersive\ALLUSERS\Solstice\Client)</code>, not in each user's home directory. This allows for centralized management of these settings and the ability to update them for all users at installation time. </p>
     </body>
 </html>

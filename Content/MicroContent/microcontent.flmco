@@ -79,7 +79,7 @@
             <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
                 <xhtml:body>
                     <MadCap:snippetBlock xhtml:src="../Resources/Snippets/howto_UserSolsticeAppQuickConnect.flsnp" />
-                    <xhtml:p MadCap:conditions="Default.5-5_Release">For more details about connecting to a video conference with the Mersive Solstice app, see <xhtml:a xhtml:href="../Topics/Solstice-Conference-How-to-Use.htm">How to Use Solstice Conference</xhtml:a>.</xhtml:p>
+                    <xhtml:p MadCap:conditions="Default.5-5-1_Release">For more details about connecting to a video conference with the Mersive Solstice app, see <xhtml:a xhtml:href="../Topics/Solstice-Conference-How-to-Use.htm">How to Use Solstice Conference</xhtml:a>.</xhtml:p>
                     <xhtml:p>&#160;</xhtml:p>
                 </xhtml:body>
             </xhtml:html>

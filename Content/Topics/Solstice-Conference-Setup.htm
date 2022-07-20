@@ -4,19 +4,19 @@
     </head>
     <body>
         <h1>Solstice Conference Pod Setup</h1>
-        <p>This setup topic will walk you through setting up Solstice Pods for Solstice video conferencing integration. This guide assumes that <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="General-Solstice-Setup.htm" target="_blank">Solstice Setup</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/general-solstice-setup.htm">Solstice Setup</a></MadCap:conditionalText> has been completed for your Solstice Pods, you have connected your Pods to your enterprise network via Ethernet, and the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Pages/Deploy-Solstice.htm" target="_blank">Baseline Deployment Steps</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pages/deploy-solstice.htm">Baseline Deployment Steps</a></MadCap:conditionalText> have been completed.</p>
+        <p>This setup topic will walk you through setting up Solstice Pods for to connect to a video conferencing application. This guide assumes that <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="General-Solstice-Setup.htm" target="_blank">Solstice Setup</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/general-solstice-setup.htm">Solstice Setup</a></MadCap:conditionalText> has been completed for your Solstice Pods, you have connected your Pods to your enterprise network via Ethernet, and the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Pages/Deploy-Solstice.htm" target="_blank">Baseline Deployment Steps</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pages/deploy-solstice.htm">Baseline Deployment Steps</a></MadCap:conditionalText> have been completed.</p>
         <h2>Pre-Deployment Considerations</h2>
         <ul>
-            <li>As a new category of room system, Solstice Conference is far more versatile and cost effective, but there are some prerequisites to ensure a high-quality conferencing experience. Our <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Solstice-Conference-Checklist.htm" target="_blank">Solstice Conference Checklist</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pdf/solsticeconferencechecklist.pdf">Solstice Conference Checklist</a></MadCap:conditionalText> outlines those specifications and the requirements of the various system components – meeting host laptop, local area network, and audio/video peripherals – most of which are consistent with best practice IT methodologies.</li>
-            <li>Ensure your network has a minimum bandwidth of 50 Mbps  per active Solstice Conference session/room, has an end-to-end latency of less than 50 ms, and allows peer-to-peer TCP connections. Note that bandwidth utilization is largely dictated by a combination of conferencing application and conference camera used. </li>
+            <li>Solstice-enhanced BOYM video conferencing is far more versatile and cost effective than a traditional room system, but there are some prerequisites to ensure a high-quality conferencing experience. Our <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Solstice-Conference-Checklist.htm" target="_blank">Solstice Conference Checklist</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/pdf/solsticeconferencechecklist.pdf">Solstice Conference Checklist</a></MadCap:conditionalText> outlines those specifications and the requirements of the various system components – meeting host laptop, local area network, and audio/video peripherals – most of which are consistent with best practice IT methodologies.</li>
+            <li>Ensure your network has a minimum bandwidth of 50 Mbps  per active Solstice video conferencing session/room, has an end-to-end latency of less than 50 ms, and allows peer-to-peer TCP connections. Note that bandwidth utilization is largely dictated by a combination of conferencing application and conference camera used. </li>
             <MadCap:snippetBlock src="../Resources/Snippets/info_ConferenceOpenPorts.flsnp" />
-            <li>Deploy and configure the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Solstice Discovery Service (SDS)</a></MadCap:conditionalText> (strongly recommended; required for a one-step start for scheduled video conferences). </li>
-            <li>Solstice Conference drivers are bundled in the Mersive Solstice app installer and require elevated permissions to install. If users do not have elevated permissions, you have the option to centrally deploy the app using <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Client-Installs.htm" target="_blank">MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">MSI or SCCM</a></MadCap:conditionalText> installers. <MadCap:snippetBlock src="../Resources/Snippets/info_Conference-UserAppVersionsMatchNote.flsnp" /></li>
-            <li>If you utilize a tool that limits program access, such as an anti-virus program or device management service, you will need to whitelist the Mersive Solstice app.</li>
+            <li>Deploy and configure the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Solstice Discovery Service (SDS)</a></MadCap:conditionalText> (strongly recommended, required for a one-step start for scheduled video conferences). </li>
+            <li>Solstice Conference drivers must be installed in addition to the Mersive Solstice app. These drivers require elevated permissions to install. If users do not have elevated permissions, administrators may centrally deploy the app using <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Client-Installs.htm" target="_blank">MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">MSI or SCCM</a></MadCap:conditionalText> installers. <MadCap:snippetBlock src="../Resources/Snippets/info_Conference-UserAppVersionsMatchNote.flsnp" /></li>
+            <li>If you utilize a tool that limits program access, such as an anti-virus program or device management service, you will need to whitelist the Mersive Solstice app program files (on Windows: SolsticeClient.exe, SolsticeConference.exe, SolsticeVirtualDisplay.exe, rsusbipclient.exe).</li>
         </ul>
-        <h2>Enabling Solstice Conference</h2>
-        <p>In order to use Solstice Conference to share the Solstice content sharing space and room devices with a video conference, the Gen3 Solstice Pod must have current Solstice Subscription and the capability must be enabled by a Solstice admin. Before enabling Solstice Conference, it is strongly recommended to upgrade the Pod to the latest version of Solstice. For information on how to update a Solstice Pod, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Updating-Solstice.htm" target="_blank">Updating Solstice</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-updating-solstice.htm">Updating Solstice</a>.</MadCap:conditionalText></p>
-        <p>The Solstice Conference functionality can be enabled in two ways:&#160;using Solstice Cloud, Mersive's cloud-based management portal, or using Solstice Dashboard, an on-premises management tool that runs on a Windows computer on the local network. Solstice Pods must have internet access for these settings to be applied. </p>
+        <h2>Enabling Solstice Conferencing</h2>
+        <p>To share the Solstice content sharing space and room devices with a video conference, the Gen3 Solstice Pod must have current Solstice Subscription and the capability must be enabled by a Solstice admin. Before enabling Solstice Conferencing, it is strongly recommended that you to upgrade the Pod to the latest version of Solstice. For information on how to update a Solstice Pod, see <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Updating-Solstice.htm" target="_blank">Updating Solstice</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-updating-solstice.htm">Updating Solstice</a>.</MadCap:conditionalText></p>
+        <p>The Solstice Conferencing functionality can be enabled in two ways:&#160;using Solstice Cloud, Mersive's cloud-based management portal, or in Solstice Dashboard, an on-premises management tool that runs on a Windows computer on the local network. Solstice Pods must have internet access for these settings to be applied. </p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>How to Enable Solstice Conference Using Solstice Cloud</MadCap:dropDownHotspot>
@@ -28,9 +28,9 @@
                     <li>Select the <b>Enable Solstice Conferencing</b> checkbox. </li>
                     <li>Click <b>Save</b>. </li>
                     <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>. The Pod Template Assignments table displays. </li>
-                    <li>Select the Gen3 Solstice Pods you want to enable Solstice Conference for. You can select the box for each Pod individually, or check the box in the header row to select all of the Pods in the table.</li>
-                    <li>In the Room Intelligence column, click a drop-down in that column for one of the selected Pods, then select the name of the template you just created or edited. </li>
-                    <li>In the pop-up confirming the changes, click&#160;<b>Confirm</b>. A green notification that the template was applied will display. </li>
+                    <li>Select the Gen3 Solstice Pods you want to enable Solstice Conferencing for. You can select the box for each Pod individually, or check the box in the header row to select all Pods.</li>
+                    <li>In the Room Intelligence column for one of the selected Pods, select the name of the template you just created or edited from the list. </li>
+                    <li>Click&#160;<b>Confirm</b> to apply the changes. A green notification that the template was applied will appear. </li>
                 </ol>
                 <p class="note">If a Pod is offline, any changes made will be applied when the Pod is back online. </p>
             </MadCap:dropDownBody>
@@ -41,7 +41,7 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>Open your Solstice Dashboard. </li>
+                    <li>Open Solstice Dashboard. </li>
                     <li>From the list of Your Solstice Instances, select the Gen3 Solstice Pods you wish to enable Solstice Conference for.</li>
                     <li>Go to the <b>Appearance and Usage</b> tab &gt;&#160;<b>Usage and Management</b> section. </li>
                     <li>Under Solstice Conference, select the <b>Enable</b> radio button.</li>
@@ -50,8 +50,9 @@
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Integrating a Room Calendar</h2>
-        <p><a name="calendar"></a>Integrating a room calendar with the Solstice Pod allows Solstice to detect  the video conference link in the calendar event information when users book a video conference and invite the meeting space. This allows Solstice to start the scheduled video conference when the meeting host connects to the Solstice display. Solstice administrators can integrate Microsoft Exchange, Microsoft 365, and Google Workspace room calendars with Solstice displays. There are two ways to integrate a room calendar:&#160;using Solstice Cloud, or using the Solstice Dashboard. Note that Solstice Pods must have internet access for these settings to be applied. </p>
-        <p class="note">Solstice users who host video conferences in a Solstice room can also integrate their personal Microsoft Exchange or Microsoft 365 calendars with their Mersive Solstice apps to auto-launch scheduled web conferences. Click for more information about the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="User-Solstice-User-App.htm" target="_blank">Mersive Solstice app</a>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/user-solstice-user-app.htm">Mersive Solstice app</a>.</MadCap:conditionalText></p>
+        <p><a name="calendar"></a>Integrating a room calendar with the Solstice Pod allows Solstice to detect  the video conference link in the calendar event information. Users simply enter the video conference information in the meeting details and invite the meeting space. Solstice can then start the scheduled video conference when the meeting host connects to the Solstice display. </p>
+        <p>Solstice administrators can integrate Microsoft Exchange, Microsoft 365, and Google Workspace room calendars with Solstice displays. There are two ways to integrate a room calendar:&#160;using Solstice Cloud, or using the Solstice Dashboard. Note that Solstice Pods must have internet access for these settings to be applied. </p>
+        <p class="note">Solstice users who host video conferences in a Solstice room can also integrate their personal Microsoft Exchange or Microsoft 365 calendars with their Mersive Solstice apps to auto-launch scheduled web conferences. See the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="User-Solstice-User-App.htm" target="_blank">Mersive Solstice App</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/user-solstice-user-app.htm">Mersive Solstice App</a></MadCap:conditionalText> topic for more information.</p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>How to Integrate a Microsoft Exchange or 365 Calendar Using Solstice Cloud
@@ -98,7 +99,7 @@
                 <ol>
                     <li>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <b>Manage</b> &gt; <b>Pods</b>. </li>
                     <li>
-                        <p>Click the name of the Solstice Pod you want to integrate this room calendar for. </p>
+                        <p>Click the name of the Solstice Pod you want to integrate with a room calendar. </p>
                     </li>
                     <li>On the Pod's Configuration Settings page, expand the <b>Calendar</b> settings section.</li>
                     <li>Select the <b>Enable Calendar Feature</b> checkbox. </li>
@@ -118,8 +119,8 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>Open your Solstice Dashboard. </li>
-                    <li>From the list of Your Solstice Instances, select the Solstice Pods you wish to integrate a room calendar for.</li>
+                    <li>Open Solstice Dashboard. </li>
+                    <li>From the list of Your Solstice Instances, select the Solstice Pod you wish to integrate with a room calendar.</li>
                     <li>Go to the <b>Calendar</b> tab.</li>
                     <li>Select the <b>Enabled</b> option.</li>
                     <li>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating: <b>Microsoft Exchange</b> or <b>Office 365</b>. </li>
@@ -145,7 +146,8 @@
         </MadCap:dropDown>
         <p class="note">&#160;</p>
         <h2>Enabling Screen Key (Optional)</h2>
-        <p>Enabling the screen key verifies that users are in the meeting space and connecting to the correct Solstice display. It also allows quick connections to a Solstice display and Solstice-enabled video conferences by simply entering a display's 4-digit key in the Mersive Solstice app. Note that <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">SDS</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">SDS</a></MadCap:conditionalText> is required for this quick connect functionality. When the screen key is not enabled, users can connect in one step by entering the Solstice display's IP address. The screen key can be enabled in Solstice Cloud and Solstice Dashboard. </p>
+        <p>Enabling the screen key verifies that users are in the meeting space and connecting to the correct Solstice display. It also allows quick connections to a Solstice display and Solstice-enabled video conferences by simply entering a display's 4-digit key in the Mersive Solstice app. Note that the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="SDS-Introduction.htm" target="_blank">Solstice Discovery Service (SDS)</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/sds-introduction.htm">Solstice Discovery Service (SDS)</a></MadCap:conditionalText> is required for this quick connect functionality. </p>
+        <p>When the screen key is not enabled, users can connect in one step by entering the Solstice display's URL. The screen key can be enabled in Solstice Cloud and Solstice Dashboard. </p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>How to Enable the Screen Key Using Solstice Cloud</MadCap:dropDownHotspot>
@@ -156,10 +158,10 @@
                     <li>Create a new template, or edit an existing template. </li>
                     <li>Under Solstice Feature Options, select the <b>Enable screen key</b> checkbox. </li>
                     <li>Click <b>Save</b>. </li>
-                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>. </li>
-                    <li>In the Pod Template Assignments table, select the Pods you want to enable a screen key for. You can check each Pod's box individually, or check the box in the header row to select all of the Pods in the table.</li>
-                    <li>Go to the features column, click the value in that column for one of the selected Pods, then select the name of the template you just created or edited. </li>
-                    <li>In the pop-up asking to confirm the changes, click&#160;<b>Confirm</b>. A green notification will display to show the template was successfully applied. </li>
+                    <li>In the left navbar, click <b>Manage</b> &gt;&#160;<b>Pods</b>. </li>
+                    <li>In the Pod Template Assignments table, select the Pods you want to enable a screen key for. You can check each Pod's box individually, or check the box in the header row to select all Pods.</li>
+                    <li>Go to the features column for one of the selected Pods, then select the name of the template you just created or edited from the drop-down list. </li>
+                    <li>Click&#160;<b>Confirm</b> to apply the change. A green notification will display to show the template was successfully applied. </li>
                 </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
@@ -169,7 +171,7 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <ol>
-                    <li>Open your Solstice Dashboard. </li>
+                    <li>Open Solstice Dashboard. </li>
                     <li>From the list of Your Solstice Instances, select the displays you wish to enable a screen key for.</li>
                     <li>Go to the <b>Security</b> tab.</li>
                     <li>Select <b>Screen key enabled</b>. A pop-up warning may appear.</li>
@@ -179,9 +181,9 @@
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Centrally Deploy the Mersive Solstice App </h2>
-        <p>In order to use the full functionality of Solstice Conference, users will first need to install the Solstice Conference drivers bundled in the Mersive Solstice app installer.&#160;These drivers are needed to provide the core benefits of Solstice Conference: wireless bridging of room audio and video to the host laptop, and the ability to share the Solstice display to remote participants through a video conferencing application. </p>
-        <p>Solstice Conference drivers can be installed when running the Mersive Solstice app installer, or installed at a later time from the app's Conference tab. As a note, the install requires a user to have user-level administrative privileges for their own account. Installing the additional component is optional, and users who don’t need to share the Solstice display to or use the room peripherals for their video conference can use the Solstice wireless content sharing and collaboration without installing the additional drivers. </p>
-        <p>For most enterprise users of Solstice Conference, Mersive recommends pre-installing or centrally deploying the latest version of the Mersive Solstice app and bundled Solstice Conference drivers through the use of centralized management (MSI or SCCM).&#160; An installer flag will allow an administrator to pre-install everything that is needed for Solstice Conference onto the user device without needing to change a user's account-level privileges. See more about installing with <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Client-Installs.htm" target="_blank">MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">MSI or SCCM</a></MadCap:conditionalText>.</p>
+        <p>To use the Solstice video conference connection functionality, users will need to install the Solstice Conference drivers with their Mersive Solstice app.&#160;These drivers provide wireless bridging of room audio and video to the host laptop and the ability to share the Solstice display to remote participants through a video conferencing application. </p>
+        <p>In Solstice 5.5 and later Solstice Conference drivers are installed separately from the Mersive Solstice app on Windows and macOS. After the user has installed the Mersive Solstice app, the option to install the Solstice Conference drivers appears in the Room Camera + Mic tab. A user must have administrator privileges on their laptop to successfully install Solstice Conference drivers. These drivers are optional; Solstice can still be used for in-person wireless content sharing and collaboration without installing the additional drivers. </p>
+        <p>For most enterprise users of Solstice conferencing, Mersive recommends pre-installing or centrally deploying the latest version of the Mersive Solstice app and Solstice Conference drivers through the use of centralized management (MSI or SCCM).&#160; Administrators can pre-install and configure Solstice conferencing functionality on user devices without giving users elevated privileges. (Note that these admin-installed versions of the Mersive Solstice app and Solstice Conference drivers cannot be auto-updated by users upon connecting to a Pod running a newer version of Solstice.) Learn more about deploying Solstice with <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Admin-Client-Installs.htm" target="_blank">MSI or SCCM</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/admin-client-installs.htm">MSI or SCCM</a></MadCap:conditionalText>.</p>
         <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
         <p MadCap:conditions="Default.ScreenOnly"><a href="Solstice-Conference-Physical-Setup.htm">Solstice Conference Physical Setup</a>
         </p>

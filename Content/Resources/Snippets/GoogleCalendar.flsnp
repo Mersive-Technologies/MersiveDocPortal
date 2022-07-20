@@ -2,8 +2,8 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>Open your Solstice Dashboard. </li>
-            <li>From the list of Your Solstice Instances, select the Solstice Pods you wish to integrate a room calendar for.</li>
+            <li>Open Solstice Dashboard. </li>
+            <li>From the list of Your Solstice Instances, select the Solstice Pod you wish to integrate with a room calendar.</li>
             <li>Go to the <b>Calendar</b> tab.</li>
             <li>Select the <b>Enabled</b> option.</li>
             <li>From the Calendar Type drop-down, select <b>Google Calendar</b>.</li>

@@ -44,11 +44,11 @@
     Comment="" />
   <ConditionTag
     BackgroundColor="#ff00ff"
-    Name="5-5_Release"
+    Name="5-5-1_Release"
     Comment="" />
   <ConditionTag
     BackgroundColor="#fa8072"
-    Name="5-5_Exclude"
+    Name="5-5-1_Exclude"
     Comment="" />
   <ConditionTag
     BackgroundColor="#ff0000"

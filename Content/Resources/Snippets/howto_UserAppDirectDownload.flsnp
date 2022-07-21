@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>Follow the steps below to download and install the Mersive Solstice app with optional video conference connection functionality directly from a Solstice Pod.</p>
+        <p>Follow the steps below to download and install the Mersive Solstice app, with optional functionality to connect Solstice to video conferences, directly from a Solstice Pod.</p>
         <ol>
             <li>On a laptop, open a browser and enter the IP address that appears on the Solstice display. The Solstice Quick Connect page will open:<p><img src="../Images/ex_SolsticeBrowserQuickConnectDnld.png" style="width: 75%;" /></p></li>
             <li>Click <b>Get the App</b>.<MadCap:snippetBlock src="info_SolsticeInstallAppConfPermissions.flsnp" /></li>

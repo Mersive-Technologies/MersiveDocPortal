@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p>Solstice Conference can also support video conferences that have not been previously scheduled on a personal calendar integrated into the Mersive Solstice app or on a room calendar integrated with the Solstice Pod. The directions below explain how to connect Solstice content sharing and room devices connected to the Solstice Pod with unscheduled and in-progress video conferences. </p>
-        <MadCap:snippetBlock src="info_SolsticeConferenceRedesign5-5Note.flsnp" />
+        <MadCap:snippetBlock src="info_SolsticeConfChanges551Note.flsnp" />
         <ol>
             <li>	Either before or after starting the video conference in the conferencing app, launch the Mersive Solstice app on your laptop.</li>
             <li>Connect to a Solstice display by clicking on the display name. Enter the 4-digit screen key listed on the display if prompted to do so. </li>

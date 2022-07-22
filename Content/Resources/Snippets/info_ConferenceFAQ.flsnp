@@ -40,7 +40,7 @@
                 <MadCap:dropDownHotspot class="FAQ">Why does changing virtual display settings with Solstice Conference create a "hall of mirrors" on my Mac?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>When the Solstice Conference virtual monitor (usually appears as Screen 2) is set as the primary display, a known issue exists that causes a video effect that resembles a hall of mirrors. Once the issue has been triggered, the Solstice Conference drivers often must be uninstalled and reinstalled to resolve it. Mersive strongly recommends not accessing the display settings while using Solstice Conference to avoid this issue. For help uninstalling and reinstalling Conference drivers, contact <a href="https://mersive.force.com/support" target="_blank">Mersive Support</a>.</p>
+                <p>When the Solstice virtual monitor for sharing with a video conference (usually appears as Monitor 2) is set as the primary display, a known issue causes a video effect that resembles a hall of mirrors. Once the issue has been triggered, the Solstice Conference drivers often must be uninstalled and reinstalled to resolve it. Mersive strongly recommends not accessing the display settings while using Solstice with a video conference to avoid this issue. For help uninstalling and reinstalling Solstice Conference drivers, contact <a href="https://mersive.force.com/support" target="_blank">Mersive Support</a>.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
@@ -48,15 +48,15 @@
                 <MadCap:dropDownHotspot class="FAQ">Why is the Solstice user app failing to share my desktop and app windows on my Windows laptop with dual graphics cards?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>In the Mersive Solstice app on Windows laptops with dual graphics cards, an issue has been reported that manually setting the dedicated graphics card as primary can prevent the app from successfully sharing the user's Desktop and App Windows. In this case, a sharing error may appear in the Mersive Solstice app; Media File sharing is usually successful. This issue can usually be resolved by changing the Windows and/or graphics card settings to allow the graphics processor to be automatically selected.</p>
+                <p>In the Mersive Solstice app on Windows laptops with dual graphics cards, an issue has been reported that manually setting the dedicated graphics card as primary can prevent the app from successfully sharing the user's Desktop and App Windows. In this case, a sharing error may appear in the Mersive Solstice app; Media File sharing may still be successful. This issue can usually be resolved by changing the Windows and/or graphics card settings to allow the graphics processor to be automatically selected.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot class="FAQ">Why does my Pod with digital signage enabled spontaneously reboot after being used for Solstice Conference?</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot class="FAQ">Why does my Pod with digital signage enabled spontaneously reboot after a Solstice video conference?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>For Solstice Pods running digital signage feeds that are also used regularly for Solstice Conference, a known issue exists that occasionally causes Solstice to become unstable and the Pod to spontaneously reboot. Mersive recommends that Pods experiencing this issue be configured to perform a daily reboot, which should avoid spontaneous restarts. A Solstice admin can enable Daily Reboots in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Cloud-Template-Advanced.htm" target="_blank">Solstice Cloud &gt; Advanced</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-advanced.htm">Solstice Cloud &gt; Advanced</a></MadCap:conditionalText> settings.</p>
+                <p>For Solstice Pods running digital signage feeds that are also used regularly for Solstice-enabled video conferences, a known issue exists that occasionally causes Solstice to become unstable and the Pod to spontaneously reboot. Mersive recommends that Pods experiencing this issue be configured to perform a daily reboot, which should avoid spontaneous restarts. A Solstice admin can enable Daily Reboots in the <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../../Topics/Cloud-Template-Advanced.htm" target="_blank">Solstice Cloud &gt; Advanced</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.PrintOnly"><a href="https://documentation.mersive.com/content/topics/cloud-template-advanced.htm">Solstice Cloud &gt; Advanced</a></MadCap:conditionalText> settings.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
     </body>

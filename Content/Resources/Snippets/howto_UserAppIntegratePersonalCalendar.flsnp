@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>When you integrate your Microsoft 365 calendar with your Mersive Solstice app, Solstice can quickly launch video conferences scheduled on your personal calendar after you connect to a Solstice display. Calendar integration and Solstice Conference drivers are available on Windows and macOS only. Solstice Conference drivers  must be installed with the Mersive Solstice app to this capability.</p>
+        <p>When you integrate your Microsoft 365 calendar with your Mersive Solstice app, Solstice can quickly launch video conferences scheduled on your personal calendar after you connect to a Solstice display. Calendar integration and Solstice Conference drivers are available on Windows and macOS only. Solstice Conference drivers  must be installed with the Mersive Solstice app to use this capability.</p>
         <p>When integrating your calendar, you will be prompted to sign into your Microsoft 365 account using the secure Microsoft Graph API OAuth2 authorization flow. This grants the Mersive Solstice app read-only access to your calendar so it can recognize video conference information (URL, meeting ID, passcode, etc.) in the body of upcoming meetings and facilitate faster starts for scheduled video conferences.</p>
         <ol>
             <li>In the Mersive Solstice app, navigate to <b>Settings</b> &gt; <b>Conference</b>. </li>

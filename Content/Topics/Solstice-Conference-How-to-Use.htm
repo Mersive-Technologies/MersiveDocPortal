@@ -4,12 +4,13 @@
     </head>
     <body>
         <h1>How to Use Solstice Conference</h1>
-        <p>These instructions outline steps for <b>meeting hosts</b> to use the Mersive Solstice app to connect their video conference to Solstice content sharing and room peripherals plugged into the Solstice Pod. </p>
-        <p MadCap:conditions="Default.ScreenOnly"><iframe width="550" height="310" src="https://www.youtube.com/embed/lNGHi-czMa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+        <p>These instructions outline steps for <b>meeting hosts</b> to use the Mersive Solstice app to connect their video conference to Solstice content sharing and room peripherals, such as cameras and mics, plugged into the Solstice Pod. </p>
+        <p MadCap:conditions="Default.ScreenOnly,Default.5-5-1_Exclude"><iframe width="550" height="310" src="https://www.youtube.com/embed/lNGHi-czMa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
         </p>
         <h3>Scheduled Conferences vs Unscheduled Conferences</h3>
-        <p>Scheduled video conferences appear in advance on either on a room calendar integrated with the Solstice Pod or on a personal calendar integrated in the Mersive Solstice app. The details for the conference – meeting ID, passcode, URL, etc. – must be included in the body of the scheduled event. Integrating a room or personal calendar, along  with Solstice Pod configuration, enables faster starts for Solstice-connected video conferences. See <a href="#Launch">Launch a Scheduled Video Conference</a> for more details.</p>
-        <p>The Mersive Solstice app can also connect Solstice content sharing and Pod-connected room peripherals to a video conference not previously scheduled on an integrated calendar. In this scenario, the video conference needs to be started separately using the host's preferred conferencing service. See <a href="#Unscheduled">Connect to an Unscheduled Meeting in Solstice Conference</a> for more details.</p>
+        <p>Scheduled video conferences appear in advance on <MadCap:conditionalText MadCap:conditions="Default.5-5-1_Exclude">either a room calendar integrated with the Solstice Pod or on </MadCap:conditionalText>a Microsoft 365 calendar integrated in the Mersive Solstice app. The details for the conference – meeting ID, passcode, URL, etc. – must be included in the body of the scheduled event. Integrating a <MadCap:conditionalText MadCap:conditions="Default.5-5-1_Exclude">room or </MadCap:conditionalText>personal Microsoft 365 calendar, along  with Solstice Pod configuration, enables faster starts for Solstice-connected video conferences.<MadCap:conditionalText MadCap:conditions="Default.5-5-1_Exclude"> See <a href="#Launch">Launch a Scheduled Video Conference</a> for more details.</MadCap:conditionalText></p>
+        <p>The Mersive Solstice app can also connect Solstice content sharing and Pod-connected room peripherals to a video conference not previously scheduled on an integrated calendar. In this scenario, the video conference needs to be started separately using the host's preferred conferencing service.<MadCap:conditionalText MadCap:conditions="Default.5-5-1_Exclude"> See <a href="#Unscheduled">Connect to an Unscheduled Meeting in Solstice Conference</a> for more details.</MadCap:conditionalText> </p>
+        <p MadCap:conditions="Default.5-5-1_Release">See <a href="#Launch">Launch a Video Conference</a> for more details.</p>
         <h3><a name="Using"></a>Using Solstice Conference with Dual Displays</h3>
         <p>If the Solstice Pod is connected to dual display monitors, the screen connected to HDMI 1 of the Pod will be available to be shared to the video conference. The screen connected to HDMI 2 will be visible to participants in the room but will not be shared as part of the conference. In the Mersive Solstice app layout screen, the display shared with the conference is the screen on the left.</p>
         <MadCap:dropDown>
@@ -17,9 +18,10 @@
                 <MadCap:dropDownHotspot>Example Dual Screen Layout in Mersive Solstice App</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>
+                <p MadCap:conditions="Default.5-5-1_Exclude">
                     <img src="../Resources/Images/ex_UserConfCnxDualDisplays.png" style="width: 80%;" />
                 </p>
+                <p>[img: Updated (edited?) dual display Layout in Conference]</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <p>&#160;</p>
@@ -58,13 +60,13 @@
         </MadCap:dropDown>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot><a name="Launch"></a>Launch a Scheduled Video Conference on Your Personal Calendar</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot><a name="Launch"></a>Start a Video Conference with Solstice Sharing and Room Resources</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_ConferenceScheduledPersonalCalendar.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.5-5-1_Exclude">
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot><a name="Launch-Room"></a>Launch a Scheduled Video Conference on the Room Calendar</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
@@ -72,7 +74,7 @@
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_ConferenceScheduledRoomCalendar.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
-        <MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.5-5-1_Exclude">
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot><a name="Unscheduled"></a>Connect to an Unscheduled Meeting in Solstice Conference</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
@@ -85,8 +87,17 @@
                 <MadCap:dropDownHotspot>End Your Meeting and Disconnect from Solstice</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <p>As the host, when your meeting is finished you will need to end your video conference and disconnect from Solstice. Here are some ways you can disconnect from Solstice:</p>
+                <p><a name="disconnect"></a>As the host, when your meeting is finished you will need to end your video conference and disconnect from Solstice. Below are some ways you can disconnect from Solstice.</p>
                 <MadCap:snippetBlock src="../Resources/Snippets/howto_UserSolsticeAppDisconnect.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Mersive Solstice App Update Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><a name="5-5-1_note"></a>Older versions of the Mersive Solstice app for Windows and macOS&#160;provided a wide range of options for connecting to Solstice Conference and starting scheduled video conferences. Which video conference was started sometimes depended on opaque logic based on details of scheduled meetings in calendars integrated with the app and/or with the Pod. </p>
+                <p>App version 5.5.1 eliminates this confusion by only auto-launching video conference meetings that appear from the calendar integrated with the app. Mersive is looking into whether and how to best to add back the ability to auto-launch video conferences from room calendars integrated with a Solstice Pod. If this functionality is heavily used in your organization, contact your Mersive representative – we would be interested to hear how it proved most useful to you to inform development going forward.</p>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <MadCap:snippetBlock src="../Resources/Snippets/info_ConferenceFAQ.flsnp" />
